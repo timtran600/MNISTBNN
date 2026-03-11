@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer2_Stream_BRAM\\bnn_layer2_Stream_BRAM.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/03/26 21:40:54",
+ "timestampMillis": "3065528850",
+ "buildStep": {
+  "cmdId": "18d02f05-647e-43b8-90be-cd9db808f016",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer2_Stream_BRAM\\logs\\bnn_layer2_Stream_BRAM.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer1.cfg --work_dir bnn_layer2_Stream_BRAM ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer1.cfg",
+   "--work_dir",
+   "bnn_layer2_Stream_BRAM"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:40:54",
+ "timestampMillis": "3065528850",
+ "status": {
+  "cmdId": "18d02f05-647e-43b8-90be-cd9db808f016",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/03/26 21:40:58",
+ "timestampMillis": "3065532376",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bnn_layer2_xnor",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer1_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer2_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer3_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer2.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer2.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/03/26 21:40:58",
+ "timestampMillis": "3065532377",
+ "buildStep": {
+  "cmdId": "5e537659-8a84-44aa-919e-a5f665a068e9",
+  "name": "csim_design",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM\\bnn_layer2_Stream_BRAM\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_Stream_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:40:58",
+ "timestampMillis": "3065532378",
+ "status": {
+  "cmdId": "5e537659-8a84-44aa-919e-a5f665a068e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:41:01",
+ "timestampMillis": "3065535836",
+ "status": {
+  "cmdId": "5e537659-8a84-44aa-919e-a5f665a068e9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:41:01",
+ "timestampMillis": "3065535965",
+ "status": {
+  "cmdId": "18d02f05-647e-43b8-90be-cd9db808f016",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/03/26 21:41:01",
+ "timestampMillis": "3065535965",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/03/26 21:41:01",
+ "timestampMillis": "3065535965",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

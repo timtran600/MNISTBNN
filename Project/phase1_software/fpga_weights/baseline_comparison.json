@@ -1,0 +1,15 @@
+{
+  "cpu": {
+    "latency_ms": 0.106,
+    "throughput": 9434.86,
+    "accuracy": 98.5,
+    "gops": 2.54
+  },
+  "gpu": {
+    "latency_ms": 0.1206,
+    "throughput": 8292.38,
+    "accuracy": 98.5,
+    "gops": 2.23,
+    "speedup_vs_cpu": 0.88
+  }
+}

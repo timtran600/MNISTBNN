@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\bnn_layer1.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/02/26 16:33:52",
+ "timestampMillis": "2960706505",
+ "buildStep": {
+  "cmdId": "989db69e-5714-4b8e-97d6-a1ae16b14510",
+  "name": "v++",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\logs\\bnn_layer1.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1.cfg --work_dir bnn_layer1 ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1.cfg",
+   "--work_dir",
+   "bnn_layer1"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1.cfg",
+    "content": "part=xczu3eg-sfvc784-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=bnn_layer1_xnor\ntb.file=tb_layer1.cpp\nsyn.file=bnn_layer1.h\nsyn.file=bnn_layer1.cpp\nclock=5ns"
+   }
+  ],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/02/26 16:33:52",
+ "timestampMillis": "2960706506",
+ "status": {
+  "cmdId": "989db69e-5714-4b8e-97d6-a1ae16b14510",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710412",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bnn_layer1_xnor",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710413",
+ "buildStep": {
+  "cmdId": "6118fa7c-1dce-40e1-9dd3-4c37910d5c11",
+  "name": "csynth_design",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710414",
+ "status": {
+  "cmdId": "6118fa7c-1dce-40e1-9dd3-4c37910d5c11",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710414",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710415",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:33:56",
+ "timestampMillis": "2960710415",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960753806",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960753807",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960753808",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960753808",
+ "status": {
+  "cmdId": "6118fa7c-1dce-40e1-9dd3-4c37910d5c11",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960753986",
+ "status": {
+  "cmdId": "989db69e-5714-4b8e-97d6-a1ae16b14510",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960754003",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\reports\\v++_compile_bnn_layer1_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/02/26 16:34:39",
+ "timestampMillis": "2960754004",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer1\\bnn_layer1\\reports\\.db\\v++_compile_bnn_layer1_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,66 @@
+{
+  "device": "cpu",
+  "architecture": "784\u2192256\u2192256\u219210",
+  "quantization": "1-bit binary weights",
+  "single_image": {
+    "avg_ms": 1.3812309989589266,
+    "std_ms": 0.368512305474489,
+    "min_ms": 0.7987999706529081,
+    "max_ms": 2.9959999956190586,
+    "median_ms": 1.35495001450181,
+    "p95_ms": 1.9563099922379477,
+    "p99_ms": 2.2695589932845905,
+    "iterations": 200
+  },
+  "batch_performance": [
+    {
+      "batch_size": 1,
+      "total_time_ms": 1.1312299990095198,
+      "time_per_image_ms": 1.1312299990095198,
+      "throughput_img_per_sec": 883.9935299413719
+    },
+    {
+      "batch_size": 10,
+      "total_time_ms": 1.241395998513326,
+      "time_per_image_ms": 0.1241395998513326,
+      "throughput_img_per_sec": 8055.447264189528
+    },
+    {
+      "batch_size": 50,
+      "total_time_ms": 1.292639997554943,
+      "time_per_image_ms": 0.02585279995109886,
+      "throughput_img_per_sec": 38680.52984170079
+    },
+    {
+      "batch_size": 100,
+      "total_time_ms": 1.6538560052867979,
+      "time_per_image_ms": 0.016538560052867978,
+      "throughput_img_per_sec": 60464.75610956157
+    },
+    {
+      "batch_size": 500,
+      "total_time_ms": 1.5412139985710382,
+      "time_per_image_ms": 0.0030824279971420764,
+      "throughput_img_per_sec": 324419.5812285531
+    },
+    {
+      "batch_size": 1000,
+      "total_time_ms": 1.5823160007130355,
+      "time_per_image_ms": 0.0015823160007130354,
+      "throughput_img_per_sec": 631985.0140865493
+    }
+  ],
+  "full_test_set": {
+    "total_images": 10000,
+    "correct": 9850,
+    "accuracy_percent": 98.5,
+    "total_time_sec": 1.1518688999931328,
+    "avg_time_per_image_ms": 0.11518688999931329,
+    "throughput_img_per_sec": 8681.54353334795
+  },
+  "computational": {
+    "ops_per_inference": 268800,
+    "ops_per_second": 2333598901.7639294,
+    "gops_per_second": 2.333598901763929
+  }
+}

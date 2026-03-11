@@ -1,0 +1,449 @@
+
+
+================================================================
+== Synthesis Summary Report of 'bnn_layer3_xnor'
+================================================================
++ General Information: 
+    * Date:           Wed Mar  4 17:27:09 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        bnn_layer3_BRAM
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sfvc784-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |                 Modules                 | Issue|      | Latency | Latency | Iteration|         | Trip |          |         |    |           |           |     |
+    |                 & Loops                 | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
+    +-----------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |+ bnn_layer3_xnor                        |     -|  0.00|       24|  120.000|         -|       25|     -|        no|  24 (5%)|   -|  3014 (2%)|  6163 (8%)|    -|
+    | + bnn_layer3_xnor_Pipeline_NEURON_LOOP  |     -|  0.00|       15|   75.000|         -|       15|     -|        no|        -|   -|  166 (~0%)|  3176 (4%)|    -|
+    |  o NEURON_LOOP                          |     -|  3.65|       13|   65.000|         5|        1|    10|       yes|        -|   -|          -|          -|    -|
+    | + bnn_layer3_xnor_Pipeline_LOAD_LOOP    |     -|  0.00|       13|   65.000|         -|       13|     -|        no|        -|   -|  273 (~0%)|   73 (~0%)|    -|
+    |  o LOAD_LOOP                            |     -|  3.65|       11|   55.000|         3|        1|    10|       yes|        -|   -|          -|          -|    -|
+    +-----------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | WRITE_ONLY | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=1            |
+| m_axi_gmem1 | READ_ONLY  | 256 -> 256 | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=15           |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | input_r_1    | 0x10   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_2    | 0x14   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_3    | 0x18   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_4    | 0x1c   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_5    | 0x20   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_6    | 0x24   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_7    | 0x28   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | input_r_8    | 0x2c   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control | output_r_1   | 0x34   | 32    | W      | Data signal of output_r          |                                                                      |
+| s_axi_control | output_r_2   | 0x38   | 32    | W      | Data signal of output_r          |                                                                      |
+| s_axi_control | weights_1    | 0x40   | 32    | W      | Data signal of weights           |                                                                      |
+| s_axi_control | weights_2    | 0x44   | 32    | W      | Data signal of weights           |                                                                      |
+| s_axi_control | load_weights | 0x4c   | 32    | W      | Data signal of load_weights      |                                                                      |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+---------------+
+| Argument     | Direction | Datatype      |
++--------------+-----------+---------------+
+| input        | in        | ap_uint<256>  |
+| output       | out       | ap_int<16>*   |
+| weights      | in        | ap_uint<256>* |
+| load_weights | in        | ap_uint<1>    |
++--------------+-----------+---------------+
+
+* SW-to-HW Mapping
++--------------+---------------+-----------+----------+----------------------------------------+
+| Argument     | HW Interface  | HW Type   | HW Usage | HW Info                                |
++--------------+---------------+-----------+----------+----------------------------------------+
+| input        | s_axi_control | register  |          | name=input_r_1 offset=0x10 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_2 offset=0x14 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_3 offset=0x18 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_4 offset=0x1c range=32    |
+| input        | s_axi_control | register  |          | name=input_r_5 offset=0x20 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_6 offset=0x24 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_7 offset=0x28 range=32    |
+| input        | s_axi_control | register  |          | name=input_r_8 offset=0x2c range=32    |
+| output       | m_axi_gmem0   | interface |          | channel=0                              |
+| output       | s_axi_control | register  | offset   | name=output_r_1 offset=0x34 range=32   |
+| output       | s_axi_control | register  | offset   | name=output_r_2 offset=0x38 range=32   |
+| weights      | m_axi_gmem1   | interface |          | channel=0                              |
+| weights      | s_axi_control | register  | offset   | name=weights_1 offset=0x40 range=32    |
+| weights      | s_axi_control | register  | offset   | name=weights_2 offset=0x44 range=32    |
+| load_weights | s_axi_control | register  |          | name=load_weights offset=0x4c range=32 |
++--------------+---------------+-----------+----------+----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+-------------+----------------------+
+| HW Interface | Direction | Length | Width | Loop        | Loop Location        |
++--------------+-----------+--------+-------+-------------+----------------------+
+| m_axi_gmem0  | write     | 10     | 16    | NEURON_LOOP | bnn_layer3.cpp:30:22 |
+| m_axi_gmem1  | read      | 10     | 256   | LOAD_LOOP   | bnn_layer3.cpp:22:20 |
++--------------+-----------+--------+-------+-------------+----------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+----------------------+-----------+--------------+--------+-------------+----------------------+------------+--------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location      | Direction | Burst Status | Length | Loop        | Loop Location        | Resolution | Problem                                                                                                |
++--------------+----------+----------------------+-----------+--------------+--------+-------------+----------------------+------------+--------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | output   | bnn_layer3.cpp:43:23 | write     | Widen Fail   |        | NEURON_LOOP | bnn_layer3.cpp:30:22 | 214-353    | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0  |
+| m_axi_gmem0  | output   | bnn_layer3.cpp:43:23 | write     | Inferred     | 10     | NEURON_LOOP | bnn_layer3.cpp:30:22 |            |                                                                                                        |
+| m_axi_gmem1  | weights  | bnn_layer3.cpp:24:19 | read      | Widen Fail   |        | LOAD_LOOP   | bnn_layer3.cpp:22:20 | 214-353    | Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | weights  | bnn_layer3.cpp:24:19 | read      | Inferred     | 10     | LOAD_LOOP   | bnn_layer3.cpp:22:20 |            |                                                                                                        |
++--------------+----------+----------------------+-----------+--------------+--------+-------------+----------------------+------------+--------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------+-----+--------+--------------+-------+--------+---------+
+| Name                                    | DSP | Pragma | Variable     | Op    | Impl   | Latency |
++-----------------------------------------+-----+--------+--------------+-------+--------+---------+
+| + bnn_layer3_xnor                       | 0   |        |              |       |        |         |
+|  + bnn_layer3_xnor_Pipeline_NEURON_LOOP | 0   |        |              |       |        |         |
+|    icmp_ln30_fu_629_p2                  |     |        | icmp_ln30    | seteq | auto   | 0       |
+|    add_ln30_fu_635_p2                   |     |        | add_ln30     | add   | fabric | 0       |
+|    xor_ln34_fu_651_p2                   |     |        | xor_ln34     | xor   | auto   | 0       |
+|    xnor_result_fu_656_p2                |     |        | xnor_result  | xor   | auto   | 0       |
+|    add_ln43_fu_3730_p2                  |     |        | add_ln43     | add   | fabric | 0       |
+|    add_ln43_1_fu_3740_p2                |     |        | add_ln43_1   | add   | fabric | 0       |
+|    add_ln43_2_fu_3750_p2                |     |        | add_ln43_2   | add   | fabric | 0       |
+|    add_ln43_3_fu_3760_p2                |     |        | add_ln43_3   | add   | fabric | 0       |
+|    add_ln43_4_fu_3770_p2                |     |        | add_ln43_4   | add   | fabric | 0       |
+|    add_ln43_5_fu_3780_p2                |     |        | add_ln43_5   | add   | fabric | 0       |
+|    add_ln43_6_fu_3790_p2                |     |        | add_ln43_6   | add   | fabric | 0       |
+|    add_ln43_7_fu_3796_p2                |     |        | add_ln43_7   | add   | fabric | 0       |
+|    add_ln43_8_fu_3806_p2                |     |        | add_ln43_8   | add   | fabric | 0       |
+|    add_ln43_9_fu_3816_p2                |     |        | add_ln43_9   | add   | fabric | 0       |
+|    add_ln43_10_fu_3826_p2               |     |        | add_ln43_10  | add   | fabric | 0       |
+|    add_ln43_11_fu_3836_p2               |     |        | add_ln43_11  | add   | fabric | 0       |
+|    add_ln43_12_fu_3846_p2               |     |        | add_ln43_12  | add   | fabric | 0       |
+|    add_ln43_13_fu_3856_p2               |     |        | add_ln43_13  | add   | fabric | 0       |
+|    add_ln43_14_fu_5848_p2               |     |        | add_ln43_14  | add   | fabric | 0       |
+|    add_ln43_15_fu_3862_p2               |     |        | add_ln43_15  | add   | fabric | 0       |
+|    add_ln43_16_fu_3872_p2               |     |        | add_ln43_16  | add   | fabric | 0       |
+|    add_ln43_17_fu_3882_p2               |     |        | add_ln43_17  | add   | fabric | 0       |
+|    add_ln43_18_fu_3892_p2               |     |        | add_ln43_18  | add   | fabric | 0       |
+|    add_ln43_19_fu_3902_p2               |     |        | add_ln43_19  | add   | fabric | 0       |
+|    add_ln43_20_fu_3912_p2               |     |        | add_ln43_20  | add   | fabric | 0       |
+|    add_ln43_21_fu_3922_p2               |     |        | add_ln43_21  | add   | fabric | 0       |
+|    add_ln43_22_fu_3928_p2               |     |        | add_ln43_22  | add   | fabric | 0       |
+|    add_ln43_23_fu_3938_p2               |     |        | add_ln43_23  | add   | fabric | 0       |
+|    add_ln43_24_fu_3948_p2               |     |        | add_ln43_24  | add   | fabric | 0       |
+|    add_ln43_25_fu_3958_p2               |     |        | add_ln43_25  | add   | fabric | 0       |
+|    add_ln43_26_fu_3968_p2               |     |        | add_ln43_26  | add   | fabric | 0       |
+|    add_ln43_27_fu_3978_p2               |     |        | add_ln43_27  | add   | fabric | 0       |
+|    add_ln43_28_fu_3988_p2               |     |        | add_ln43_28  | add   | fabric | 0       |
+|    add_ln43_29_fu_5864_p2               |     |        | add_ln43_29  | add   | fabric | 0       |
+|    add_ln43_30_fu_5874_p2               |     |        | add_ln43_30  | add   | fabric | 0       |
+|    add_ln43_31_fu_3994_p2               |     |        | add_ln43_31  | add   | fabric | 0       |
+|    add_ln43_32_fu_4004_p2               |     |        | add_ln43_32  | add   | fabric | 0       |
+|    add_ln43_33_fu_4014_p2               |     |        | add_ln43_33  | add   | fabric | 0       |
+|    add_ln43_34_fu_4024_p2               |     |        | add_ln43_34  | add   | fabric | 0       |
+|    add_ln43_35_fu_4034_p2               |     |        | add_ln43_35  | add   | fabric | 0       |
+|    add_ln43_36_fu_4044_p2               |     |        | add_ln43_36  | add   | fabric | 0       |
+|    add_ln43_37_fu_4054_p2               |     |        | add_ln43_37  | add   | fabric | 0       |
+|    add_ln43_38_fu_4060_p2               |     |        | add_ln43_38  | add   | fabric | 0       |
+|    add_ln43_39_fu_4070_p2               |     |        | add_ln43_39  | add   | fabric | 0       |
+|    add_ln43_40_fu_4080_p2               |     |        | add_ln43_40  | add   | fabric | 0       |
+|    add_ln43_41_fu_4090_p2               |     |        | add_ln43_41  | add   | fabric | 0       |
+|    add_ln43_42_fu_4100_p2               |     |        | add_ln43_42  | add   | fabric | 0       |
+|    add_ln43_43_fu_4110_p2               |     |        | add_ln43_43  | add   | fabric | 0       |
+|    add_ln43_44_fu_4120_p2               |     |        | add_ln43_44  | add   | fabric | 0       |
+|    add_ln43_45_fu_5890_p2               |     |        | add_ln43_45  | add   | fabric | 0       |
+|    add_ln43_46_fu_4126_p2               |     |        | add_ln43_46  | add   | fabric | 0       |
+|    add_ln43_47_fu_4136_p2               |     |        | add_ln43_47  | add   | fabric | 0       |
+|    add_ln43_48_fu_4146_p2               |     |        | add_ln43_48  | add   | fabric | 0       |
+|    add_ln43_49_fu_4156_p2               |     |        | add_ln43_49  | add   | fabric | 0       |
+|    add_ln43_50_fu_4166_p2               |     |        | add_ln43_50  | add   | fabric | 0       |
+|    add_ln43_51_fu_4176_p2               |     |        | add_ln43_51  | add   | fabric | 0       |
+|    add_ln43_52_fu_4186_p2               |     |        | add_ln43_52  | add   | fabric | 0       |
+|    add_ln43_53_fu_4192_p2               |     |        | add_ln43_53  | add   | fabric | 0       |
+|    add_ln43_54_fu_4202_p2               |     |        | add_ln43_54  | add   | fabric | 0       |
+|    add_ln43_55_fu_4212_p2               |     |        | add_ln43_55  | add   | fabric | 0       |
+|    add_ln43_56_fu_4222_p2               |     |        | add_ln43_56  | add   | fabric | 0       |
+|    add_ln43_57_fu_4232_p2               |     |        | add_ln43_57  | add   | fabric | 0       |
+|    add_ln43_58_fu_4242_p2               |     |        | add_ln43_58  | add   | fabric | 0       |
+|    add_ln43_59_fu_4252_p2               |     |        | add_ln43_59  | add   | fabric | 0       |
+|    add_ln43_60_fu_5906_p2               |     |        | add_ln43_60  | add   | fabric | 0       |
+|    add_ln43_61_fu_5916_p2               |     |        | add_ln43_61  | add   | fabric | 0       |
+|    add_ln43_62_fu_5926_p2               |     |        | add_ln43_62  | add   | fabric | 0       |
+|    add_ln43_63_fu_4258_p2               |     |        | add_ln43_63  | add   | fabric | 0       |
+|    add_ln43_64_fu_4268_p2               |     |        | add_ln43_64  | add   | fabric | 0       |
+|    add_ln43_65_fu_4278_p2               |     |        | add_ln43_65  | add   | fabric | 0       |
+|    add_ln43_66_fu_4288_p2               |     |        | add_ln43_66  | add   | fabric | 0       |
+|    add_ln43_67_fu_4298_p2               |     |        | add_ln43_67  | add   | fabric | 0       |
+|    add_ln43_68_fu_4308_p2               |     |        | add_ln43_68  | add   | fabric | 0       |
+|    add_ln43_69_fu_4318_p2               |     |        | add_ln43_69  | add   | fabric | 0       |
+|    add_ln43_70_fu_4324_p2               |     |        | add_ln43_70  | add   | fabric | 0       |
+|    add_ln43_71_fu_4334_p2               |     |        | add_ln43_71  | add   | fabric | 0       |
+|    add_ln43_72_fu_4344_p2               |     |        | add_ln43_72  | add   | fabric | 0       |
+|    add_ln43_73_fu_4354_p2               |     |        | add_ln43_73  | add   | fabric | 0       |
+|    add_ln43_74_fu_4364_p2               |     |        | add_ln43_74  | add   | fabric | 0       |
+|    add_ln43_75_fu_4374_p2               |     |        | add_ln43_75  | add   | fabric | 0       |
+|    add_ln43_76_fu_4384_p2               |     |        | add_ln43_76  | add   | fabric | 0       |
+|    add_ln43_77_fu_5942_p2               |     |        | add_ln43_77  | add   | fabric | 0       |
+|    add_ln43_78_fu_4390_p2               |     |        | add_ln43_78  | add   | fabric | 0       |
+|    add_ln43_79_fu_4400_p2               |     |        | add_ln43_79  | add   | fabric | 0       |
+|    add_ln43_80_fu_4410_p2               |     |        | add_ln43_80  | add   | fabric | 0       |
+|    add_ln43_81_fu_4420_p2               |     |        | add_ln43_81  | add   | fabric | 0       |
+|    add_ln43_82_fu_4430_p2               |     |        | add_ln43_82  | add   | fabric | 0       |
+|    add_ln43_83_fu_4440_p2               |     |        | add_ln43_83  | add   | fabric | 0       |
+|    add_ln43_84_fu_4450_p2               |     |        | add_ln43_84  | add   | fabric | 0       |
+|    add_ln43_85_fu_4456_p2               |     |        | add_ln43_85  | add   | fabric | 0       |
+|    add_ln43_86_fu_4466_p2               |     |        | add_ln43_86  | add   | fabric | 0       |
+|    add_ln43_87_fu_4476_p2               |     |        | add_ln43_87  | add   | fabric | 0       |
+|    add_ln43_88_fu_4486_p2               |     |        | add_ln43_88  | add   | fabric | 0       |
+|    add_ln43_89_fu_4496_p2               |     |        | add_ln43_89  | add   | fabric | 0       |
+|    add_ln43_90_fu_4506_p2               |     |        | add_ln43_90  | add   | fabric | 0       |
+|    add_ln43_91_fu_4516_p2               |     |        | add_ln43_91  | add   | fabric | 0       |
+|    add_ln43_92_fu_5958_p2               |     |        | add_ln43_92  | add   | fabric | 0       |
+|    add_ln43_93_fu_5968_p2               |     |        | add_ln43_93  | add   | fabric | 0       |
+|    add_ln43_94_fu_4522_p2               |     |        | add_ln43_94  | add   | fabric | 0       |
+|    add_ln43_95_fu_4532_p2               |     |        | add_ln43_95  | add   | fabric | 0       |
+|    add_ln43_96_fu_4542_p2               |     |        | add_ln43_96  | add   | fabric | 0       |
+|    add_ln43_97_fu_4552_p2               |     |        | add_ln43_97  | add   | fabric | 0       |
+|    add_ln43_98_fu_4562_p2               |     |        | add_ln43_98  | add   | fabric | 0       |
+|    add_ln43_99_fu_4572_p2               |     |        | add_ln43_99  | add   | fabric | 0       |
+|    add_ln43_100_fu_4582_p2              |     |        | add_ln43_100 | add   | fabric | 0       |
+|    add_ln43_101_fu_4588_p2              |     |        | add_ln43_101 | add   | fabric | 0       |
+|    add_ln43_102_fu_4598_p2              |     |        | add_ln43_102 | add   | fabric | 0       |
+|    add_ln43_103_fu_4608_p2              |     |        | add_ln43_103 | add   | fabric | 0       |
+|    add_ln43_104_fu_4618_p2              |     |        | add_ln43_104 | add   | fabric | 0       |
+|    add_ln43_105_fu_4628_p2              |     |        | add_ln43_105 | add   | fabric | 0       |
+|    add_ln43_106_fu_4638_p2              |     |        | add_ln43_106 | add   | fabric | 0       |
+|    add_ln43_107_fu_4648_p2              |     |        | add_ln43_107 | add   | fabric | 0       |
+|    add_ln43_108_fu_5984_p2              |     |        | add_ln43_108 | add   | fabric | 0       |
+|    add_ln43_109_fu_4654_p2              |     |        | add_ln43_109 | add   | fabric | 0       |
+|    add_ln43_110_fu_4664_p2              |     |        | add_ln43_110 | add   | fabric | 0       |
+|    add_ln43_111_fu_4674_p2              |     |        | add_ln43_111 | add   | fabric | 0       |
+|    add_ln43_112_fu_4684_p2              |     |        | add_ln43_112 | add   | fabric | 0       |
+|    add_ln43_113_fu_4694_p2              |     |        | add_ln43_113 | add   | fabric | 0       |
+|    add_ln43_114_fu_4704_p2              |     |        | add_ln43_114 | add   | fabric | 0       |
+|    add_ln43_115_fu_4714_p2              |     |        | add_ln43_115 | add   | fabric | 0       |
+|    add_ln43_116_fu_4720_p2              |     |        | add_ln43_116 | add   | fabric | 0       |
+|    add_ln43_117_fu_4730_p2              |     |        | add_ln43_117 | add   | fabric | 0       |
+|    add_ln43_118_fu_4740_p2              |     |        | add_ln43_118 | add   | fabric | 0       |
+|    add_ln43_119_fu_4750_p2              |     |        | add_ln43_119 | add   | fabric | 0       |
+|    add_ln43_120_fu_4760_p2              |     |        | add_ln43_120 | add   | fabric | 0       |
+|    add_ln43_121_fu_4770_p2              |     |        | add_ln43_121 | add   | fabric | 0       |
+|    add_ln43_122_fu_4780_p2              |     |        | add_ln43_122 | add   | fabric | 0       |
+|    add_ln43_123_fu_6000_p2              |     |        | add_ln43_123 | add   | fabric | 0       |
+|    add_ln43_124_fu_6010_p2              |     |        | add_ln43_124 | add   | fabric | 0       |
+|    add_ln43_125_fu_6020_p2              |     |        | add_ln43_125 | add   | fabric | 0       |
+|    add_ln43_126_fu_6030_p2              |     |        | add_ln43_126 | add   | fabric | 0       |
+|    add_ln43_127_fu_4786_p2              |     |        | add_ln43_127 | add   | fabric | 0       |
+|    add_ln43_128_fu_4796_p2              |     |        | add_ln43_128 | add   | fabric | 0       |
+|    add_ln43_129_fu_4806_p2              |     |        | add_ln43_129 | add   | fabric | 0       |
+|    add_ln43_130_fu_4816_p2              |     |        | add_ln43_130 | add   | fabric | 0       |
+|    add_ln43_131_fu_4826_p2              |     |        | add_ln43_131 | add   | fabric | 0       |
+|    add_ln43_132_fu_4836_p2              |     |        | add_ln43_132 | add   | fabric | 0       |
+|    add_ln43_133_fu_4846_p2              |     |        | add_ln43_133 | add   | fabric | 0       |
+|    add_ln43_134_fu_4852_p2              |     |        | add_ln43_134 | add   | fabric | 0       |
+|    add_ln43_135_fu_4862_p2              |     |        | add_ln43_135 | add   | fabric | 0       |
+|    add_ln43_136_fu_4872_p2              |     |        | add_ln43_136 | add   | fabric | 0       |
+|    add_ln43_137_fu_4882_p2              |     |        | add_ln43_137 | add   | fabric | 0       |
+|    add_ln43_138_fu_4892_p2              |     |        | add_ln43_138 | add   | fabric | 0       |
+|    add_ln43_139_fu_4902_p2              |     |        | add_ln43_139 | add   | fabric | 0       |
+|    add_ln43_140_fu_4912_p2              |     |        | add_ln43_140 | add   | fabric | 0       |
+|    add_ln43_141_fu_6042_p2              |     |        | add_ln43_141 | add   | fabric | 0       |
+|    add_ln43_142_fu_4918_p2              |     |        | add_ln43_142 | add   | fabric | 0       |
+|    add_ln43_143_fu_4928_p2              |     |        | add_ln43_143 | add   | fabric | 0       |
+|    add_ln43_144_fu_4938_p2              |     |        | add_ln43_144 | add   | fabric | 0       |
+|    add_ln43_145_fu_4948_p2              |     |        | add_ln43_145 | add   | fabric | 0       |
+|    add_ln43_146_fu_4958_p2              |     |        | add_ln43_146 | add   | fabric | 0       |
+|    add_ln43_147_fu_4968_p2              |     |        | add_ln43_147 | add   | fabric | 0       |
+|    add_ln43_148_fu_4978_p2              |     |        | add_ln43_148 | add   | fabric | 0       |
+|    add_ln43_149_fu_4984_p2              |     |        | add_ln43_149 | add   | fabric | 0       |
+|    add_ln43_150_fu_4994_p2              |     |        | add_ln43_150 | add   | fabric | 0       |
+|    add_ln43_151_fu_5004_p2              |     |        | add_ln43_151 | add   | fabric | 0       |
+|    add_ln43_152_fu_5014_p2              |     |        | add_ln43_152 | add   | fabric | 0       |
+|    add_ln43_153_fu_5024_p2              |     |        | add_ln43_153 | add   | fabric | 0       |
+|    add_ln43_154_fu_5034_p2              |     |        | add_ln43_154 | add   | fabric | 0       |
+|    add_ln43_155_fu_5044_p2              |     |        | add_ln43_155 | add   | fabric | 0       |
+|    add_ln43_156_fu_6058_p2              |     |        | add_ln43_156 | add   | fabric | 0       |
+|    add_ln43_157_fu_6068_p2              |     |        | add_ln43_157 | add   | fabric | 0       |
+|    add_ln43_158_fu_5050_p2              |     |        | add_ln43_158 | add   | fabric | 0       |
+|    add_ln43_159_fu_5060_p2              |     |        | add_ln43_159 | add   | fabric | 0       |
+|    add_ln43_160_fu_5070_p2              |     |        | add_ln43_160 | add   | fabric | 0       |
+|    add_ln43_161_fu_5080_p2              |     |        | add_ln43_161 | add   | fabric | 0       |
+|    add_ln43_162_fu_5090_p2              |     |        | add_ln43_162 | add   | fabric | 0       |
+|    add_ln43_163_fu_5100_p2              |     |        | add_ln43_163 | add   | fabric | 0       |
+|    add_ln43_164_fu_5110_p2              |     |        | add_ln43_164 | add   | fabric | 0       |
+|    add_ln43_165_fu_5116_p2              |     |        | add_ln43_165 | add   | fabric | 0       |
+|    add_ln43_166_fu_5126_p2              |     |        | add_ln43_166 | add   | fabric | 0       |
+|    add_ln43_167_fu_5136_p2              |     |        | add_ln43_167 | add   | fabric | 0       |
+|    add_ln43_168_fu_5146_p2              |     |        | add_ln43_168 | add   | fabric | 0       |
+|    add_ln43_169_fu_5156_p2              |     |        | add_ln43_169 | add   | fabric | 0       |
+|    add_ln43_170_fu_5166_p2              |     |        | add_ln43_170 | add   | fabric | 0       |
+|    add_ln43_171_fu_5176_p2              |     |        | add_ln43_171 | add   | fabric | 0       |
+|    add_ln43_172_fu_6084_p2              |     |        | add_ln43_172 | add   | fabric | 0       |
+|    add_ln43_173_fu_5182_p2              |     |        | add_ln43_173 | add   | fabric | 0       |
+|    add_ln43_174_fu_5192_p2              |     |        | add_ln43_174 | add   | fabric | 0       |
+|    add_ln43_175_fu_5202_p2              |     |        | add_ln43_175 | add   | fabric | 0       |
+|    add_ln43_176_fu_5212_p2              |     |        | add_ln43_176 | add   | fabric | 0       |
+|    add_ln43_177_fu_5222_p2              |     |        | add_ln43_177 | add   | fabric | 0       |
+|    add_ln43_178_fu_5232_p2              |     |        | add_ln43_178 | add   | fabric | 0       |
+|    add_ln43_179_fu_5242_p2              |     |        | add_ln43_179 | add   | fabric | 0       |
+|    add_ln43_180_fu_5248_p2              |     |        | add_ln43_180 | add   | fabric | 0       |
+|    add_ln43_181_fu_5258_p2              |     |        | add_ln43_181 | add   | fabric | 0       |
+|    add_ln43_182_fu_5268_p2              |     |        | add_ln43_182 | add   | fabric | 0       |
+|    add_ln43_183_fu_5278_p2              |     |        | add_ln43_183 | add   | fabric | 0       |
+|    add_ln43_184_fu_5288_p2              |     |        | add_ln43_184 | add   | fabric | 0       |
+|    add_ln43_185_fu_5298_p2              |     |        | add_ln43_185 | add   | fabric | 0       |
+|    add_ln43_186_fu_5308_p2              |     |        | add_ln43_186 | add   | fabric | 0       |
+|    add_ln43_187_fu_6100_p2              |     |        | add_ln43_187 | add   | fabric | 0       |
+|    add_ln43_188_fu_6110_p2              |     |        | add_ln43_188 | add   | fabric | 0       |
+|    add_ln43_189_fu_6120_p2              |     |        | add_ln43_189 | add   | fabric | 0       |
+|    add_ln43_190_fu_5314_p2              |     |        | add_ln43_190 | add   | fabric | 0       |
+|    add_ln43_191_fu_5324_p2              |     |        | add_ln43_191 | add   | fabric | 0       |
+|    add_ln43_192_fu_5334_p2              |     |        | add_ln43_192 | add   | fabric | 0       |
+|    add_ln43_193_fu_5344_p2              |     |        | add_ln43_193 | add   | fabric | 0       |
+|    add_ln43_194_fu_5354_p2              |     |        | add_ln43_194 | add   | fabric | 0       |
+|    add_ln43_195_fu_5364_p2              |     |        | add_ln43_195 | add   | fabric | 0       |
+|    add_ln43_196_fu_5374_p2              |     |        | add_ln43_196 | add   | fabric | 0       |
+|    add_ln43_197_fu_5380_p2              |     |        | add_ln43_197 | add   | fabric | 0       |
+|    add_ln43_198_fu_5390_p2              |     |        | add_ln43_198 | add   | fabric | 0       |
+|    add_ln43_199_fu_5400_p2              |     |        | add_ln43_199 | add   | fabric | 0       |
+|    add_ln43_200_fu_5410_p2              |     |        | add_ln43_200 | add   | fabric | 0       |
+|    add_ln43_201_fu_5420_p2              |     |        | add_ln43_201 | add   | fabric | 0       |
+|    add_ln43_202_fu_5430_p2              |     |        | add_ln43_202 | add   | fabric | 0       |
+|    add_ln43_203_fu_5440_p2              |     |        | add_ln43_203 | add   | fabric | 0       |
+|    add_ln43_204_fu_6136_p2              |     |        | add_ln43_204 | add   | fabric | 0       |
+|    add_ln43_205_fu_5446_p2              |     |        | add_ln43_205 | add   | fabric | 0       |
+|    add_ln43_206_fu_5456_p2              |     |        | add_ln43_206 | add   | fabric | 0       |
+|    add_ln43_207_fu_5466_p2              |     |        | add_ln43_207 | add   | fabric | 0       |
+|    add_ln43_208_fu_5476_p2              |     |        | add_ln43_208 | add   | fabric | 0       |
+|    add_ln43_209_fu_5486_p2              |     |        | add_ln43_209 | add   | fabric | 0       |
+|    add_ln43_210_fu_5496_p2              |     |        | add_ln43_210 | add   | fabric | 0       |
+|    add_ln43_211_fu_5506_p2              |     |        | add_ln43_211 | add   | fabric | 0       |
+|    add_ln43_212_fu_5512_p2              |     |        | add_ln43_212 | add   | fabric | 0       |
+|    add_ln43_213_fu_5522_p2              |     |        | add_ln43_213 | add   | fabric | 0       |
+|    add_ln43_214_fu_5532_p2              |     |        | add_ln43_214 | add   | fabric | 0       |
+|    add_ln43_215_fu_5542_p2              |     |        | add_ln43_215 | add   | fabric | 0       |
+|    add_ln43_216_fu_5552_p2              |     |        | add_ln43_216 | add   | fabric | 0       |
+|    add_ln43_217_fu_5562_p2              |     |        | add_ln43_217 | add   | fabric | 0       |
+|    add_ln43_218_fu_5572_p2              |     |        | add_ln43_218 | add   | fabric | 0       |
+|    add_ln43_219_fu_6152_p2              |     |        | add_ln43_219 | add   | fabric | 0       |
+|    add_ln43_220_fu_6162_p2              |     |        | add_ln43_220 | add   | fabric | 0       |
+|    add_ln43_221_fu_5578_p2              |     |        | add_ln43_221 | add   | fabric | 0       |
+|    add_ln43_222_fu_5588_p2              |     |        | add_ln43_222 | add   | fabric | 0       |
+|    add_ln43_223_fu_5598_p2              |     |        | add_ln43_223 | add   | fabric | 0       |
+|    add_ln43_224_fu_5608_p2              |     |        | add_ln43_224 | add   | fabric | 0       |
+|    add_ln43_225_fu_5618_p2              |     |        | add_ln43_225 | add   | fabric | 0       |
+|    add_ln43_226_fu_5628_p2              |     |        | add_ln43_226 | add   | fabric | 0       |
+|    add_ln43_227_fu_5638_p2              |     |        | add_ln43_227 | add   | fabric | 0       |
+|    add_ln43_228_fu_5644_p2              |     |        | add_ln43_228 | add   | fabric | 0       |
+|    add_ln43_229_fu_5654_p2              |     |        | add_ln43_229 | add   | fabric | 0       |
+|    add_ln43_230_fu_5664_p2              |     |        | add_ln43_230 | add   | fabric | 0       |
+|    add_ln43_231_fu_5674_p2              |     |        | add_ln43_231 | add   | fabric | 0       |
+|    add_ln43_232_fu_5684_p2              |     |        | add_ln43_232 | add   | fabric | 0       |
+|    add_ln43_233_fu_5694_p2              |     |        | add_ln43_233 | add   | fabric | 0       |
+|    add_ln43_234_fu_5704_p2              |     |        | add_ln43_234 | add   | fabric | 0       |
+|    add_ln43_235_fu_6178_p2              |     |        | add_ln43_235 | add   | fabric | 0       |
+|    add_ln43_236_fu_5710_p2              |     |        | add_ln43_236 | add   | fabric | 0       |
+|    add_ln43_237_fu_5720_p2              |     |        | add_ln43_237 | add   | fabric | 0       |
+|    add_ln43_238_fu_5730_p2              |     |        | add_ln43_238 | add   | fabric | 0       |
+|    add_ln43_239_fu_5740_p2              |     |        | add_ln43_239 | add   | fabric | 0       |
+|    add_ln43_240_fu_5750_p2              |     |        | add_ln43_240 | add   | fabric | 0       |
+|    add_ln43_241_fu_5760_p2              |     |        | add_ln43_241 | add   | fabric | 0       |
+|    add_ln43_242_fu_5770_p2              |     |        | add_ln43_242 | add   | fabric | 0       |
+|    add_ln43_243_fu_5776_p2              |     |        | add_ln43_243 | add   | fabric | 0       |
+|    add_ln43_244_fu_5786_p2              |     |        | add_ln43_244 | add   | fabric | 0       |
+|    add_ln43_245_fu_5796_p2              |     |        | add_ln43_245 | add   | fabric | 0       |
+|    add_ln43_246_fu_5806_p2              |     |        | add_ln43_246 | add   | fabric | 0       |
+|    add_ln43_247_fu_5816_p2              |     |        | add_ln43_247 | add   | fabric | 0       |
+|    add_ln43_248_fu_5826_p2              |     |        | add_ln43_248 | add   | fabric | 0       |
+|    add_ln43_249_fu_5836_p2              |     |        | add_ln43_249 | add   | fabric | 0       |
+|    add_ln43_250_fu_6194_p2              |     |        | add_ln43_250 | add   | fabric | 0       |
+|    add_ln43_251_fu_6204_p2              |     |        | add_ln43_251 | add   | fabric | 0       |
+|    add_ln43_252_fu_6214_p2              |     |        | add_ln43_252 | add   | fabric | 0       |
+|    add_ln43_253_fu_6224_p2              |     |        | add_ln43_253 | add   | fabric | 0       |
+|    add_ln43_254_fu_6236_p2              |     |        | add_ln43_254 | add   | fabric | 0       |
+|    add_ln43_255_fu_6250_p2              |     |        | add_ln43_255 | add   | fabric | 0       |
+|  + bnn_layer3_xnor_Pipeline_LOAD_LOOP   | 0   |        |              |       |        |         |
+|    icmp_ln22_fu_102_p2                  |     |        | icmp_ln22    | seteq | auto   | 0       |
+|    add_ln22_fu_108_p2                   |     |        | add_ln22     | add   | fabric | 0       |
++-----------------------------------------+-----+--------+--------------+-------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+---------------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable      | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |               |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+---------------+------+---------+------------------+
+| + bnn_layer3_xnor |           |           | 24   | 0    |        |               |      |         |                  |
+|   control_s_axi_U | interface | s_axilite |      |      |        |               |      |         |                  |
+|   gmem0_m_axi_U   | interface | m_axi     | 1    |      |        |               |      |         |                  |
+|   gmem1_m_axi_U   | interface | m_axi     | 15   |      |        |               |      |         |                  |
+|   local_weights_U | ram_2p    |           | 8    |      | pragma | local_weights | bram | 1       | 256, 10, 1       |
++-------------------+-----------+-----------+------+------+--------+---------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++--------------+----------------------------------------------+-----------------------------------------------------+
+| Type         | Options                                      | Location                                            |
++--------------+----------------------------------------------+-----------------------------------------------------+
+| interface    | s_axilite port=return                        | bnn_layer3.cpp:10 in bnn_layer3_xnor, return        |
+| interface    | s_axilite port=load_weights                  | bnn_layer3.cpp:11 in bnn_layer3_xnor, load_weights  |
+| interface    | s_axilite port=input                         | bnn_layer3.cpp:12 in bnn_layer3_xnor, input         |
+| interface    | m_axi depth=256 port=output bundle=gmem0     | bnn_layer3.cpp:13 in bnn_layer3_xnor, output        |
+| interface    | m_axi depth=256 port=weights bundle=gmem1    | bnn_layer3.cpp:14 in bnn_layer3_xnor, weights       |
+| bind_storage | variable=local_weights type=ram_2p impl=bram | bnn_layer3.cpp:18 in bnn_layer3_xnor, local_weights |
+| pipeline     | II=1                                         | bnn_layer3.cpp:23 in bnn_layer3_xnor                |
+| pipeline     | II=1                                         | bnn_layer3.cpp:31 in bnn_layer3_xnor                |
++--------------+----------------------------------------------+-----------------------------------------------------+
+
+

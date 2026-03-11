@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer2_BRAM\\bnn_layer2_BRAM.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/03/26 21:07:52",
+ "timestampMillis": "3063546366",
+ "buildStep": {
+  "cmdId": "c01842e7-528f-454a-b158-9eff9bb98169",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer2_BRAM\\logs\\bnn_layer2_BRAM.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer1.cfg --work_dir bnn_layer2_BRAM ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer1.cfg",
+   "--work_dir",
+   "bnn_layer2_BRAM"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:07:52",
+ "timestampMillis": "3063546367",
+ "status": {
+  "cmdId": "c01842e7-528f-454a-b158-9eff9bb98169",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/03/26 21:07:55",
+ "timestampMillis": "3063549978",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bnn_layer2_xnor",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer1_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer2_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer3_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer2.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer2.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/03/26 21:07:55",
+ "timestampMillis": "3063549980",
+ "buildStep": {
+  "cmdId": "ac701e73-1c8d-4dc5-97aa-f9736faaa660",
+  "name": "csim_design",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer2_BRAM\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:07:55",
+ "timestampMillis": "3063549981",
+ "status": {
+  "cmdId": "ac701e73-1c8d-4dc5-97aa-f9736faaa660",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:07:59",
+ "timestampMillis": "3063553053",
+ "status": {
+  "cmdId": "ac701e73-1c8d-4dc5-97aa-f9736faaa660",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/03/26 21:07:59",
+ "timestampMillis": "3063553190",
+ "status": {
+  "cmdId": "c01842e7-528f-454a-b158-9eff9bb98169",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/03/26 21:07:59",
+ "timestampMillis": "3063553191",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/03/26 21:07:59",
+ "timestampMillis": "3063553191",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

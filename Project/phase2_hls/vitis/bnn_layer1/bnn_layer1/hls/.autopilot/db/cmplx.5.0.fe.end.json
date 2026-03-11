@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "bnn_layer1_xnor",
+        "file": "bnn_layer1.cpp",
+        "fileloc": "3",
+        "instructions": "2926",
+        "total_instructions": "2926",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

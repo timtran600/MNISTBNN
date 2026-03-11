@@ -1,0 +1,75 @@
+############################################
+# Vivado Generated Files
+############################################
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.gen/
+
+############################################
+# Vitis / Vitis HLS
+############################################
+.logs/
+logs/
+*.ltx
+*.elf
+*.bin
+*.xclbin
+*.xo
+
+############################################
+# HLS build folders
+############################################
+solution*/
+impl/
+syn/
+sim/
+csim/
+cosim/
+.ipcache/
+
+############################################
+# OS / Editor junk
+############################################
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+############################################
+# Temporary files
+############################################
+*.tmp
+*.bak
+# Python environments - never commit these
+bnn_env/
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# HLS/Vivado build artifacts (large)
+*.bit
+*.hwh
+# Keep .bit and .hwh only if they are final deliverables
+
+# Large model checkpoints (optional, use Git LFS if needed)
+*.pt
+*.pth

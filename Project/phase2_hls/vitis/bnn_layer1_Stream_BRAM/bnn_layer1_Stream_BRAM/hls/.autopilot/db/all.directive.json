@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "bnn_layer1_xnor",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "bnn_layer1_xnor"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "bnn_layer2.cpp",
+    "fileloc": 3,
+    "instructions": 85,
+    "loads": {
+      "L": 1,
+      "T": 1
+    },
+    "name": "bnn_layer2_xnor",
+    "stores": {
+      "G": 1,
+      "L": 2,
+      "T": 1
+    },
+    "total_instructions": 208
+  }
+}

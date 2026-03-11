@@ -1,0 +1,127 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: bnn_layer1.cpp, Line: 38, Column: 28 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        POPCOUNT_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn_layer1.cpp, Line: 9, Column: 0 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        POPCOUNT_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'bnn_layer1.cpp:38:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          bnn_layer1_xnor
+  - String:          ''' completely with a factor of '
+  - Factor:          '784'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: bnn_layer1.cpp, Line: 22, Column: 20 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights1seq
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        LOAD_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:22:20'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<784>, ap_uint<784>*, ap_uint<1>)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 24, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.5
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            TypeAllocSizePaddingMemoryAccess
+DebugLoc:        { File: bnn_layer1.cpp, Line: 22, Column: 20 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - Type:            i784
+  - String:          ' allocated space contains padding. This is unsupported'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 22, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          weights1seq
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<784>, ap_uint<784>*, ap_uint<1>)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 22, Column: 20 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '1024'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        LOAD_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:22:20'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<784>, ap_uint<784>*, ap_uint<1>)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 22, Column: 20 }
+Function:        _Z15bnn_layer1_xnorRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_S2_ILi1EE
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '1024'
+  - String:          ' in loop '''
+  - LoopName:        LOAD_LOOP
+  - String:          '''('
+  - LoopLoc:         'bnn_layer1.cpp:22:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

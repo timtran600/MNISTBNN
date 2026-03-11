@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/Project/phase2_hls/vitis/bnn_layer1
+original_argv=--mode hls --csim --config C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_layer1\bnn_layer1.cfg --work_dir bnn_layer1 
+

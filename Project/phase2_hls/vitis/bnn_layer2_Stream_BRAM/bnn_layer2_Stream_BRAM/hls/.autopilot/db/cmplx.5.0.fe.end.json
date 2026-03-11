@@ -1,0 +1,49 @@
+{
+    "1": {
+        "name": "bnn_layer2_xnor_Pipeline_LOAD_LOOP",
+        "file": "bnn_layer2.cpp",
+        "fileloc": "22",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "bnn_layer2_xnor",
+        "file": "bnn_layer2.cpp",
+        "fileloc": "3",
+        "instructions": "33",
+        "total_instructions": "1104",
+        "calls": "2 1",
+        "basicblocks": "4"
+    },
+    "2": {
+        "name": "bnn_layer2_xnor_Pipeline_NEURON_LOOP",
+        "file": "bnn_layer2.cpp",
+        "fileloc": "30",
+        "instructions": "1048",
+        "total_instructions": "1048",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

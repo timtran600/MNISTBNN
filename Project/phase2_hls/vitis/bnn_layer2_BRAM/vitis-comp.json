@@ -1,0 +1,11 @@
+{
+  "name": "bnn_layer2_BRAM",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "bnn_layer1.cfg"
+    ],
+    "work_dir": "bnn_layer2_BRAM"
+  }
+}

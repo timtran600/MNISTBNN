@@ -1,0 +1,234 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: bnn_layer1.cpp, Line: 23, Column: 24 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        POPCOUNT_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        POPCOUNT_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'bnn_layer1.cpp:23:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          bnn_layer1_xnor
+  - String:          ''' completely with a factor of '
+  - Factor:          '784'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights2seq
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        NEURON_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 19, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          POPCOUNT_LOOP.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output3seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        NEURON_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 30, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          POPCOUNT_LOOP.store.2363
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            TypeAllocSizePaddingMemoryAccess
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - Type:            i784
+  - String:          ' allocated space contains padding. This is unsupported'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          weights2seq
+  - ArrayName:       weights
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+  - OrigDirection:   write
+  - OrigID:          output3seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        NEURON_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '1024'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        NEURON_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '1024'
+  - String:          ' in loop '''
+  - LoopName:        NEURON_LOOP
+  - String:          '''('
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        NEURON_LOOP
+  - String:          ' '
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ' '
+  - Function:        'bnn_layer1_xnor(ap_uint<784>, ap_int<16>*, ap_uint<784>*)'
+    DebugLoc:        { File: bnn_layer1.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: bnn_layer1.cpp, Line: 13, Column: 15 }
+Function:        _Z15bnn_layer1_xnor7ap_uintILi784EEP6ap_intILi16EEPS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        NEURON_LOOP
+  - String:          '''('
+  - LoopLoc:         'bnn_layer1.cpp:13:15'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

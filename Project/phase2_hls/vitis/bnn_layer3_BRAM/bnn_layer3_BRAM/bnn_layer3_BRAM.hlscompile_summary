@@ -1,0 +1,251 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\bnn_layer3_BRAM.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/04/26 17:26:48",
+ "timestampMillis": "3136682768",
+ "buildStep": {
+  "cmdId": "ff57b5bc-6de2-44d9-afcd-862a558459ce",
+  "name": "v++",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\logs\\bnn_layer3_BRAM.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer1.cfg --work_dir bnn_layer3_BRAM ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer1.cfg",
+   "--work_dir",
+   "bnn_layer3_BRAM"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer1.cfg",
+    "content": "part=xczu3eg-sfvc784-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=bnn_layer3_xnor\nclock=5ns\ntb.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer3.cpp\ntb.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\tb_layer3.cppp\ntb.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\tb_layer2.cpp\ntb.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\tb_layer3.cpp\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer1_weights.h\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer2_weights.h\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer3_weights.h\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer3.h\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3.h\nsyn.file=C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer23cpp\nsyn.file=bnn_layer3.cpp"
+   }
+  ],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/04/26 17:26:48",
+ "timestampMillis": "3136682769",
+ "status": {
+  "cmdId": "ff57b5bc-6de2-44d9-afcd-862a558459ce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687316",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bnn_layer3_xnor",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer1_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer2_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase1_software\\fpga_weights\\layer3_weights.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer2_BRAM\\bnn_layer3.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3.h",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer23cpp",
+     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687317",
+ "buildStep": {
+  "cmdId": "1b5b8090-6386-4c96-9473-c91af0102a79",
+  "name": "csynth_design",
+  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687318",
+ "status": {
+  "cmdId": "1b5b8090-6386-4c96-9473-c91af0102a79",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687318",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687318",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:26:53",
+ "timestampMillis": "3136687319",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:27:10",
+ "timestampMillis": "3136705047",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:27:10",
+ "timestampMillis": "3136705047",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:27:11",
+ "timestampMillis": "3136705049",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/04/26 17:27:11",
+ "timestampMillis": "3136705050",
+ "status": {
+  "cmdId": "1b5b8090-6386-4c96-9473-c91af0102a79",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/04/26 17:27:11",
+ "timestampMillis": "3136705200",
+ "status": {
+  "cmdId": "ff57b5bc-6de2-44d9-afcd-862a558459ce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:27:11",
+ "timestampMillis": "3136705214",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\reports\\v++_compile_bnn_layer3_BRAM_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/04/26 17:27:11",
+ "timestampMillis": "3136705215",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_layer3_BRAM\\bnn_layer3_BRAM\\reports\\.db\\v++_compile_bnn_layer3_BRAM_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
