@@ -4,6 +4,7 @@ cd /path to project forlder/
 
 2. Create Venv
 python -m venv bnn_env
+
 3. Activate venv
 source bnn_env/Scripts/activate
 Linux/Mac:
@@ -25,7 +26,7 @@ project/phase1_software/phase1.ipynb
 8. Deactivate venv
 deactivate
 
-# Commiting to GitHub without venv (lies too big)
+# Commiting to GitHub without venv
 1. Add to .gitignore
 echo "bnn_env/" >> .gitignore
 
