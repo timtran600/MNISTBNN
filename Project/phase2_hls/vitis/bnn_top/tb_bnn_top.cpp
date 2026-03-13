@@ -7,9 +7,9 @@
 using namespace std;
 
 int main() {
-    cout << "=== BNN TOP-LEVEL (3-LAYER) TEST ===" << endl;
+    cout << "BNN TOP-LEVEL (3-LAYER) TEST" << endl;
 
-    // ===== Pack all weights =====
+    // Pack all weights
 
     // Layer 1: 256 x 784
     l1_weight_row_t packed_l1[L1_NEURONS];
@@ -38,21 +38,21 @@ int main() {
         }
     }
 
-    // ===== STEP 1: Load weights =====
+    // Load weights
     hls::stream<out_stream_t> dummy_stream;
     l1_input_t dummy_input = 0;
     cout << "\nLoading weights into BRAM..." << endl;
     bnn_top(dummy_stream, dummy_input, packed_l1, packed_l2, packed_l3, 1);
     cout << "All weights loaded." << endl;
 
-    // ===== STEP 2: Run inference =====
+    // Run inference 
     hls::stream<out_stream_t> output_stream;
     l1_input_t test_input = 0;  // All bits 0 = all bipolar +1
 
     cout << "\nRunning 3-layer inference..." << endl;
     bnn_top(output_stream, test_input, packed_l1, packed_l2, packed_l3, 0);
 
-    // ===== STEP 3: Compute expected (golden reference) =====
+    // Compute expected (golden reference)
 
     // Layer 1
     int l1_out[L1_NEURONS];
@@ -109,14 +109,14 @@ int main() {
         expected_scores[n] = 2 * count - L3_INPUT_SIZE;
     }
 
-    // ===== STEP 4: Read stream and validate =====
+    // Read stream and validate
     int pass_count = 0;
     int fail_count = 0;
     int last_seen = -1;
     int predicted_class = 0;
     int max_score = -9999;
 
-    cout << "\n--- Output Scores ---" << endl;
+    cout << "\n=== Output Scores ===" << endl;
     for (int n = 0; n < L3_NEURONS; n++) {
         out_stream_t out_word = output_stream.read();
         ap_int<16> result = out_word.data;

@@ -5,9 +5,9 @@
 using namespace std;
 
 int main() {
-    cout << "=== BNN LAYER 1 - AXI-STREAM TEST ===" << endl;
+    cout << "BNN LAYER 1 - AXI-STREAM TEST" << endl;
 
-    // ===== Pack weights into ap_uint<784> format =====
+    // Pack weights into ap_uint<784> format
     weight_row_t packed_weights[LAYER1_NEURONS];
     for (int n = 0; n < LAYER1_NEURONS; n++) {
         packed_weights[n] = 0;
@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    // ===== STEP 1: Load weights into BRAM =====
+    // Load weights into BRAM
     hls::stream<out_stream_t> dummy_stream;
     input_t dummy_input = 0;
 
@@ -26,14 +26,14 @@ int main() {
     bnn_layer1_xnor(dummy_stream, dummy_input, packed_weights, 1);
     cout << "Weights loaded." << endl;
 
-    // ===== STEP 2: Run inference =====
+    // STEP 2: Run inference
     hls::stream<out_stream_t> output_stream;
     input_t test_input = 0;  // All bits 0 = all bipolar +1
 
     cout << "\nRunning inference..." << endl;
     bnn_layer1_xnor(output_stream, test_input, packed_weights, 0);
 
-    // ===== STEP 3: Read stream and validate =====
+    // Read stream and validate
     int pass_count = 0;
     int fail_count = 0;
     int last_seen = 0;
@@ -68,7 +68,7 @@ int main() {
         }
     }
 
-    // ===== STEP 4: Verify TLAST position =====
+    // Verify TLAST position
     cout << "\n=== RESULTS ===" << endl;
     cout << "Passed: " << pass_count << " / " << LAYER1_NEURONS << endl;
     cout << "Failed: " << fail_count << " / " << LAYER1_NEURONS << endl;

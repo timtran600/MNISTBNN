@@ -9,7 +9,7 @@ int main() {
     
     // Test data
     input_t test_input = -1;  // All ones
-    input_stream.write(test_input);  // ← Write to stream instead of passing directly
+    input_stream.write(test_input);  // Write to stream instead of passing directly
     
     output_t test_output[LAYER1_NEURONS];
     weight_row_t test_weights[LAYER1_NEURONS];
@@ -26,10 +26,10 @@ int main() {
     std::cout << "Output[0] = " << test_output[0] << " (expected: 784)" << std::endl;
     
     if (test_output[0] == 784) {
-        std::cout << "✓ Test PASSED" << std::endl;
+        std::cout << "Test PASSED" << std::endl;
         return 0;
     } else {
-        std::cout << "✗ Test FAILED" << std::endl;
+        std::cout << "Test FAILED" << std::endl;
         return 1;
     }
 }

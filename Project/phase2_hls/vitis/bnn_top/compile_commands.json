@@ -1,26 +1,26 @@
 [
   {
-    "directory": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top",
+    "directory": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top",
     "arguments": [
       "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
       "-fhls",
       "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
       "",
       "-c",
-      "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
+      "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
     ],
-    "file": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
+    "file": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
   },
   {
-    "directory": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top",
+    "directory": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top",
     "arguments": [
       "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
       "-fhls-tb",
       "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
       "",
       "-c",
-      "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\tb_bnn_top.cpp"
+      "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\tb_bnn_top.cpp"
     ],
-    "file": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\tb_bnn_top.cpp"
+    "file": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\tb_bnn_top.cpp"
   }
 ]

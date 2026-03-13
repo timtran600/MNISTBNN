@@ -25,10 +25,10 @@ int main() {
     std::cout << "Output[0] = " << test_output[0] << " (expected: 784)" << std::endl;
     
     if (test_output[0] == 784) {
-        std::cout << "✓ Test PASSED" << std::endl;
+        std::cout << "Test PASSED" << std::endl;
         return 0;
     } else {
-        std::cout << "✗ Test FAILED" << std::endl;
+        std::cout << "Test FAILED" << std::endl;
         return 1;
     }
 }

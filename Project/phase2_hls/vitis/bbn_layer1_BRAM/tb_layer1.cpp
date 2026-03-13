@@ -5,9 +5,9 @@
 using namespace std;
 
 int main() {
-    cout << "=== BNN LAYER 1 - BRAM WEIGHT LOADING TEST ===" << endl;
+    cout << "BNN LAYER 1 - BRAM WEIGHT LOADING TEST" << endl;
 
-    // ===== Pack weights into ap_uint<784> format =====
+    // Pack weights into ap_uint<784> format
     weight_row_t packed_weights[LAYER1_NEURONS];
     for (int n = 0; n < LAYER1_NEURONS; n++) {
         packed_weights[n] = 0;
@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    // ===== STEP 1: Load weights into BRAM =====
+    // Load weights into BRAM
     output_t dummy_output[LAYER1_NEURONS];
     input_t dummy_input = 0;
 
@@ -26,14 +26,14 @@ int main() {
     bnn_layer1_xnor(dummy_input, dummy_output, packed_weights, 1);
     cout << "Weights loaded." << endl;
 
-    // ===== STEP 2: Run inference (all-zero input = all +1 bipolar) =====
+    // Run inference (all-zero input = all +1 bipolar)
     output_t test_output[LAYER1_NEURONS];
     input_t test_input = 0;
 
     cout << "\nRunning inference..." << endl;
     bnn_layer1_xnor(test_input, test_output, packed_weights, 0);
 
-    // ===== STEP 3: Compute expected result for neuron 0 =====
+    // Compute expected result for neuron 0 
     int expected_count = 0;
     for (int i = 0; i < INPUT_SIZE; i++) {
         // input bit = 0 means bipolar +1, weight +1 maps to bit 0
@@ -47,7 +47,7 @@ int main() {
     cout << "\nNeuron 0 output:   " << test_output[0] << endl;
     cout << "Expected:          " << expected_val << endl;
 
-    // ===== STEP 4: Validate all neurons =====
+    // Validate all neurons
     int pass_count = 0;
     int fail_count = 0;
 
