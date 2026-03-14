@@ -17,18 +17,14 @@ set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict l1_output_1 { MEM_WIDTH 11 MEM_SIZE 256 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict l1_output { MEM_WIDTH 11 MEM_SIZE 256 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 { MEM_WIDTH 784 MEM_SIZE 6272 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 { MEM_WIDTH 784 MEM_SIZE 6272 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 { MEM_WIDTH 784 MEM_SIZE 6272 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights { MEM_WIDTH 784 MEM_SIZE 6272 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 { MEM_WIDTH 784 MEM_SIZE 12544 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights { MEM_WIDTH 784 MEM_SIZE 12544 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ l1_output_1 int 11 regular {array 128 { 0 0 } 0 1 }  }
 	{ l1_output int 11 regular {array 128 { 0 0 } 0 1 }  }
 	{ input_r int 784 regular  }
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 int 784 regular {array 64 { 1 3 } 1 1 } {global 0}  }
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 int 784 regular {array 64 { 1 3 } 1 1 } {global 0}  }
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 int 784 regular {array 64 { 1 3 } 1 1 } {global 0}  }
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights int 784 regular {array 64 { 1 3 } 1 1 } {global 0}  }
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 int 784 regular {array 128 { 1 1 } 1 1 } {global 0}  }
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights int 784 regular {array 128 { 1 1 } 1 1 } {global 0}  }
 }
 set hasAXIMCache 0
 set hasAXIML2Cache 0
@@ -37,8 +33,6 @@ set C_modelArgMapList {[
 	{ "Name" : "l1_output_1", "interface" : "memory", "bitwidth" : 11, "direction" : "WRITEONLY"} , 
  	{ "Name" : "l1_output", "interface" : "memory", "bitwidth" : 11, "direction" : "WRITEONLY"} , 
  	{ "Name" : "input_r", "interface" : "wire", "bitwidth" : 784, "direction" : "READONLY"} , 
- 	{ "Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "interface" : "memory", "bitwidth" : 784, "direction" : "READONLY", "extern" : 0} , 
- 	{ "Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "interface" : "memory", "bitwidth" : 784, "direction" : "READONLY", "extern" : 0} , 
  	{ "Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "interface" : "memory", "bitwidth" : 784, "direction" : "READONLY", "extern" : 0} , 
  	{ "Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "interface" : "memory", "bitwidth" : 784, "direction" : "READONLY", "extern" : 0} ]}
 # RTL Port declarations: 
@@ -67,18 +61,18 @@ set portList {
 	{ l1_output_we1 sc_out sc_logic 1 signal 1 } 
 	{ l1_output_d1 sc_out sc_lv 11 signal 1 } 
 	{ input_r sc_in sc_lv 784 signal 2 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_address0 sc_out sc_lv 6 signal 3 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_ce0 sc_out sc_logic 1 signal 3 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_q0 sc_in sc_lv 784 signal 3 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_address0 sc_out sc_lv 6 signal 4 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_ce0 sc_out sc_logic 1 signal 4 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_q0 sc_in sc_lv 784 signal 4 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0 sc_out sc_lv 6 signal 5 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0 sc_out sc_logic 1 signal 5 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q0 sc_in sc_lv 784 signal 5 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0 sc_out sc_lv 6 signal 6 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0 sc_out sc_logic 1 signal 6 } 
-	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0 sc_in sc_lv 784 signal 6 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0 sc_out sc_lv 7 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0 sc_out sc_logic 1 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q0 sc_in sc_lv 784 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address1 sc_out sc_lv 7 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce1 sc_out sc_logic 1 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q1 sc_in sc_lv 784 signal 3 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0 sc_out sc_lv 7 signal 4 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0 sc_out sc_logic 1 signal 4 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0 sc_in sc_lv 784 signal 4 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address1 sc_out sc_lv 7 signal 4 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce1 sc_out sc_logic 1 signal 4 } 
+	{ bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q1 sc_in sc_lv 784 signal 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -104,18 +98,18 @@ set NewPortList {[
  	{ "name": "l1_output_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1_output", "role": "we1" }} , 
  	{ "name": "l1_output_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "l1_output", "role": "d1" }} , 
  	{ "name": "input_r", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "input_r", "role": "default" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "role": "address0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "role": "ce0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "role": "q0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "role": "address0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "role": "ce0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "role": "q0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "address0" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "address0" }} , 
  	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "ce0" }} , 
  	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "q0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "address0" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "address1" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "ce1" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "role": "q1" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "address0" }} , 
  	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "ce0" }} , 
- 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "q0" }}  ]}
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "q0" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "address1" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "ce1" }} , 
+ 	{ "name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":784, "type": "signal", "bundle":{"name": "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -136,8 +130,6 @@ set RtlHierarchyInfo {[
 			{"Name" : "l1_output_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "l1_output", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "input_r", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
@@ -151,10 +143,8 @@ set ArgLastReadFirstWriteLatency {
 		l1_output_1 {Type O LastRead -1 FirstWrite 6}
 		l1_output {Type O LastRead -1 FirstWrite 6}
 		input_r {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type I LastRead 0 FirstWrite -1}}}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type I LastRead 1 FirstWrite -1}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type I LastRead 1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -171,8 +161,6 @@ set Spec2ImplPortList {
 	l1_output_1 { ap_memory {  { l1_output_1_address0 mem_address 1 7 }  { l1_output_1_ce0 mem_ce 1 1 }  { l1_output_1_we0 mem_we 1 1 }  { l1_output_1_d0 mem_din 1 11 }  { l1_output_1_address1 MemPortADDR2 1 7 }  { l1_output_1_ce1 MemPortCE2 1 1 }  { l1_output_1_we1 MemPortWE2 1 1 }  { l1_output_1_d1 MemPortDIN2 1 11 } } }
 	l1_output { ap_memory {  { l1_output_address0 mem_address 1 7 }  { l1_output_ce0 mem_ce 1 1 }  { l1_output_we0 mem_we 1 1 }  { l1_output_d0 mem_din 1 11 }  { l1_output_address1 MemPortADDR2 1 7 }  { l1_output_ce1 MemPortCE2 1 1 }  { l1_output_we1 MemPortWE2 1 1 }  { l1_output_d1 MemPortDIN2 1 11 } } }
 	input_r { ap_none {  { input_r in_data 0 784 } } }
-	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_address0 mem_address 1 6 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_q0 mem_dout 0 784 } } }
-	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_address0 mem_address 1 6 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_q0 mem_dout 0 784 } } }
-	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0 mem_address 1 6 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q0 mem_dout 0 784 } } }
-	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0 mem_address 1 6 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0 mem_dout 0 784 } } }
+	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0 mem_address 1 7 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q0 mem_dout 0 784 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address1 MemPortADDR2 1 7 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce1 MemPortCE2 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_q1 MemPortDOUT2 0 784 } } }
+	bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights { ap_memory {  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0 mem_address 1 7 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0 mem_ce 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q0 mem_dout 0 784 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address1 MemPortADDR2 1 7 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce1 MemPortCE2 1 1 }  { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_q1 MemPortDOUT2 0 784 } } }
 }

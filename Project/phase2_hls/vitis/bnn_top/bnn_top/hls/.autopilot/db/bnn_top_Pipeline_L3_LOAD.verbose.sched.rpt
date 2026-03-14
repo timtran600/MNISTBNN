@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'bnn_top_Pipeline_L3_LOAD'
 ================================================================
-* Date:           Thu Mar  5 04:43:40 2026
+* Date:           Fri Mar 13 20:30:11 2026
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        bnn_top
@@ -89,8 +89,8 @@ State 1 <SV = 0> <Delay = 1.65>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%n = alloca i32 1" [bnn_top.cpp:43]   --->   Operation 6 'alloca' 'n' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln43_read = read i59 @_ssdm_op_Read.ap_auto.i59, i59 %sext_ln43"   --->   Operation 7 'read' 'sext_ln43_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln43_cast = sext i59 %sext_ln43_read"   --->   Operation 8 'sext' 'sext_ln43_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem2, void @empty_21, i32 0, i32 0, void @empty_22, i32 0, i32 10, void @empty_2, void @empty_0, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %gmem2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 10, void @empty_4, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.42ns)   --->   "%store_ln43 = store i4 0, i4 %n" [bnn_top.cpp:43]   --->   Operation 11 'store' 'store_ln43' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc26"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%n_1 = load i4 %n" [bnn_top.cpp:43]   --->   Operation 13 'load' 'n_1' <Predicate = true> <Delay = 0.00>
@@ -105,13 +105,13 @@ ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i256 %g
 ST_2 : Operation 20 [1/1] (2.19ns)   --->   "%gmem2_addr_read = read i256 @_ssdm_op_Read.m_axi.p1i256, i256 %gmem2_addr" [bnn_top.cpp:46]   --->   Operation 20 'read' 'gmem2_addr_read' <Predicate = true> <Delay = 2.19> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_2 : Operation 28 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln43)> <Delay = 0.42>
 
-State 3 <SV = 2> <Delay = 0.78>
+State 3 <SV = 2> <Delay = 1.23>
 ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln43 = zext i4 %n_1" [bnn_top.cpp:43]   --->   Operation 21 'zext' 'zext_ln43' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_22" [bnn_top.cpp:45]   --->   Operation 22 'specpipeline' 'specpipeline_ln45' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [bnn_top.cpp:45]   --->   Operation 22 'specpipeline' 'specpipeline_ln45' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln43 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10" [bnn_top.cpp:43]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln43' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln43 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [bnn_top.cpp:43]   --->   Operation 24 'specloopname' 'specloopname_ln43' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln43 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [bnn_top.cpp:43]   --->   Operation 24 'specloopname' 'specloopname_ln43' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%local_l3_weights_addr = getelementptr i256 %local_l3_weights, i64 0, i64 %zext_ln43" [bnn_top.cpp:46]   --->   Operation 25 'getelementptr' 'local_l3_weights_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 26 [1/1] (0.78ns)   --->   "%store_ln46 = store i256 %gmem2_addr_read, i4 %local_l3_weights_addr" [bnn_top.cpp:46]   --->   Operation 26 'store' 'store_ln46' <Predicate = true> <Delay = 0.78> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 88 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.78> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 256> <Depth = 10> <RAM>
+ST_3 : Operation 26 [1/1] (1.23ns)   --->   "%store_ln46 = store i256 %gmem2_addr_read, i4 %local_l3_weights_addr" [bnn_top.cpp:46]   --->   Operation 26 'store' 'store_ln46' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 10> <RAM>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln43 = br void %for.inc26" [bnn_top.cpp:43]   --->   Operation 27 'br' 'br_ln43' <Predicate = true> <Delay = 0.00>
 
 
@@ -132,10 +132,10 @@ The critical path consists of the following:
 	'getelementptr' operation 256 bit ('gmem2_addr', bnn_top.cpp:43) [18]  (0.000 ns)
 	bus read operation ('gmem2_addr_read', bnn_top.cpp:46) on port 'gmem2' (bnn_top.cpp:46) [24]  (2.190 ns)
 
- <State 3>: 0.789ns
+ <State 3>: 1.237ns
 The critical path consists of the following:
 	'getelementptr' operation 4 bit ('local_l3_weights_addr', bnn_top.cpp:46) [23]  (0.000 ns)
-	'store' operation 0 bit ('store_ln46', bnn_top.cpp:46) of variable 'gmem2_addr_read', bnn_top.cpp:46 on array 'local_l3_weights' [25]  (0.789 ns)
+	'store' operation 0 bit ('store_ln46', bnn_top.cpp:46) of variable 'gmem2_addr_read', bnn_top.cpp:46 on array 'local_l3_weights' [25]  (1.237 ns)
 
 
 ============================================================

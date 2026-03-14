@@ -6,19 +6,10 @@
         <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_layer1.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=256 port=output bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=256 port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_layer1.cpp:11:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=256 port=weights bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_layer1.cpp:16:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="bnn_layer1.cpp:23:24" msg_body="Loop 'POPCOUNT_LOOP' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="POPCOUNT_LOOP"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="bnn_layer1.cpp:8:0" msg_body="Unrolling loop 'POPCOUNT_LOOP' (bnn_layer1.cpp:23:24) in function 'bnn_layer1_xnor' completely with a factor of 784">
-        <args Factor="784" LoopLoc="bnn_layer1.cpp:23:24" LoopName="POPCOUNT_LOOP"/>
+        <args ARG_PragmaFunction="bnn_layer1_xnor" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=256 port=weights" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

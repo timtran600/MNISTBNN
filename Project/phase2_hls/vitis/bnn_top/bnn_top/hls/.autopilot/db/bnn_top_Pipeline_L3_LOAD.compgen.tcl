@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 35 \
+    id 27 \
     name local_l3_weights \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename local_l3_weights \
     op interface \
-    ports { local_l3_weights_address0 { O 4 vector } local_l3_weights_ce0 { O 1 bit } local_l3_weights_we0 { O 1 bit } local_l3_weights_d0 { O 256 vector } } \
+    ports { local_l3_weights_address1 { O 4 vector } local_l3_weights_ce1 { O 1 bit } local_l3_weights_we1 { O 1 bit } local_l3_weights_d1 { O 256 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'local_l3_weights'"
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 33 \
+    id 25 \
     name gmem2 \
     type other \
     dir I \
@@ -44,7 +44,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
+    id 26 \
     name sext_ln43 \
     type other \
     dir I \

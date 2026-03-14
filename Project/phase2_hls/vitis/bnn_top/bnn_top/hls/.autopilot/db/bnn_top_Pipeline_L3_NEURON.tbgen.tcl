@@ -22,7 +22,7 @@ set C_modelArgList {
 	{ output_stream_V_keep_V int 2 regular {axi_s 1 volatile  { output_stream Keep } }  }
 	{ output_stream_V_strb_V int 2 regular {axi_s 1 volatile  { output_stream Strb } }  }
 	{ output_stream_V_last_V int 1 regular {axi_s 1 volatile  { output_stream Last } }  }
-	{ local_l3_weights int 256 regular {array 10 { 1 } 1 1 } {global 0}  }
+	{ local_l3_weights int 256 regular {array 10 { 1 3 } 1 1 } {global 0}  }
 }
 set hasAXIMCache 0
 set hasAXIML2Cache 0

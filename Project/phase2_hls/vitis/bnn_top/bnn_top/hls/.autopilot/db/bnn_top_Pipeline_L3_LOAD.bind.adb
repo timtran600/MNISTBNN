@@ -103,7 +103,7 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName>RAM_1P_LUTRAM</coreName>
+						<coreName>RAM_2P_BRAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
 						<coreId>4294967295</coreId>
@@ -130,7 +130,7 @@
 						<id>4</id>
 						<name>n</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -138,7 +138,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -271,7 +271,7 @@
 						<id>9</id>
 						<name>n_write_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -279,7 +279,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -370,7 +370,7 @@
 						<id>12</id>
 						<name>n_1</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -378,7 +378,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -427,7 +427,7 @@
 						<id>14</id>
 						<name>icmp_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -435,7 +435,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -484,7 +484,7 @@
 						<id>15</id>
 						<name>add_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -492,7 +492,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -541,7 +541,7 @@
 						<id>16</id>
 						<name>br_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -549,7 +549,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -599,7 +599,7 @@
 						<id>18</id>
 						<name>gmem2_addr</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -607,7 +607,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -656,7 +656,7 @@
 						<id>19</id>
 						<name>zext_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -664,7 +664,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -712,7 +712,7 @@
 						<id>23</id>
 						<name>local_l3_weights_addr</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -720,7 +720,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -770,7 +770,7 @@
 						<id>24</id>
 						<name>gmem2_addr_read</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -778,7 +778,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -827,7 +827,7 @@
 						<id>25</id>
 						<name>local_l3_weights_addr_write_ln46</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -835,7 +835,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -852,12 +852,12 @@
 						<originalName></originalName>
 						<rtlName></rtlName>
 						<control>auto</control>
-						<opType>ram_1p</opType>
-						<implIndex>lutram</implIndex>
-						<coreName>RAM_1P_LUTRAM</coreName>
+						<opType>ram_2p</opType>
+						<implIndex>bram</implIndex>
+						<coreName>RAM_2P_BRAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>88</coreId>
+						<coreId>93</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -873,7 +873,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.78</m_delay>
+				<m_delay>1.23</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -884,7 +884,7 @@
 						<id>26</id>
 						<name>n_write_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -892,7 +892,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -943,7 +943,7 @@
 						<id>27</id>
 						<name>br_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -951,7 +951,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2070,7 +2070,7 @@
 			</second>
 		</item>
 		<item>
-			<first>86</first>
+			<first>90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2078,7 +2078,7 @@
 			</second>
 		</item>
 		<item>
-			<first>90</first>
+			<first>94</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2086,7 +2086,7 @@
 			</second>
 		</item>
 		<item>
-			<first>95</first>
+			<first>99</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2094,7 +2094,7 @@
 			</second>
 		</item>
 		<item>
-			<first>98</first>
+			<first>102</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2102,7 +2102,7 @@
 			</second>
 		</item>
 		<item>
-			<first>104</first>
+			<first>108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2110,7 +2110,7 @@
 			</second>
 		</item>
 		<item>
-			<first>110</first>
+			<first>114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2118,7 +2118,7 @@
 			</second>
 		</item>
 		<item>
-			<first>115</first>
+			<first>119</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2126,7 +2126,7 @@
 			</second>
 		</item>
 		<item>
-			<first>121</first>
+			<first>125</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2138,7 +2138,7 @@
 		<count>7</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln43_fu_104</first>
+			<first>add_ln43_fu_108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2146,7 +2146,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem2_addr_fu_115</first>
+			<first>gmem2_addr_fu_119</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2154,7 +2154,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln43_fu_98</first>
+			<first>icmp_ln43_fu_102</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2178,7 +2178,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln43_cast_fu_86</first>
+			<first>sext_ln43_cast_fu_90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2186,7 +2186,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln43_fu_121</first>
+			<first>zext_ln43_fu_125</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2210,7 +2210,7 @@
 			</second>
 		</item>
 		<item>
-			<first>n_1_load_fu_95</first>
+			<first>n_1_load_fu_99</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2226,7 +2226,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln43_store_fu_110</first>
+			<first>store_ln43_store_fu_114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2234,7 +2234,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln43_store_fu_90</first>
+			<first>store_ln43_store_fu_94</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2252,7 +2252,7 @@
 		<item class_id="50" tracking_level="0" version="0">
 			<first class_id="51" tracking_level="0" version="0">
 				<first>local_l3_weights</first>
-				<second>0</second>
+				<second>1</second>
 			</first>
 			<second>
 				<count>1</count>
@@ -2265,7 +2265,7 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item>
-			<first>125</first>
+			<first>129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2273,7 +2273,7 @@
 			</second>
 		</item>
 		<item>
-			<first>132</first>
+			<first>136</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2281,7 +2281,7 @@
 			</second>
 		</item>
 		<item>
-			<first>137</first>
+			<first>141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2289,7 +2289,7 @@
 			</second>
 		</item>
 		<item>
-			<first>142</first>
+			<first>146</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2297,7 +2297,7 @@
 			</second>
 		</item>
 		<item>
-			<first>146</first>
+			<first>150</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2309,7 +2309,7 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item>
-			<first>gmem2_addr_read_reg_146</first>
+			<first>gmem2_addr_read_reg_150</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2317,7 +2317,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln43_reg_142</first>
+			<first>icmp_ln43_reg_146</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2325,7 +2325,7 @@
 			</second>
 		</item>
 		<item>
-			<first>n_1_reg_137</first>
+			<first>n_1_reg_141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2333,7 +2333,7 @@
 			</second>
 		</item>
 		<item>
-			<first>n_reg_125</first>
+			<first>n_reg_129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2341,7 +2341,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln43_cast_reg_132</first>
+			<first>sext_ln43_cast_reg_136</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2376,7 +2376,7 @@
 			</second>
 		</item>
 		<item>
-			<first>local_l3_weights(p0)</first>
+			<first>local_l3_weights(p1)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2413,7 +2413,7 @@
 			<first>3</first>
 			<second>
 				<first>666</first>
-				<second>19</second>
+				<second>22</second>
 			</second>
 		</item>
 	</port2core>
@@ -2445,7 +2445,7 @@
 			<first>25</first>
 			<second>
 				<first>666</first>
-				<second>19</second>
+				<second>22</second>
 			</second>
 		</item>
 	</node2core>

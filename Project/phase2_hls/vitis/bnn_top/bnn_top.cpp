@@ -17,12 +17,12 @@ void bnn_top(
     #pragma HLS INTERFACE m_axi depth=256 port=l2_weights bundle=gmem1
     #pragma HLS INTERFACE m_axi depth=10  port=l3_weights bundle=gmem2
 
-    // ========== On-chip BRAM weight storage ==========
+    // On-chip BRAM weight storage
     static l1_weight_row_t local_l1_weights[L1_NEURONS];
     #pragma HLS ARRAY_PARTITION variable=local_l1_weights cyclic factor=L1_UNROLL dim=1
 
     static l2_weight_row_t local_l2_weights[L2_NEURONS];
-    #pragma HLS ARRAY_PARTITION variable=local_l2_weights cyclic factor=L2_UNROLL dim=1
+    #pragma HLS ARRAY_PARTITION variable=local_l2_weights cyclic factor=L2_UNROLL dim=1Array partitioning was also used to allow for successful unrolling
 
     static l3_weight_row_t local_l3_weights[L3_NEURONS];
     #pragma HLS BIND_STORAGE variable=local_l3_weights type=ram_1p impl=lutram

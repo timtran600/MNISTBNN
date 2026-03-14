@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 8 \
+    id 6 \
     name l2_output_1 \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 9 \
+    id 7 \
     name l2_output \
     reset_level 1 \
     sync_rst true \
@@ -49,52 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 11 \
-    name bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3 \
-    op interface \
-    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_address0 { O 6 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_q0 { I 256 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 12 \
-    name bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2 \
-    op interface \
-    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_address0 { O 6 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_q0 { I 256 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 13 \
+    id 9 \
     name bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 \
     op interface \
-    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_address0 { O 6 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_q0 { I 256 vector } } \
+    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_address0 { O 7 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_q0 { I 256 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_address1 { O 7 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_ce1 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_q1 { I 256 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1'"
@@ -106,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 14 \
+    id 10 \
     name bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights \
     op interface \
-    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_address0 { O 6 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_q0 { I 256 vector } } \
+    ports { bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_address0 { O 7 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_ce0 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_q0 { I 256 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_address1 { O 7 vector } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_ce1 { O 1 bit } bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_q1 { I 256 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights'"
@@ -124,7 +86,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 8 \
     name l2_input \
     type other \
     dir I \

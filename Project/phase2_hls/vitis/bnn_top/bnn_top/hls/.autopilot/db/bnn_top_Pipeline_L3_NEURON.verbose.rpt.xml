@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'bnn_top_Pipeline_L3_NEURON'" level="0">
-<item name = "Date">Thu Mar  5 04:44:02 2026
+<item name = "Date">Fri Mar 13 20:30:34 2026
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">bnn_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.018 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.164 ns, 0.81 ns</column>
 </table>
 </item>
 </section>

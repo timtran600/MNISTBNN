@@ -17,7 +17,7 @@ void bnn_layer1_xnor(
     static weight_row_t local_weights[LAYER1_NEURONS];
     #pragma HLS BIND_STORAGE variable=local_weights type=ram_2p impl=bram
 
-    // ========== PHASE 1: Load weights from DDR into BRAM ==========
+    // Load weights from DDR into BRAM
     if (load_weights) {
         LOAD_LOOP: for (int n = 0; n < LAYER1_NEURONS; n++) {
             #pragma HLS PIPELINE II=1
@@ -25,7 +25,7 @@ void bnn_layer1_xnor(
         }
     }
 
-    // ========== PHASE 2: Inference — stream out results ==========
+    // Inference — stream out results
     if (!load_weights) {
         NEURON_LOOP: for (int n = 0; n < LAYER1_NEURONS; n++) {
             #pragma HLS PIPELINE II=1

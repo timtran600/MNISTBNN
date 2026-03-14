@@ -1,10 +1,10 @@
 {
     "1": {
-        "name": "bnn_top_Pipeline_L2_NEURON",
+        "name": "bnn_top_Pipeline_L1_NEURON",
         "file": "bnn_top.cpp",
-        "fileloc": "85",
-        "instructions": "4133",
-        "total_instructions": "4133",
+        "fileloc": "57",
+        "instructions": "11558",
+        "total_instructions": "11558",
         "calls": "",
         "basicblocks": "4",
         "loads": {
@@ -19,18 +19,18 @@
         }
     },
     "2": {
-        "name": "bnn_top_Pipeline_L3_NEURON",
+        "name": "bnn_top_Pipeline_L2_LOAD",
         "file": "bnn_top.cpp",
-        "fileloc": "111",
-        "instructions": "1048",
-        "total_instructions": "1048",
+        "fileloc": "38",
+        "instructions": "31",
+        "total_instructions": "31",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "7",
         "loads": {
-            "G": "1",
             "L": "1"
         },
         "stores": {
+            "G": "2",
             "L": "2"
         },
         "loops": {
@@ -38,63 +38,6 @@
         }
     },
     "3": {
-        "name": "bnn_top_Pipeline_L2_LOAD",
-        "file": "bnn_top.cpp",
-        "fileloc": "38",
-        "instructions": "35",
-        "total_instructions": "35",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "4",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "4": {
-        "name": "bnn_top_Pipeline_L1_NEURON",
-        "file": "bnn_top.cpp",
-        "fileloc": "57",
-        "instructions": "11557",
-        "total_instructions": "11557",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "G": "4",
-            "L": "1"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "5": {
-        "name": "bnn_top_Pipeline_L1_LOAD",
-        "file": "bnn_top.cpp",
-        "fileloc": "33",
-        "instructions": "36",
-        "total_instructions": "36",
-        "calls": "",
-        "basicblocks": "9",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "4",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "6": {
         "name": "bnn_top_Pipeline_L3_LOAD",
         "file": "bnn_top.cpp",
         "fileloc": "43",
@@ -113,16 +56,73 @@
             "L": "1"
         }
     },
+    "4": {
+        "name": "bnn_top_Pipeline_L1_LOAD",
+        "file": "bnn_top.cpp",
+        "fileloc": "33",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "2",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
     "0": {
         "name": "bnn_top",
         "file": "bnn_top.cpp",
         "fileloc": "3",
-        "instructions": "1597",
-        "total_instructions": "18429",
-        "calls": "4 1 2 5 3 6",
+        "instructions": "1601",
+        "total_instructions": "18427",
+        "calls": "1 6 5 4 2 3",
         "basicblocks": "4",
         "loads": {
             "L": "512"
+        }
+    },
+    "5": {
+        "name": "bnn_top_Pipeline_L3_NEURON",
+        "file": "bnn_top.cpp",
+        "fileloc": "111",
+        "instructions": "1048",
+        "total_instructions": "1048",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "bnn_top_Pipeline_L2_NEURON",
+        "file": "bnn_top.cpp",
+        "fileloc": "85",
+        "instructions": "4134",
+        "total_instructions": "4134",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "4",
+            "L": "1"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
         }
     }
 }

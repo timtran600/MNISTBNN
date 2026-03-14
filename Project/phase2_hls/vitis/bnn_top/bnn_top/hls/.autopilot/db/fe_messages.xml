@@ -54,13 +54,13 @@
         <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=10 port=l3_weights bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_top.cpp:22:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l1_weights cyclic factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l1_weights type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_top.cpp:25:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l2_weights cyclic factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l2_weights type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_top.cpp:28:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l3_weights type=ram_1p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_l3_weights type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bnn_top.cpp:35:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="bnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
@@ -146,11 +146,17 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="bnn_top.cpp:11:0" msg_body="Unrolling loop 'VITIS_LOOP_65_2' (bnn_top.cpp:65:34) in function 'bnn_top' completely with a factor of 784">
         <args Factor="784" LoopLoc="bnn_top.cpp:65:34" LoopName="VITIS_LOOP_65_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="bnn_top.cpp:24:0" msg_body="Applying array_partition to '_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights': Cyclic partitioning with factor 4 on dimension 1.">
-        <args Dim="1" Factor="4" Mode="Cyclic" UOName="_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="bnn_top.cpp:21:0" msg_body="array_partition dim=1 type=cyclic factor=2 variable=_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights 1 bnn_top bnn_top.cpp:21:0 bnn_top.cpp:59:9bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l1_weights">
+        <args PragmaFunction="bnn_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights" PragmaSrcLoc="bnn_top.cpp:59:9" PragmaSrcLoc-DebugLoc="File bnn_top.cpp Line 59 Column 9" PragmaType="array_partition" VarName="bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l1_weights" varLoc="bnn_top.cpp:21:0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="bnn_top.cpp:21:0" msg_body="Applying array_partition to '_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights': Cyclic partitioning with factor 4 on dimension 1.">
-        <args Dim="1" Factor="4" Mode="Cyclic" UOName="_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="bnn_top.cpp:59:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l1_weights' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l1_weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="bnn_top.cpp:24:0" msg_body="array_partition dim=1 type=cyclic factor=2 variable=_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights 1 bnn_top bnn_top.cpp:24:0 bnn_top.cpp:87:9bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l2_weights">
+        <args PragmaFunction="bnn_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights" PragmaSrcLoc="bnn_top.cpp:87:9" PragmaSrcLoc-DebugLoc="File bnn_top.cpp Line 87 Column 9" PragmaType="array_partition" VarName="bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l2_weights" varLoc="bnn_top.cpp:24:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="bnn_top.cpp:87:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l2_weights' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="bnn_top(hls::stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_uint&lt;784&gt;, ap_uint&lt;784&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;256&gt;*, ap_uint&lt;1&gt;)::local_l2_weights" PragmaType="array_partition"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="bnn_top.cpp:55:17" msg_body="array_partition dim=1 type=cyclic factor=2 variable=l1_output 1 bnn_top bnn_top.cpp:55:17 bnn_top.cpp:59:9l1_output">
         <args PragmaFunction="bnn_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=l1_output" PragmaSrcLoc="bnn_top.cpp:59:9" PragmaSrcLoc-DebugLoc="File bnn_top.cpp Line 59 Column 9" PragmaType="array_partition" VarName="l1_output" varLoc="bnn_top.cpp:55:17"/>
@@ -163,6 +169,12 @@
     </msg>
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="bnn_top.cpp:87:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'l2_output' due to pipeline pragma">
         <args Dim="1" Factor="2" Mode="cyclic" Name="l2_output" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="bnn_top.cpp:24:0" msg_body="Applying array_partition to '_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l2_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="bnn_top.cpp:21:0" msg_body="Applying array_partition to '_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="_ZZ7bnn_topRN3hls6streamINS_4axisI7ap_uintILi16EELm0ELm0ELm0ELh56ELb0EEELi0EEES2_ILi784EEPS7_PS2_ILi256EESA_S2_ILi1EEE16local_l1_weights"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="bnn_top.cpp:55:17" msg_body="Applying array_partition to 'l1_output': Cyclic partitioning with factor 2 on dimension 1.">
         <args Dim="1" Factor="2" Mode="Cyclic" UOName="l1_output"/>

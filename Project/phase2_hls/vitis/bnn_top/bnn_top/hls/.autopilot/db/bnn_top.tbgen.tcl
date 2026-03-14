@@ -374,7 +374,7 @@ set NewPortList {[
  	{ "name": "output_stream_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "output_stream_V_last_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "16", "18", "20", "22", "24", "26", "27", "28", "29", "30", "31", "32", "33"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "12", "14", "16", "18", "20", "22", "23", "24", "25", "26", "27", "28", "29"],
 		"CDFG" : "bnn_top",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -393,84 +393,64 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "gmem0_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Port" : "gmem0", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4639", "Port" : "gmem0", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "gmem1", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem1_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Port" : "gmem1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4650", "Port" : "gmem1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "gmem2", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem2_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_bnn_top_Pipeline_L3_LOAD_fu_4685", "Port" : "gmem2", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L3_LOAD_fu_4661", "Port" : "gmem2", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "output_stream_V_data_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "output_stream",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Port" : "output_stream_V_data_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
+					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Port" : "output_stream_V_data_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
 			{"Name" : "output_stream_V_keep_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "output_stream",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Port" : "output_stream_V_keep_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
+					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Port" : "output_stream_V_keep_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
 			{"Name" : "output_stream_V_strb_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "output_stream",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Port" : "output_stream_V_strb_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
+					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Port" : "output_stream_V_strb_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
 			{"Name" : "output_stream_V_last_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "output_stream",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Port" : "output_stream_V_last_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
+					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Port" : "output_stream_V_last_V", "Inst_start_state" : "133", "Inst_end_state" : "134"}]},
 			{"Name" : "input_r", "Type" : "None", "Direction" : "I"},
 			{"Name" : "l1_weights", "Type" : "None", "Direction" : "I"},
 			{"Name" : "l2_weights", "Type" : "None", "Direction" : "I"},
 			{"Name" : "l3_weights", "Type" : "None", "Direction" : "I"},
 			{"Name" : "load_weights", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4607", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4607", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4607", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "10", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4599", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4639", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4607", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4625", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3", "Inst_start_state" : "67", "Inst_end_state" : "68"},
-					{"ID" : "22", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4625", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2", "Inst_start_state" : "67", "Inst_end_state" : "68"},
-					{"ID" : "22", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "10", "SubInstance" : "grp_bnn_top_Pipeline_L1_NEURON_fu_4599", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L1_LOAD_fu_4639", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4625", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Inst_start_state" : "67", "Inst_end_state" : "68"},
-					{"ID" : "22", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "12", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4613", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Inst_start_state" : "67", "Inst_end_state" : "68"},
+					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4650", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "16", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4625", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Inst_start_state" : "67", "Inst_end_state" : "68"},
-					{"ID" : "22", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
+					{"ID" : "12", "SubInstance" : "grp_bnn_top_Pipeline_L2_NEURON_fu_4613", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Inst_start_state" : "67", "Inst_end_state" : "68"},
+					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L2_LOAD_fu_4650", "Port" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]},
 			{"Name" : "local_l3_weights", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Port" : "local_l3_weights", "Inst_start_state" : "133", "Inst_end_state" : "134"},
-					{"ID" : "24", "SubInstance" : "grp_bnn_top_Pipeline_L3_LOAD_fu_4685", "Port" : "local_l3_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.local_l3_weights_U", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l1_output_U", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l1_output_1_U", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l2_output_U", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l2_output_1_U", "Parent" : "0"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_NEURON_fu_4607", "Parent" : "0", "Child" : ["15"],
+					{"ID" : "14", "SubInstance" : "grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Port" : "local_l3_weights", "Inst_start_state" : "133", "Inst_end_state" : "134"},
+					{"ID" : "20", "SubInstance" : "grp_bnn_top_Pipeline_L3_LOAD_fu_4661", "Port" : "local_l3_weights", "Inst_start_state" : "143", "Inst_end_state" : "144"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.local_l3_weights_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l1_output_U", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l1_output_1_U", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l2_output_U", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.l2_output_1_U", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_NEURON_fu_4599", "Parent" : "0", "Child" : ["11"],
 		"CDFG" : "bnn_top_Pipeline_L1_NEURON",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -488,15 +468,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "l1_output_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "l1_output", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "input_r", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "L1_NEURON", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter6", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter6", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_NEURON_fu_4607.flow_control_loop_pipe_sequential_init_U", "Parent" : "14"},
-	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_NEURON_fu_4625", "Parent" : "0", "Child" : ["17"],
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_NEURON_fu_4599.flow_control_loop_pipe_sequential_init_U", "Parent" : "10"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_NEURON_fu_4613", "Parent" : "0", "Child" : ["13"],
 		"CDFG" : "bnn_top_Pipeline_L2_NEURON",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -514,15 +492,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "l2_output_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "l2_output", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "l2_input", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "L2_NEURON", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter5", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter5", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_NEURON_fu_4625.flow_control_loop_pipe_sequential_init_U", "Parent" : "16"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_NEURON_fu_4640", "Parent" : "0", "Child" : ["19"],
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_NEURON_fu_4613.flow_control_loop_pipe_sequential_init_U", "Parent" : "12"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_NEURON_fu_4624", "Parent" : "0", "Child" : ["15"],
 		"CDFG" : "bnn_top_Pipeline_L3_NEURON",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -548,8 +524,8 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "L3_NEURON", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter5", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter5", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_NEURON_fu_4640.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_LOAD_fu_4655", "Parent" : "0", "Child" : ["21"],
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_NEURON_fu_4624.flow_control_loop_pipe_sequential_init_U", "Parent" : "14"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_LOAD_fu_4639", "Parent" : "0", "Child" : ["17"],
 		"CDFG" : "bnn_top_Pipeline_L1_LOAD",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -568,15 +544,13 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "gmem0_blk_n_R", "Type" : "RtlSignal"}]},
 			{"Name" : "sext_ln33", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "L1_LOAD", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_LOAD_fu_4655.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_LOAD_fu_4670", "Parent" : "0", "Child" : ["23"],
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L1_LOAD_fu_4639.flow_control_loop_pipe_sequential_init_U", "Parent" : "16"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_LOAD_fu_4650", "Parent" : "0", "Child" : ["19"],
 		"CDFG" : "bnn_top_Pipeline_L2_LOAD",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -595,15 +569,13 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "gmem1_blk_n_R", "Type" : "RtlSignal"}]},
 			{"Name" : "sext_ln38", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "L2_LOAD", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_LOAD_fu_4670.flow_control_loop_pipe_sequential_init_U", "Parent" : "22"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_LOAD_fu_4685", "Parent" : "0", "Child" : ["25"],
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L2_LOAD_fu_4650.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_LOAD_fu_4661", "Parent" : "0", "Child" : ["21"],
 		"CDFG" : "bnn_top_Pipeline_L3_LOAD",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -626,15 +598,15 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "L3_LOAD", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_LOAD_fu_4685.flow_control_loop_pipe_sequential_init_U", "Parent" : "24"},
-	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
-	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem0_m_axi_U", "Parent" : "0"},
-	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem1_m_axi_U", "Parent" : "0"},
-	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem2_m_axi_U", "Parent" : "0"},
-	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_data_V_U", "Parent" : "0"},
-	{"ID" : "31", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_keep_V_U", "Parent" : "0"},
-	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_strb_V_U", "Parent" : "0"},
-	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_last_V_U", "Parent" : "0"}]}
+	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_bnn_top_Pipeline_L3_LOAD_fu_4661.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem0_m_axi_U", "Parent" : "0"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem1_m_axi_U", "Parent" : "0"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem2_m_axi_U", "Parent" : "0"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_data_V_U", "Parent" : "0"},
+	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_stream_V_last_V_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -651,12 +623,8 @@ set ArgLastReadFirstWriteLatency {
 		l2_weights {Type I LastRead 0 FirstWrite -1}
 		l3_weights {Type I LastRead 0 FirstWrite -1}
 		load_weights {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 {Type IO LastRead -1 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 {Type IO LastRead -1 FirstWrite -1}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type IO LastRead -1 FirstWrite -1}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type IO LastRead -1 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3 {Type IO LastRead -1 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2 {Type IO LastRead -1 FirstWrite -1}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 {Type IO LastRead -1 FirstWrite -1}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights {Type IO LastRead -1 FirstWrite -1}
 		local_l3_weights {Type IO LastRead -1 FirstWrite -1}}
@@ -664,18 +632,14 @@ set ArgLastReadFirstWriteLatency {
 		l1_output_1 {Type O LastRead -1 FirstWrite 6}
 		l1_output {Type O LastRead -1 FirstWrite 6}
 		input_r {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type I LastRead 0 FirstWrite -1}}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type I LastRead 1 FirstWrite -1}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type I LastRead 1 FirstWrite -1}}
 	bnn_top_Pipeline_L2_NEURON {
 		l2_output_1 {Type O LastRead -1 FirstWrite 5}
 		l2_output {Type O LastRead -1 FirstWrite 5}
 		l2_input {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights {Type I LastRead 0 FirstWrite -1}}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 {Type I LastRead 1 FirstWrite -1}
+		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights {Type I LastRead 1 FirstWrite -1}}
 	bnn_top_Pipeline_L3_NEURON {
 		l3_input {Type I LastRead 0 FirstWrite -1}
 		output_stream_V_data_V {Type O LastRead -1 FirstWrite 5}
@@ -686,15 +650,11 @@ set ArgLastReadFirstWriteLatency {
 	bnn_top_Pipeline_L1_LOAD {
 		gmem0 {Type I LastRead 1 FirstWrite -1}
 		sext_ln33 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3 {Type O LastRead -1 FirstWrite 2}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2 {Type O LastRead -1 FirstWrite 2}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1 {Type O LastRead -1 FirstWrite 2}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights {Type O LastRead -1 FirstWrite 2}}
 	bnn_top_Pipeline_L2_LOAD {
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		sext_ln38 {Type I LastRead 0 FirstWrite -1}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3 {Type O LastRead -1 FirstWrite 2}
-		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2 {Type O LastRead -1 FirstWrite 2}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1 {Type O LastRead -1 FirstWrite 2}
 		bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights {Type O LastRead -1 FirstWrite 2}}
 	bnn_top_Pipeline_L3_LOAD {

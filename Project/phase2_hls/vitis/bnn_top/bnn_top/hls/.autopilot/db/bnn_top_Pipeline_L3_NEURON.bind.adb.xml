@@ -64,7 +64,7 @@ newFuncRoot:0 %idx = alloca i32 1
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="2" op_3_bw="2" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-newFuncRoot:1 %specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i16 %output_stream_V_data_V, i2 %output_stream_V_keep_V, i2 %output_stream_V_strb_V, i1 0, i1 %output_stream_V_last_V, i1 0, i1 0, void @empty_13
+newFuncRoot:1 %specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i16 %output_stream_V_data_V, i2 %output_stream_V_keep_V, i2 %output_stream_V_strb_V, i1 0, i1 %output_stream_V_last_V, i1 0, i1 0, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specaxissidechannel_ln0"/></StgValue>
@@ -79,7 +79,7 @@ newFuncRoot:1 %specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_Spec
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="256" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 19, i64 18446744073709551615
+newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -94,7 +94,7 @@ newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %l
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2" op_3_bw="2" op_4_bw="16" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="0" op_19_bw="0" op_20_bw="32" op_21_bw="32" op_22_bw="32">
 <![CDATA[
-newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %output_stream_V_last_V, i2 %output_stream_V_strb_V, i2 %output_stream_V_keep_V, i16 %output_stream_V_data_V, void @empty_3, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_22, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0
+newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %output_stream_V_last_V, i2 %output_stream_V_strb_V, i2 %output_stream_V_keep_V, i16 %output_stream_V_data_V, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -238,7 +238,7 @@ VITIS_LOOP_114_5.split:4 %local_l3_weights_addr = getelementptr i256 %local_l3_w
 </operation>
 
 <operation id="22" st_id="1" stage="2" lat="2">
-<core>RAM_1P_LUTRAM</core>
+<core>RAM_2P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln111" val="0"/>
@@ -289,7 +289,7 @@ VITIS_LOOP_114_5.split:1034 %store_ln117 = store i4 %add_ln111, i4 %idx
 <state id="2" st_id="3">
 
 <operation id="25" st_id="2" stage="1" lat="2">
-<core>RAM_1P_LUTRAM</core>
+<core>RAM_2P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -15685,7 +15685,7 @@ if.end170.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-VITIS_LOOP_114_5.split:1 %specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_22
+VITIS_LOOP_114_5.split:1 %specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln113"/></StgValue>
@@ -15715,7 +15715,7 @@ VITIS_LOOP_114_5.split:2 %speclooptripcount_ln111 = speclooptripcount void @_ssd
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_114_5.split:3 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
+VITIS_LOOP_114_5.split:3 %specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln111"/></StgValue>
@@ -15816,7 +15816,7 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 <core>NULL</core><StgValue><ssdm name="output_stream_V_last_V"/></StgValue>
 </port>
 <port id="1080" name="local_l3_weights" dir="0" iftype="1">
-<core>RAM_1P_LUTRAM</core><StgValue><ssdm name="local_l3_weights"/><MemPortTyVec>1 </MemPortTyVec>
+<core>RAM_2P_BRAM</core><StgValue><ssdm name="local_l3_weights"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -15841,7 +15841,7 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 </dataflow>
 <dataflow id="1092" from="StgValue_1088" to="specaxissidechannel_ln0" fromId="1088" toId="10">
 </dataflow>
-<dataflow id="1094" from="empty_13" to="specaxissidechannel_ln0" fromId="1093" toId="10">
+<dataflow id="1094" from="empty_16" to="specaxissidechannel_ln0" fromId="1093" toId="10">
 </dataflow>
 <dataflow id="1096" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="1095" toId="11">
 </dataflow>
@@ -15863,23 +15863,23 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 </dataflow>
 <dataflow id="1109" from="output_stream_V_data_V" to="specinterface_ln0" fromId="1076" toId="12">
 </dataflow>
-<dataflow id="1111" from="empty_3" to="specinterface_ln0" fromId="1110" toId="12">
+<dataflow id="1111" from="empty_5" to="specinterface_ln0" fromId="1110" toId="12">
 </dataflow>
 <dataflow id="1113" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
 <dataflow id="1114" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
-<dataflow id="1116" from="empty_12" to="specinterface_ln0" fromId="1115" toId="12">
+<dataflow id="1116" from="empty_6" to="specinterface_ln0" fromId="1115" toId="12">
 </dataflow>
 <dataflow id="1117" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
 <dataflow id="1118" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
-<dataflow id="1120" from="empty_22" to="specinterface_ln0" fromId="1119" toId="12">
+<dataflow id="1120" from="empty_0" to="specinterface_ln0" fromId="1119" toId="12">
 </dataflow>
-<dataflow id="1121" from="empty_22" to="specinterface_ln0" fromId="1119" toId="12">
+<dataflow id="1121" from="empty_0" to="specinterface_ln0" fromId="1119" toId="12">
 </dataflow>
-<dataflow id="1122" from="empty_22" to="specinterface_ln0" fromId="1119" toId="12">
+<dataflow id="1122" from="empty_0" to="specinterface_ln0" fromId="1119" toId="12">
 </dataflow>
 <dataflow id="1123" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
@@ -15889,9 +15889,9 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 </dataflow>
 <dataflow id="1126" from="StgValue_1112" to="specinterface_ln0" fromId="1112" toId="12">
 </dataflow>
-<dataflow id="1127" from="empty_22" to="specinterface_ln0" fromId="1119" toId="12">
+<dataflow id="1127" from="empty_0" to="specinterface_ln0" fromId="1119" toId="12">
 </dataflow>
-<dataflow id="1128" from="empty_22" to="specinterface_ln0" fromId="1119" toId="12">
+<dataflow id="1128" from="empty_0" to="specinterface_ln0" fromId="1119" toId="12">
 </dataflow>
 <dataflow id="1130" from="StgValue_1129" to="specinterface_ln0" fromId="1129" toId="12">
 </dataflow>
@@ -19529,7 +19529,7 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 </dataflow>
 <dataflow id="3210" from="StgValue_1112" to="specpipeline_ln113" fromId="1112" toId="1049">
 </dataflow>
-<dataflow id="3211" from="empty_22" to="specpipeline_ln113" fromId="1119" toId="1049">
+<dataflow id="3211" from="empty_0" to="specpipeline_ln113" fromId="1119" toId="1049">
 </dataflow>
 <dataflow id="3213" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln111" fromId="3212" toId="1050">
 </dataflow>
@@ -19541,7 +19541,7 @@ VITIS_LOOP_114_5.split:1035 %br_ln111 = br void %VITIS_LOOP_114_5
 </dataflow>
 <dataflow id="3219" from="_ssdm_op_SpecLoopName" to="specloopname_ln111" fromId="3218" toId="1051">
 </dataflow>
-<dataflow id="3221" from="empty_7" to="specloopname_ln111" fromId="3220" toId="1051">
+<dataflow id="3221" from="empty_18" to="specloopname_ln111" fromId="3220" toId="1051">
 </dataflow>
 <dataflow id="3223" from="_ssdm_op_BitConcatenate.i10.i9.i1" to="shl_ln2" fromId="3222" toId="1052">
 </dataflow>

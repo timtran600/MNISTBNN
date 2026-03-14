@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'bnn_top_Pipeline_L3_LOAD'" level="0">
-<item name = "Date">Thu Mar  5 04:44:04 2026
+<item name = "Date">Fri Mar 13 20:30:37 2026
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">bnn_top</item>
@@ -78,9 +78,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln43_fu_104_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln43_fu_108_p2">+, 0, 0, 12, 4, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln43_fu_98_p2">icmp, 0, 0, 12, 4, 4</column>
+<column name="icmp_ln43_fu_102_p2">icmp, 0, 0, 12, 4, 4</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -100,9 +100,9 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="gmem2_addr_read_reg_146">256, 0, 256, 0</column>
-<column name="n_1_reg_137">4, 0, 4, 0</column>
-<column name="n_1_reg_137_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="gmem2_addr_read_reg_150">256, 0, 256, 0</column>
+<column name="n_1_reg_141">4, 0, 4, 0</column>
+<column name="n_1_reg_141_pp0_iter1_reg">4, 0, 4, 0</column>
 <column name="n_fu_58">4, 0, 4, 0</column>
 </table>
 </item>
@@ -166,10 +166,10 @@
 <column name="m_axi_gmem2_BID">in, 1, m_axi, gmem2, pointer</column>
 <column name="m_axi_gmem2_BUSER">in, 1, m_axi, gmem2, pointer</column>
 <column name="sext_ln43">in, 59, ap_none, sext_ln43, scalar</column>
-<column name="local_l3_weights_address0">out, 4, ap_memory, local_l3_weights, array</column>
-<column name="local_l3_weights_ce0">out, 1, ap_memory, local_l3_weights, array</column>
-<column name="local_l3_weights_we0">out, 1, ap_memory, local_l3_weights, array</column>
-<column name="local_l3_weights_d0">out, 256, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_address1">out, 4, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_ce1">out, 1, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_we1">out, 1, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_d1">out, 256, ap_memory, local_l3_weights, array</column>
 </table>
 </item>
 </section>

@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L1_LOAD_fu_4655/grp_bnn_top_Pipeline_L1_LOAD_fu_4655_activity": {
+				"grp_bnn_top_Pipeline_L1_LOAD_fu_4639/grp_bnn_top_Pipeline_L1_LOAD_fu_4639_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L1_NEURON_fu_4607/grp_bnn_top_Pipeline_L1_NEURON_fu_4607_activity": {
+				"grp_bnn_top_Pipeline_L1_NEURON_fu_4599/grp_bnn_top_Pipeline_L1_NEURON_fu_4599_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L2_LOAD_fu_4670/grp_bnn_top_Pipeline_L2_LOAD_fu_4670_activity": {
+				"grp_bnn_top_Pipeline_L2_LOAD_fu_4650/grp_bnn_top_Pipeline_L2_LOAD_fu_4650_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L2_NEURON_fu_4625/grp_bnn_top_Pipeline_L2_NEURON_fu_4625_activity": {
+				"grp_bnn_top_Pipeline_L2_NEURON_fu_4613/grp_bnn_top_Pipeline_L2_NEURON_fu_4613_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L3_LOAD_fu_4685/grp_bnn_top_Pipeline_L3_LOAD_fu_4685_activity": {
+				"grp_bnn_top_Pipeline_L3_LOAD_fu_4661/grp_bnn_top_Pipeline_L3_LOAD_fu_4661_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_bnn_top_Pipeline_L3_NEURON_fu_4640/grp_bnn_top_Pipeline_L3_NEURON_fu_4640_activity": {
+				"grp_bnn_top_Pipeline_L3_NEURON_fu_4624/grp_bnn_top_Pipeline_L3_NEURON_fu_4624_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

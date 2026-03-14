@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'bnn_top_Pipeline_L3_NEURON'
 ================================================================
-* Date:           Thu Mar  5 04:43:39 2026
+* Date:           Fri Mar 13 20:30:10 2026
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        bnn_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.00 ns|  2.018 ns|     0.81 ns|
+    |ap_clk  |  3.00 ns|  2.164 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -88,11 +88,11 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.65>
+State 1 <SV = 0> <Delay = 1.66>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%idx = alloca i32 1" [bnn_top.cpp:117]   --->   Operation 9 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i16 %output_stream_V_data_V, i2 %output_stream_V_keep_V, i2 %output_stream_V_strb_V, i1 0, i1 %output_stream_V_last_V, i1 0, i1 0, void @empty_13"   --->   Operation 10 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 19, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %output_stream_V_last_V, i2 %output_stream_V_strb_V, i2 %output_stream_V_keep_V, i16 %output_stream_V_data_V, void @empty_3, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_22, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i16 %output_stream_V_data_V, i2 %output_stream_V_keep_V, i2 %output_stream_V_strb_V, i1 0, i1 %output_stream_V_last_V, i1 0, i1 0, void @empty_16"   --->   Operation 10 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %local_l3_weights, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %output_stream_V_last_V, i2 %output_stream_V_strb_V, i2 %output_stream_V_keep_V, i16 %output_stream_V_data_V, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%l3_input_read = read i256 @_ssdm_op_Read.ap_auto.i256, i256 %l3_input"   --->   Operation 13 'read' 'l3_input_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.42ns)   --->   "%store_ln117 = store i4 0, i4 %idx" [bnn_top.cpp:117]   --->   Operation 14 'store' 'store_ln117' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_114_5"   --->   Operation 15 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -102,12 +102,12 @@ ST_1 : Operation 18 [1/1] (0.79ns)   --->   "%add_ln111 = add i4 %n, i4 1" [bnn_
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln111 = br i1 %icmp_ln111, void %VITIS_LOOP_114_5.split, void %if.end170.loopexit.exitStub" [bnn_top.cpp:111]   --->   Operation 19 'br' 'br_ln111' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln111 = zext i4 %n" [bnn_top.cpp:111]   --->   Operation 20 'zext' 'zext_ln111' <Predicate = (!icmp_ln111)> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%local_l3_weights_addr = getelementptr i256 %local_l3_weights, i64 0, i64 %zext_ln111" [bnn_top.cpp:118]   --->   Operation 21 'getelementptr' 'local_l3_weights_addr' <Predicate = (!icmp_ln111)> <Delay = 0.00>
-ST_1 : Operation 22 [2/2] (0.78ns)   --->   "%local_l3_weights_load = load i4 %local_l3_weights_addr" [bnn_top.cpp:118]   --->   Operation 22 'load' 'local_l3_weights_load' <Predicate = (!icmp_ln111)> <Delay = 0.78> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 88 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.78> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 256> <Depth = 10> <RAM>
+ST_1 : Operation 22 [2/2] (1.23ns)   --->   "%local_l3_weights_load = load i4 %local_l3_weights_addr" [bnn_top.cpp:118]   --->   Operation 22 'load' 'local_l3_weights_load' <Predicate = (!icmp_ln111)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 10> <RAM>
 ST_1 : Operation 23 [1/1] (0.79ns)   --->   "%out_word_last = icmp_eq  i4 %n, i4 9" [bnn_top.cpp:130]   --->   Operation 23 'icmp' 'out_word_last' <Predicate = (!icmp_ln111)> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 24 [1/1] (0.42ns)   --->   "%store_ln117 = store i4 %add_ln111, i4 %idx" [bnn_top.cpp:117]   --->   Operation 24 'store' 'store_ln117' <Predicate = (!icmp_ln111)> <Delay = 0.42>
 
-State 2 <SV = 1> <Delay = 1.71>
-ST_2 : Operation 25 [1/2] (0.78ns)   --->   "%local_l3_weights_load = load i4 %local_l3_weights_addr" [bnn_top.cpp:118]   --->   Operation 25 'load' 'local_l3_weights_load' <Predicate = true> <Delay = 0.78> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 88 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.78> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 256> <Depth = 10> <RAM>
+State 2 <SV = 1> <Delay = 2.16>
+ST_2 : Operation 25 [1/2] (1.23ns)   --->   "%local_l3_weights_load = load i4 %local_l3_weights_addr" [bnn_top.cpp:118]   --->   Operation 25 'load' 'local_l3_weights_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 10> <RAM>
 ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node xnor_result)   --->   "%xor_ln118 = xor i256 %l3_input_read, i256 115792089237316195423570985008687907853269984665640564039457584007913129639935" [bnn_top.cpp:118]   --->   Operation 26 'xor' 'xor_ln118' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 27 [1/1] (0.37ns) (out node of the LUT)   --->   "%xnor_result = xor i256 %local_l3_weights_load, i256 %xor_ln118" [bnn_top.cpp:118]   --->   Operation 27 'xor' 'xnor_result' <Predicate = true> <Delay = 0.37> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln123 = trunc i256 %xnor_result" [bnn_top.cpp:123]   --->   Operation 28 'trunc' 'trunc_ln123' <Predicate = true> <Delay = 0.00>
@@ -1140,9 +1140,9 @@ ST_5 : Operation 1048 [1/1] (0.76ns)   --->   "%add_ln127_254 = add i9 %zext_ln1
 ST_5 : Operation 1057 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 1057 'ret' 'ret_ln0' <Predicate = (icmp_ln111)> <Delay = 0.42>
 
 State 6 <SV = 5> <Delay = 1.24>
-ST_6 : Operation 1049 [1/1] (0.00ns)   --->   "%specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_22" [bnn_top.cpp:113]   --->   Operation 1049 'specpipeline' 'specpipeline_ln113' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 1049 [1/1] (0.00ns)   --->   "%specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [bnn_top.cpp:113]   --->   Operation 1049 'specpipeline' 'specpipeline_ln113' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 1050 [1/1] (0.00ns)   --->   "%speclooptripcount_ln111 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10" [bnn_top.cpp:111]   --->   Operation 1050 'speclooptripcount' 'speclooptripcount_ln111' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 1051 [1/1] (0.00ns)   --->   "%specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [bnn_top.cpp:111]   --->   Operation 1051 'specloopname' 'specloopname_ln111' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 1051 [1/1] (0.00ns)   --->   "%specloopname_ln111 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [bnn_top.cpp:111]   --->   Operation 1051 'specloopname' 'specloopname_ln111' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 1052 [1/1] (0.00ns)   --->   "%shl_ln2 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i9.i1, i9 %add_ln127_254, i1 0" [bnn_top.cpp:127]   --->   Operation 1052 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 1053 [1/1] (0.78ns)   --->   "%out_word_data = add i10 %shl_ln2, i10 768" [bnn_top.cpp:127]   --->   Operation 1053 'add' 'out_word_data' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 1054 [1/1] (0.00ns)   --->   "%sext_ln126 = sext i10 %out_word_data" [bnn_top.cpp:126]   --->   Operation 1054 'sext' 'sext_ln126' <Predicate = true> <Delay = 0.00>
@@ -1155,16 +1155,16 @@ ST_6 : Operation 1056 [1/1] (0.00ns)   --->   "%br_ln111 = br void %VITIS_LOOP_1
 ============================================================
 Target clock period: 3.000ns, clock uncertainty: 0.810ns.
 
- <State 1>: 1.651ns
+ <State 1>: 1.664ns
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln117', bnn_top.cpp:117) of constant 0 on local variable 'idx', bnn_top.cpp:117 [12]  (0.427 ns)
 	'load' operation 4 bit ('n', bnn_top.cpp:111) on local variable 'idx', bnn_top.cpp:117 [15]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln111', bnn_top.cpp:111) [16]  (0.797 ns)
-	'store' operation 0 bit ('store_ln117', bnn_top.cpp:117) of variable 'add_ln111', bnn_top.cpp:111 on local variable 'idx', bnn_top.cpp:117 [1054]  (0.427 ns)
+	'getelementptr' operation 4 bit ('local_l3_weights_addr', bnn_top.cpp:118) [24]  (0.000 ns)
+	'load' operation 256 bit ('local_l3_weights_load', bnn_top.cpp:118) on array 'local_l3_weights' [25]  (1.237 ns)
 
- <State 2>: 1.716ns
+ <State 2>: 2.164ns
 The critical path consists of the following:
-	'load' operation 256 bit ('local_l3_weights_load', bnn_top.cpp:118) on array 'local_l3_weights' [25]  (0.789 ns)
+	'load' operation 256 bit ('local_l3_weights_load', bnn_top.cpp:118) on array 'local_l3_weights' [25]  (1.237 ns)
 	'xor' operation 256 bit ('xnor_result', bnn_top.cpp:118) [27]  (0.379 ns)
 	'add' operation 2 bit ('add_ln127', bnn_top.cpp:127) [540]  (0.548 ns)
 

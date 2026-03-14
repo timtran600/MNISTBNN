@@ -130,7 +130,7 @@
 						<id>4</id>
 						<name>n</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -138,7 +138,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -271,7 +271,7 @@
 						<id>9</id>
 						<name>n_write_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -279,7 +279,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -370,7 +370,7 @@
 						<id>12</id>
 						<name>n_1</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -378,7 +378,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -427,7 +427,7 @@
 						<id>14</id>
 						<name>icmp_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -435,7 +435,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -484,7 +484,7 @@
 						<id>15</id>
 						<name>add_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -492,7 +492,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -541,7 +541,7 @@
 						<id>16</id>
 						<name>br_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -549,7 +549,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -599,7 +599,7 @@
 						<id>18</id>
 						<name>gmem2_addr</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -607,7 +607,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -656,7 +656,7 @@
 						<id>19</id>
 						<name>zext_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -664,7 +664,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -712,7 +712,7 @@
 						<id>23</id>
 						<name>local_l3_weights_addr</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -720,7 +720,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -770,7 +770,7 @@
 						<id>24</id>
 						<name>gmem2_addr_read</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -778,7 +778,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -827,7 +827,7 @@
 						<id>25</id>
 						<name>local_l3_weights_addr_write_ln46</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -835,7 +835,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -873,7 +873,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.78</m_delay>
+				<m_delay>1.23</m_delay>
 				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -884,7 +884,7 @@
 						<id>26</id>
 						<name>n_write_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -892,7 +892,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -943,7 +943,7 @@
 						<id>27</id>
 						<name>br_ln43</name>
 						<fileName>bnn_top.cpp</fileName>
-						<fileDirectory>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</fileDirectory>
+						<fileDirectory>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</fileDirectory>
 						<lineNumber>43</lineNumber>
 						<contextFuncName>bnn_top</contextFuncName>
 						<contextNormFuncName>bnn_top</contextNormFuncName>
@@ -951,7 +951,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+								<first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

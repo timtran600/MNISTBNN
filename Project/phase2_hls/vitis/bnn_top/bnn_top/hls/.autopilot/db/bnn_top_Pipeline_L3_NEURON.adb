@@ -211,7 +211,7 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>RAM_1P_LUTRAM</coreName>
+              <coreName>RAM_2P_BRAM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>4294967295</coreId>
@@ -246,7 +246,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -345,7 +345,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -444,7 +444,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -501,7 +501,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -558,7 +558,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -615,7 +615,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -673,7 +673,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -729,7 +729,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -787,7 +787,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -804,12 +804,12 @@
               <originalName/>
               <rtlName/>
               <control>auto</control>
-              <opType>ram_1p</opType>
-              <implIndex>lutram</implIndex>
-              <coreName>RAM_1P_LUTRAM</coreName>
+              <opType>ram_2p</opType>
+              <implIndex>bram</implIndex>
+              <coreName>RAM_2P_BRAM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>88</coreId>
+              <coreId>93</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>256</bitwidth>
@@ -824,7 +824,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.78</m_delay>
+          <m_delay>1.23</m_delay>
           <m_topoIndex>11</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -843,7 +843,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -900,7 +900,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -957,7 +957,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1013,7 +1013,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1071,7 +1071,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1129,7 +1129,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1187,7 +1187,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1245,7 +1245,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1303,7 +1303,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1361,7 +1361,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1419,7 +1419,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1477,7 +1477,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1535,7 +1535,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1593,7 +1593,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1651,7 +1651,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1709,7 +1709,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1767,7 +1767,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1825,7 +1825,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1883,7 +1883,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1941,7 +1941,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1999,7 +1999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2057,7 +2057,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2115,7 +2115,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2173,7 +2173,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2231,7 +2231,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2289,7 +2289,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2347,7 +2347,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2405,7 +2405,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2463,7 +2463,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2521,7 +2521,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2579,7 +2579,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2637,7 +2637,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2695,7 +2695,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2753,7 +2753,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2811,7 +2811,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2869,7 +2869,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2927,7 +2927,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2985,7 +2985,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3043,7 +3043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3101,7 +3101,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3159,7 +3159,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3217,7 +3217,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3275,7 +3275,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3333,7 +3333,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3391,7 +3391,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3449,7 +3449,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3507,7 +3507,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3565,7 +3565,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3623,7 +3623,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3681,7 +3681,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3739,7 +3739,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3797,7 +3797,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3855,7 +3855,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3913,7 +3913,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3971,7 +3971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4029,7 +4029,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4087,7 +4087,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4145,7 +4145,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4203,7 +4203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4261,7 +4261,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4319,7 +4319,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4377,7 +4377,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4435,7 +4435,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4493,7 +4493,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4551,7 +4551,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4609,7 +4609,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4667,7 +4667,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4725,7 +4725,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4783,7 +4783,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4841,7 +4841,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4899,7 +4899,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4957,7 +4957,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5015,7 +5015,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5073,7 +5073,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5131,7 +5131,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5189,7 +5189,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5247,7 +5247,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5305,7 +5305,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5363,7 +5363,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5421,7 +5421,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5479,7 +5479,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5537,7 +5537,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5595,7 +5595,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5653,7 +5653,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5711,7 +5711,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5769,7 +5769,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5827,7 +5827,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5885,7 +5885,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5943,7 +5943,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6001,7 +6001,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6059,7 +6059,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6117,7 +6117,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6175,7 +6175,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6233,7 +6233,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6291,7 +6291,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6349,7 +6349,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6407,7 +6407,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6465,7 +6465,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6523,7 +6523,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6581,7 +6581,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6639,7 +6639,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6697,7 +6697,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6755,7 +6755,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6813,7 +6813,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6871,7 +6871,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6929,7 +6929,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6987,7 +6987,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7045,7 +7045,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7103,7 +7103,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7161,7 +7161,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7219,7 +7219,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7277,7 +7277,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7335,7 +7335,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7393,7 +7393,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7451,7 +7451,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7509,7 +7509,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7567,7 +7567,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7625,7 +7625,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7683,7 +7683,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7741,7 +7741,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7799,7 +7799,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7857,7 +7857,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7915,7 +7915,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7973,7 +7973,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8031,7 +8031,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8089,7 +8089,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8147,7 +8147,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8205,7 +8205,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8263,7 +8263,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8321,7 +8321,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8379,7 +8379,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8437,7 +8437,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8495,7 +8495,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8553,7 +8553,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8611,7 +8611,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8669,7 +8669,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8727,7 +8727,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8785,7 +8785,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8843,7 +8843,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8901,7 +8901,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8959,7 +8959,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9017,7 +9017,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9075,7 +9075,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9133,7 +9133,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9191,7 +9191,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9249,7 +9249,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9307,7 +9307,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9365,7 +9365,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9423,7 +9423,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9481,7 +9481,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9539,7 +9539,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9597,7 +9597,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9655,7 +9655,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9713,7 +9713,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9771,7 +9771,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9829,7 +9829,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9887,7 +9887,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9945,7 +9945,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10003,7 +10003,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10061,7 +10061,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10119,7 +10119,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10177,7 +10177,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10235,7 +10235,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10293,7 +10293,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10351,7 +10351,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10409,7 +10409,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10467,7 +10467,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10525,7 +10525,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10583,7 +10583,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10641,7 +10641,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10699,7 +10699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10757,7 +10757,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10815,7 +10815,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10873,7 +10873,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10931,7 +10931,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -10989,7 +10989,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11047,7 +11047,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11105,7 +11105,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11163,7 +11163,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11221,7 +11221,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11279,7 +11279,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11337,7 +11337,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11395,7 +11395,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11453,7 +11453,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11511,7 +11511,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11569,7 +11569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11627,7 +11627,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11685,7 +11685,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11743,7 +11743,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11801,7 +11801,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11859,7 +11859,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11917,7 +11917,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -11975,7 +11975,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12033,7 +12033,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12091,7 +12091,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12149,7 +12149,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12207,7 +12207,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12265,7 +12265,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12323,7 +12323,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12381,7 +12381,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12439,7 +12439,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12497,7 +12497,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12555,7 +12555,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12613,7 +12613,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12671,7 +12671,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12729,7 +12729,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12787,7 +12787,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12845,7 +12845,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12903,7 +12903,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -12961,7 +12961,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13019,7 +13019,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13077,7 +13077,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13135,7 +13135,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13193,7 +13193,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13251,7 +13251,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13309,7 +13309,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13367,7 +13367,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13425,7 +13425,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13483,7 +13483,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13541,7 +13541,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13599,7 +13599,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13657,7 +13657,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13715,7 +13715,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13773,7 +13773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13831,7 +13831,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13889,7 +13889,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -13947,7 +13947,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14005,7 +14005,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14063,7 +14063,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14121,7 +14121,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14179,7 +14179,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14237,7 +14237,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14295,7 +14295,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14353,7 +14353,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14411,7 +14411,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14469,7 +14469,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14527,7 +14527,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14585,7 +14585,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14643,7 +14643,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14701,7 +14701,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14759,7 +14759,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14817,7 +14817,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14875,7 +14875,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14933,7 +14933,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -14991,7 +14991,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15049,7 +15049,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15107,7 +15107,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15165,7 +15165,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15223,7 +15223,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15281,7 +15281,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15339,7 +15339,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15397,7 +15397,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15455,7 +15455,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15513,7 +15513,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15571,7 +15571,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15629,7 +15629,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15687,7 +15687,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15745,7 +15745,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15803,7 +15803,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15859,7 +15859,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15915,7 +15915,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -15971,7 +15971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16027,7 +16027,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16083,7 +16083,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16139,7 +16139,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16195,7 +16195,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16251,7 +16251,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16307,7 +16307,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16363,7 +16363,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16419,7 +16419,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16475,7 +16475,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16531,7 +16531,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16587,7 +16587,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16643,7 +16643,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16699,7 +16699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16755,7 +16755,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16811,7 +16811,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16867,7 +16867,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16923,7 +16923,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -16979,7 +16979,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17035,7 +17035,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17091,7 +17091,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17147,7 +17147,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17203,7 +17203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17259,7 +17259,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17315,7 +17315,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17371,7 +17371,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17427,7 +17427,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17483,7 +17483,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17539,7 +17539,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17595,7 +17595,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17651,7 +17651,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17707,7 +17707,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17763,7 +17763,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17819,7 +17819,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17875,7 +17875,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17931,7 +17931,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -17987,7 +17987,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18043,7 +18043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18099,7 +18099,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18155,7 +18155,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18211,7 +18211,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18267,7 +18267,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18323,7 +18323,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18379,7 +18379,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18435,7 +18435,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18491,7 +18491,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18547,7 +18547,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18603,7 +18603,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18659,7 +18659,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18715,7 +18715,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18771,7 +18771,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18827,7 +18827,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18883,7 +18883,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18939,7 +18939,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -18995,7 +18995,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19051,7 +19051,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19107,7 +19107,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19163,7 +19163,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19219,7 +19219,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19275,7 +19275,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19331,7 +19331,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19387,7 +19387,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19443,7 +19443,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19499,7 +19499,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19555,7 +19555,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19611,7 +19611,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19667,7 +19667,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19723,7 +19723,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19779,7 +19779,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19835,7 +19835,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19891,7 +19891,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -19947,7 +19947,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20003,7 +20003,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20059,7 +20059,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20115,7 +20115,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20171,7 +20171,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20227,7 +20227,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20283,7 +20283,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20339,7 +20339,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20395,7 +20395,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20451,7 +20451,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20507,7 +20507,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20563,7 +20563,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20619,7 +20619,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20675,7 +20675,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20731,7 +20731,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20787,7 +20787,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20843,7 +20843,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20899,7 +20899,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -20955,7 +20955,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21011,7 +21011,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21067,7 +21067,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21123,7 +21123,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21179,7 +21179,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21235,7 +21235,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21291,7 +21291,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21347,7 +21347,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21403,7 +21403,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21459,7 +21459,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21515,7 +21515,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21571,7 +21571,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21627,7 +21627,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21683,7 +21683,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21739,7 +21739,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21795,7 +21795,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21851,7 +21851,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21907,7 +21907,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -21963,7 +21963,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22019,7 +22019,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22075,7 +22075,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22131,7 +22131,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22187,7 +22187,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22243,7 +22243,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22299,7 +22299,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22355,7 +22355,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22411,7 +22411,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22467,7 +22467,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22523,7 +22523,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22579,7 +22579,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22635,7 +22635,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22691,7 +22691,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22747,7 +22747,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22803,7 +22803,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22859,7 +22859,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22915,7 +22915,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -22971,7 +22971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23027,7 +23027,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23083,7 +23083,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23139,7 +23139,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23195,7 +23195,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23251,7 +23251,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23307,7 +23307,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23363,7 +23363,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23419,7 +23419,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23475,7 +23475,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23531,7 +23531,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23587,7 +23587,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23643,7 +23643,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23699,7 +23699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23755,7 +23755,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23811,7 +23811,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23867,7 +23867,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23923,7 +23923,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -23979,7 +23979,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24035,7 +24035,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24091,7 +24091,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24147,7 +24147,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24203,7 +24203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24259,7 +24259,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24315,7 +24315,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24371,7 +24371,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24427,7 +24427,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24483,7 +24483,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24539,7 +24539,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24595,7 +24595,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24651,7 +24651,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24707,7 +24707,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24763,7 +24763,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24819,7 +24819,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24875,7 +24875,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24931,7 +24931,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -24987,7 +24987,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25043,7 +25043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25099,7 +25099,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25155,7 +25155,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25211,7 +25211,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25267,7 +25267,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25323,7 +25323,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25379,7 +25379,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25435,7 +25435,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25491,7 +25491,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25547,7 +25547,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25603,7 +25603,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25659,7 +25659,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25715,7 +25715,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25771,7 +25771,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25827,7 +25827,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25883,7 +25883,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25939,7 +25939,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -25995,7 +25995,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26051,7 +26051,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26107,7 +26107,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26163,7 +26163,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26219,7 +26219,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26275,7 +26275,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26331,7 +26331,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26387,7 +26387,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26443,7 +26443,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26499,7 +26499,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26555,7 +26555,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26611,7 +26611,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26667,7 +26667,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26723,7 +26723,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26779,7 +26779,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26835,7 +26835,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26891,7 +26891,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -26947,7 +26947,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27003,7 +27003,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27059,7 +27059,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27115,7 +27115,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27171,7 +27171,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27227,7 +27227,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27283,7 +27283,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27339,7 +27339,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27395,7 +27395,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27451,7 +27451,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27507,7 +27507,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27563,7 +27563,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27619,7 +27619,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27675,7 +27675,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27731,7 +27731,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27787,7 +27787,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27843,7 +27843,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27899,7 +27899,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -27955,7 +27955,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28011,7 +28011,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28067,7 +28067,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28123,7 +28123,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28179,7 +28179,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28235,7 +28235,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28291,7 +28291,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28347,7 +28347,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28403,7 +28403,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28459,7 +28459,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28515,7 +28515,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28571,7 +28571,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28627,7 +28627,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28683,7 +28683,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28739,7 +28739,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28795,7 +28795,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28851,7 +28851,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28907,7 +28907,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -28963,7 +28963,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29019,7 +29019,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29075,7 +29075,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29131,7 +29131,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29187,7 +29187,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29243,7 +29243,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29299,7 +29299,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29355,7 +29355,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29411,7 +29411,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29467,7 +29467,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29523,7 +29523,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29579,7 +29579,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29635,7 +29635,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29691,7 +29691,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29747,7 +29747,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29803,7 +29803,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29859,7 +29859,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29915,7 +29915,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -29971,7 +29971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30027,7 +30027,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30083,7 +30083,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30139,7 +30139,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30196,7 +30196,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30252,7 +30252,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30309,7 +30309,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30365,7 +30365,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30422,7 +30422,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30478,7 +30478,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30535,7 +30535,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30591,7 +30591,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30648,7 +30648,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30704,7 +30704,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30761,7 +30761,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30817,7 +30817,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30874,7 +30874,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30930,7 +30930,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -30987,7 +30987,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31043,7 +31043,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31100,7 +31100,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31156,7 +31156,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31213,7 +31213,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31269,7 +31269,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31326,7 +31326,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31382,7 +31382,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31439,7 +31439,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31495,7 +31495,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31552,7 +31552,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31608,7 +31608,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31665,7 +31665,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31721,7 +31721,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31778,7 +31778,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31834,7 +31834,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31891,7 +31891,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -31947,7 +31947,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32004,7 +32004,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32060,7 +32060,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32117,7 +32117,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32173,7 +32173,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32230,7 +32230,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32286,7 +32286,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32343,7 +32343,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32399,7 +32399,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32456,7 +32456,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32512,7 +32512,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32569,7 +32569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32625,7 +32625,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32682,7 +32682,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32738,7 +32738,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32795,7 +32795,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32851,7 +32851,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32908,7 +32908,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -32964,7 +32964,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33021,7 +33021,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33077,7 +33077,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33134,7 +33134,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33190,7 +33190,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33247,7 +33247,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33303,7 +33303,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33360,7 +33360,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33416,7 +33416,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33473,7 +33473,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33529,7 +33529,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33586,7 +33586,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33642,7 +33642,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33699,7 +33699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33755,7 +33755,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33812,7 +33812,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33868,7 +33868,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33925,7 +33925,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -33981,7 +33981,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34038,7 +34038,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34094,7 +34094,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34151,7 +34151,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34207,7 +34207,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34264,7 +34264,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34320,7 +34320,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34377,7 +34377,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34433,7 +34433,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34490,7 +34490,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34546,7 +34546,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34603,7 +34603,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34659,7 +34659,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34716,7 +34716,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34772,7 +34772,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34829,7 +34829,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34885,7 +34885,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34942,7 +34942,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -34998,7 +34998,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35055,7 +35055,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35111,7 +35111,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35168,7 +35168,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35224,7 +35224,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35281,7 +35281,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35337,7 +35337,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35394,7 +35394,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35450,7 +35450,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35507,7 +35507,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35563,7 +35563,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35620,7 +35620,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35676,7 +35676,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35733,7 +35733,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35789,7 +35789,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35846,7 +35846,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35902,7 +35902,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -35959,7 +35959,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36015,7 +36015,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36072,7 +36072,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36128,7 +36128,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36185,7 +36185,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36241,7 +36241,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36298,7 +36298,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36354,7 +36354,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36411,7 +36411,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36467,7 +36467,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36524,7 +36524,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36580,7 +36580,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36637,7 +36637,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36693,7 +36693,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36750,7 +36750,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36806,7 +36806,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36863,7 +36863,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36919,7 +36919,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -36976,7 +36976,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37032,7 +37032,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37089,7 +37089,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37145,7 +37145,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37202,7 +37202,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37258,7 +37258,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37315,7 +37315,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37371,7 +37371,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37428,7 +37428,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37484,7 +37484,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37541,7 +37541,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37597,7 +37597,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37654,7 +37654,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37710,7 +37710,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37767,7 +37767,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37823,7 +37823,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37880,7 +37880,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37936,7 +37936,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -37993,7 +37993,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38049,7 +38049,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38106,7 +38106,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38162,7 +38162,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38219,7 +38219,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38275,7 +38275,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38332,7 +38332,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38388,7 +38388,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38445,7 +38445,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38501,7 +38501,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38558,7 +38558,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38614,7 +38614,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38671,7 +38671,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38727,7 +38727,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38784,7 +38784,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38840,7 +38840,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38897,7 +38897,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -38953,7 +38953,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39010,7 +39010,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39066,7 +39066,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39123,7 +39123,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39179,7 +39179,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39236,7 +39236,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39292,7 +39292,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39349,7 +39349,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39405,7 +39405,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39462,7 +39462,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39518,7 +39518,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39575,7 +39575,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39631,7 +39631,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39688,7 +39688,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39744,7 +39744,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39801,7 +39801,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39857,7 +39857,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39914,7 +39914,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -39970,7 +39970,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40027,7 +40027,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40083,7 +40083,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40140,7 +40140,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40196,7 +40196,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40253,7 +40253,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40309,7 +40309,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40366,7 +40366,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40422,7 +40422,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40479,7 +40479,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40535,7 +40535,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40592,7 +40592,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40648,7 +40648,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40705,7 +40705,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40761,7 +40761,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40818,7 +40818,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40874,7 +40874,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40931,7 +40931,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -40987,7 +40987,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41044,7 +41044,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41100,7 +41100,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41157,7 +41157,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41213,7 +41213,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41270,7 +41270,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41326,7 +41326,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41383,7 +41383,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41439,7 +41439,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41496,7 +41496,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41552,7 +41552,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41609,7 +41609,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41665,7 +41665,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41722,7 +41722,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41778,7 +41778,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41835,7 +41835,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41891,7 +41891,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -41948,7 +41948,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42004,7 +42004,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42061,7 +42061,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42117,7 +42117,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42174,7 +42174,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42230,7 +42230,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42287,7 +42287,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42343,7 +42343,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42400,7 +42400,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42456,7 +42456,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42513,7 +42513,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42569,7 +42569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42626,7 +42626,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42682,7 +42682,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42739,7 +42739,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42795,7 +42795,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42852,7 +42852,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42908,7 +42908,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -42965,7 +42965,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43021,7 +43021,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43078,7 +43078,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43134,7 +43134,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43191,7 +43191,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43247,7 +43247,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43304,7 +43304,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43360,7 +43360,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43417,7 +43417,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43473,7 +43473,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43530,7 +43530,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43586,7 +43586,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43643,7 +43643,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43699,7 +43699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43756,7 +43756,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43812,7 +43812,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43869,7 +43869,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43925,7 +43925,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -43982,7 +43982,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44038,7 +44038,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44095,7 +44095,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44151,7 +44151,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44208,7 +44208,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44264,7 +44264,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44321,7 +44321,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44377,7 +44377,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44434,7 +44434,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44490,7 +44490,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44547,7 +44547,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44603,7 +44603,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44660,7 +44660,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44716,7 +44716,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44773,7 +44773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44829,7 +44829,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44886,7 +44886,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44942,7 +44942,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -44999,7 +44999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45055,7 +45055,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45112,7 +45112,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45168,7 +45168,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45225,7 +45225,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45281,7 +45281,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45338,7 +45338,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45394,7 +45394,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45451,7 +45451,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45507,7 +45507,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45564,7 +45564,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45620,7 +45620,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45677,7 +45677,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45733,7 +45733,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45790,7 +45790,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45846,7 +45846,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45903,7 +45903,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -45959,7 +45959,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46016,7 +46016,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46072,7 +46072,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46129,7 +46129,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46185,7 +46185,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46242,7 +46242,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46298,7 +46298,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46355,7 +46355,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46411,7 +46411,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46468,7 +46468,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46524,7 +46524,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46581,7 +46581,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46637,7 +46637,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46694,7 +46694,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46750,7 +46750,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46807,7 +46807,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46863,7 +46863,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46920,7 +46920,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -46976,7 +46976,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47033,7 +47033,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47089,7 +47089,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47146,7 +47146,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47202,7 +47202,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47259,7 +47259,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47315,7 +47315,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47372,7 +47372,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47428,7 +47428,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47485,7 +47485,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47541,7 +47541,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47598,7 +47598,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47654,7 +47654,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47711,7 +47711,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47767,7 +47767,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47824,7 +47824,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47880,7 +47880,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47937,7 +47937,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -47993,7 +47993,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48050,7 +48050,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48106,7 +48106,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48163,7 +48163,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48219,7 +48219,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48276,7 +48276,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48332,7 +48332,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48389,7 +48389,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48445,7 +48445,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48502,7 +48502,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48558,7 +48558,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48615,7 +48615,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48671,7 +48671,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48728,7 +48728,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48784,7 +48784,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48841,7 +48841,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48897,7 +48897,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -48954,7 +48954,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49010,7 +49010,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49067,7 +49067,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49123,7 +49123,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49180,7 +49180,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49236,7 +49236,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49293,7 +49293,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49349,7 +49349,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49406,7 +49406,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49462,7 +49462,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49519,7 +49519,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49575,7 +49575,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49632,7 +49632,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49688,7 +49688,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49745,7 +49745,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49801,7 +49801,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49858,7 +49858,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49914,7 +49914,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -49971,7 +49971,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50027,7 +50027,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50084,7 +50084,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50140,7 +50140,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50197,7 +50197,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50253,7 +50253,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50310,7 +50310,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50366,7 +50366,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50423,7 +50423,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50479,7 +50479,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50536,7 +50536,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50592,7 +50592,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50649,7 +50649,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50705,7 +50705,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50762,7 +50762,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50818,7 +50818,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50875,7 +50875,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50931,7 +50931,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -50988,7 +50988,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51044,7 +51044,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51101,7 +51101,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51157,7 +51157,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51214,7 +51214,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51270,7 +51270,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51327,7 +51327,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51383,7 +51383,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51440,7 +51440,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51496,7 +51496,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51553,7 +51553,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51609,7 +51609,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51666,7 +51666,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51722,7 +51722,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51779,7 +51779,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51835,7 +51835,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51892,7 +51892,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -51948,7 +51948,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52005,7 +52005,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52061,7 +52061,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52118,7 +52118,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52174,7 +52174,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52231,7 +52231,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52287,7 +52287,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52344,7 +52344,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52400,7 +52400,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52457,7 +52457,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52513,7 +52513,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52570,7 +52570,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52626,7 +52626,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52683,7 +52683,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52739,7 +52739,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52796,7 +52796,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52852,7 +52852,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52909,7 +52909,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -52965,7 +52965,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53022,7 +53022,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53078,7 +53078,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53135,7 +53135,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53191,7 +53191,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53248,7 +53248,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53304,7 +53304,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53361,7 +53361,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53417,7 +53417,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53474,7 +53474,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53530,7 +53530,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53587,7 +53587,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53643,7 +53643,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53700,7 +53700,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53756,7 +53756,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53813,7 +53813,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53869,7 +53869,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53926,7 +53926,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -53982,7 +53982,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54039,7 +54039,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54095,7 +54095,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54152,7 +54152,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54208,7 +54208,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54265,7 +54265,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54321,7 +54321,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54378,7 +54378,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54434,7 +54434,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54491,7 +54491,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54547,7 +54547,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54604,7 +54604,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54660,7 +54660,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54717,7 +54717,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54773,7 +54773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54830,7 +54830,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54886,7 +54886,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54943,7 +54943,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -54999,7 +54999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55056,7 +55056,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55112,7 +55112,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55169,7 +55169,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55225,7 +55225,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55282,7 +55282,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55338,7 +55338,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55395,7 +55395,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55451,7 +55451,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55508,7 +55508,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55564,7 +55564,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55621,7 +55621,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55677,7 +55677,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55734,7 +55734,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55790,7 +55790,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55847,7 +55847,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55903,7 +55903,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -55960,7 +55960,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56016,7 +56016,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56073,7 +56073,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56129,7 +56129,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56186,7 +56186,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56242,7 +56242,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56299,7 +56299,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56355,7 +56355,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56412,7 +56412,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56468,7 +56468,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56525,7 +56525,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56581,7 +56581,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56638,7 +56638,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56694,7 +56694,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56751,7 +56751,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56807,7 +56807,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56864,7 +56864,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56920,7 +56920,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -56977,7 +56977,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57033,7 +57033,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57090,7 +57090,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57146,7 +57146,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57203,7 +57203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57259,7 +57259,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57316,7 +57316,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57372,7 +57372,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57429,7 +57429,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57485,7 +57485,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57542,7 +57542,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57598,7 +57598,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57655,7 +57655,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57711,7 +57711,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57768,7 +57768,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57824,7 +57824,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57881,7 +57881,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57937,7 +57937,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -57994,7 +57994,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58050,7 +58050,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58107,7 +58107,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58163,7 +58163,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58220,7 +58220,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58276,7 +58276,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58333,7 +58333,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58389,7 +58389,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58446,7 +58446,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58502,7 +58502,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58559,7 +58559,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58615,7 +58615,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58672,7 +58672,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58728,7 +58728,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58785,7 +58785,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58841,7 +58841,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58898,7 +58898,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -58956,7 +58956,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -59013,7 +59013,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -59069,7 +59069,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -59126,7 +59126,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -59190,7 +59190,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -59249,7 +59249,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>C:\GitRepos\EECE4632\Project\phase2_hls\vitis\bnn_top</first>
+                  <first>C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -123215,7 +123215,7 @@
         <first>6</first>
         <second>
           <first>666</first>
-          <second>19</second>
+          <second>22</second>
         </second>
       </item>
     </port2core>
@@ -123240,7 +123240,7 @@
         <first>25</first>
         <second>
           <first>666</first>
-          <second>19</second>
+          <second>22</second>
         </second>
       </item>
       <item>

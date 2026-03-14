@@ -12,7 +12,7 @@ use IEEE.NUMERIC_STD.all;
 
 
 
-entity bnn_layer1_xnor_gmem1_m_axi is
+entity bnn_layer1_xnor_gmem_m_axi is
     generic (
         CONSERVATIVE              : INTEGER := 0;
         NUM_READ_OUTSTANDING      : INTEGER := 2;
@@ -119,10 +119,10 @@ entity bnn_layer1_xnor_gmem1_m_axi is
         I_CH0_RFIFONUM  : out STD_LOGIC_VECTOR(CH0_USER_RFIFONUM_WIDTH-1 downto 0);
         I_CH0_RVALID    : out STD_LOGIC;
         I_CH0_RREADY    : in  STD_LOGIC);
-end entity bnn_layer1_xnor_gmem1_m_axi;
+end entity bnn_layer1_xnor_gmem_m_axi;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi is
-    component bnn_layer1_xnor_gmem1_m_axi_load is
+architecture behave of bnn_layer1_xnor_gmem_m_axi is
+    component bnn_layer1_xnor_gmem_m_axi_load is
         generic (
             C_TARGET_ADDR          : INTEGER := 16#00000000#;
             NUM_READ_OUTSTANDING   : INTEGER := 2;
@@ -155,11 +155,11 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi is
             out_HLS_RVALID         : out STD_LOGIC;
             in_HLS_RREADY          : in  STD_LOGIC;
             out_HLS_RFIFONUM       : out UNSIGNED(USER_RFIFONUM_WIDTH-1 downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_load;
+    end component bnn_layer1_xnor_gmem_m_axi_load;
 
     
 
-    component bnn_layer1_xnor_gmem1_m_axi_store is
+    component bnn_layer1_xnor_gmem_m_axi_store is
         generic (
             C_TARGET_ADDR          : INTEGER := 16#00000000#;
             NUM_WRITE_OUTSTANDING  : INTEGER := 2;
@@ -194,9 +194,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi is
             out_HLS_WREADY         : out STD_LOGIC;
             out_HLS_BVALID         : out STD_LOGIC;
             in_HLS_BREADY          : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_store;
+    end component bnn_layer1_xnor_gmem_m_axi_store;
 
-    component bnn_layer1_xnor_gmem1_m_axi_read is
+    component bnn_layer1_xnor_gmem_m_axi_read is
         generic (
             NUM_READ_OUTSTANDING   : INTEGER := 1;
             MAX_READ_BURST_LENGTH  : INTEGER := 1;
@@ -241,9 +241,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi is
             in_HLS_RBURST_READY    : in  STD_LOGIC;
             out_HLS_RLAST          : out UNSIGNED(1 downto 0);
             out_HLS_RDATA          : out UNSIGNED(BUS_DATA_WIDTH-1 downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_read;
+    end component bnn_layer1_xnor_gmem_m_axi_read;
 
-    component bnn_layer1_xnor_gmem1_m_axi_write is
+    component bnn_layer1_xnor_gmem_m_axi_write is
         generic (
             CONSERVATIVE           : INTEGER := 0;
             C_M_AXI_ID_WIDTH       : INTEGER := 1;
@@ -297,7 +297,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi is
             out_HLS_BVALID         : out STD_LOGIC;
             in_HLS_BREADY          : in  STD_LOGIC;
             out_HLS_BRESP          : out UNSIGNED(1 downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_write;
+    end component bnn_layer1_xnor_gmem_m_axi_write;
 
     
     --========================Local Signals===================
@@ -324,7 +324,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi is
 
 begin
     -- Instantiation
-    load_unit : bnn_layer1_xnor_gmem1_m_axi_load
+    load_unit : bnn_layer1_xnor_gmem_m_axi_load
         generic map(
             C_TARGET_ADDR          => C_TARGET_ADDR,
             NUM_READ_OUTSTANDING   => NUM_READ_OUTSTANDING,
@@ -360,7 +360,7 @@ begin
             in_HLS_RREADY          => I_CH0_RREADY,
             STD_LOGIC_VECTOR(out_HLS_RFIFONUM) => I_CH0_RFIFONUM);
 
-    store_unit : bnn_layer1_xnor_gmem1_m_axi_store
+    store_unit : bnn_layer1_xnor_gmem_m_axi_store
         generic map (
             C_TARGET_ADDR          => C_TARGET_ADDR,
             NUM_WRITE_OUTSTANDING  => NUM_WRITE_OUTSTANDING,
@@ -398,7 +398,7 @@ begin
             out_HLS_BVALID         => I_CH0_BVALID,
             in_HLS_BREADY          => I_CH0_BREADY);
 
-    bus_read : bnn_layer1_xnor_gmem1_m_axi_read
+    bus_read : bnn_layer1_xnor_gmem_m_axi_read
         generic map (
             C_M_AXI_ID_WIDTH       => C_M_AXI_ID_WIDTH,
             C_M_AXI_ARUSER_WIDTH   => C_M_AXI_ARUSER_WIDTH,
@@ -448,7 +448,7 @@ begin
             out_HLS_RLAST                      => RLAST_Dummy,
             out_HLS_RDATA                      => RDATA_Dummy);
     
-    bus_write : bnn_layer1_xnor_gmem1_m_axi_write
+    bus_write : bnn_layer1_xnor_gmem_m_axi_write
         generic map (
             CONSERVATIVE           => CONSERVATIVE,
             C_M_AXI_ID_WIDTH       => C_M_AXI_ID_WIDTH,
@@ -518,7 +518,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_load is
+entity bnn_layer1_xnor_gmem_m_axi_load is
     generic (
         C_TARGET_ADDR         : INTEGER := 16#00000000#;
         NUM_READ_OUTSTANDING  : INTEGER := 2;
@@ -553,9 +553,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_load is
         out_HLS_RVALID        : out STD_LOGIC;
         in_HLS_RREADY         : in  STD_LOGIC;
         out_HLS_RFIFONUM      : out UNSIGNED(USER_RFIFONUM_WIDTH-1 downto 0));
-end entity bnn_layer1_xnor_gmem1_m_axi_load;
+end entity bnn_layer1_xnor_gmem_m_axi_load;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_load is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_load is
     ------------------------Task and function--------------
     function calc_data_width (x : INTEGER) return INTEGER is
         variable y : INTEGER;
@@ -619,7 +619,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_load is
 
     -- enable regslice on R channel  no 
 
-    component bnn_layer1_xnor_gmem1_m_axi_fifo is
+    component bnn_layer1_xnor_gmem_m_axi_fifo is
         generic (
             MEM_STYLE         : STRING  := "shiftreg";
             DATA_WIDTH        : INTEGER := 8;
@@ -636,9 +636,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_load is
             if_read           : in  STD_LOGIC;
             if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
             if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_fifo;
+    end component bnn_layer1_xnor_gmem_m_axi_fifo;
 
-    component bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+    component bnn_layer1_xnor_gmem_m_axi_reg_slice is
         generic (
             DATA_WIDTH  : INTEGER := 8);
         port (
@@ -650,14 +650,14 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_load is
             m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
             m_valid     : out STD_LOGIC;
             m_ready     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+    end component bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
 begin
 
     -- Instantiation
     
     
-    fifo_rreq : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_rreq : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         DATA_WIDTH        => USER_AW + 32,
         ADDR_WIDTH        => log2(USER_MAXREQS),
@@ -724,7 +724,7 @@ begin
     
 
     
-    buff_rdata : bnn_layer1_xnor_gmem1_m_axi_fifo
+    buff_rdata : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         MEM_STYLE         => BUFFER_IMPL,
         DATA_WIDTH        => BUS_DATA_WIDTH + 2,
@@ -824,7 +824,7 @@ begin
 
     begin
 
-        rreq_offset : bnn_layer1_xnor_gmem1_m_axi_fifo
+        rreq_offset : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 2*SPLIT_ALIGN,
             ADDR_WIDTH        => log2(NUM_READ_OUTSTANDING),
@@ -841,7 +841,7 @@ begin
             if_dout           => offset_pack,
             if_num_data_valid => open);
 
-        rs_tmp_rdata : bnn_layer1_xnor_gmem1_m_axi_reg_slice
+        rs_tmp_rdata : bnn_layer1_xnor_gmem_m_axi_reg_slice
         generic map (
             DATA_WIDTH        => BUS_DATA_WIDTH + 1)
         port map (
@@ -1108,7 +1108,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_store is
+entity bnn_layer1_xnor_gmem_m_axi_store is
     generic (
         C_TARGET_ADDR          : INTEGER := 16#00000000#;
         NUM_WRITE_OUTSTANDING  : INTEGER := 2;
@@ -1145,9 +1145,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_store is
         out_HLS_WREADY         : out STD_LOGIC;
         out_HLS_BVALID         : out STD_LOGIC;
         in_HLS_BREADY          : in  STD_LOGIC);
-end entity bnn_layer1_xnor_gmem1_m_axi_store;
+end entity bnn_layer1_xnor_gmem_m_axi_store;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_store is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_store is
     ------------------------Task and function--------------
     function max (x : INTEGER; 
                   y : INTEGER) return INTEGER is
@@ -1230,7 +1230,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_store is
 
     -- regslice io ?  no 
 
-    component bnn_layer1_xnor_gmem1_m_axi_fifo is
+    component bnn_layer1_xnor_gmem_m_axi_fifo is
         generic (
             MEM_STYLE         : STRING  := "shiftreg";
             DATA_WIDTH        : INTEGER := 8;
@@ -1247,7 +1247,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_store is
             if_read           : in  STD_LOGIC;
             if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
             if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_fifo;
+    end component bnn_layer1_xnor_gmem_m_axi_fifo;
 
     
 
@@ -1255,7 +1255,7 @@ begin
     -- Instantiation
     
 
-    fifo_wreq : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_wreq : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         DATA_WIDTH        => USER_AW + 32,
         ADDR_WIDTH        => log2(USER_MAXREQS),
@@ -1322,7 +1322,7 @@ begin
     
 
     
-    buff_wdata : bnn_layer1_xnor_gmem1_m_axi_fifo
+    buff_wdata : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         MEM_STYLE         => BUFFER_IMPL,
         DATA_WIDTH        => USER_DW + USER_DW/8,
@@ -1419,7 +1419,7 @@ begin
         signal  last_pad        : BOOLEAN;
 
     begin
-        wreq_offset : bnn_layer1_xnor_gmem1_m_axi_fifo
+        wreq_offset : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 2*PAD_ALIGN + BEAT_LEN_WIDTH,
             ADDR_WIDTH        => log2(NUM_WRITE_OUTSTANDING),
@@ -1664,7 +1664,7 @@ begin
         signal  ready_for_data  : BOOLEAN;
     begin
         -- instantiation
-        wreq_offset : bnn_layer1_xnor_gmem1_m_axi_fifo
+        wreq_offset : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => BEAT_LEN_WIDTH,
             ADDR_WIDTH        => log2(NUM_WRITE_OUTSTANDING),
@@ -1777,7 +1777,7 @@ begin
 
     -- ===================================================================
     -- generate response for all request (including request with invalid length)
-    fifo_wrsp : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_wrsp : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         DATA_WIDTH        => 1,
         ADDR_WIDTH        => log2(NUM_WRITE_OUTSTANDING),
@@ -1794,7 +1794,7 @@ begin
         if_dout           => wrsp_type,  -- "1" for valid length request, "0" for invalid length request
         if_num_data_valid => open);
 
-    user_resp : bnn_layer1_xnor_gmem1_m_axi_fifo
+    user_resp : bnn_layer1_xnor_gmem_m_axi_fifo
     generic map (
         DATA_WIDTH        => 1,
         ADDR_WIDTH        => log2(USER_MAXREQS),
@@ -1830,7 +1830,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_read is
+entity bnn_layer1_xnor_gmem_m_axi_read is
     generic (
         C_M_AXI_ID_WIDTH        : INTEGER := 1;
         C_M_AXI_ARUSER_WIDTH    : INTEGER := 1;
@@ -1876,9 +1876,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_read is
         out_HLS_RLAST           : out UNSIGNED(1 downto 0);
         out_HLS_RDATA           : out UNSIGNED(BUS_DATA_WIDTH-1 downto 0));
 
-end entity bnn_layer1_xnor_gmem1_m_axi_read;
+end entity bnn_layer1_xnor_gmem_m_axi_read;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_read is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_read is
 
     function log2 (x : INTEGER) return INTEGER is
         variable n, m : INTEGER;
@@ -1918,7 +1918,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_read is
     -- regslice io ? 
 
     -- component
-    component bnn_layer1_xnor_gmem1_m_axi_burst_converter is
+    component bnn_layer1_xnor_gmem_m_axi_burst_converter is
         generic (
             DATA_WIDTH        : INTEGER := 32;
             ADDR_WIDTH        : INTEGER := 32;
@@ -1939,9 +1939,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_read is
             out_CTRL_LEN      : out UNSIGNED(7 downto 0);
             out_CTRL_VALID    : out STD_LOGIC;
             in_CTRL_READY     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_burst_converter;
+    end component bnn_layer1_xnor_gmem_m_axi_burst_converter;
 
-    component bnn_layer1_xnor_gmem1_m_axi_fifo is
+    component bnn_layer1_xnor_gmem_m_axi_fifo is
         generic (
             MEM_STYLE         : STRING  := "shiftreg";
             DATA_WIDTH        : INTEGER := 8;
@@ -1958,9 +1958,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_read is
             if_read           : in  STD_LOGIC;
             if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
             if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_fifo;
+    end component bnn_layer1_xnor_gmem_m_axi_fifo;
 
-    component bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+    component bnn_layer1_xnor_gmem_m_axi_reg_slice is
         generic (
             DATA_WIDTH  : INTEGER := 8);
         port (
@@ -1972,12 +1972,12 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_read is
             m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
             m_valid     : out STD_LOGIC;
             m_ready     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+    end component bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
 begin
     --------------------------- AR channel begin -----------------------------------
     -- Instantiation
-    rreq_burst_conv : bnn_layer1_xnor_gmem1_m_axi_burst_converter
+    rreq_burst_conv : bnn_layer1_xnor_gmem_m_axi_burst_converter
     generic map (
         DATA_WIDTH       => BUS_DATA_WIDTH,
         ADDR_WIDTH       => BUS_ADDR_WIDTH,
@@ -2016,7 +2016,7 @@ begin
 
     --------------------------- R channel begin ------------------------------------
     -- Instantiation
-    rs_rdata : bnn_layer1_xnor_gmem1_m_axi_reg_slice
+    rs_rdata : bnn_layer1_xnor_gmem_m_axi_reg_slice
         generic map (
             DATA_WIDTH        => BUS_DATA_WIDTH + 1)
         port map (
@@ -2029,7 +2029,7 @@ begin
             m_valid           => data_valid,
             m_ready           => data_ready);
 
-    fifo_rctl : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_rctl : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 1,
             DEPTH             => NUM_READ_OUTSTANDING,
@@ -2046,7 +2046,7 @@ begin
             if_dout           => open,
             if_num_data_valid => open);
     
-    fifo_burst : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_burst : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 1,
             DEPTH             => NUM_READ_OUTSTANDING,
@@ -2084,7 +2084,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_write is
+entity bnn_layer1_xnor_gmem_m_axi_write is
     generic (
         CONSERVATIVE              : INTEGER := 0;
         C_M_AXI_ID_WIDTH          : INTEGER := 1;
@@ -2138,9 +2138,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_write is
         out_HLS_BVALID            : out STD_LOGIC;
         in_HLS_BREADY             : in  STD_LOGIC;
         out_HLS_BRESP             : out UNSIGNED(1 downto 0));
-end entity bnn_layer1_xnor_gmem1_m_axi_write;
+end entity bnn_layer1_xnor_gmem_m_axi_write;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_write is
 
     function log2 (x : INTEGER) return INTEGER is
         variable n, m : INTEGER;
@@ -2193,7 +2193,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
     -- regslice io ?  no 
 
     -- component
-    component bnn_layer1_xnor_gmem1_m_axi_fifo is
+    component bnn_layer1_xnor_gmem_m_axi_fifo is
         generic (
             MEM_STYLE         : STRING  := "shiftreg";
             DATA_WIDTH        : INTEGER := 8;
@@ -2210,9 +2210,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
             if_read           : in  STD_LOGIC;
             if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
             if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-    end component bnn_layer1_xnor_gmem1_m_axi_fifo;
+    end component bnn_layer1_xnor_gmem_m_axi_fifo;
 
-    component bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+    component bnn_layer1_xnor_gmem_m_axi_reg_slice is
         generic (
             DATA_WIDTH  : INTEGER := 8);
         port (
@@ -2224,9 +2224,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
             m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
             m_valid     : out STD_LOGIC;
             m_ready     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+    end component bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
-    component bnn_layer1_xnor_gmem1_m_axi_burst_converter is
+    component bnn_layer1_xnor_gmem_m_axi_burst_converter is
         generic (
             DATA_WIDTH        : INTEGER := 32;
             ADDR_WIDTH        : INTEGER := 32;
@@ -2247,9 +2247,9 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
             out_CTRL_LEN      : out UNSIGNED(7 downto 0);
             out_CTRL_VALID    : out STD_LOGIC;
             in_CTRL_READY     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_burst_converter;
+    end component bnn_layer1_xnor_gmem_m_axi_burst_converter;
 
-    component bnn_layer1_xnor_gmem1_m_axi_throttle is
+    component bnn_layer1_xnor_gmem_m_axi_throttle is
         generic (
             CONSERVATIVE  : INTEGER := 0;
             USED_FIX      : BOOLEAN := true;
@@ -2281,12 +2281,12 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_write is
             out_BUS_WLAST     : out STD_LOGIC;
             out_BUS_WVALID    : out STD_LOGIC;
             in_BUS_WREADY     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_throttle;
+    end component bnn_layer1_xnor_gmem_m_axi_throttle;
 
 begin
     --------------------------- AW channel begin -----------------------------------
     -- Instantiation
-    wreq_burst_conv : bnn_layer1_xnor_gmem1_m_axi_burst_converter
+    wreq_burst_conv : bnn_layer1_xnor_gmem_m_axi_burst_converter
     generic map (
         DATA_WIDTH       => BUS_DATA_WIDTH,
         ADDR_WIDTH       => BUS_ADDR_WIDTH,
@@ -2324,7 +2324,7 @@ begin
     --------------------------- W channel begin ------------------------------------
     -- Instantiation
 
-    fifo_burst : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_burst : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 8,
             DEPTH             => NUM_WRITE_OUTSTANDING,
@@ -2414,7 +2414,7 @@ begin
 
     --------------------------- W channel end --------------------------------------
     -- Write throttling instantiation
-    wreq_throttl : bnn_layer1_xnor_gmem1_m_axi_throttle
+    wreq_throttl : bnn_layer1_xnor_gmem_m_axi_throttle
         generic map (
             CONSERVATIVE      => CONSERVATIVE,
             USED_FIX          => false,
@@ -2452,7 +2452,7 @@ begin
      
     --------------------------- B channel begin ------------------------------------
     -- Instantiation
-    rs_resp : bnn_layer1_xnor_gmem1_m_axi_reg_slice
+    rs_resp : bnn_layer1_xnor_gmem_m_axi_reg_slice
         generic map (
             DATA_WIDTH        => 1)
         port map (
@@ -2465,7 +2465,7 @@ begin
             m_valid           => resp_valid,
             m_ready           => resp_ready);
 
-    fifo_resp : bnn_layer1_xnor_gmem1_m_axi_fifo
+    fifo_resp : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => 1,
             DEPTH             => NUM_WRITE_OUTSTANDING,
@@ -2496,7 +2496,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_burst_converter is
+entity bnn_layer1_xnor_gmem_m_axi_burst_converter is
     generic (
         DATA_WIDTH        : INTEGER := 32;
         ADDR_WIDTH        : INTEGER := 32;
@@ -2521,9 +2521,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_burst_converter is
         out_CTRL_VALID    : out STD_LOGIC;
         in_CTRL_READY     : in  STD_LOGIC);
 
-end entity bnn_layer1_xnor_gmem1_m_axi_burst_converter;
+end entity bnn_layer1_xnor_gmem_m_axi_burst_converter;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_burst_converter is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_burst_converter is
 
     function log2 (x : INTEGER) return INTEGER is
         variable n, m : INTEGER;
@@ -2582,7 +2582,7 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_burst_converter is
 
     signal  burst_valid           : STD_LOGIC;
 
-    component bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+    component bnn_layer1_xnor_gmem_m_axi_reg_slice is
         generic (
             DATA_WIDTH  : INTEGER := 8);
         port (
@@ -2594,12 +2594,12 @@ architecture behave of bnn_layer1_xnor_gmem1_m_axi_burst_converter is
             m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
             m_valid     : out STD_LOGIC;
             m_ready     : in  STD_LOGIC);
-    end component bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+    end component bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
 begin
     --------------------------- AR channel begin -----------------------------------
     -- Instantiation
-    rs_req : bnn_layer1_xnor_gmem1_m_axi_reg_slice
+    rs_req : bnn_layer1_xnor_gmem_m_axi_reg_slice
         generic map (
             DATA_WIDTH =>  ADDR_WIDTH+32)
         port map (
@@ -2845,7 +2845,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_throttle is
+entity bnn_layer1_xnor_gmem_m_axi_throttle is
     generic (
         CONSERVATIVE  : INTEGER := 0;
         USED_FIX      : BOOLEAN := false;
@@ -2900,9 +2900,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_throttle is
         return n;
     end function gt_4;
 
-end entity bnn_layer1_xnor_gmem1_m_axi_throttle;
+end entity bnn_layer1_xnor_gmem_m_axi_throttle;
 
-architecture behav of bnn_layer1_xnor_gmem1_m_axi_throttle is
+architecture behav of bnn_layer1_xnor_gmem_m_axi_throttle is
 begin
 
     conservative_gen : if (CONSERVATIVE = 0) generate
@@ -2963,7 +2963,7 @@ begin
 
     aggressive_gen : if (CONSERVATIVE /= 0) generate
 
-        component bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+        component bnn_layer1_xnor_gmem_m_axi_reg_slice is
             generic (
                 DATA_WIDTH  : integer := 8);
             port (
@@ -2975,9 +2975,9 @@ begin
                 m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
                 m_valid     : out std_logic;
                 m_ready     : in  std_logic);
-        end component bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+        end component bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
-        component bnn_layer1_xnor_gmem1_m_axi_fifo is
+        component bnn_layer1_xnor_gmem_m_axi_fifo is
             generic (
                 MEM_STYLE         : STRING  := "shiftreg";
                 DATA_WIDTH        : INTEGER := 8;
@@ -2994,7 +2994,7 @@ begin
                 if_read           : in  STD_LOGIC;
                 if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
                 if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-        end component bnn_layer1_xnor_gmem1_m_axi_fifo;
+        end component bnn_layer1_xnor_gmem_m_axi_fifo;
 
         -- Instantiation for reg slice for AW channel
         signal   rs_req_ready   : STD_LOGIC;
@@ -3044,7 +3044,7 @@ begin
             end if;
         end process;
 
-        req_fifo : bnn_layer1_xnor_gmem1_m_axi_fifo
+        req_fifo : bnn_layer1_xnor_gmem_m_axi_fifo
             generic map (
                 DATA_WIDTH        => ADDR_WIDTH + 8,
                 DEPTH             => MAXREQS,
@@ -3061,7 +3061,7 @@ begin
                 if_dout           => rs_req_in,
                 if_num_data_valid => open);
 
-        rs_req : bnn_layer1_xnor_gmem1_m_axi_reg_slice
+        rs_req : bnn_layer1_xnor_gmem_m_axi_reg_slice
             generic map (
                 DATA_WIDTH      =>  ADDR_WIDTH + 8)
             port map (
@@ -3103,7 +3103,7 @@ begin
             end if;
         end process;
 
-        data_fifo : bnn_layer1_xnor_gmem1_m_axi_fifo
+        data_fifo : bnn_layer1_xnor_gmem_m_axi_fifo
         generic map (
             DATA_WIDTH        => DATA_WIDTH + DATA_WIDTH/8 + 1,
             ADDR_WIDTH        => log2(DEPTH),
@@ -3129,7 +3129,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+entity bnn_layer1_xnor_gmem_m_axi_reg_slice is
     generic (
         DATA_WIDTH  : INTEGER := 8);
     port (
@@ -3144,9 +3144,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_reg_slice is
         m_data      : out UNSIGNED(DATA_WIDTH-1 downto 0);
         m_valid     : out STD_LOGIC;
         m_ready     : in  STD_LOGIC);
-end entity bnn_layer1_xnor_gmem1_m_axi_reg_slice;
+end entity bnn_layer1_xnor_gmem_m_axi_reg_slice;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_reg_slice is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_reg_slice is
     constant ZERO                     : UNSIGNED(1 downto 0) := "10";
     constant ONE                      : UNSIGNED(1 downto 0) := "11";
     constant TWO                      : UNSIGNED(1 downto 0) := "01";
@@ -3254,7 +3254,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_fifo is
+entity bnn_layer1_xnor_gmem_m_axi_fifo is
     generic (
         MEM_STYLE         : STRING  := "shiftreg";
         DATA_WIDTH        : INTEGER := 8;
@@ -3271,9 +3271,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_fifo is
         if_read           : in  STD_LOGIC;
         if_dout           : out UNSIGNED(DATA_WIDTH-1 downto 0);
         if_num_data_valid : out UNSIGNED(ADDR_WIDTH downto 0));
-end entity bnn_layer1_xnor_gmem1_m_axi_fifo;
+end entity bnn_layer1_xnor_gmem_m_axi_fifo;
 
-architecture behave of bnn_layer1_xnor_gmem1_m_axi_fifo is
+architecture behave of bnn_layer1_xnor_gmem_m_axi_fifo is
 
     signal push       : std_logic;
     signal pop        : std_logic;
@@ -3371,7 +3371,7 @@ begin
 
     -- shiftreg based fifo or depth == 1
     fifo_srl_gen: if ((MEM_STYLE = "shiftreg") or (DEPTH = 1)) generate
-        component bnn_layer1_xnor_gmem1_m_axi_srl is
+        component bnn_layer1_xnor_gmem_m_axi_srl is
             generic (
                 DATA_WIDTH  : integer := 32;
                 ADDR_WIDTH  : integer := 6;
@@ -3388,7 +3388,7 @@ begin
         end component;
         signal raddr      : UNSIGNED(ADDR_WIDTH - 1 downto 0) := (others => '0');
     begin
-        U_ffo_srl: bnn_layer1_xnor_gmem1_m_axi_srl
+        U_ffo_srl: bnn_layer1_xnor_gmem_m_axi_srl
         generic map (
             DATA_WIDTH  => DATA_WIDTH,
             ADDR_WIDTH  => ADDR_WIDTH,
@@ -3420,7 +3420,7 @@ begin
 
     -- mem based fifo (depth must be greater than 1)
     fifo_mem_gen: if ((MEM_STYLE /= "shiftreg") and (DEPTH > 1)) generate
-        component bnn_layer1_xnor_gmem1_m_axi_mem is
+        component bnn_layer1_xnor_gmem_m_axi_mem is
             generic (
                 MEM_STYLE   : string  := "auto";
                 DATA_WIDTH  : integer := 32;
@@ -3443,7 +3443,7 @@ begin
         signal wnext      : UNSIGNED(ADDR_WIDTH - 1 downto 0);
         signal rnext      : UNSIGNED(ADDR_WIDTH - 1 downto 0);
     begin
-        U_ffo_mem: bnn_layer1_xnor_gmem1_m_axi_mem
+        U_ffo_mem: bnn_layer1_xnor_gmem_m_axi_mem
         generic map (
             MEM_STYLE   => MEM_STYLE,
             DATA_WIDTH  => DATA_WIDTH,
@@ -3494,7 +3494,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_srl is
+entity bnn_layer1_xnor_gmem_m_axi_srl is
     generic (
         DATA_WIDTH  : integer := 32;
         ADDR_WIDTH  : integer := 6;
@@ -3508,9 +3508,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_srl is
         raddr       : in  UNSIGNED(ADDR_WIDTH-1 downto 0);
         re          : in  std_logic;
         dout        : out UNSIGNED(DATA_WIDTH-1 downto 0));
-end bnn_layer1_xnor_gmem1_m_axi_srl;
+end bnn_layer1_xnor_gmem_m_axi_srl;
 
-architecture behav of bnn_layer1_xnor_gmem1_m_axi_srl is
+architecture behav of bnn_layer1_xnor_gmem_m_axi_srl is
 begin
 
     fifo_depth_1_gen: if (DEPTH = 1) generate
@@ -3561,7 +3561,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity bnn_layer1_xnor_gmem1_m_axi_mem is
+entity bnn_layer1_xnor_gmem_m_axi_mem is
     generic (
         MEM_STYLE   : string  := "auto";
         DATA_WIDTH  : integer := 32;
@@ -3577,9 +3577,9 @@ entity bnn_layer1_xnor_gmem1_m_axi_mem is
         re          : in  std_logic;
         raddr       : in  UNSIGNED(ADDR_WIDTH-1 downto 0);
         dout        : out UNSIGNED(DATA_WIDTH-1 downto 0));
-end bnn_layer1_xnor_gmem1_m_axi_mem;
+end bnn_layer1_xnor_gmem_m_axi_mem;
 
-architecture behav of bnn_layer1_xnor_gmem1_m_axi_mem is
+architecture behav of bnn_layer1_xnor_gmem_m_axi_mem is
 
     signal raddr_reg : UNSIGNED(ADDR_WIDTH - 1 downto 0) := (others => '0');
     -- depth must be larger than 1

@@ -9800,13 +9800,13 @@ __attribute__((sdx_kernel("bnn_top", 0))) void bnn_top(
 
 
  static l1_weight_row_t local_l1_weights[256];
-#pragma HLS ARRAY_PARTITION variable=local_l1_weights cyclic factor=4 dim=1
+#pragma HLS BIND_STORAGE variable=local_l1_weights type=ram_2p impl=bram
 
  static l2_weight_row_t local_l2_weights[256];
-#pragma HLS ARRAY_PARTITION variable=local_l2_weights cyclic factor=4 dim=1
+#pragma HLS BIND_STORAGE variable=local_l2_weights type=ram_2p impl=bram
 
  static l3_weight_row_t local_l3_weights[10];
-#pragma HLS BIND_STORAGE variable=local_l3_weights type=ram_1p impl=lutram
+#pragma HLS BIND_STORAGE variable=local_l3_weights type=ram_2p impl=bram
 
 
  if (load_weights)

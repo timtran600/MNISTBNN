@@ -11,7 +11,7 @@
 
 
 
-module bnn_layer1_xnor_gmem0_m_axi
+module bnn_layer1_xnor_gmem_m_axi
 #(parameter
     CONSERVATIVE            = 0,
     MAX_READ_BURST_LENGTH   = 16,
@@ -140,8 +140,8 @@ module bnn_layer1_xnor_gmem0_m_axi
     wire                            RBURST_READY_Dummy;
     
 //------------------------Instantiation------------------
-    // bnn_layer1_xnor_gmem0_m_axi_store
-    bnn_layer1_xnor_gmem0_m_axi_store #(
+    // bnn_layer1_xnor_gmem_m_axi_store
+    bnn_layer1_xnor_gmem_m_axi_store #(
         .C_TARGET_ADDR           ( C_TARGET_ADDR ),
         .NUM_WRITE_OUTSTANDING   ( NUM_WRITE_OUTSTANDING ),
         .MAX_WRITE_BURST_LENGTH  ( MAX_WRITE_BURST_LENGTH ),
@@ -176,7 +176,7 @@ module bnn_layer1_xnor_gmem0_m_axi
         .out_HLS_BVALID          ( I_CH0_BVALID ),
         .in_HLS_BREADY           ( I_CH0_BREADY ));
 
-    bnn_layer1_xnor_gmem0_m_axi_load #(
+    bnn_layer1_xnor_gmem_m_axi_load #(
         .C_TARGET_ADDR           ( C_TARGET_ADDR ),
         .NUM_READ_OUTSTANDING    ( NUM_READ_OUTSTANDING ),
         .MAX_READ_BURST_LENGTH   ( MAX_READ_BURST_LENGTH ),
@@ -209,8 +209,8 @@ module bnn_layer1_xnor_gmem0_m_axi
         .in_HLS_RREADY           ( I_CH0_RREADY ),
         .out_HLS_RFIFONUM        ( I_CH0_RFIFONUM ));
 
-    // bnn_layer1_xnor_gmem0_m_axi_write
-    bnn_layer1_xnor_gmem0_m_axi_write #(
+    // bnn_layer1_xnor_gmem_m_axi_write
+    bnn_layer1_xnor_gmem_m_axi_write #(
         .CONSERVATIVE            ( CONSERVATIVE),
         .C_M_AXI_ID_WIDTH        ( C_M_AXI_ID_WIDTH ),
         .C_M_AXI_AWUSER_WIDTH    ( C_M_AXI_AWUSER_WIDTH ),
@@ -269,8 +269,8 @@ module bnn_layer1_xnor_gmem0_m_axi
         .out_HLS_BVALID          ( BVALID_Dummy ),
         .in_HLS_BREADY           ( BREADY_Dummy ));
 
-    // bnn_layer1_xnor_gmem0_m_axi_read
-    bnn_layer1_xnor_gmem0_m_axi_read #(
+    // bnn_layer1_xnor_gmem_m_axi_read
+    bnn_layer1_xnor_gmem_m_axi_read #(
         .C_M_AXI_ID_WIDTH         ( C_M_AXI_ID_WIDTH ),
         .C_M_AXI_ARUSER_WIDTH     ( C_M_AXI_ARUSER_WIDTH ),
         .C_M_AXI_RUSER_WIDTH      ( C_M_AXI_RUSER_WIDTH ),
@@ -325,7 +325,7 @@ endmodule
 // 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
 `timescale 1ns/1ps
 
-module bnn_layer1_xnor_gmem0_m_axi_load
+module bnn_layer1_xnor_gmem_m_axi_load
 #(parameter
     C_TARGET_ADDR                         = 32'h00000000,
     NUM_READ_OUTSTANDING                  = 2,
@@ -436,7 +436,7 @@ module bnn_layer1_xnor_gmem0_m_axi_load
 
     
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH        (USER_AW + 32),
         .ADDR_WIDTH        (log2(USER_MAXREQS)),
         .DEPTH             (USER_MAXREQS)
@@ -495,7 +495,7 @@ module bnn_layer1_xnor_gmem0_m_axi_load
     
 
     
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .MEM_STYLE         (BUFFER_IMPL),
         .DATA_WIDTH        (BUS_DATA_WIDTH + 2),
         .ADDR_WIDTH        (log2(RBUFF_DEPTH)),
@@ -582,7 +582,7 @@ module bnn_layer1_xnor_gmem0_m_axi_load
         wire                        ready_for_split;
 
         // Recording the offset of start & end address to extract the expect data from beats when USER_DW < BUS_DW.
-        bnn_layer1_xnor_gmem0_m_axi_fifo #(
+        bnn_layer1_xnor_gmem_m_axi_fifo #(
             .DATA_WIDTH         (2*SPLIT_ALIGN),
             .ADDR_WIDTH         (log2(NUM_READ_OUTSTANDING)),
             .DEPTH              (NUM_READ_OUTSTANDING)
@@ -598,7 +598,7 @@ module bnn_layer1_xnor_gmem0_m_axi_load
             .if_dout            ({head_offset, tail_offset}),
             .if_num_data_valid  ());
 
-        bnn_layer1_xnor_gmem0_m_axi_reg_slice #(
+        bnn_layer1_xnor_gmem_m_axi_reg_slice #(
             .DATA_WIDTH         (BUS_DATA_WIDTH + 1)
         ) rs_tmp_rdata (
             .clk               (ACLK),
@@ -817,7 +817,7 @@ module bnn_layer1_xnor_gmem0_m_axi_load
 endmodule
 
 
-module bnn_layer1_xnor_gmem0_m_axi_store
+module bnn_layer1_xnor_gmem_m_axi_store
 #(parameter
     C_TARGET_ADDR           = 32'h00000000,
     NUM_WRITE_OUTSTANDING   = 2,
@@ -942,7 +942,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
 //------------------------Instantiation------------------
     
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH     (USER_AW + 32),
         .ADDR_WIDTH     (log2(USER_MAXREQS)),
         .DEPTH          (USER_MAXREQS)
@@ -996,7 +996,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
     
 
     
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .MEM_STYLE         (BUFFER_IMPL),
         .DATA_WIDTH        (USER_DW + USER_DW/8),
         .ADDR_WIDTH        (log2(WBUFF_DEPTH)),
@@ -1087,7 +1087,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
         reg                         data_valid;
 
         // Recording the offset of start & end address to align beats from data USER_DW < BUS_DW.
-        bnn_layer1_xnor_gmem0_m_axi_fifo #(
+        bnn_layer1_xnor_gmem_m_axi_fifo #(
             .DATA_WIDTH             (2*PAD_ALIGN + BEAT_LEN_WIDTH),
             .ADDR_WIDTH             (log2(NUM_WRITE_OUTSTANDING)),
             .DEPTH                  (NUM_WRITE_OUTSTANDING)
@@ -1290,7 +1290,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
         wire                        last_split;
 
         // Recording the offset of start & end address to align beats from data USER_DW < BUS_DW.
-        bnn_layer1_xnor_gmem0_m_axi_fifo #(
+        bnn_layer1_xnor_gmem_m_axi_fifo #(
             .DATA_WIDTH        (BEAT_LEN_WIDTH),
             .ADDR_WIDTH        (log2(NUM_WRITE_OUTSTANDING)),
             .DEPTH             (NUM_WRITE_OUTSTANDING)
@@ -1386,7 +1386,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
     // ===================================================================
 
     // generate response for all request (including request with invalid length)
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH        (1),
         .ADDR_WIDTH        (log2(NUM_WRITE_OUTSTANDING)),
         .DEPTH             (NUM_WRITE_OUTSTANDING)
@@ -1402,7 +1402,7 @@ module bnn_layer1_xnor_gmem0_m_axi_store
         .if_dout           (wrsp_type), // 1 - valid length request, 0 - invalid length request
         .if_num_data_valid ());
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH        (1),
         .ADDR_WIDTH        (log2(USER_MAXREQS)),
         .DEPTH             (USER_MAXREQS)
@@ -1433,7 +1433,7 @@ endmodule
 //
 
 
-module bnn_layer1_xnor_gmem0_m_axi_read
+module bnn_layer1_xnor_gmem_m_axi_read
 #(parameter
     C_M_AXI_ID_WIDTH          = 1,
     C_M_AXI_ARUSER_WIDTH      = 1,
@@ -1527,7 +1527,7 @@ module bnn_layer1_xnor_gmem0_m_axi_read
 
 //------------------------AR channel begin---------------
 //------------------------Instantiation------------------
-    bnn_layer1_xnor_gmem0_m_axi_burst_converter #(
+    bnn_layer1_xnor_gmem_m_axi_burst_converter #(
         .DATA_WIDTH        (BUS_DATA_WIDTH),
         .ADDR_WIDTH        (BUS_ADDR_WIDTH),
         .MAX_BURST_LEN     (MAX_READ_BURST_LENGTH)
@@ -1569,7 +1569,7 @@ module bnn_layer1_xnor_gmem0_m_axi_read
 
 //------------------------R channel begin----------------
 //------------------------Instantiation------------------
-    bnn_layer1_xnor_gmem0_m_axi_reg_slice #(
+    bnn_layer1_xnor_gmem_m_axi_reg_slice #(
         .DATA_WIDTH     (BUS_DATA_WIDTH + 1)
     ) rs_rdata (
         .clk            (ACLK),
@@ -1581,7 +1581,7 @@ module bnn_layer1_xnor_gmem0_m_axi_read
         .m_valid        (data_valid),
         .m_ready        (data_ready));
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH     (1),
         .ADDR_WIDTH     (log2(NUM_READ_OUTSTANDING)),
         .DEPTH          (NUM_READ_OUTSTANDING)
@@ -1597,7 +1597,7 @@ module bnn_layer1_xnor_gmem0_m_axi_read
         .if_dout        (),
         .if_num_data_valid());
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH     (1),
         .ADDR_WIDTH     (log2(NUM_READ_OUTSTANDING)),
         .DEPTH          (NUM_READ_OUTSTANDING)
@@ -1625,7 +1625,7 @@ module bnn_layer1_xnor_gmem0_m_axi_read
 //------------------------R channel end------------------
 endmodule
 
-module bnn_layer1_xnor_gmem0_m_axi_write
+module bnn_layer1_xnor_gmem_m_axi_write
 #(parameter
     CONSERVATIVE              = 0,
     C_M_AXI_ID_WIDTH          = 1,
@@ -1745,7 +1745,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
 
 //------------------------AW channel begin---------------
 //------------------------Instantiation------------------
-    bnn_layer1_xnor_gmem0_m_axi_burst_converter #(
+    bnn_layer1_xnor_gmem_m_axi_burst_converter #(
         .DATA_WIDTH        (BUS_DATA_WIDTH),
         .ADDR_WIDTH        (BUS_ADDR_WIDTH),
         .MAX_BURST_LEN     (MAX_WRITE_BURST_LENGTH)
@@ -1786,7 +1786,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
 //------------------------W channel begin----------------
 //------------------------Instantiation------------------
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH     (8),
         .ADDR_WIDTH     (log2(NUM_WRITE_OUTSTANDING)),
         .DEPTH          (NUM_WRITE_OUTSTANDING)
@@ -1866,7 +1866,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
 //------------------------W channel end------------------
 
     // Write throttling unit
-    bnn_layer1_xnor_gmem0_m_axi_throttle #(
+    bnn_layer1_xnor_gmem_m_axi_throttle #(
         .CONSERVATIVE    (CONSERVATIVE),
         .USED_FIX        (0),
         .ADDR_WIDTH      (BUS_ADDR_WIDTH),
@@ -1907,7 +1907,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
     
 //------------------------B channel begin----------------
 //------------------------Instantiation------------------
-    bnn_layer1_xnor_gmem0_m_axi_reg_slice #(
+    bnn_layer1_xnor_gmem_m_axi_reg_slice #(
         .DATA_WIDTH     (1)
     ) rs_resp (
         .clk            (ACLK),
@@ -1919,7 +1919,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
         .m_valid        (resp_valid),
         .m_ready        (resp_ready));
 
-    bnn_layer1_xnor_gmem0_m_axi_fifo #(
+    bnn_layer1_xnor_gmem_m_axi_fifo #(
         .DATA_WIDTH     (1),
         .ADDR_WIDTH     (log2(NUM_WRITE_OUTSTANDING)),
         .DEPTH          (NUM_WRITE_OUTSTANDING)
@@ -1945,7 +1945,7 @@ module bnn_layer1_xnor_gmem0_m_axi_write
 endmodule
 
 
-module bnn_layer1_xnor_gmem0_m_axi_burst_converter
+module bnn_layer1_xnor_gmem_m_axi_burst_converter
 #(parameter
     DATA_WIDTH                   = 32,
     ADDR_WIDTH                   = 32,
@@ -2028,7 +2028,7 @@ module bnn_layer1_xnor_gmem0_m_axi_burst_converter
     wire [7:0]                  ost_ctrl_len;
     wire                        ost_ctrl_valid;
 //------------------------Instantiation------------------
-    bnn_layer1_xnor_gmem0_m_axi_reg_slice #(
+    bnn_layer1_xnor_gmem_m_axi_reg_slice #(
         .DATA_WIDTH     (ADDR_WIDTH + 32)
     ) rs_req (
         .clk            (clk),
@@ -2251,7 +2251,7 @@ module bnn_layer1_xnor_gmem0_m_axi_burst_converter
 
 endmodule
 
-module bnn_layer1_xnor_gmem0_m_axi_throttle
+module bnn_layer1_xnor_gmem_m_axi_throttle
 #(parameter
     CONSERVATIVE   = 0,
     USED_FIX       = 0,
@@ -2358,7 +2358,7 @@ module bnn_layer1_xnor_gmem0_m_axi_throttle
         wire [ADDR_WIDTH + 7 : 0]   rs_req_in;
         wire [ADDR_WIDTH + 7 : 0]   rs_req_out;
 
-        bnn_layer1_xnor_gmem0_m_axi_reg_slice #(
+        bnn_layer1_xnor_gmem_m_axi_reg_slice #(
             .DATA_WIDTH     (ADDR_WIDTH + 8)
         ) rs_req (
             .clk            (clk),
@@ -2414,7 +2414,7 @@ module bnn_layer1_xnor_gmem0_m_axi_throttle
             end
         end
 
-        bnn_layer1_xnor_gmem0_m_axi_fifo #(
+        bnn_layer1_xnor_gmem_m_axi_fifo #(
             .DATA_WIDTH     (ADDR_WIDTH + 8),
             .ADDR_WIDTH     (log2(MAXREQS)),
             .DEPTH          (MAXREQS)
@@ -2454,7 +2454,7 @@ module bnn_layer1_xnor_gmem0_m_axi_throttle
             end
         end
             
-        bnn_layer1_xnor_gmem0_m_axi_fifo #(
+        bnn_layer1_xnor_gmem_m_axi_fifo #(
             .DATA_WIDTH     (DATA_WIDTH + DATA_WIDTH/8 + 1),
             .ADDR_WIDTH     (log2(DEPTH)),
             .DEPTH          (DEPTH)
@@ -2477,7 +2477,7 @@ endmodule
 
 
 
-module bnn_layer1_xnor_gmem0_m_axi_reg_slice
+module bnn_layer1_xnor_gmem_m_axi_reg_slice
 #(parameter
     DATA_WIDTH = 8
 ) (
@@ -2579,7 +2579,7 @@ module bnn_layer1_xnor_gmem0_m_axi_reg_slice
     end
 endmodule
 
-module bnn_layer1_xnor_gmem0_m_axi_fifo
+module bnn_layer1_xnor_gmem_m_axi_fifo
 #(parameter
     MEM_STYLE   = "shiftreg",
     DATA_WIDTH = 32,
@@ -2616,7 +2616,7 @@ module bnn_layer1_xnor_gmem0_m_axi_fifo
     if ((MEM_STYLE == "shiftreg") || (DEPTH == 1)) begin
         reg  [ADDR_WIDTH-1:0] raddr = 1'b0;
 
-        bnn_layer1_xnor_gmem0_m_axi_srl
+        bnn_layer1_xnor_gmem_m_axi_srl
         #(  .DATA_WIDTH     (DATA_WIDTH),
             .ADDR_WIDTH     (ADDR_WIDTH),
             .DEPTH          (DEPTH))
@@ -2649,7 +2649,7 @@ module bnn_layer1_xnor_gmem0_m_axi_fifo
         wire [ADDR_WIDTH-1:0] wnext;
         wire [ADDR_WIDTH-1:0] rnext;
 
-        bnn_layer1_xnor_gmem0_m_axi_mem
+        bnn_layer1_xnor_gmem_m_axi_mem
         #(  .MEM_STYLE      (MEM_STYLE),
             .DATA_WIDTH     (DATA_WIDTH),
             .ADDR_WIDTH     (ADDR_WIDTH),
@@ -2757,7 +2757,7 @@ module bnn_layer1_xnor_gmem0_m_axi_fifo
 
 endmodule
 
-module bnn_layer1_xnor_gmem0_m_axi_srl
+module bnn_layer1_xnor_gmem_m_axi_srl
 #(parameter
         DATA_WIDTH  = 32,
         ADDR_WIDTH  = 6,
@@ -2811,7 +2811,7 @@ module bnn_layer1_xnor_gmem0_m_axi_srl
 
 endmodule
 
-module bnn_layer1_xnor_gmem0_m_axi_mem
+module bnn_layer1_xnor_gmem_m_axi_mem
 #(parameter
     MEM_STYLE   = "auto",
     DATA_WIDTH  = 32,

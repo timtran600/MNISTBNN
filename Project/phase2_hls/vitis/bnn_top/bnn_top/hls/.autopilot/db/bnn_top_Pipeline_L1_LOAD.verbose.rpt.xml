@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'bnn_top_Pipeline_L1_LOAD'" level="0">
-<item name = "Date">Thu Mar  5 04:44:03 2026
+<item name = "Date">Fri Mar 13 20:30:35 2026
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">bnn_top</item>
@@ -78,9 +78,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln33_fu_153_p2">+, 0, 0, 16, 9, 1</column>
+<column name="add_ln33_fu_131_p2">+, 0, 0, 16, 9, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln33_fu_147_p2">icmp, 0, 0, 17, 9, 10</column>
+<column name="icmp_ln33_fu_125_p2">icmp, 0, 0, 17, 9, 10</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -90,7 +90,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_n_3">9, 2, 9, 18</column>
 <column name="gmem0_blk_n_R">9, 2, 1, 2</column>
-<column name="n_fu_68">9, 2, 9, 18</column>
+<column name="n_fu_64">9, 2, 9, 18</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -100,12 +100,12 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="lshr_ln_reg_215">6, 0, 6, 0</column>
-<column name="lshr_ln_reg_215_pp0_iter1_reg">6, 0, 6, 0</column>
-<column name="n_fu_68">9, 0, 9, 0</column>
-<column name="trunc_ln33_reg_211">2, 0, 2, 0</column>
-<column name="trunc_ln33_reg_211_pp0_iter1_reg">2, 0, 2, 0</column>
-<column name="trunc_ln36_reg_220">784, 0, 784, 0</column>
+<column name="lshr_ln_reg_191">7, 0, 7, 0</column>
+<column name="lshr_ln_reg_191_pp0_iter1_reg">7, 0, 7, 0</column>
+<column name="n_fu_64">9, 0, 9, 0</column>
+<column name="trunc_ln33_reg_187">1, 0, 1, 0</column>
+<column name="trunc_ln33_reg_187_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="trunc_ln36_reg_196">784, 0, 784, 0</column>
 </table>
 </item>
 </section>
@@ -168,22 +168,14 @@
 <column name="m_axi_gmem0_BID">in, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_BUSER">in, 1, m_axi, gmem0, pointer</column>
 <column name="sext_ln33">in, 57, ap_none, sext_ln33, scalar</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_address0">out, 6, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_ce0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_we0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_d0">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_address0">out, 6, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_ce0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_we0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_d0">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address0">out, 6, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_we0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_d0">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address0">out, 6, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_we0">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
-<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_d0">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_address1">out, 7, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_ce1">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_we1">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_d1">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_address1">out, 7, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_ce1">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_we1">out, 1, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
+<column name="bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_d1">out, 784, ap_memory, bnn_top_stream_ap_uint_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights, array</column>
 </table>
 </item>
 </section>

@@ -25,15 +25,12 @@ using namespace std;
 #define AUTOTB_TVOUT_output_r "../tv/cdatafile/c.bnn_layer1_xnor.autotvout_output_r.dat"
 #define AUTOTB_TVIN_weights "../tv/cdatafile/c.bnn_layer1_xnor.autotvin_weights.dat"
 #define AUTOTB_TVOUT_weights "../tv/cdatafile/c.bnn_layer1_xnor.autotvout_weights.dat"
-#define AUTOTB_TVIN_gmem0 "../tv/cdatafile/c.bnn_layer1_xnor.autotvin_gmem0.dat"
-#define AUTOTB_TVOUT_gmem0 "../tv/cdatafile/c.bnn_layer1_xnor.autotvout_gmem0.dat"
-#define AUTOTB_TVIN_gmem1 "../tv/cdatafile/c.bnn_layer1_xnor.autotvin_gmem1.dat"
-#define AUTOTB_TVOUT_gmem1 "../tv/cdatafile/c.bnn_layer1_xnor.autotvout_gmem1.dat"
+#define AUTOTB_TVIN_gmem "../tv/cdatafile/c.bnn_layer1_xnor.autotvin_gmem.dat"
+#define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.bnn_layer1_xnor.autotvout_gmem.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_gmem0 "../tv/rtldatafile/rtl.bnn_layer1_xnor.autotvout_gmem0.dat"
-#define AUTOTB_TVOUT_PC_gmem1 "../tv/rtldatafile/rtl.bnn_layer1_xnor.autotvout_gmem1.dat"
+#define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.bnn_layer1_xnor.autotvout_gmem.dat"
 
 
 namespace hls::sim
@@ -1209,57 +1206,35 @@ void apatb_bnn_layer1_xnor_hw(hls::sim::Byte<128>* __xlx_apatb_param_input_r, vo
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 16,
-    .asize = 2,
-    .hbm = false,
-    .name = { "gmem0" },
-#ifdef POST_CHECK
-#ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_gmem0),
-#else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_gmem0),
-#endif
-#else
-#ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_gmem0),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_gmem0),
-#endif
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem0),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem0),
-#endif
-#endif
-  };
-  port3.param = { __xlx_apatb_param_output_r };
-  port3.nbytes = { 512 };
-  port3.offset = {  };
-  port3.hasWrite = { true };
-
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port4 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
-#endif
     .width = 1024,
     .asize = 128,
     .hbm = false,
-    .name = { "gmem1" },
+    .name = { "gmem" },
 #ifdef POST_CHECK
-#else
-    .owriter = nullptr,
 #ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem1),
+    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_gmem),
 #else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem1),
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_gmem),
+#endif
+#else
+#ifdef USE_BINARY_TV_FILE
+    .owriter = new hls::sim::Output(AUTOTB_TVOUT_gmem),
+#else
+    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_gmem),
+#endif
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem),
 #endif
 #endif
   };
-  port4.param = { __xlx_apatb_param_weights };
-  port4.nbytes = { 32768 };
-  port4.offset = {  };
-  port4.hasWrite = { false };
+  __xlx_offset_byte_param_output_r = 0*128;
+  __xlx_offset_byte_param_weights = 4*128;
+  port3.param = { __xlx_apatb_param_output_r, __xlx_apatb_param_weights };
+  port3.nbytes = { 512, 32768 };
+  port3.offset = { 0, 4 };
+  port3.hasWrite = { true, true };
 
   try {
 #ifdef POST_CHECK
@@ -1272,12 +1247,10 @@ void apatb_bnn_layer1_xnor_hw(hls::sim::Byte<128>* __xlx_apatb_param_input_r, vo
     dump(port1, port1.iwriter, tcl.AESL_transaction);
     dump(port2, port2.iwriter, tcl.AESL_transaction);
     dump(port3, port3.iwriter, tcl.AESL_transaction);
-    dump(port4, port4.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
     port3.doTCL(tcl);
-    port4.doTCL(tcl);
     CodeState = CALL_C_DUT;
     bnn_layer1_xnor_hw_stub_wrapper(__xlx_apatb_param_input_r, __xlx_apatb_param_output_r, __xlx_apatb_param_weights);
     CodeState = DUMP_OUTPUTS;

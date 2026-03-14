@@ -245,33 +245,31 @@ class AESL_RUNTIME_BC {
 using hls::sim::Byte;
 struct __cosim_s128__ { char data[128]; };
 struct __cosim_s98__ { char data[98]; };
-extern "C" void bnn_layer1_xnor(Byte<2>*, Byte<128>*, __cosim_s128__*, int, int);
+extern "C" void bnn_layer1_xnor(Byte<128>*, __cosim_s128__*, int, int);
 extern "C" void apatb_bnn_layer1_xnor_hw(__cosim_s128__* __xlx_apatb_param_input_r, volatile void * __xlx_apatb_param_output_r, volatile void * __xlx_apatb_param_weights) {
 using hls::sim::createStream;
-  // Collect __xlx_output_r__tmp_vec
-std::vector<Byte<2>> __xlx_output_r__tmp_vec;
-for (size_t i = 0; i < 256; ++i){
-__xlx_output_r__tmp_vec.push_back(((Byte<2>*)__xlx_apatb_param_output_r)[i]);
+  // Collect __xlx_output_r_weights__tmp_vec
+std::vector<Byte<128>> __xlx_output_r_weights__tmp_vec;
+for (size_t i = 0; i < 4; ++i){
+__xlx_output_r_weights__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_output_r)[i]);
 }
-  int __xlx_size_param_output_r = 256;
+  int __xlx_size_param_output_r = 4;
   int __xlx_offset_param_output_r = 0;
-  int __xlx_offset_byte_param_output_r = 0*2;
-  // Collect __xlx_weights__tmp_vec
-std::vector<Byte<128>> __xlx_weights__tmp_vec;
+  int __xlx_offset_byte_param_output_r = 0*128;
 for (size_t i = 0; i < 256; ++i){
-__xlx_weights__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_weights)[i]);
+__xlx_output_r_weights__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_weights)[i]);
 }
   int __xlx_size_param_weights = 256;
-  int __xlx_offset_param_weights = 0;
-  int __xlx_offset_byte_param_weights = 0*128;
+  int __xlx_offset_param_weights = 4;
+  int __xlx_offset_byte_param_weights = 4*128;
   // DUT call
-  bnn_layer1_xnor(__xlx_output_r__tmp_vec.data(), __xlx_weights__tmp_vec.data(), __xlx_apatb_param_input_r, __xlx_offset_byte_param_output_r, __xlx_offset_byte_param_weights);
+  bnn_layer1_xnor(__xlx_output_r_weights__tmp_vec.data(), __xlx_apatb_param_input_r, __xlx_offset_byte_param_output_r, __xlx_offset_byte_param_weights);
 // print __xlx_apatb_param_output_r
 for (size_t i = 0; i < __xlx_size_param_output_r; ++i) {
-((Byte<2>*)__xlx_apatb_param_output_r)[i] = __xlx_output_r__tmp_vec[__xlx_offset_param_output_r+i];
+((Byte<128>*)__xlx_apatb_param_output_r)[i] = __xlx_output_r_weights__tmp_vec[__xlx_offset_param_output_r+i];
 }
 // print __xlx_apatb_param_weights
 for (size_t i = 0; i < __xlx_size_param_weights; ++i) {
-((Byte<128>*)__xlx_apatb_param_weights)[i] = __xlx_weights__tmp_vec[__xlx_offset_param_weights+i];
+((Byte<128>*)__xlx_apatb_param_weights)[i] = __xlx_output_r_weights__tmp_vec[__xlx_offset_param_weights+i];
 }
 }

@@ -5744,16 +5744,14 @@ __attribute__((sdx_kernel("bnn_layer1_xnor", 0))) void bnn_layer1_xnor(
 # 8 "bnn_layer1.cpp"
 
 #pragma HLS INTERFACE s_axilite port=return
-#pragma HLS INTERFACE m_axi depth=256 port=output bundle=gmem0
-#pragma HLS INTERFACE m_axi depth=256 port=weights bundle=gmem1
+#pragma HLS INTERFACE m_axi depth=256 port=output
+#pragma HLS INTERFACE m_axi depth=256 port=weights
 
  NEURON_LOOP: for (int n = 0; n < 256; n++)
     {
 
-#pragma HLS PIPELINE II=1
 
-
- ap_uint<784> xnor_result = ~(input ^ weights[n]);
+        ap_uint<784> xnor_result = ~(input ^ weights[n]);
 
 
         int count = 0;
