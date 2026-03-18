@@ -7,13 +7,7 @@
 *.pb
 *.wdb
 
-.Xil/
-*.cache/
-*.hw/
-*.ip_user_files/
-*.sim/
-*.runs/
-*.gen/
+
 
 ############################################
 # Vitis / Vitis HLS
@@ -50,6 +44,7 @@ Thumbs.db
 ############################################
 *.tmp
 *.bak
+
 # Python environments - never commit these
 bnn_env/
 venv/
@@ -65,11 +60,15 @@ __pycache__/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# HLS/Vivado build artifacts (large)
-*.bit
-*.hwh
 # Keep .bit and .hwh only if they are final deliverables
 
 # Large model checkpoints (optional, use Git LFS if needed)
 *.pt
+*.pthbnn_env/
+__pycache__/
+*.pyc
+*.pt
 *.pth
+Project/bnn_env/
+bnn_env/
+bnn_env/
