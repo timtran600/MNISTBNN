@@ -13,7 +13,7 @@ source bnn_env/bin/activate
 4. Install dependencies
 pip install -r requirements.txt
 
-5. Verify python versioin (3.10)
+5. Verify python version (3.10)
 python --version 
 pip list
 

@@ -10,7 +10,7 @@ beautifulsoup4==4.14.3
 bleach==6.3.0
 brevitas==0.12.1
 certifi==2026.1.4
-cffi==2.0.0
+cffi==1.17.1
 charset-normalizer==3.4.4
 colorama==0.4.6
 comm==0.2.3

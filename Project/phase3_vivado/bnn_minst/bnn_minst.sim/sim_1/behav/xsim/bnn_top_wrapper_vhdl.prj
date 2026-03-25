@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../bnn_minst.ip_user_files/bd/bnn_top/ip/bnn_top_axi_dma_0/sim/bnn_top_axi_dma_0.vhd" \
-"../../../../bnn_minst.ip_user_files/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/sim/bnn_top_rst_ps7_0_100M_0.vhd" \
-
-# Do not sort compile order
-nosort

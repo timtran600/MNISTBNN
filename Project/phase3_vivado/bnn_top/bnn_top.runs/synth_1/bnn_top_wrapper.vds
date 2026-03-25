@@ -1,0 +1,503 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Mar 25 17:21:31 2026
+# Process ID: 37084
+# Current directory: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1
+# Command line: vivado.exe -log bnn_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bnn_top_wrapper.tcl
+# Log file: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/bnn_top_wrapper.vds
+# Journal file: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1\vivado.jou
+# Running On        :icarus
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency     :3072 MHz
+# CPU Physical cores:24
+# CPU Logical cores :24
+# Host memory       :33673 MB
+# Swap memory       :38654 MB
+# Total Virtual     :72328 MB
+# Available Virtual :51161 MB
+#-----------------------------------------------------------
+source bnn_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitRepos/MNISTBNN/Project/phase2_hls/vitis/bnn_top_iostream'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top bnn_top_wrapper -part xczu3eg-sfvc784-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20528
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2007.090 ; gain = 394.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_wrapper' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/hdl/bnn_top_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_axi_dma_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_axi_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_axi_dma_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_axi_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'bnn_top_axi_dma_0' is unconnected for instance 'axi_dma' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'bnn_top_axi_dma_0' is unconnected for instance 'axi_dma' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'bnn_top_axi_dma_0' is unconnected for instance 'axi_dma' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'bnn_top_axi_dma_0' is unconnected for instance 'axi_dma' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'bnn_top_axi_dma_0' is unconnected for instance 'axi_dma' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+WARNING: [Synth 8-7023] instance 'axi_dma' of module 'bnn_top_axi_dma_0' has 64 connections declared, but only 59 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:234]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_axi_mem_intercon_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:750]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_J5MNFD' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2376]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_J5MNFD' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2376]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1HVW6MD' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2905]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_us_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_us_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'bnn_top_auto_us_0' is unconnected for instance 'auto_us' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3064]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'bnn_top_auto_us_0' has 40 connections declared, but only 39 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3064]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1HVW6MD' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2905]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_s00_mmu_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_s00_mmu_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_JAZAVA' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3620]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_ds_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_ds_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bnn_top_auto_ds_0' is unconnected for instance 'auto_ds' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3767]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'bnn_top_auto_ds_0' has 36 connections declared, but only 35 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3767]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_JAZAVA' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3620]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_644TVM' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3805]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_ds_1' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_ds_1' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bnn_top_auto_ds_1' is unconnected for instance 'auto_ds' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3952]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'bnn_top_auto_ds_1' has 36 connections declared, but only 35 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3952]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_644TVM' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3805]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_14F6Z9D' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3990]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_ds_2' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_ds_2' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bnn_top_auto_ds_2' is unconnected for instance 'auto_ds' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:4137]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'bnn_top_auto_ds_2' has 36 connections declared, but only 35 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:4137]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_14F6Z9D' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3990]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_xbar_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_xbar_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (4) of module 'bnn_top_xbar_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1664]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (8) of module 'bnn_top_xbar_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1668]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (4) of module 'bnn_top_xbar_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1669]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_wready' does not match port width (4) of module 'bnn_top_xbar_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1677]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'bnn_top_xbar_0' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1605]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'bnn_top_xbar_0' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1605]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'bnn_top_xbar_0' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1605]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bnn_top_xbar_0' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1605]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'bnn_top_xbar_0' has 78 connections declared, but only 74 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1605]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_axi_mem_intercon_0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:750]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_axi_mem_intercon_1_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1682]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_8HMEHZ' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3516]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_8HMEHZ' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3516]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_axi_mem_intercon_1_0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1682]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_0_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_bnn_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_0_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_bnn_top_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWADDR' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWBURST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWCACHE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWLEN' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWLOCK' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWPROT' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWQOS' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWREGION' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWSIZE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_AWVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_BREADY' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_WDATA' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_WID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_WLAST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_WSTRB' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem0_WVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWADDR' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWBURST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWCACHE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWLEN' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWLOCK' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWPROT' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWQOS' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWREGION' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWSIZE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_AWVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_BREADY' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_WDATA' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_WID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_WLAST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_WSTRB' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem1_WVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWADDR' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWBURST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWCACHE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWLEN' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWLOCK' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWPROT' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWQOS' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWREGION' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWSIZE' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_AWVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_BREADY' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_WDATA' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_WID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_WLAST' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_WSTRB' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'm_axi_gmem2_WVALID' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7071] port 'output_stream_TSTRB' of module 'bnn_top_bnn_top_0_0' is unconnected for instance 'bnn_top_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+WARNING: [Synth 8-7023] instance 'bnn_top_0' of module 'bnn_top_bnn_top_0_0' has 152 connections declared, but only 99 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:447]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_ps7_0_axi_periph_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1842]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_KMUQCB' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2648]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_KMUQCB' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2648]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1L5DJMG' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2773]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1L5DJMG' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2773]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1KZHYDJ' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3106]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_ds_3' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_ds_3' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_auto_pc_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_auto_pc_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1KZHYDJ' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:3106]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_xbar_1' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_xbar_1' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bnn_top_xbar_1' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2335]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bnn_top_xbar_1' is unconnected for instance 'xbar' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2335]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'bnn_top_xbar_1' has 40 connections declared, but only 38 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:2335]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_ps7_0_axi_periph_0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:1842]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_rst_ps7_0_100M_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_rst_ps7_0_100M_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bnn_top_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:626]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bnn_top_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:626]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bnn_top_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:626]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bnn_top_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:626]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'bnn_top_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:626]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_zynq_ultra_ps_e_0_0' [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_zynq_ultra_ps_e_0_0' (0#1) [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/.Xil/Vivado-37084-icarus/realtime/bnn_top_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_awready' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_wready' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_bid' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_bresp' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_bvalid' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7071] port 'saxigp4_rid' of module 'bnn_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'bnn_top_zynq_ultra_ps_e_0_0' has 122 connections declared, but only 114 given [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:633]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/synth/bnn_top.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_wrapper' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/hdl/bnn_top_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1KZHYDJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1KZHYDJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1L5DJMG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1L5DJMG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1L5DJMG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1L5DJMG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_KMUQCB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_KMUQCB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_KMUQCB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_KMUQCB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_8HMEHZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_8HMEHZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_8HMEHZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_8HMEHZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s03_couplers_imp_14F6Z9D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s03_couplers_imp_14F6Z9D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s03_couplers_imp_14F6Z9D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_644TVM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s02_couplers_imp_644TVM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s02_couplers_imp_644TVM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_JAZAVA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_JAZAVA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s01_couplers_imp_JAZAVA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1HVW6MD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1HVW6MD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_J5MNFD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_J5MNFD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_J5MNFD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_J5MNFD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2132.590 ; gain = 520.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.590 ; gain = 520.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.590 ; gain = 520.125
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2132.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0/bnn_top_axi_dma_0_in_context.xdc] for cell 'bnn_top_i/axi_dma'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0/bnn_top_axi_dma_0_in_context.xdc] for cell 'bnn_top_i/axi_dma'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_0/bnn_top_xbar_0/bnn_top_xbar_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_0/bnn_top_xbar_0/bnn_top_xbar_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/xbar'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0/bnn_top_auto_us_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0/bnn_top_auto_us_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_0/bnn_top_auto_ds_0/bnn_top_auto_ds_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s01_couplers/auto_ds'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_0/bnn_top_auto_ds_0/bnn_top_auto_ds_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s01_couplers/auto_ds'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_1/bnn_top_auto_ds_1/bnn_top_auto_ds_1_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s02_couplers/auto_ds'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_1/bnn_top_auto_ds_1/bnn_top_auto_ds_1_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s02_couplers/auto_ds'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_2/bnn_top_auto_ds_2/bnn_top_auto_ds_1_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s03_couplers/auto_ds'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_2/bnn_top_auto_ds_2/bnn_top_auto_ds_1_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s03_couplers/auto_ds'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s00_mmu'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0_in_context.xdc] for cell 'bnn_top_i/axi_mem_intercon/s00_mmu'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bnn_top_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bnn_top_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1/bnn_top_xbar_1_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1/bnn_top_xbar_1_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3/bnn_top_auto_ds_3_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3/bnn_top_auto_ds_3_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_pc_0/bnn_top_auto_pc_0/bnn_top_auto_pc_0_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_pc_0/bnn_top_auto_pc_0/bnn_top_auto_pc_0_in_context.xdc] for cell 'bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_in_context.xdc] for cell 'bnn_top_i/rst_ps7_0_100M'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_in_context.xdc] for cell 'bnn_top_i/rst_ps7_0_100M'
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0_in_context.xdc] for cell 'bnn_top_i/bnn_top_0'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0_in_context.xdc] for cell 'bnn_top_i/bnn_top_0'
+Parsing XDC File [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2141.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2141.184 ; gain = 528.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2141.184 ; gain = 528.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_dma. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/s02_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/s03_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/axi_mem_intercon_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bnn_top_i/bnn_top_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2141.184 ; gain = 528.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2141.184 ; gain = 528.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module bnn_top_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module bnn_top_axi_mem_intercon_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_AXI_arlock[1] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S02_AXI_arlock[1] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ACLK in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_ARESETN in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S03_AXI_arlock[1] in module bnn_top_axi_mem_intercon_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2141.184 ; gain = 528.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2606.465 ; gain = 994.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2606.465 ; gain = 994.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2619.098 ; gain = 1006.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |bnn_top_axi_dma_0           |         1|
+|2     |bnn_top_s00_mmu_0           |         1|
+|3     |bnn_top_xbar_0              |         1|
+|4     |bnn_top_auto_us_0           |         1|
+|5     |bnn_top_auto_ds_0           |         1|
+|6     |bnn_top_auto_ds_1           |         1|
+|7     |bnn_top_auto_ds_2           |         1|
+|8     |bnn_top_bnn_top_0_0         |         1|
+|9     |bnn_top_xbar_1              |         1|
+|10    |bnn_top_auto_ds_3           |         1|
+|11    |bnn_top_auto_pc_0           |         1|
+|12    |bnn_top_rst_ps7_0_100M_0    |         1|
+|13    |bnn_top_zynq_ultra_ps_e_0_0 |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |bnn_top_auto_ds           |     4|
+|5     |bnn_top_auto_pc           |     1|
+|6     |bnn_top_auto_us           |     1|
+|7     |bnn_top_axi_dma           |     1|
+|8     |bnn_top_bnn_top_0         |     1|
+|9     |bnn_top_rst_ps7_0_100M    |     1|
+|10    |bnn_top_s00_mmu           |     1|
+|11    |bnn_top_xbar              |     2|
+|13    |bnn_top_zynq_ultra_ps_e_0 |     1|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2632.867 ; gain = 1011.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2632.867 ; gain = 1020.402
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2632.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2632.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3288404d
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 175 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 2632.867 ; gain = 1948.438
+INFO: [Common 17-1381] The checkpoint 'C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.runs/synth_1/bnn_top_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bnn_top_wrapper_utilization_synth.rpt -pb bnn_top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 17:22:19 2026...

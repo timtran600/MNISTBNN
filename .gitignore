@@ -47,6 +47,7 @@ Thumbs.db
 
 # Python environments - never commit these
 bnn_env/
+bnn_env_win/
 venv/
 env/
 .venv/
