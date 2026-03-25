@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top_iostream\\bnn_top_iostream.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/23/26 17:27:39",
+ "timestampMillis": "479765868",
+ "buildStep": {
+  "cmdId": "93fcc128-911a-410c-a2a2-6b4de0e60482",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top_iostream\\logs\\bnn_top_iostream.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\hls_config.cfg --work_dir bnn_top_iostream ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\hls_config.cfg",
+   "--work_dir",
+   "bnn_top_iostream"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/23/26 17:27:39",
+ "timestampMillis": "479765869",
+ "status": {
+  "cmdId": "93fcc128-911a-410c-a2a2-6b4de0e60482",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/23/26 17:27:43",
+ "timestampMillis": "479769768",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bnn_top",
+     "file": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top_iostream\\bnn_top.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top.cpp",
+     "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/23/26 17:27:43",
+ "timestampMillis": "479769769",
+ "buildStep": {
+  "cmdId": "45e5b619-3997-48a2-b517-4cdd25ce1a43",
+  "name": "export_design",
+  "logFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream\\bnn_top_iostream\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top_iostream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/23/26 17:27:43",
+ "timestampMillis": "479769770",
+ "status": {
+  "cmdId": "45e5b619-3997-48a2-b517-4cdd25ce1a43",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/23/26 17:27:57",
+ "timestampMillis": "479784250",
+ "status": {
+  "cmdId": "45e5b619-3997-48a2-b517-4cdd25ce1a43",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/23/26 17:27:57",
+ "timestampMillis": "479784393",
+ "status": {
+  "cmdId": "93fcc128-911a-410c-a2a2-6b4de0e60482",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/23/26 17:27:57",
+ "timestampMillis": "479784394",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/23/26 17:27:57",
+ "timestampMillis": "479784394",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

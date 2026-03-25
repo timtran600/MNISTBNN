@@ -1,0 +1,549 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'bnn_top_Pipeline_L3_NEURON'" level="0">
+<item name = "Date">Mon Mar 23 17:20:09 2026
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">bnn_top_iostream</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.018 ns, 0.81 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">16, 16, 48.000 ns, 48.000 ns, 11, 11, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- L3_NEURON">14, 14, 6, 1, 1, 10, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 3145, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 45, -</column>
+<column name="Register">-, -, 453, 32, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln124_fu_639_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln140_100_fu_5080_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_101_fu_4052_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_102_fu_4058_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_103_fu_5096_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_104_fu_4064_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_105_fu_4070_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_106_fu_5112_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_107_fu_5122_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_108_fu_5132_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_109_fu_4076_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_10_fu_3776_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_110_fu_4082_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_111_fu_5144_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_112_fu_4088_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_113_fu_4094_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_114_fu_5160_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_115_fu_5170_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_116_fu_4100_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_117_fu_4106_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_118_fu_5186_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_119_fu_4112_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_11_fu_3782_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_120_fu_4118_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_121_fu_5202_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_122_fu_5212_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_123_fu_5222_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_124_fu_6008_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_125_fu_6018_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln140_126_fu_6106_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln140_127_fu_4124_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_128_fu_4130_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_129_fu_5234_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_12_fu_4572_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_130_fu_4136_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_131_fu_4142_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_132_fu_5250_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_133_fu_5260_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_134_fu_4148_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_135_fu_4154_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_136_fu_5276_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_137_fu_4160_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_138_fu_4166_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_139_fu_5292_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_13_fu_4582_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_140_fu_5302_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_141_fu_5312_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_142_fu_4172_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_143_fu_4178_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_144_fu_5324_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_145_fu_4184_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_146_fu_4190_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_147_fu_5340_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_148_fu_5350_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_149_fu_4196_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_14_fu_4592_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_150_fu_4202_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_151_fu_5366_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_152_fu_4208_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_153_fu_4214_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_154_fu_5382_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_155_fu_5392_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_156_fu_5402_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_157_fu_6030_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_158_fu_4220_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_159_fu_4226_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_15_fu_3788_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_160_fu_5414_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_161_fu_4232_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_162_fu_4238_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_163_fu_5430_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_164_fu_5440_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_165_fu_4244_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_166_fu_4250_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_167_fu_5456_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_168_fu_4256_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_169_fu_4262_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_16_fu_3794_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_170_fu_5472_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_171_fu_5482_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_172_fu_5492_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_173_fu_4268_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_174_fu_4274_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_175_fu_5504_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_176_fu_4280_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_177_fu_4286_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_178_fu_5520_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_179_fu_5530_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_17_fu_4604_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_180_fu_4292_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_181_fu_4298_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_182_fu_5546_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_183_fu_4304_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_184_fu_4310_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_185_fu_5562_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_186_fu_5572_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_187_fu_5582_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_188_fu_6046_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_189_fu_6056_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln140_18_fu_3800_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_190_fu_4316_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_191_fu_4322_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_192_fu_5594_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_193_fu_4328_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_194_fu_4334_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_195_fu_5610_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_196_fu_5620_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_197_fu_4340_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_198_fu_4346_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_199_fu_5636_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_19_fu_3806_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_1_fu_3746_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_200_fu_4352_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_201_fu_4358_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_202_fu_5652_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_203_fu_5662_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_204_fu_5672_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_205_fu_4364_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_206_fu_4370_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_207_fu_5684_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_208_fu_4376_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_209_fu_4382_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_20_fu_4620_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_210_fu_5700_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_211_fu_5710_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_212_fu_4388_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_213_fu_4394_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_214_fu_5726_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_215_fu_4400_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_216_fu_4406_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_217_fu_5742_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_218_fu_5752_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_219_fu_5762_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_21_fu_4630_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_220_fu_6068_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_221_fu_4412_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_222_fu_4418_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_223_fu_5774_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_224_fu_4424_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_225_fu_4430_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_226_fu_5790_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_227_fu_5800_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_228_fu_4436_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_229_fu_4442_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_22_fu_3812_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_230_fu_5816_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_231_fu_4448_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_232_fu_4454_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_233_fu_5832_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_234_fu_5842_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_235_fu_5852_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_236_fu_4460_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_237_fu_4466_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_238_fu_5864_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_239_fu_4472_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_23_fu_3818_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_240_fu_4478_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_241_fu_5880_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_242_fu_5890_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_243_fu_4484_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_244_fu_4490_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_245_fu_5906_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_246_fu_4496_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_247_fu_4502_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_248_fu_5922_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_249_fu_5932_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_24_fu_4646_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_250_fu_5942_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_251_fu_6084_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_252_fu_6094_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln140_253_fu_6122_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln140_254_fu_6132_p2">+, 0, 0, 16, 9, 9</column>
+<column name="add_ln140_25_fu_3824_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_26_fu_3830_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_27_fu_4662_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_28_fu_4672_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_29_fu_4682_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_2_fu_4514_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_30_fu_5954_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_31_fu_3836_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_32_fu_3842_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_33_fu_4694_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_34_fu_3848_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_35_fu_3854_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_36_fu_4710_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_37_fu_4720_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_38_fu_3860_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_39_fu_3866_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_3_fu_3752_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_40_fu_4736_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_41_fu_3872_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_42_fu_3878_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_43_fu_4752_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_44_fu_4762_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_45_fu_4772_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_46_fu_3884_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_47_fu_3890_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_48_fu_4784_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_49_fu_3896_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_4_fu_3758_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_50_fu_3902_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_51_fu_4800_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_52_fu_4810_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_53_fu_3908_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_54_fu_3914_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_55_fu_4826_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_56_fu_3920_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_57_fu_3926_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_58_fu_4842_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_59_fu_4852_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_5_fu_4530_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_60_fu_4862_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_61_fu_5970_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_62_fu_5980_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln140_63_fu_3932_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_64_fu_3938_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_65_fu_4874_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_66_fu_3944_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_67_fu_3950_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_68_fu_4890_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_69_fu_4900_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_6_fu_4540_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_70_fu_3956_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_71_fu_3962_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_72_fu_4916_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_73_fu_3968_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_74_fu_3974_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_75_fu_4932_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_76_fu_4942_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_77_fu_4952_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_78_fu_3980_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_79_fu_3986_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_7_fu_3764_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_80_fu_4964_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_81_fu_3992_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_82_fu_3998_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_83_fu_4980_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_84_fu_4990_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_85_fu_4004_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_86_fu_4010_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_87_fu_5006_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_88_fu_4016_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_89_fu_4022_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_8_fu_3770_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_90_fu_5022_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_91_fu_5032_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln140_92_fu_5042_p2">+, 0, 0, 12, 5, 5</column>
+<column name="add_ln140_93_fu_5992_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln140_94_fu_4028_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_95_fu_4034_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_96_fu_5054_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_97_fu_4040_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_98_fu_4046_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln140_99_fu_5070_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_9_fu_4556_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln140_fu_3740_p2">+, 0, 0, 9, 2, 2</column>
+<column name="out_word_data_fu_6145_p2">+, 0, 0, 17, 10, 10</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln124_fu_633_p2">icmp, 0, 0, 12, 4, 4</column>
+<column name="out_word_last_fu_650_p2">icmp, 0, 0, 12, 4, 4</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xnor_result_fu_666_p2">xor, 0, 0, 256, 256, 256</column>
+<column name="xor_ln131_fu_661_p2">xor, 0, 0, 256, 256, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_n">9, 2, 4, 8</column>
+<column name="idx_fu_584">9, 2, 4, 8</column>
+<column name="output_stream_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln140_101_reg_6442">2, 0, 2, 0</column>
+<column name="add_ln140_102_reg_6447">2, 0, 2, 0</column>
+<column name="add_ln140_104_reg_6452">2, 0, 2, 0</column>
+<column name="add_ln140_105_reg_6457">2, 0, 2, 0</column>
+<column name="add_ln140_108_reg_6852">5, 0, 5, 0</column>
+<column name="add_ln140_109_reg_6462">2, 0, 2, 0</column>
+<column name="add_ln140_10_reg_6212">2, 0, 2, 0</column>
+<column name="add_ln140_110_reg_6467">2, 0, 2, 0</column>
+<column name="add_ln140_112_reg_6472">2, 0, 2, 0</column>
+<column name="add_ln140_113_reg_6477">2, 0, 2, 0</column>
+<column name="add_ln140_116_reg_6482">2, 0, 2, 0</column>
+<column name="add_ln140_117_reg_6487">2, 0, 2, 0</column>
+<column name="add_ln140_119_reg_6492">2, 0, 2, 0</column>
+<column name="add_ln140_11_reg_6217">2, 0, 2, 0</column>
+<column name="add_ln140_120_reg_6497">2, 0, 2, 0</column>
+<column name="add_ln140_123_reg_6857">5, 0, 5, 0</column>
+<column name="add_ln140_125_reg_6907">7, 0, 7, 0</column>
+<column name="add_ln140_127_reg_6502">2, 0, 2, 0</column>
+<column name="add_ln140_128_reg_6507">2, 0, 2, 0</column>
+<column name="add_ln140_130_reg_6512">2, 0, 2, 0</column>
+<column name="add_ln140_131_reg_6517">2, 0, 2, 0</column>
+<column name="add_ln140_134_reg_6522">2, 0, 2, 0</column>
+<column name="add_ln140_135_reg_6527">2, 0, 2, 0</column>
+<column name="add_ln140_137_reg_6532">2, 0, 2, 0</column>
+<column name="add_ln140_138_reg_6537">2, 0, 2, 0</column>
+<column name="add_ln140_141_reg_6862">5, 0, 5, 0</column>
+<column name="add_ln140_142_reg_6542">2, 0, 2, 0</column>
+<column name="add_ln140_143_reg_6547">2, 0, 2, 0</column>
+<column name="add_ln140_145_reg_6552">2, 0, 2, 0</column>
+<column name="add_ln140_146_reg_6557">2, 0, 2, 0</column>
+<column name="add_ln140_149_reg_6562">2, 0, 2, 0</column>
+<column name="add_ln140_14_reg_6822">5, 0, 5, 0</column>
+<column name="add_ln140_150_reg_6567">2, 0, 2, 0</column>
+<column name="add_ln140_152_reg_6572">2, 0, 2, 0</column>
+<column name="add_ln140_153_reg_6577">2, 0, 2, 0</column>
+<column name="add_ln140_156_reg_6867">5, 0, 5, 0</column>
+<column name="add_ln140_158_reg_6582">2, 0, 2, 0</column>
+<column name="add_ln140_159_reg_6587">2, 0, 2, 0</column>
+<column name="add_ln140_15_reg_6222">2, 0, 2, 0</column>
+<column name="add_ln140_161_reg_6592">2, 0, 2, 0</column>
+<column name="add_ln140_162_reg_6597">2, 0, 2, 0</column>
+<column name="add_ln140_165_reg_6602">2, 0, 2, 0</column>
+<column name="add_ln140_166_reg_6607">2, 0, 2, 0</column>
+<column name="add_ln140_168_reg_6612">2, 0, 2, 0</column>
+<column name="add_ln140_169_reg_6617">2, 0, 2, 0</column>
+<column name="add_ln140_16_reg_6227">2, 0, 2, 0</column>
+<column name="add_ln140_172_reg_6872">5, 0, 5, 0</column>
+<column name="add_ln140_173_reg_6622">2, 0, 2, 0</column>
+<column name="add_ln140_174_reg_6627">2, 0, 2, 0</column>
+<column name="add_ln140_176_reg_6632">2, 0, 2, 0</column>
+<column name="add_ln140_177_reg_6637">2, 0, 2, 0</column>
+<column name="add_ln140_180_reg_6642">2, 0, 2, 0</column>
+<column name="add_ln140_181_reg_6647">2, 0, 2, 0</column>
+<column name="add_ln140_183_reg_6652">2, 0, 2, 0</column>
+<column name="add_ln140_184_reg_6657">2, 0, 2, 0</column>
+<column name="add_ln140_187_reg_6877">5, 0, 5, 0</column>
+<column name="add_ln140_189_reg_6912">7, 0, 7, 0</column>
+<column name="add_ln140_18_reg_6232">2, 0, 2, 0</column>
+<column name="add_ln140_190_reg_6662">2, 0, 2, 0</column>
+<column name="add_ln140_191_reg_6667">2, 0, 2, 0</column>
+<column name="add_ln140_193_reg_6672">2, 0, 2, 0</column>
+<column name="add_ln140_194_reg_6677">2, 0, 2, 0</column>
+<column name="add_ln140_197_reg_6682">2, 0, 2, 0</column>
+<column name="add_ln140_198_reg_6687">2, 0, 2, 0</column>
+<column name="add_ln140_19_reg_6237">2, 0, 2, 0</column>
+<column name="add_ln140_1_reg_6187">2, 0, 2, 0</column>
+<column name="add_ln140_200_reg_6692">2, 0, 2, 0</column>
+<column name="add_ln140_201_reg_6697">2, 0, 2, 0</column>
+<column name="add_ln140_204_reg_6882">5, 0, 5, 0</column>
+<column name="add_ln140_205_reg_6702">2, 0, 2, 0</column>
+<column name="add_ln140_206_reg_6707">2, 0, 2, 0</column>
+<column name="add_ln140_208_reg_6712">2, 0, 2, 0</column>
+<column name="add_ln140_209_reg_6717">2, 0, 2, 0</column>
+<column name="add_ln140_212_reg_6722">2, 0, 2, 0</column>
+<column name="add_ln140_213_reg_6727">2, 0, 2, 0</column>
+<column name="add_ln140_215_reg_6732">2, 0, 2, 0</column>
+<column name="add_ln140_216_reg_6737">2, 0, 2, 0</column>
+<column name="add_ln140_219_reg_6887">5, 0, 5, 0</column>
+<column name="add_ln140_221_reg_6742">2, 0, 2, 0</column>
+<column name="add_ln140_222_reg_6747">2, 0, 2, 0</column>
+<column name="add_ln140_224_reg_6752">2, 0, 2, 0</column>
+<column name="add_ln140_225_reg_6757">2, 0, 2, 0</column>
+<column name="add_ln140_228_reg_6762">2, 0, 2, 0</column>
+<column name="add_ln140_229_reg_6767">2, 0, 2, 0</column>
+<column name="add_ln140_22_reg_6242">2, 0, 2, 0</column>
+<column name="add_ln140_231_reg_6772">2, 0, 2, 0</column>
+<column name="add_ln140_232_reg_6777">2, 0, 2, 0</column>
+<column name="add_ln140_235_reg_6892">5, 0, 5, 0</column>
+<column name="add_ln140_236_reg_6782">2, 0, 2, 0</column>
+<column name="add_ln140_237_reg_6787">2, 0, 2, 0</column>
+<column name="add_ln140_239_reg_6792">2, 0, 2, 0</column>
+<column name="add_ln140_23_reg_6247">2, 0, 2, 0</column>
+<column name="add_ln140_240_reg_6797">2, 0, 2, 0</column>
+<column name="add_ln140_243_reg_6802">2, 0, 2, 0</column>
+<column name="add_ln140_244_reg_6807">2, 0, 2, 0</column>
+<column name="add_ln140_246_reg_6812">2, 0, 2, 0</column>
+<column name="add_ln140_247_reg_6817">2, 0, 2, 0</column>
+<column name="add_ln140_250_reg_6897">5, 0, 5, 0</column>
+<column name="add_ln140_252_reg_6917">7, 0, 7, 0</column>
+<column name="add_ln140_254_reg_6922">9, 0, 9, 0</column>
+<column name="add_ln140_25_reg_6252">2, 0, 2, 0</column>
+<column name="add_ln140_26_reg_6257">2, 0, 2, 0</column>
+<column name="add_ln140_29_reg_6827">5, 0, 5, 0</column>
+<column name="add_ln140_31_reg_6262">2, 0, 2, 0</column>
+<column name="add_ln140_32_reg_6267">2, 0, 2, 0</column>
+<column name="add_ln140_34_reg_6272">2, 0, 2, 0</column>
+<column name="add_ln140_35_reg_6277">2, 0, 2, 0</column>
+<column name="add_ln140_38_reg_6282">2, 0, 2, 0</column>
+<column name="add_ln140_39_reg_6287">2, 0, 2, 0</column>
+<column name="add_ln140_3_reg_6192">2, 0, 2, 0</column>
+<column name="add_ln140_41_reg_6292">2, 0, 2, 0</column>
+<column name="add_ln140_42_reg_6297">2, 0, 2, 0</column>
+<column name="add_ln140_45_reg_6832">5, 0, 5, 0</column>
+<column name="add_ln140_46_reg_6302">2, 0, 2, 0</column>
+<column name="add_ln140_47_reg_6307">2, 0, 2, 0</column>
+<column name="add_ln140_49_reg_6312">2, 0, 2, 0</column>
+<column name="add_ln140_4_reg_6197">2, 0, 2, 0</column>
+<column name="add_ln140_50_reg_6317">2, 0, 2, 0</column>
+<column name="add_ln140_53_reg_6322">2, 0, 2, 0</column>
+<column name="add_ln140_54_reg_6327">2, 0, 2, 0</column>
+<column name="add_ln140_56_reg_6332">2, 0, 2, 0</column>
+<column name="add_ln140_57_reg_6337">2, 0, 2, 0</column>
+<column name="add_ln140_60_reg_6837">5, 0, 5, 0</column>
+<column name="add_ln140_62_reg_6902">7, 0, 7, 0</column>
+<column name="add_ln140_63_reg_6342">2, 0, 2, 0</column>
+<column name="add_ln140_64_reg_6347">2, 0, 2, 0</column>
+<column name="add_ln140_66_reg_6352">2, 0, 2, 0</column>
+<column name="add_ln140_67_reg_6357">2, 0, 2, 0</column>
+<column name="add_ln140_70_reg_6362">2, 0, 2, 0</column>
+<column name="add_ln140_71_reg_6367">2, 0, 2, 0</column>
+<column name="add_ln140_73_reg_6372">2, 0, 2, 0</column>
+<column name="add_ln140_74_reg_6377">2, 0, 2, 0</column>
+<column name="add_ln140_77_reg_6842">5, 0, 5, 0</column>
+<column name="add_ln140_78_reg_6382">2, 0, 2, 0</column>
+<column name="add_ln140_79_reg_6387">2, 0, 2, 0</column>
+<column name="add_ln140_7_reg_6202">2, 0, 2, 0</column>
+<column name="add_ln140_81_reg_6392">2, 0, 2, 0</column>
+<column name="add_ln140_82_reg_6397">2, 0, 2, 0</column>
+<column name="add_ln140_85_reg_6402">2, 0, 2, 0</column>
+<column name="add_ln140_86_reg_6407">2, 0, 2, 0</column>
+<column name="add_ln140_88_reg_6412">2, 0, 2, 0</column>
+<column name="add_ln140_89_reg_6417">2, 0, 2, 0</column>
+<column name="add_ln140_8_reg_6207">2, 0, 2, 0</column>
+<column name="add_ln140_92_reg_6847">5, 0, 5, 0</column>
+<column name="add_ln140_94_reg_6422">2, 0, 2, 0</column>
+<column name="add_ln140_95_reg_6427">2, 0, 2, 0</column>
+<column name="add_ln140_97_reg_6432">2, 0, 2, 0</column>
+<column name="add_ln140_98_reg_6437">2, 0, 2, 0</column>
+<column name="add_ln140_reg_6182">2, 0, 2, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter4_reg">1, 0, 1, 0</column>
+<column name="idx_fu_584">4, 0, 4, 0</column>
+<column name="out_word_last_reg_6177">1, 0, 1, 0</column>
+<column name="out_word_last_reg_6177">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, bnn_top_Pipeline_L3_NEURON, return value</column>
+<column name="output_stream_TREADY">in, 1, axis, output_stream_V_data_V, pointer</column>
+<column name="output_stream_TDATA">out, 16, axis, output_stream_V_data_V, pointer</column>
+<column name="l3_input">in, 256, ap_none, l3_input, scalar</column>
+<column name="output_stream_TVALID">out, 1, axis, output_stream_V_last_V, pointer</column>
+<column name="output_stream_TLAST">out, 1, axis, output_stream_V_last_V, pointer</column>
+<column name="output_stream_TKEEP">out, 2, axis, output_stream_V_keep_V, pointer</column>
+<column name="output_stream_TSTRB">out, 2, axis, output_stream_V_strb_V, pointer</column>
+<column name="local_l3_weights_address0">out, 4, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_ce0">out, 1, ap_memory, local_l3_weights, array</column>
+<column name="local_l3_weights_q0">in, 256, ap_memory, local_l3_weights, array</column>
+</table>
+</item>
+</section>
+</profile>

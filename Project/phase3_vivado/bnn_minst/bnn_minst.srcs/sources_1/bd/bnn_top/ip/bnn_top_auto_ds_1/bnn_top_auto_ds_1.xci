@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "bnn_top_auto_ds_1",
-    "cell_name": "axi_mem_intercon/s02_couplers/auto_ds",
+    "cell_name": "axi_mem_intercon/s03_couplers/auto_ds",
     "component_reference": "xilinx.com:ip:axi_dwidth_converter:2.1",
     "ip_revision": "31",
     "gen_directory": "../../../../../../bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_1",

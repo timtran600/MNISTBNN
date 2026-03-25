@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\bnn_top.hlsrun_csim_summary",
+ "thisFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\bnn_top.hlsrun_csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "03/05/26 04:47:38",
- "timestampMillis": "3177532658",
+ "dateTimestamp": "03/23/26 16:21:19",
+ "timestampMillis": "475786130",
  "buildStep": {
-  "cmdId": "3c3ca2a9-93eb-4c59-94b3-67ea06a0e091",
+  "cmdId": "265a7fb7-ffa9-466b-a55f-3ec79183eb69",
   "name": "vitis-run",
-  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\logs\\bnn_top.steps.log",
-  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\hls_config.cfg --work_dir bnn_top ",
+  "logFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\logs\\bnn_top.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\hls_config.cfg --work_dir bnn_top ",
   "args": [
    "--mode",
    "hls",
    "--csim",
    "--config",
-   "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\hls_config.cfg",
+   "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\hls_config.cfg",
    "--work_dir",
    "bnn_top"
   ],
   "iniFiles": [],
-  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top"
+  "cwd": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/05/26 04:47:38",
- "timestampMillis": "3177532658",
+ "dateTimestamp": "03/23/26 16:21:19",
+ "timestampMillis": "475786131",
  "status": {
-  "cmdId": "3c3ca2a9-93eb-4c59-94b3-67ea06a0e091",
+  "cmdId": "265a7fb7-ffa9-466b-a55f-3ec79183eb69",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "03/05/26 04:47:41",
- "timestampMillis": "3177535644",
+ "dateTimestamp": "03/23/26 16:21:22",
+ "timestampMillis": "475789292",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -65,7 +65,7 @@
     },
     "sources": [
      "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.h",
-     "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
+     "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,26 +81,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "03/05/26 04:47:41",
- "timestampMillis": "3177535645",
+ "dateTimestamp": "03/23/26 16:21:22",
+ "timestampMillis": "475789293",
  "buildStep": {
-  "cmdId": "5e66dde0-fc47-4c86-8a20-0fb471807408",
+  "cmdId": "5acad85d-0a09-4d23-a974-7698266b6798",
   "name": "csim_design",
-  "logFile": "C:/GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\hls\\hls.log",
+  "logFile": "C:/GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top\\bnn_top\\hls\\hls.log",
   "commandLine": "csim_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "C:\\GitRepos\\EECE4632\\Project\\phase2_hls\\vitis\\bnn_top"
+  "cwd": "C:\\GitRepos\\MNISTBNN\\Project\\phase2_hls\\vitis\\bnn_top"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/05/26 04:47:41",
- "timestampMillis": "3177535645",
+ "dateTimestamp": "03/23/26 16:21:22",
+ "timestampMillis": "475789293",
  "status": {
-  "cmdId": "5e66dde0-fc47-4c86-8a20-0fb471807408",
+  "cmdId": "5acad85d-0a09-4d23-a974-7698266b6798",
   "state": "CS_RUNNING"
  }
 }
@@ -108,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/05/26 04:47:44",
- "timestampMillis": "3177538775",
+ "dateTimestamp": "03/23/26 16:21:26",
+ "timestampMillis": "475792858",
  "status": {
-  "cmdId": "5e66dde0-fc47-4c86-8a20-0fb471807408",
+  "cmdId": "5acad85d-0a09-4d23-a974-7698266b6798",
   "state": "CS_PASSED"
  }
 }
@@ -119,10 +119,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/05/26 04:47:44",
- "timestampMillis": "3177538897",
+ "dateTimestamp": "03/23/26 16:21:26",
+ "timestampMillis": "475792989",
  "status": {
-  "cmdId": "3c3ca2a9-93eb-4c59-94b3-67ea06a0e091",
+  "cmdId": "265a7fb7-ffa9-466b-a55f-3ec79183eb69",
   "state": "CS_PASSED"
  }
 }
@@ -130,8 +130,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/05/26 04:47:44",
- "timestampMillis": "3177538897",
+ "dateTimestamp": "03/23/26 16:21:26",
+ "timestampMillis": "475792990",
  "report": {
   "path": "",
   "name": "",
@@ -144,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/05/26 04:47:44",
- "timestampMillis": "3177538898",
+ "dateTimestamp": "03/23/26 16:21:26",
+ "timestampMillis": "475792990",
  "report": {
   "path": "",
   "name": "",

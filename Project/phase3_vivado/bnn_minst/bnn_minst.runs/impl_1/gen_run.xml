@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu3eg-sfvc784-2-e" LaunchTime="1772737238">
+<GenRun Id="impl_1" LaunchPart="xczu3eg-sfvc784-2-e" LaunchTime="1774393328">
   <File Type="ROUTE-PWR" Name="bnn_top_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="bnn_top_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="bnn_top_wrapper_power_summary_routed.pb"/>
@@ -114,14 +114,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/bnn_top_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -133,17 +139,10 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="bnn_top_axi_dma_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_bnn_top_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_s00_mmu_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bnn_top_s01_mmu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bnn_top_bnn_top_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bnn_top_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bnn_top_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_ds_1"/>
   <BlockFileSet Type="BlockSrcs" Name="bnn_top_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_us_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_ds_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_ds_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bnn_top_auto_ds_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bnn_top_xbar_0"/>
 </GenRun>

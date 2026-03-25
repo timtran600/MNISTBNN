@@ -1,0 +1,1139 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Mar 24 19:02:10 2026
+# Process ID: 11948
+# Current directory: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1
+# Command line: vivado.exe -log bnn_top_bnn_top_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bnn_top_bnn_top_0_1.tcl
+# Log file: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/bnn_top_bnn_top_0_1.vds
+# Journal file: C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1\vivado.jou
+# Running On        :icarus
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency     :3072 MHz
+# CPU Physical cores:24
+# CPU Logical cores :24
+# Host memory       :33673 MB
+# Swap memory       :38654 MB
+# Total Virtual     :72328 MB
+# Available Virtual :45272 MB
+#-----------------------------------------------------------
+source bnn_top_bnn_top_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitRepos/MNISTBNN/Project/phase2_hls/vitis/bnn_top_iostream'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bnn_top_bnn_top_0_1
+Command: synth_design -top bnn_top_bnn_top_0_1 -part xczu3eg-sfvc784-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1975.859 ; gain = 394.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_0_1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_1/synth/bnn_top_bnn_top_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb.dat' is read successfully [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi.v:7]
+INFO: [Synth 8-3876] $readmem data file './bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi.dat' is read successfully [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W.dat' is read successfully [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_l1_output_RAM_AUTO_1R1W' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_l1_output_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_l1_output_RAM_AUTO_1R1W' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_l1_output_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_l2_output_RAM_AUTO_1R1W' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_l2_output_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_l2_output_RAM_AUTO_1R1W' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_l2_output_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_RECV_INPUT' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_RECV_INPUT.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_flow_control_loop_pipe_sequential_init' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_flow_control_loop_pipe_sequential_init' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_RECV_INPUT' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_RECV_INPUT.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L1_NEURON' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L1_NEURON.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L1_NEURON' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L1_NEURON.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L2_NEURON' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L2_NEURON.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L2_NEURON' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L2_NEURON.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L3_NEURON' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L3_NEURON.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L3_NEURON' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L3_NEURON.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L1_LOAD' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L1_LOAD.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L1_LOAD' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L1_LOAD.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L2_LOAD' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L2_LOAD.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L2_LOAD' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L2_LOAD.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_bnn_top_Pipeline_L3_LOAD' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L3_LOAD.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_bnn_top_Pipeline_L3_LOAD' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_bnn_top_Pipeline_L3_LOAD.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_control_s_axi' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_control_s_axi.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_control_s_axi' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:14]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_store' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_mem' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_mem' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_store' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_load' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_mem__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_mem__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_load' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_write' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_burst_converter' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_reg_slice' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_reg_slice' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_burst_converter' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_throttle' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized5' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized6' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized6' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_throttle' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1939]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1942]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_write' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_read' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1436]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_reg_slice__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2480]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized7' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized5' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_srl__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_fifo__parameterized7' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:2582]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1620]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi_read' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:1436]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem0_m_axi' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem0_m_axi.v:14]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:14]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_store' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_mem' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_mem' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_store' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_load' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_mem__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_mem__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_load' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_write' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_burst_converter' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_reg_slice' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_reg_slice' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_burst_converter' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_throttle' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized5' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized6' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized6' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_throttle' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1939]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1942]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_write' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_read' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1436]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_reg_slice__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2480]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized7' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized5' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_srl__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_fifo__parameterized7' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:2582]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1620]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi_read' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:1436]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem1_m_axi' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem1_m_axi.v:14]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:14]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_store' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_mem' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_mem' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_store' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:820]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_load' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_mem__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_mem__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2814]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_load' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:328]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_write' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_burst_converter' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_reg_slice' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_reg_slice' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_burst_converter' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1948]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized2' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_throttle' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_reg_slice__parameterized0' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_reg_slice__parameterized0' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized5' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized3' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized3' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized6' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized4' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized4' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized6' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_throttle' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2254]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_reg_slice__parameterized1' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_reg_slice__parameterized1' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1939]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1942]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_write' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1628]
+INFO: [Synth 8-6157] synthesizing module 'bnn_top_gmem2_m_axi_read' [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1436]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_reg_slice__parameterized2' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2480]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_srl__parameterized5' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_fifo__parameterized7' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:2582]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1620]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top_gmem2_m_axi_read' (0#1) [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_gmem2_m_axi.v:1436]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ipshared/41f4/hdl/verilog/bnn_top_control_s_axi.v:317]
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module bnn_top_gmem2_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module bnn_top_gmem2_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module bnn_top_gmem2_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module bnn_top_gmem2_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem2_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem2_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem2_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem2_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem2_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem2_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem2_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem2_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem2_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module bnn_top_gmem2_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module bnn_top_gmem2_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module bnn_top_gmem2_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module bnn_top_gmem2_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module bnn_top_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module bnn_top_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module bnn_top_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module bnn_top_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem1_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem1_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem1_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem1_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem1_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem1_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem1_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem1_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem1_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module bnn_top_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module bnn_top_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module bnn_top_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module bnn_top_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module bnn_top_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module bnn_top_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module bnn_top_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module bnn_top_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem0_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem0_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem0_m_axi_srl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem0_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem0_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem0_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[-1] in module bnn_top_gmem0_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module bnn_top_gmem0_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re in module bnn_top_gmem0_m_axi_srl__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module bnn_top_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module bnn_top_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module bnn_top_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module bnn_top_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[1] in module bnn_top_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module bnn_top_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_AWREADY in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_WREADY in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_ARREADY in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RLAST in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RID[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[8] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[7] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[6] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[5] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[4] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[3] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[2] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[1] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RFIFONUM[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RUSER[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RRESP[1] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_RRESP[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_BVALID in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_BRESP[1] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_BRESP[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_BID[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem2_BUSER[0] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[58] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[57] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[56] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[55] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[54] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[53] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[52] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[51] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[50] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[49] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[48] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[47] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[46] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[45] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[44] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[43] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[42] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[41] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[40] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[39] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[38] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[37] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[36] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[35] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln43[34] in module bnn_top_bnn_top_Pipeline_L3_LOAD is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2344.039 ; gain = 763.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2344.039 ; gain = 763.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2344.039 ; gain = 763.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.513 . Memory (MB): peak = 2344.039 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_1/constraints/bnn_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_1/constraints/bnn_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2544.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.725 . Memory (MB): peak = 2633.016 ; gain = 88.430
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2633.016 ; gain = 1051.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2633.016 ; gain = 1051.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2633.016 ; gain = 1051.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'bnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'bnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem2_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_regslice_both__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bnn_top_regslice_both__parameterized3'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "bnn_top_l1_output_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "bnn_top_l2_output_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'bnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'bnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem0_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem2_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_gmem2_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bnn_top_regslice_both__parameterized3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2633.016 ; gain = 1051.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   52 Bit       Adders := 6     
+	   2 Input   32 Bit       Adders := 12    
+	   2 Input   12 Bit       Adders := 12    
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 11    
+	   2 Input    9 Bit       Adders := 10    
+	   4 Input    9 Bit       Adders := 13    
+	   2 Input    8 Bit       Adders := 9     
+	   4 Input    7 Bit       Adders := 52    
+	   2 Input    5 Bit       Adders := 34    
+	   8 Input    5 Bit       Adders := 144   
+	   7 Input    5 Bit       Adders := 64    
+	   2 Input    4 Bit       Adders := 35    
+	   3 Input    3 Bit       Adders := 64    
+	   2 Input    3 Bit       Adders := 22    
+	   3 Input    2 Bit       Adders := 960   
+	   2 Input    2 Bit       Adders := 792   
+	   2 Input    1 Bit       Adders := 26    
++---XORs : 
+	   2 Input    784 Bit         XORs := 6     
+	   3 Input    256 Bit         XORs := 1     
+	   2 Input    256 Bit         XORs := 5     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	             1153 Bit    Registers := 1     
+	             1152 Bit    Registers := 1     
+	             1026 Bit    Registers := 1     
+	             1025 Bit    Registers := 2     
+	             1024 Bit    Registers := 1     
+	              784 Bit    Registers := 7     
+	              289 Bit    Registers := 2     
+	              288 Bit    Registers := 2     
+	              258 Bit    Registers := 2     
+	              257 Bit    Registers := 4     
+	              256 Bit    Registers := 11    
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 18    
+	               72 Bit    Registers := 9     
+	               64 Bit    Registers := 18    
+	               59 Bit    Registers := 2     
+	               57 Bit    Registers := 1     
+	               52 Bit    Registers := 6     
+	               32 Bit    Registers := 20    
+	               20 Bit    Registers := 6     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 4     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 20    
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 79    
+	                6 Bit    Registers := 17    
+	                5 Bit    Registers := 235   
+	                4 Bit    Registers := 33    
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 1772  
+	                1 Bit    Registers := 836   
++---RAMs : 
+	             255K Bit	(255 X 1026 bit)          RAMs := 1     
+	              64K Bit	(255 X 258 bit)          RAMs := 2     
+	              49K Bit	(64 X 784 bit)          RAMs := 4     
+	              16K Bit	(15 X 1152 bit)          RAMs := 1     
+	              16K Bit	(64 X 256 bit)          RAMs := 4     
+	               4K Bit	(15 X 288 bit)          RAMs := 2     
+	               1K Bit	(128 X 11 bit)          RAMs := 2     
+	               1K Bit	(128 X 10 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input 1025 Bit        Muxes := 1     
+	   2 Input 1024 Bit        Muxes := 2     
+	   2 Input  784 Bit        Muxes := 1     
+	   2 Input  257 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 4     
+	   2 Input  147 Bit        Muxes := 3     
+	   2 Input  138 Bit        Muxes := 1     
+	   2 Input  137 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   96 Bit        Muxes := 6     
+	   2 Input   72 Bit        Muxes := 3     
+	   2 Input   71 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 21    
+	   2 Input   52 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   20 Bit        Muxes := 6     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 4     
+	   4 Input   12 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    6 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 39    
+	   2 Input    4 Bit        Muxes := 42    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 16    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 257   
+	   3 Input    2 Bit        Muxes := 69    
+	   4 Input    2 Bit        Muxes := 23    
+	   2 Input    1 Bit        Muxes := 377   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3971] The signal "inst/l1_output_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/l1_output_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5784] Optimized 1152 bits of RAM "buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 1152 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-5784] Optimized 288 bits of RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 288 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-5784] Optimized 288 bits of RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 288 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-3971] The signal "inst/l2_output_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/l2_output_U/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (wreq_burst_conv/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (wreq_burst_conv/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem0_m_axi_write.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_regslice_both__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_regslice_both__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_regslice_both__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_burst_conv/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem2_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_burst_conv/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem2_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem2_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem2_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_burst_conv/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_burst_conv/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module bnn_top_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module bnn_top_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module bnn_top_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module bnn_top_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2633.016 ; gain = 1051.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                          | RTL Object                                                                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|inst                                 | l1_output_U/ram_reg                                                                | 128 x 11(READ_FIRST)   | W | R | 128 x 11(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | l1_output_1_U/ram_reg                                                              | 128 x 11(READ_FIRST)   | W | R | 128 x 11(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg   | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst/i_3_2/gmem0_m_axi_U/load_unit_0 | buff_rdata/U_fifo_mem/mem_reg                                                      | 255 x 1026(READ_FIRST) | W |   | 255 x 1026(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst/i_3_3/gmem2_m_axi_U             | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                                          | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|inst/i_3_3/gmem1_m_axi_U             | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                                          | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|inst                                 | l2_output_1_U/ram_reg                                                              | 128 x 10(READ_FIRST)   | W | R | 128 x 10(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | l2_output_U/ram_reg                                                                | 128 x 10(READ_FIRST)   | W | R | 128 x 10(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg   | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference      | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+----------------+----------------------+-----------------+
+|inst        | local_l3_weights_U/ram_reg | User Attribute | 16 x 256             | RAM16X1S x 256  | 
++------------+----------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 2753.508 ; gain = 1172.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 2958.215 ; gain = 1377.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                          | RTL Object                                                                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|inst                                 | l1_output_U/ram_reg                                                                | 128 x 11(READ_FIRST)   | W | R | 128 x 11(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | l1_output_1_U/ram_reg                                                              | 128 x 11(READ_FIRST)   | W | R | 128 x 11(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg   | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst/i_3_2/gmem0_m_axi_U/load_unit_0 | buff_rdata/U_fifo_mem/mem_reg                                                      | 255 x 1026(READ_FIRST) | W |   | 255 x 1026(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg | 64 x 784(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 11     |                 | 
+|inst/i_3_3/gmem2_m_axi_U             | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                                          | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|inst/i_3_3/gmem1_m_axi_U             | load_unit_0/buff_rdata/U_fifo_mem/mem_reg                                          | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|inst                                 | l2_output_1_U/ram_reg                                                              | 128 x 10(READ_FIRST)   | W | R | 128 x 10(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | l2_output_U/ram_reg                                                                | 128 x 10(READ_FIRST)   | W | R | 128 x 10(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg   | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
+|inst                                 | bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg | 64 x 256(READ_FIRST)   | W | R |                         |   |   | Port A           | 0      | 4      |                 | 
++-------------------------------------+------------------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference      | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+----------------+----------------------+-----------------+
+|inst        | local_l3_weights_U/ram_reg | User Attribute | 16 x 256             | RAM16X1S x 256  | 
++------------+----------------------------+----------------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/l1_output_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1_output_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1_output_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l1_output_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem2_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2_output_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2_output_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2_output_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/l2_output_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:51 . Memory (MB): peak = 3148.129 ; gain = 1567.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|bnn_top     | grp_bnn_top_Pipeline_L1_NEURON_fu_4624/ap_loop_exit_ready_pp0_iter5_reg_reg        | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L1_NEURON_fu_4624/lshr_ln2_reg_65476_pp0_iter5_reg_reg[1]     | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L1_NEURON_fu_4624/lshr_ln2_reg_65476_pp0_iter5_reg_reg[2]     | 5      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L3_NEURON_fu_4654/out_word_last_reg_6177_pp0_iter4_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L3_NEURON_fu_4654/ap_loop_exit_ready_pp0_iter4_reg_reg        | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L2_NEURON_fu_4639/ap_loop_exit_ready_pp0_iter4_reg_reg        | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L2_NEURON_fu_4639/lshr_ln3_reg_22716_pp0_iter4_reg_reg[1]     | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L2_NEURON_fu_4639/lshr_ln3_reg_22716_pp0_iter4_reg_reg[2]     | 4      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L1_NEURON_fu_4624/ap_enable_reg_pp0_iter6_reg                 | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|bnn_top     | grp_bnn_top_Pipeline_L2_NEURON_fu_4639/ap_enable_reg_pp0_iter5_reg                 | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[5]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[5]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 1153   | 1153       | 1153   | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[5]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[5]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[14] | 289    | 289        | 289    | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[5]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[5]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14] | 289    | 289        | 289    | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   156|
+|2     |LUT1     |    52|
+|3     |LUT2     |   367|
+|4     |LUT3     |  2981|
+|5     |LUT4     |  3553|
+|6     |LUT5     |  2563|
+|7     |LUT6     |  4611|
+|8     |RAM16X1S |   256|
+|9     |RAMB18E2 |     5|
+|11    |RAMB36E2 |    79|
+|14    |SRL16E   |   200|
+|15    |FDRE     | 13450|
+|16    |FDSE     |    79|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:01:47 . Memory (MB): peak = 3157.258 ; gain = 1287.258
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:01:57 . Memory (MB): peak = 3157.258 ; gain = 1576.234
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 3157.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_10 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_4 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_5 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_6 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_1_U/ram_reg_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_10 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_4 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_5 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_6 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_2_U/ram_reg_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_10 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_4 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_5 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_6 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_U/ram_reg_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_10 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_4 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_5 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_6 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_7 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_U/ram_reg_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_1_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_2_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_U/ram_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3157.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+
+Synth Design complete | Checksum: b569394c
+INFO: [Common 17-83] Releasing license: Synthesis
+436 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 3157.258 ; gain = 2474.996
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3157.258 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/bnn_top_bnn_top_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bnn_top_bnn_top_0_1, cache-ID = 953f80e1eef62a54
+INFO: [Coretcl 2-1174] Renamed 77 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3157.258 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/bnn_top_bnn_top_0_1_synth_1/bnn_top_bnn_top_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bnn_top_bnn_top_0_1_utilization_synth.rpt -pb bnn_top_bnn_top_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 24 19:04:36 2026...

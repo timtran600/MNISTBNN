@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/GitRepos/EECE4632/Project/phase3_vivado/bnn_minst/bnn_minst.runs/impl_1'
+HD_PWD='C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

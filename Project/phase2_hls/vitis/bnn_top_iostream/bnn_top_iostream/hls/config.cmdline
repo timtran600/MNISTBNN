@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/MNISTBNN/Project/phase2_hls/vitis/bnn_top_iostream
+original_argv=--mode hls --package --config C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\hls_config.cfg --work_dir bnn_top_iostream 
+

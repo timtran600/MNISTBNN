@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Thu Mar  5 14:01:56 2026
+-- Date        : Thu Mar  5 14:01:55 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/GitRepos/EECE4632/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top bnn_top_auto_us_0 -prefix
+--               bnn_top_auto_us_0_ bnn_top_auto_us_0_sim_netlist.vhdl
 -- Design      : bnn_top_auto_us_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -59,8 +59,6 @@ entity bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_w_upsizer is
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \USE_RTL_CURR_WORD.current_word_q_reg[2]_2\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_w_upsizer : entity is "axi_dwidth_converter_v2_1_31_w_upsizer";
 end bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_w_upsizer;
 
 architecture STRUCTURE of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_w_upsizer is
@@ -2926,8 +2924,6 @@ entity bnn_top_auto_us_0_axi_register_slice_v2_1_31_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_register_slice_v2_1_31_axic_register_slice : entity is "axi_register_slice_v2_1_31_axic_register_slice";
 end bnn_top_auto_us_0_axi_register_slice_v2_1_31_axic_register_slice;
 
 architecture STRUCTURE of bnn_top_auto_us_0_axi_register_slice_v2_1_31_axic_register_slice is
@@ -4687,8 +4683,6 @@ entity bnn_top_auto_us_0_generic_baseblocks_v2_1_2_command_fifo is
     m_axi_awready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 27 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_generic_baseblocks_v2_1_2_command_fifo : entity is "generic_baseblocks_v2_1_2_command_fifo";
 end bnn_top_auto_us_0_generic_baseblocks_v2_1_2_command_fifo;
 
 architecture STRUCTURE of bnn_top_auto_us_0_generic_baseblocks_v2_1_2_command_fifo is
@@ -6156,8 +6150,6 @@ entity bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_a_upsizer is
     m_axi_awready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 27 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_a_upsizer : entity is "axi_dwidth_converter_v2_1_31_a_upsizer";
 end bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_a_upsizer;
 
 architecture STRUCTURE of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_a_upsizer is
@@ -6239,8 +6231,6 @@ entity bnn_top_auto_us_0_axi_register_slice_v2_1_31_axi_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 68 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_register_slice_v2_1_31_axi_register_slice : entity is "axi_register_slice_v2_1_31_axi_register_slice";
 end bnn_top_auto_us_0_axi_register_slice_v2_1_31_axi_register_slice;
 
 architecture STRUCTURE of bnn_top_auto_us_0_axi_register_slice_v2_1_31_axi_register_slice is
@@ -6290,8 +6280,6 @@ entity bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_axi_upsizer is
     m_axi_wready : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_axi_upsizer : entity is "axi_dwidth_converter_v2_1_31_axi_upsizer";
 end bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_axi_upsizer;
 
 architecture STRUCTURE of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_axi_upsizer is
@@ -6641,8 +6629,6 @@ entity bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_top is
   attribute C_S_AXI_ID_WIDTH of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_top : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_top : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_top : entity is "axi_dwidth_converter_v2_1_31_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of bnn_top_auto_us_0_axi_dwidth_converter_v2_1_31_top : entity is 1;
   attribute P_AXI4 : integer;

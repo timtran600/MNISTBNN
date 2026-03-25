@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Mar  5 14:04:36 2026
+| Date         : Tue Mar 24 19:05:14 2026
 | Host         : icarus running 64-bit major release  (build 9200)
 | Command      : report_utilization -file bnn_top_wrapper_utilization_synth.rpt -pb bnn_top_wrapper_utilization_synth.pb
 | Design       : bnn_top_wrapper
@@ -163,7 +163,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | bnn_top_s01_mmu_0           |    1 |
 | bnn_top_s00_mmu_0           |    1 |
 | bnn_top_rst_ps7_0_100M_0    |    1 |
-| bnn_top_bnn_top_0_0         |    1 |
+| bnn_top_bnn_top_0_1         |    1 |
 | bnn_top_axi_dma_0           |    1 |
 | bnn_top_auto_us_0           |    1 |
 | bnn_top_auto_pc_0           |    1 |

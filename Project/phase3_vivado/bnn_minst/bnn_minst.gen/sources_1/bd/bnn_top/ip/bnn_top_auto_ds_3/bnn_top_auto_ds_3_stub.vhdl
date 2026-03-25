@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Thu Mar  5 14:02:01 2026
+-- Date        : Thu Mar  5 14:02:00 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/GitRepos/EECE4632/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top bnn_top_auto_ds_3 -prefix
+--               bnn_top_auto_ds_3_ bnn_top_auto_ds_3_stub.vhdl
 -- Design      : bnn_top_auto_ds_3
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu3eg-sfvc784-2-e

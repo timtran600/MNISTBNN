@@ -7,26 +7,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top || 
 # IP: bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_axi_dma_0 || ORIG_REF_NAME==bnn_top_axi_dma_0} -quiet] -quiet
 
-# IP: bd/bnn_top/ip/bnn_top_axi_mem_intercon_0/bnn_top_axi_mem_intercon_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_axi_mem_intercon_0 || ORIG_REF_NAME==bnn_top_axi_mem_intercon_0} -quiet] -quiet
-
-# IP: bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==bnn_top_zynq_ultra_ps_e_0_0} -quiet] -quiet
-
-# IP: bd/bnn_top/ip/bnn_top_ps7_0_axi_periph_0/bnn_top_ps7_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_ps7_0_axi_periph_0 || ORIG_REF_NAME==bnn_top_ps7_0_axi_periph_0} -quiet] -quiet
-
-# IP: bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_rst_ps7_0_100M_0 || ORIG_REF_NAME==bnn_top_rst_ps7_0_100M_0} -quiet] -quiet
-
 # IP: bd/bnn_top/ip/bnn_top_xbar_0/bnn_top_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_xbar_0 || ORIG_REF_NAME==bnn_top_xbar_0} -quiet] -quiet
-
-# IP: bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_xbar_1 || ORIG_REF_NAME==bnn_top_xbar_1} -quiet] -quiet
-
-# IP: bd/bnn_top/ip/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_bnn_top_0_0 || ORIG_REF_NAME==bnn_top_bnn_top_0_0} -quiet] -quiet
 
 # IP: bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_auto_us_0 || ORIG_REF_NAME==bnn_top_auto_us_0} -quiet] -quiet
@@ -46,10 +28,28 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_s00
 # IP: bd/bnn_top/ip/bnn_top_s01_mmu_0/bnn_top_s01_mmu_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_s01_mmu_0 || ORIG_REF_NAME==bnn_top_s01_mmu_0} -quiet] -quiet
 
+# IP: bd/bnn_top/ip/bnn_top_axi_mem_intercon_0/bnn_top_axi_mem_intercon_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_axi_mem_intercon_0 || ORIG_REF_NAME==bnn_top_axi_mem_intercon_0} -quiet] -quiet
+
+# IP: bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==bnn_top_zynq_ultra_ps_e_0_0} -quiet] -quiet
+
+# IP: bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_rst_ps7_0_100M_0 || ORIG_REF_NAME==bnn_top_rst_ps7_0_100M_0} -quiet] -quiet
+
+# IP: bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_xbar_1 || ORIG_REF_NAME==bnn_top_xbar_1} -quiet] -quiet
+
 # IP: bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_auto_ds_3 || ORIG_REF_NAME==bnn_top_auto_ds_3} -quiet] -quiet
 
 # IP: bd/bnn_top/ip/bnn_top_auto_pc_0/bnn_top_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_auto_pc_0 || ORIG_REF_NAME==bnn_top_auto_pc_0} -quiet] -quiet
 
-# XDC: c:/GitRepos/EECE4632/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/bnn_top_ooc.xdc
+# IP: bd/bnn_top/ip/bnn_top_ps7_0_axi_periph_0/bnn_top_ps7_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_ps7_0_axi_periph_0 || ORIG_REF_NAME==bnn_top_ps7_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/bnn_top/ip/bnn_top_bnn_top_0_1/bnn_top_bnn_top_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bnn_top_bnn_top_0_1 || ORIG_REF_NAME==bnn_top_bnn_top_0_1} -quiet] -quiet
+
+# XDC: c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/bnn_top_ooc.xdc

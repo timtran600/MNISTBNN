@@ -1,0 +1,108 @@
+---
+MainSourceFile:  'C:/GitRepos/MNISTBNN/Project/phase2_hls/vitis/bnn_top_iostream/bnn_top_iostream/hls/.autopilot/db/bnn_top.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          55148
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          282514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          282978
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          283443
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          566763
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      28
+    FilePath:        bnn_top.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1061693
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_2:  '
+    FileOffset:      78
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1061865
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_101_3:  '
+    FileOffset:      101
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1062346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_101_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_106_4:  '
+    FileOffset:      106
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1062521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_106_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_5:  '
+    FileOffset:      127
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1062968
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_133_6:  '
+    FileOffset:      133
+    FilePath:        bnn_top.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\MNISTBNN\Project\phase2_hls\vitis\bnn_top_iostream\bnn_top_iostream\hls\.autopilot\db\bnn_top.pp.0.cpp'
+        Offset:          1063174
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_133_6: '
+...
