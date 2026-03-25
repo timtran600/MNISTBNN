@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 // Date        : Tue Mar 24 19:02:57 2026
 // Host        : icarus running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_minst/bnn_minst.gen/sources_1/bd/bnn_top/ip/bnn_top_s01_mmu_0/bnn_top_s01_mmu_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top bnn_top_s01_mmu_0 -prefix
+//               bnn_top_s01_mmu_0_ bnn_top_s01_mmu_0_stub.v
 // Design      : bnn_top_s01_mmu_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sfvc784-2-e
