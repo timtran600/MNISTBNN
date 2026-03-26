@@ -28,8 +28,7 @@
         },
         "s04_couplers": {},
         "m00_couplers": {},
-        "s00_mmu": "",
-        "s04_mmu": ""
+        "s00_mmu": ""
       },
       "zynq_ultra_ps_e_0": "",
       "ps7_0_axi_periph": {
@@ -883,22 +882,6 @@
                 ]
               }
             }
-          },
-          "s04_mmu": {
-            "vlnv": "xilinx.com:ip:axi_mmu:2.1",
-            "ip_revision": "29",
-            "xci_name": "bnn_top_s04_mmu_0",
-            "xci_path": "ip\\bnn_top_s04_mmu_0\\bnn_top_s04_mmu_0.xci",
-            "inst_hier_path": "axi_mem_intercon/s04_mmu",
-            "interface_ports": {
-              "S_AXI": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "bridges": [
-                  "M_AXI"
-                ]
-              }
-            }
           }
         },
         "interface_nets": {
@@ -906,12 +889,6 @@
             "interface_ports": [
               "s00_mmu/S_AXI",
               "S00_AXI"
-            ]
-          },
-          "S04_AXI_1": {
-            "interface_ports": [
-              "s04_mmu/S_AXI",
-              "S04_AXI"
             ]
           },
           "axi_mem_intercon_to_s01_couplers": {
@@ -930,6 +907,12 @@
             "interface_ports": [
               "S03_AXI",
               "s03_couplers/S_AXI"
+            ]
+          },
+          "axi_mem_intercon_to_s04_couplers": {
+            "interface_ports": [
+              "S04_AXI",
+              "s04_couplers/S_AXI"
             ]
           },
           "m00_couplers_to_axi_mem_intercon": {
@@ -974,12 +957,6 @@
               "xbar/S04_AXI"
             ]
           },
-          "s04_mmu_M_AXI": {
-            "interface_ports": [
-              "s04_mmu/M_AXI",
-              "s04_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
@@ -1004,8 +981,7 @@
               "s04_couplers/M_ACLK",
               "m00_couplers/M_ACLK",
               "m00_couplers/S_ACLK",
-              "s00_mmu/aclk",
-              "s04_mmu/aclk"
+              "s00_mmu/aclk"
             ]
           },
           "axi_mem_intercon_ARESETN_net": {
@@ -1024,8 +1000,7 @@
               "s04_couplers/M_ARESETN",
               "m00_couplers/M_ARESETN",
               "m00_couplers/S_ARESETN",
-              "s00_mmu/aresetn",
-              "s04_mmu/aresetn"
+              "s00_mmu/aresetn"
             ]
           }
         }
@@ -2570,6 +2545,11 @@
                 "address_block": "/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH",
                 "offset": "0x0800000000",
                 "range": "32G"
+              },
+              "SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW": {
+                "address_block": "/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW",
+                "offset": "0x0000000000",
+                "range": "2G"
               },
               "SEG_zynq_ultra_ps_e_0_HP0_LPS_OCM": {
                 "address_block": "/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM",

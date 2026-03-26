@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 26 18:46:01 2026" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 26 19:46:16 2026" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplus" DEVICE="xczu3eg" NAME="bnn_top" PACKAGE="sfvc784" SPEEDGRADE="-2"/>
 
@@ -1390,6 +1390,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="HP0_DDR_LOW" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x7FFFFFFF" INSTANCE="zynq_ultra_ps_e_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_MM2S" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI_HP0_FPD"/>
         <MEMRANGE ADDRESSBLOCK="HP0_DDR_LOW" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x1FFFFFFF" INSTANCE="zynq_ultra_ps_e_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_S2MM" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI_HP0_FPD"/>
         <MEMRANGE ADDRESSBLOCK="HP0_DDR_HIGH" BASENAME="C_BASEADDR" BASEVALUE="0x800000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0xFFFFFFFFF" INSTANCE="zynq_ultra_ps_e_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_MM2S" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI_HP0_FPD"/>
       </MEMORYMAP>
@@ -2351,7 +2352,7 @@
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S04_AXI_arready" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_arready">
+        <PORT DIR="O" LEFT="0" NAME="S04_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_arready"/>
           </CONNECTIONS>
@@ -2361,7 +2362,7 @@
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S04_AXI_arvalid" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_arvalid">
+        <PORT DIR="I" LEFT="0" NAME="S04_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_arvalid"/>
           </CONNECTIONS>
@@ -2371,12 +2372,12 @@
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S04_AXI_rlast" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rlast">
+        <PORT DIR="O" LEFT="0" NAME="S04_AXI_rlast" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_rlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S04_AXI_rready" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rready">
+        <PORT DIR="I" LEFT="0" NAME="S04_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_rready"/>
           </CONNECTIONS>
@@ -2386,7 +2387,7 @@
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S04_AXI_rvalid" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rvalid">
+        <PORT DIR="O" LEFT="0" NAME="S04_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dma_m_axi_mm2s_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_dma" PORT="m_axi_mm2s_rvalid"/>
           </CONNECTIONS>
@@ -4518,6 +4519,9 @@
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_HIGH" RANGE="0x800000000" USAGE="memory"/>
+      </ADDRESSBLOCKS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_LPS_OCM" RANGE="0x1000000" USAGE="register"/>
