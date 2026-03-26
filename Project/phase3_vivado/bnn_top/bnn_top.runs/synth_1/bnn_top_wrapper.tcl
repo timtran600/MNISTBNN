@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param general.maxThreads 1
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu3eg-sfvc784-2-e
 
@@ -74,16 +76,11 @@ set_property ip_output_repo c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/b
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/hdl/bnn_top_wrapper.v
+read_verilog -library xil_defaultlib C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/hdl/bnn_top_wrapper.v
 add_files C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.srcs/sources_1/bd/bnn_top/bnn_top.bd
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_axi_dma_0/bnn_top_axi_dma_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_0/bnn_top_xbar_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_us_0/bnn_top_auto_us_0_clocks.xdc]
@@ -98,11 +95,17 @@ set_property used_in_synthesis false [get_files -all c:/GitRepos/MNISTBNN/Projec
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_2/bnn_top_auto_ds_2_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_2/bnn_top_auto_ds_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s04_mmu_0/bnn_top_s04_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_ds_3/bnn_top_auto_ds_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_auto_pc_0/bnn_top_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_rst_ps7_0_100M_0/bnn_top_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_0/constraints/bnn_top_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/bnn_top_ooc.xdc]
 
@@ -118,6 +121,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.srcs/utils_1/imports/synth_1/bnn_top_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

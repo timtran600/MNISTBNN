@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Mar 25 17:19:41 2026
+// Date        : Thu Mar 26 19:02:32 2026
 // Host        : icarus running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_zynq_ultra_ps_e_0_0/bnn_top_zynq_ultra_ps_e_0_0_stub.v
@@ -30,19 +30,10 @@ module bnn_top_zynq_ultra_ps_e_0_0(maxihpm0_fpd_aclk, maxigp0_awid,
   saxigp2_bready, saxigp2_arid, saxigp2_araddr, saxigp2_arlen, saxigp2_arsize, 
   saxigp2_arburst, saxigp2_arlock, saxigp2_arcache, saxigp2_arprot, saxigp2_arvalid, 
   saxigp2_arready, saxigp2_rid, saxigp2_rdata, saxigp2_rresp, saxigp2_rlast, saxigp2_rvalid, 
-  saxigp2_rready, saxigp2_awqos, saxigp2_arqos, saxihp2_fpd_aclk, saxigp4_aruser, 
-  saxigp4_awuser, saxigp4_awid, saxigp4_awaddr, saxigp4_awlen, saxigp4_awsize, 
-  saxigp4_awburst, saxigp4_awlock, saxigp4_awcache, saxigp4_awprot, saxigp4_awvalid, 
-  saxigp4_awready, saxigp4_wdata, saxigp4_wstrb, saxigp4_wlast, saxigp4_wvalid, 
-  saxigp4_wready, saxigp4_bid, saxigp4_bresp, saxigp4_bvalid, saxigp4_bready, saxigp4_arid, 
-  saxigp4_araddr, saxigp4_arlen, saxigp4_arsize, saxigp4_arburst, saxigp4_arlock, 
-  saxigp4_arcache, saxigp4_arprot, saxigp4_arvalid, saxigp4_arready, saxigp4_rid, 
-  saxigp4_rdata, saxigp4_rresp, saxigp4_rlast, saxigp4_rvalid, saxigp4_rready, saxigp4_awqos, 
-  saxigp4_arqos, pl_resetn0, pl_clk0)
-/* synthesis syn_black_box black_box_pad_pin="maxigp0_awid[15:0],maxigp0_awaddr[39:0],maxigp0_awlen[7:0],maxigp0_awsize[2:0],maxigp0_awburst[1:0],maxigp0_awlock,maxigp0_awcache[3:0],maxigp0_awprot[2:0],maxigp0_awvalid,maxigp0_awuser[15:0],maxigp0_awready,maxigp0_wdata[63:0],maxigp0_wstrb[7:0],maxigp0_wlast,maxigp0_wvalid,maxigp0_wready,maxigp0_bid[15:0],maxigp0_bresp[1:0],maxigp0_bvalid,maxigp0_bready,maxigp0_arid[15:0],maxigp0_araddr[39:0],maxigp0_arlen[7:0],maxigp0_arsize[2:0],maxigp0_arburst[1:0],maxigp0_arlock,maxigp0_arcache[3:0],maxigp0_arprot[2:0],maxigp0_arvalid,maxigp0_aruser[15:0],maxigp0_arready,maxigp0_rid[15:0],maxigp0_rdata[63:0],maxigp0_rresp[1:0],maxigp0_rlast,maxigp0_rvalid,maxigp0_rready,maxigp0_awqos[3:0],maxigp0_arqos[3:0],saxigp2_aruser,saxigp2_awuser,saxigp2_awid[5:0],saxigp2_awaddr[48:0],saxigp2_awlen[7:0],saxigp2_awsize[2:0],saxigp2_awburst[1:0],saxigp2_awlock,saxigp2_awcache[3:0],saxigp2_awprot[2:0],saxigp2_awvalid,saxigp2_awready,saxigp2_wdata[63:0],saxigp2_wstrb[7:0],saxigp2_wlast,saxigp2_wvalid,saxigp2_wready,saxigp2_bid[5:0],saxigp2_bresp[1:0],saxigp2_bvalid,saxigp2_bready,saxigp2_arid[5:0],saxigp2_araddr[48:0],saxigp2_arlen[7:0],saxigp2_arsize[2:0],saxigp2_arburst[1:0],saxigp2_arlock,saxigp2_arcache[3:0],saxigp2_arprot[2:0],saxigp2_arvalid,saxigp2_arready,saxigp2_rid[5:0],saxigp2_rdata[63:0],saxigp2_rresp[1:0],saxigp2_rlast,saxigp2_rvalid,saxigp2_rready,saxigp2_awqos[3:0],saxigp2_arqos[3:0],saxigp4_aruser,saxigp4_awuser,saxigp4_awid[5:0],saxigp4_awaddr[48:0],saxigp4_awlen[7:0],saxigp4_awsize[2:0],saxigp4_awburst[1:0],saxigp4_awlock,saxigp4_awcache[3:0],saxigp4_awprot[2:0],saxigp4_awvalid,saxigp4_awready,saxigp4_wdata[63:0],saxigp4_wstrb[7:0],saxigp4_wlast,saxigp4_wvalid,saxigp4_wready,saxigp4_bid[5:0],saxigp4_bresp[1:0],saxigp4_bvalid,saxigp4_bready,saxigp4_arid[5:0],saxigp4_araddr[48:0],saxigp4_arlen[7:0],saxigp4_arsize[2:0],saxigp4_arburst[1:0],saxigp4_arlock,saxigp4_arcache[3:0],saxigp4_arprot[2:0],saxigp4_arvalid,saxigp4_arready,saxigp4_rid[5:0],saxigp4_rdata[63:0],saxigp4_rresp[1:0],saxigp4_rlast,saxigp4_rvalid,saxigp4_rready,saxigp4_awqos[3:0],saxigp4_arqos[3:0],pl_resetn0" */
+  saxigp2_rready, saxigp2_awqos, saxigp2_arqos, pl_resetn0, pl_clk0)
+/* synthesis syn_black_box black_box_pad_pin="maxigp0_awid[15:0],maxigp0_awaddr[39:0],maxigp0_awlen[7:0],maxigp0_awsize[2:0],maxigp0_awburst[1:0],maxigp0_awlock,maxigp0_awcache[3:0],maxigp0_awprot[2:0],maxigp0_awvalid,maxigp0_awuser[15:0],maxigp0_awready,maxigp0_wdata[63:0],maxigp0_wstrb[7:0],maxigp0_wlast,maxigp0_wvalid,maxigp0_wready,maxigp0_bid[15:0],maxigp0_bresp[1:0],maxigp0_bvalid,maxigp0_bready,maxigp0_arid[15:0],maxigp0_araddr[39:0],maxigp0_arlen[7:0],maxigp0_arsize[2:0],maxigp0_arburst[1:0],maxigp0_arlock,maxigp0_arcache[3:0],maxigp0_arprot[2:0],maxigp0_arvalid,maxigp0_aruser[15:0],maxigp0_arready,maxigp0_rid[15:0],maxigp0_rdata[63:0],maxigp0_rresp[1:0],maxigp0_rlast,maxigp0_rvalid,maxigp0_rready,maxigp0_awqos[3:0],maxigp0_arqos[3:0],saxigp2_aruser,saxigp2_awuser,saxigp2_awid[5:0],saxigp2_awaddr[48:0],saxigp2_awlen[7:0],saxigp2_awsize[2:0],saxigp2_awburst[1:0],saxigp2_awlock,saxigp2_awcache[3:0],saxigp2_awprot[2:0],saxigp2_awvalid,saxigp2_awready,saxigp2_wdata[63:0],saxigp2_wstrb[7:0],saxigp2_wlast,saxigp2_wvalid,saxigp2_wready,saxigp2_bid[5:0],saxigp2_bresp[1:0],saxigp2_bvalid,saxigp2_bready,saxigp2_arid[5:0],saxigp2_araddr[48:0],saxigp2_arlen[7:0],saxigp2_arsize[2:0],saxigp2_arburst[1:0],saxigp2_arlock,saxigp2_arcache[3:0],saxigp2_arprot[2:0],saxigp2_arvalid,saxigp2_arready,saxigp2_rid[5:0],saxigp2_rdata[63:0],saxigp2_rresp[1:0],saxigp2_rlast,saxigp2_rvalid,saxigp2_rready,saxigp2_awqos[3:0],saxigp2_arqos[3:0],pl_resetn0" */
 /* synthesis syn_force_seq_prim="maxihpm0_fpd_aclk" */
 /* synthesis syn_force_seq_prim="saxihp0_fpd_aclk" */
-/* synthesis syn_force_seq_prim="saxihp2_fpd_aclk" */
 /* synthesis syn_force_seq_prim="pl_clk0" */;
   input maxihpm0_fpd_aclk /* synthesis syn_isclock = 1 */;
   output [15:0]maxigp0_awid;
@@ -124,46 +115,6 @@ module bnn_top_zynq_ultra_ps_e_0_0(maxihpm0_fpd_aclk, maxigp0_awid,
   input saxigp2_rready;
   input [3:0]saxigp2_awqos;
   input [3:0]saxigp2_arqos;
-  input saxihp2_fpd_aclk /* synthesis syn_isclock = 1 */;
-  input saxigp4_aruser;
-  input saxigp4_awuser;
-  input [5:0]saxigp4_awid;
-  input [48:0]saxigp4_awaddr;
-  input [7:0]saxigp4_awlen;
-  input [2:0]saxigp4_awsize;
-  input [1:0]saxigp4_awburst;
-  input saxigp4_awlock;
-  input [3:0]saxigp4_awcache;
-  input [2:0]saxigp4_awprot;
-  input saxigp4_awvalid;
-  output saxigp4_awready;
-  input [63:0]saxigp4_wdata;
-  input [7:0]saxigp4_wstrb;
-  input saxigp4_wlast;
-  input saxigp4_wvalid;
-  output saxigp4_wready;
-  output [5:0]saxigp4_bid;
-  output [1:0]saxigp4_bresp;
-  output saxigp4_bvalid;
-  input saxigp4_bready;
-  input [5:0]saxigp4_arid;
-  input [48:0]saxigp4_araddr;
-  input [7:0]saxigp4_arlen;
-  input [2:0]saxigp4_arsize;
-  input [1:0]saxigp4_arburst;
-  input saxigp4_arlock;
-  input [3:0]saxigp4_arcache;
-  input [2:0]saxigp4_arprot;
-  input saxigp4_arvalid;
-  output saxigp4_arready;
-  output [5:0]saxigp4_rid;
-  output [63:0]saxigp4_rdata;
-  output [1:0]saxigp4_rresp;
-  output saxigp4_rlast;
-  output saxigp4_rvalid;
-  input saxigp4_rready;
-  input [3:0]saxigp4_awqos;
-  input [3:0]saxigp4_arqos;
   output pl_resetn0;
   output pl_clk0 /* synthesis syn_isclock = 1 */;
 endmodule

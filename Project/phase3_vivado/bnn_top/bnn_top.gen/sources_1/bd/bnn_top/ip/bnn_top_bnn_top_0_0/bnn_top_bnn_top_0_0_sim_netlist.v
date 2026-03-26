@@ -2,2981 +2,16 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Mar 25 17:21:27 2026
+// Date        : Wed Mar 25 17:21:24 2026
 // Host        : icarus running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top bnn_top_bnn_top_0_0 -prefix
+//               bnn_top_bnn_top_0_0_ bnn_top_bnn_top_0_0_sim_netlist.v
 // Design      : bnn_top_bnn_top_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xczu3eg-sfvc784-2-e
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
-
-(* CHECK_LICENSE_TYPE = "bnn_top_bnn_top_0_0,bnn_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "HLS" *) 
-(* X_CORE_INFO = "bnn_top,Vivado 2024.1" *) (* hls_module = "yes" *) 
-(* NotValidForBitStream *)
-module bnn_top_bnn_top_0_0
-   (s_axi_control_ARADDR,
-    s_axi_control_ARREADY,
-    s_axi_control_ARVALID,
-    s_axi_control_AWADDR,
-    s_axi_control_AWREADY,
-    s_axi_control_AWVALID,
-    s_axi_control_BREADY,
-    s_axi_control_BRESP,
-    s_axi_control_BVALID,
-    s_axi_control_RDATA,
-    s_axi_control_RREADY,
-    s_axi_control_RRESP,
-    s_axi_control_RVALID,
-    s_axi_control_WDATA,
-    s_axi_control_WREADY,
-    s_axi_control_WSTRB,
-    s_axi_control_WVALID,
-    ap_clk,
-    ap_rst_n,
-    interrupt,
-    m_axi_gmem0_ARADDR,
-    m_axi_gmem0_ARBURST,
-    m_axi_gmem0_ARCACHE,
-    m_axi_gmem0_ARID,
-    m_axi_gmem0_ARLEN,
-    m_axi_gmem0_ARLOCK,
-    m_axi_gmem0_ARPROT,
-    m_axi_gmem0_ARQOS,
-    m_axi_gmem0_ARREADY,
-    m_axi_gmem0_ARREGION,
-    m_axi_gmem0_ARSIZE,
-    m_axi_gmem0_ARVALID,
-    m_axi_gmem0_AWADDR,
-    m_axi_gmem0_AWBURST,
-    m_axi_gmem0_AWCACHE,
-    m_axi_gmem0_AWID,
-    m_axi_gmem0_AWLEN,
-    m_axi_gmem0_AWLOCK,
-    m_axi_gmem0_AWPROT,
-    m_axi_gmem0_AWQOS,
-    m_axi_gmem0_AWREADY,
-    m_axi_gmem0_AWREGION,
-    m_axi_gmem0_AWSIZE,
-    m_axi_gmem0_AWVALID,
-    m_axi_gmem0_BID,
-    m_axi_gmem0_BREADY,
-    m_axi_gmem0_BRESP,
-    m_axi_gmem0_BVALID,
-    m_axi_gmem0_RDATA,
-    m_axi_gmem0_RID,
-    m_axi_gmem0_RLAST,
-    m_axi_gmem0_RREADY,
-    m_axi_gmem0_RRESP,
-    m_axi_gmem0_RVALID,
-    m_axi_gmem0_WDATA,
-    m_axi_gmem0_WID,
-    m_axi_gmem0_WLAST,
-    m_axi_gmem0_WREADY,
-    m_axi_gmem0_WSTRB,
-    m_axi_gmem0_WVALID,
-    m_axi_gmem1_ARADDR,
-    m_axi_gmem1_ARBURST,
-    m_axi_gmem1_ARCACHE,
-    m_axi_gmem1_ARID,
-    m_axi_gmem1_ARLEN,
-    m_axi_gmem1_ARLOCK,
-    m_axi_gmem1_ARPROT,
-    m_axi_gmem1_ARQOS,
-    m_axi_gmem1_ARREADY,
-    m_axi_gmem1_ARREGION,
-    m_axi_gmem1_ARSIZE,
-    m_axi_gmem1_ARVALID,
-    m_axi_gmem1_AWADDR,
-    m_axi_gmem1_AWBURST,
-    m_axi_gmem1_AWCACHE,
-    m_axi_gmem1_AWID,
-    m_axi_gmem1_AWLEN,
-    m_axi_gmem1_AWLOCK,
-    m_axi_gmem1_AWPROT,
-    m_axi_gmem1_AWQOS,
-    m_axi_gmem1_AWREADY,
-    m_axi_gmem1_AWREGION,
-    m_axi_gmem1_AWSIZE,
-    m_axi_gmem1_AWVALID,
-    m_axi_gmem1_BID,
-    m_axi_gmem1_BREADY,
-    m_axi_gmem1_BRESP,
-    m_axi_gmem1_BVALID,
-    m_axi_gmem1_RDATA,
-    m_axi_gmem1_RID,
-    m_axi_gmem1_RLAST,
-    m_axi_gmem1_RREADY,
-    m_axi_gmem1_RRESP,
-    m_axi_gmem1_RVALID,
-    m_axi_gmem1_WDATA,
-    m_axi_gmem1_WID,
-    m_axi_gmem1_WLAST,
-    m_axi_gmem1_WREADY,
-    m_axi_gmem1_WSTRB,
-    m_axi_gmem1_WVALID,
-    m_axi_gmem2_ARADDR,
-    m_axi_gmem2_ARBURST,
-    m_axi_gmem2_ARCACHE,
-    m_axi_gmem2_ARID,
-    m_axi_gmem2_ARLEN,
-    m_axi_gmem2_ARLOCK,
-    m_axi_gmem2_ARPROT,
-    m_axi_gmem2_ARQOS,
-    m_axi_gmem2_ARREADY,
-    m_axi_gmem2_ARREGION,
-    m_axi_gmem2_ARSIZE,
-    m_axi_gmem2_ARVALID,
-    m_axi_gmem2_AWADDR,
-    m_axi_gmem2_AWBURST,
-    m_axi_gmem2_AWCACHE,
-    m_axi_gmem2_AWID,
-    m_axi_gmem2_AWLEN,
-    m_axi_gmem2_AWLOCK,
-    m_axi_gmem2_AWPROT,
-    m_axi_gmem2_AWQOS,
-    m_axi_gmem2_AWREADY,
-    m_axi_gmem2_AWREGION,
-    m_axi_gmem2_AWSIZE,
-    m_axi_gmem2_AWVALID,
-    m_axi_gmem2_BID,
-    m_axi_gmem2_BREADY,
-    m_axi_gmem2_BRESP,
-    m_axi_gmem2_BVALID,
-    m_axi_gmem2_RDATA,
-    m_axi_gmem2_RID,
-    m_axi_gmem2_RLAST,
-    m_axi_gmem2_RREADY,
-    m_axi_gmem2_RRESP,
-    m_axi_gmem2_RVALID,
-    m_axi_gmem2_WDATA,
-    m_axi_gmem2_WID,
-    m_axi_gmem2_WLAST,
-    m_axi_gmem2_WREADY,
-    m_axi_gmem2_WSTRB,
-    m_axi_gmem2_WVALID,
-    input_stream_TDATA,
-    input_stream_TKEEP,
-    input_stream_TLAST,
-    input_stream_TREADY,
-    input_stream_TSTRB,
-    input_stream_TVALID,
-    output_stream_TDATA,
-    output_stream_TKEEP,
-    output_stream_TLAST,
-    output_stream_TREADY,
-    output_stream_TSTRB,
-    output_stream_TVALID);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *) input [5:0]s_axi_control_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARREADY" *) output s_axi_control_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARVALID" *) input s_axi_control_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWADDR" *) input [5:0]s_axi_control_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWREADY" *) output s_axi_control_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWVALID" *) input s_axi_control_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BREADY" *) input s_axi_control_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BRESP" *) output [1:0]s_axi_control_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BVALID" *) output s_axi_control_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RDATA" *) output [31:0]s_axi_control_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RREADY" *) input s_axi_control_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RRESP" *) output [1:0]s_axi_control_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RVALID" *) output s_axi_control_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WDATA" *) input [31:0]s_axi_control_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WREADY" *) output s_axi_control_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WSTRB" *) input [3:0]s_axi_control_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 6, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 299999939, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_control_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_control:m_axi_gmem0:m_axi_gmem1:m_axi_gmem2:input_stream:output_stream, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 299999939, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *) input ap_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ap_rst_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output interrupt;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARADDR" *) output [63:0]m_axi_gmem0_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARBURST" *) output [1:0]m_axi_gmem0_ARBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARCACHE" *) output [3:0]m_axi_gmem0_ARCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARID" *) output [0:0]m_axi_gmem0_ARID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARLEN" *) output [7:0]m_axi_gmem0_ARLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARLOCK" *) output [1:0]m_axi_gmem0_ARLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARPROT" *) output [2:0]m_axi_gmem0_ARPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARQOS" *) output [3:0]m_axi_gmem0_ARQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARREADY" *) input m_axi_gmem0_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARREGION" *) output [3:0]m_axi_gmem0_ARREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARSIZE" *) output [2:0]m_axi_gmem0_ARSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARVALID" *) output m_axi_gmem0_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWADDR" *) output [63:0]m_axi_gmem0_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWBURST" *) output [1:0]m_axi_gmem0_AWBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWCACHE" *) output [3:0]m_axi_gmem0_AWCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWID" *) output [0:0]m_axi_gmem0_AWID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWLEN" *) output [7:0]m_axi_gmem0_AWLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWLOCK" *) output [1:0]m_axi_gmem0_AWLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWPROT" *) output [2:0]m_axi_gmem0_AWPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWQOS" *) output [3:0]m_axi_gmem0_AWQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWREADY" *) input m_axi_gmem0_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWREGION" *) output [3:0]m_axi_gmem0_AWREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWSIZE" *) output [2:0]m_axi_gmem0_AWSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWVALID" *) output m_axi_gmem0_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BID" *) input [0:0]m_axi_gmem0_BID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BREADY" *) output m_axi_gmem0_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BRESP" *) input [1:0]m_axi_gmem0_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BVALID" *) input m_axi_gmem0_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RDATA" *) input [1023:0]m_axi_gmem0_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RID" *) input [0:0]m_axi_gmem0_RID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RLAST" *) input m_axi_gmem0_RLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RREADY" *) output m_axi_gmem0_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RRESP" *) input [1:0]m_axi_gmem0_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RVALID" *) input m_axi_gmem0_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WDATA" *) output [1023:0]m_axi_gmem0_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WID" *) output [0:0]m_axi_gmem0_WID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WLAST" *) output m_axi_gmem0_WLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WREADY" *) input m_axi_gmem0_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WSTRB" *) output [127:0]m_axi_gmem0_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem0, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 1024, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem0_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARADDR" *) output [63:0]m_axi_gmem1_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARBURST" *) output [1:0]m_axi_gmem1_ARBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARCACHE" *) output [3:0]m_axi_gmem1_ARCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARID" *) output [0:0]m_axi_gmem1_ARID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARLEN" *) output [7:0]m_axi_gmem1_ARLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARLOCK" *) output [1:0]m_axi_gmem1_ARLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARPROT" *) output [2:0]m_axi_gmem1_ARPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARQOS" *) output [3:0]m_axi_gmem1_ARQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARREADY" *) input m_axi_gmem1_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARREGION" *) output [3:0]m_axi_gmem1_ARREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARSIZE" *) output [2:0]m_axi_gmem1_ARSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARVALID" *) output m_axi_gmem1_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWADDR" *) output [63:0]m_axi_gmem1_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWBURST" *) output [1:0]m_axi_gmem1_AWBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWCACHE" *) output [3:0]m_axi_gmem1_AWCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWID" *) output [0:0]m_axi_gmem1_AWID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWLEN" *) output [7:0]m_axi_gmem1_AWLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWLOCK" *) output [1:0]m_axi_gmem1_AWLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWPROT" *) output [2:0]m_axi_gmem1_AWPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWQOS" *) output [3:0]m_axi_gmem1_AWQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWREADY" *) input m_axi_gmem1_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWREGION" *) output [3:0]m_axi_gmem1_AWREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWSIZE" *) output [2:0]m_axi_gmem1_AWSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWVALID" *) output m_axi_gmem1_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BID" *) input [0:0]m_axi_gmem1_BID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BREADY" *) output m_axi_gmem1_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BRESP" *) input [1:0]m_axi_gmem1_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BVALID" *) input m_axi_gmem1_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RDATA" *) input [255:0]m_axi_gmem1_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RID" *) input [0:0]m_axi_gmem1_RID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RLAST" *) input m_axi_gmem1_RLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RREADY" *) output m_axi_gmem1_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RRESP" *) input [1:0]m_axi_gmem1_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RVALID" *) input m_axi_gmem1_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WDATA" *) output [255:0]m_axi_gmem1_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WID" *) output [0:0]m_axi_gmem1_WID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WLAST" *) output m_axi_gmem1_WLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WREADY" *) input m_axi_gmem1_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WSTRB" *) output [31:0]m_axi_gmem1_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem1, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 256, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem1_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARADDR" *) output [63:0]m_axi_gmem2_ARADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARBURST" *) output [1:0]m_axi_gmem2_ARBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARCACHE" *) output [3:0]m_axi_gmem2_ARCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARID" *) output [0:0]m_axi_gmem2_ARID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARLEN" *) output [7:0]m_axi_gmem2_ARLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARLOCK" *) output [1:0]m_axi_gmem2_ARLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARPROT" *) output [2:0]m_axi_gmem2_ARPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARQOS" *) output [3:0]m_axi_gmem2_ARQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARREADY" *) input m_axi_gmem2_ARREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARREGION" *) output [3:0]m_axi_gmem2_ARREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARSIZE" *) output [2:0]m_axi_gmem2_ARSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARVALID" *) output m_axi_gmem2_ARVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWADDR" *) output [63:0]m_axi_gmem2_AWADDR;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWBURST" *) output [1:0]m_axi_gmem2_AWBURST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWCACHE" *) output [3:0]m_axi_gmem2_AWCACHE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWID" *) output [0:0]m_axi_gmem2_AWID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWLEN" *) output [7:0]m_axi_gmem2_AWLEN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWLOCK" *) output [1:0]m_axi_gmem2_AWLOCK;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWPROT" *) output [2:0]m_axi_gmem2_AWPROT;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWQOS" *) output [3:0]m_axi_gmem2_AWQOS;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWREADY" *) input m_axi_gmem2_AWREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWREGION" *) output [3:0]m_axi_gmem2_AWREGION;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWSIZE" *) output [2:0]m_axi_gmem2_AWSIZE;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWVALID" *) output m_axi_gmem2_AWVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BID" *) input [0:0]m_axi_gmem2_BID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BREADY" *) output m_axi_gmem2_BREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BRESP" *) input [1:0]m_axi_gmem2_BRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BVALID" *) input m_axi_gmem2_BVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RDATA" *) input [255:0]m_axi_gmem2_RDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RID" *) input [0:0]m_axi_gmem2_RID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RLAST" *) input m_axi_gmem2_RLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RREADY" *) output m_axi_gmem2_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RRESP" *) input [1:0]m_axi_gmem2_RRESP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RVALID" *) input m_axi_gmem2_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WDATA" *) output [255:0]m_axi_gmem2_WDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WID" *) output [0:0]m_axi_gmem2_WID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WLAST" *) output m_axi_gmem2_WLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WREADY" *) input m_axi_gmem2_WREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WSTRB" *) output [31:0]m_axi_gmem2_WSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem2, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 256, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem2_WVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TDATA" *) input [31:0]input_stream_TDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TKEEP" *) input [3:0]input_stream_TKEEP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TLAST" *) input [0:0]input_stream_TLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TREADY" *) output input_stream_TREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TSTRB" *) input [3:0]input_stream_TSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_stream, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 299999939, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) input input_stream_TVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TDATA" *) output [15:0]output_stream_TDATA;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TKEEP" *) output [1:0]output_stream_TKEEP;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TLAST" *) output [0:0]output_stream_TLAST;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TREADY" *) input output_stream_TREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TSTRB" *) output [1:0]output_stream_TSTRB;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_stream, TUSER_WIDTH 0, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 299999939, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) output output_stream_TVALID;
-
-  wire \<const0> ;
-  wire \<const1> ;
-  wire ap_clk;
-  wire ap_rst_n;
-  wire [31:0]input_stream_TDATA;
-  wire input_stream_TREADY;
-  wire input_stream_TVALID;
-  wire interrupt;
-  wire [63:7]\^m_axi_gmem0_ARADDR ;
-  wire [3:0]\^m_axi_gmem0_ARLEN ;
-  wire m_axi_gmem0_ARREADY;
-  wire m_axi_gmem0_ARVALID;
-  wire m_axi_gmem0_BREADY;
-  wire m_axi_gmem0_BVALID;
-  wire [1023:0]m_axi_gmem0_RDATA;
-  wire m_axi_gmem0_RLAST;
-  wire m_axi_gmem0_RREADY;
-  wire m_axi_gmem0_RVALID;
-  wire [63:5]\^m_axi_gmem1_ARADDR ;
-  wire [3:0]\^m_axi_gmem1_ARLEN ;
-  wire m_axi_gmem1_ARREADY;
-  wire m_axi_gmem1_ARVALID;
-  wire m_axi_gmem1_BREADY;
-  wire m_axi_gmem1_BVALID;
-  wire [255:0]m_axi_gmem1_RDATA;
-  wire m_axi_gmem1_RLAST;
-  wire m_axi_gmem1_RREADY;
-  wire m_axi_gmem1_RVALID;
-  wire [63:5]\^m_axi_gmem2_ARADDR ;
-  wire [3:0]\^m_axi_gmem2_ARLEN ;
-  wire m_axi_gmem2_ARREADY;
-  wire m_axi_gmem2_ARVALID;
-  wire m_axi_gmem2_BREADY;
-  wire m_axi_gmem2_BVALID;
-  wire [255:0]m_axi_gmem2_RDATA;
-  wire m_axi_gmem2_RLAST;
-  wire m_axi_gmem2_RREADY;
-  wire m_axi_gmem2_RVALID;
-  wire [15:1]\^output_stream_TDATA ;
-  wire [0:0]output_stream_TLAST;
-  wire output_stream_TREADY;
-  wire output_stream_TVALID;
-  wire [5:0]s_axi_control_ARADDR;
-  wire s_axi_control_ARREADY;
-  wire s_axi_control_ARVALID;
-  wire [5:0]s_axi_control_AWADDR;
-  wire s_axi_control_AWREADY;
-  wire s_axi_control_AWVALID;
-  wire s_axi_control_BREADY;
-  wire s_axi_control_BVALID;
-  wire [31:0]s_axi_control_RDATA;
-  wire s_axi_control_RREADY;
-  wire s_axi_control_RVALID;
-  wire [31:0]s_axi_control_WDATA;
-  wire s_axi_control_WREADY;
-  wire [3:0]s_axi_control_WSTRB;
-  wire s_axi_control_WVALID;
-  wire NLW_inst_m_axi_gmem0_AWVALID_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem0_WLAST_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem0_WVALID_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem1_AWVALID_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem1_WLAST_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem1_WVALID_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem2_AWVALID_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem2_WLAST_UNCONNECTED;
-  wire NLW_inst_m_axi_gmem2_WVALID_UNCONNECTED;
-  wire [6:0]NLW_inst_m_axi_gmem0_ARADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem0_ARBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_ARCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_ARID_UNCONNECTED;
-  wire [7:4]NLW_inst_m_axi_gmem0_ARLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem0_ARLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem0_ARPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_ARQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_ARREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem0_ARSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_ARUSER_UNCONNECTED;
-  wire [63:0]NLW_inst_m_axi_gmem0_AWADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem0_AWBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_AWCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_AWID_UNCONNECTED;
-  wire [7:0]NLW_inst_m_axi_gmem0_AWLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem0_AWLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem0_AWPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_AWQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem0_AWREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem0_AWSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_AWUSER_UNCONNECTED;
-  wire [1023:0]NLW_inst_m_axi_gmem0_WDATA_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_WID_UNCONNECTED;
-  wire [127:0]NLW_inst_m_axi_gmem0_WSTRB_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem0_WUSER_UNCONNECTED;
-  wire [4:0]NLW_inst_m_axi_gmem1_ARADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem1_ARBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_ARCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_ARID_UNCONNECTED;
-  wire [7:4]NLW_inst_m_axi_gmem1_ARLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem1_ARLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem1_ARPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_ARQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_ARREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem1_ARSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_ARUSER_UNCONNECTED;
-  wire [63:0]NLW_inst_m_axi_gmem1_AWADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem1_AWBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_AWCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_AWID_UNCONNECTED;
-  wire [7:0]NLW_inst_m_axi_gmem1_AWLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem1_AWLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem1_AWPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_AWQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem1_AWREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem1_AWSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_AWUSER_UNCONNECTED;
-  wire [255:0]NLW_inst_m_axi_gmem1_WDATA_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_WID_UNCONNECTED;
-  wire [31:0]NLW_inst_m_axi_gmem1_WSTRB_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem1_WUSER_UNCONNECTED;
-  wire [4:0]NLW_inst_m_axi_gmem2_ARADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem2_ARBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_ARCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_ARID_UNCONNECTED;
-  wire [7:4]NLW_inst_m_axi_gmem2_ARLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem2_ARLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem2_ARPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_ARQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_ARREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem2_ARSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_ARUSER_UNCONNECTED;
-  wire [63:0]NLW_inst_m_axi_gmem2_AWADDR_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem2_AWBURST_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_AWCACHE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_AWID_UNCONNECTED;
-  wire [7:0]NLW_inst_m_axi_gmem2_AWLEN_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axi_gmem2_AWLOCK_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem2_AWPROT_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_AWQOS_UNCONNECTED;
-  wire [3:0]NLW_inst_m_axi_gmem2_AWREGION_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axi_gmem2_AWSIZE_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_AWUSER_UNCONNECTED;
-  wire [255:0]NLW_inst_m_axi_gmem2_WDATA_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_WID_UNCONNECTED;
-  wire [31:0]NLW_inst_m_axi_gmem2_WSTRB_UNCONNECTED;
-  wire [0:0]NLW_inst_m_axi_gmem2_WUSER_UNCONNECTED;
-  wire [0:0]NLW_inst_output_stream_TDATA_UNCONNECTED;
-  wire [1:0]NLW_inst_output_stream_TKEEP_UNCONNECTED;
-  wire [1:0]NLW_inst_output_stream_TSTRB_UNCONNECTED;
-  wire [1:0]NLW_inst_s_axi_control_BRESP_UNCONNECTED;
-  wire [1:0]NLW_inst_s_axi_control_RRESP_UNCONNECTED;
-
-  assign m_axi_gmem0_ARADDR[63:7] = \^m_axi_gmem0_ARADDR [63:7];
-  assign m_axi_gmem0_ARADDR[6] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[5] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[4] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[3] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[2] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[1] = \<const0> ;
-  assign m_axi_gmem0_ARADDR[0] = \<const0> ;
-  assign m_axi_gmem0_ARBURST[1] = \<const0> ;
-  assign m_axi_gmem0_ARBURST[0] = \<const1> ;
-  assign m_axi_gmem0_ARCACHE[3] = \<const0> ;
-  assign m_axi_gmem0_ARCACHE[2] = \<const0> ;
-  assign m_axi_gmem0_ARCACHE[1] = \<const1> ;
-  assign m_axi_gmem0_ARCACHE[0] = \<const1> ;
-  assign m_axi_gmem0_ARID[0] = \<const0> ;
-  assign m_axi_gmem0_ARLEN[7] = \<const0> ;
-  assign m_axi_gmem0_ARLEN[6] = \<const0> ;
-  assign m_axi_gmem0_ARLEN[5] = \<const0> ;
-  assign m_axi_gmem0_ARLEN[4] = \<const0> ;
-  assign m_axi_gmem0_ARLEN[3:0] = \^m_axi_gmem0_ARLEN [3:0];
-  assign m_axi_gmem0_ARLOCK[1] = \<const0> ;
-  assign m_axi_gmem0_ARLOCK[0] = \<const0> ;
-  assign m_axi_gmem0_ARPROT[2] = \<const0> ;
-  assign m_axi_gmem0_ARPROT[1] = \<const0> ;
-  assign m_axi_gmem0_ARPROT[0] = \<const0> ;
-  assign m_axi_gmem0_ARQOS[3] = \<const0> ;
-  assign m_axi_gmem0_ARQOS[2] = \<const0> ;
-  assign m_axi_gmem0_ARQOS[1] = \<const0> ;
-  assign m_axi_gmem0_ARQOS[0] = \<const0> ;
-  assign m_axi_gmem0_ARREGION[3] = \<const0> ;
-  assign m_axi_gmem0_ARREGION[2] = \<const0> ;
-  assign m_axi_gmem0_ARREGION[1] = \<const0> ;
-  assign m_axi_gmem0_ARREGION[0] = \<const0> ;
-  assign m_axi_gmem0_ARSIZE[2] = \<const1> ;
-  assign m_axi_gmem0_ARSIZE[1] = \<const1> ;
-  assign m_axi_gmem0_ARSIZE[0] = \<const1> ;
-  assign m_axi_gmem0_AWADDR[63] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[62] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[61] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[60] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[59] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[58] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[57] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[56] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[55] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[54] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[53] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[52] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[51] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[50] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[49] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[48] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[47] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[46] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[45] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[44] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[43] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[42] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[41] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[40] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[39] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[38] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[37] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[36] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[35] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[34] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[33] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[32] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[31] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[30] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[29] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[28] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[27] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[26] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[25] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[24] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[23] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[22] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[21] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[20] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[19] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[18] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[17] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[16] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[15] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[14] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[13] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[12] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[11] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[10] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[9] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[8] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[7] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[6] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[5] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[4] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[3] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[2] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[1] = \<const0> ;
-  assign m_axi_gmem0_AWADDR[0] = \<const0> ;
-  assign m_axi_gmem0_AWBURST[1] = \<const0> ;
-  assign m_axi_gmem0_AWBURST[0] = \<const1> ;
-  assign m_axi_gmem0_AWCACHE[3] = \<const0> ;
-  assign m_axi_gmem0_AWCACHE[2] = \<const0> ;
-  assign m_axi_gmem0_AWCACHE[1] = \<const1> ;
-  assign m_axi_gmem0_AWCACHE[0] = \<const1> ;
-  assign m_axi_gmem0_AWID[0] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[7] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[6] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[5] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[4] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[3] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[2] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[1] = \<const0> ;
-  assign m_axi_gmem0_AWLEN[0] = \<const0> ;
-  assign m_axi_gmem0_AWLOCK[1] = \<const0> ;
-  assign m_axi_gmem0_AWLOCK[0] = \<const0> ;
-  assign m_axi_gmem0_AWPROT[2] = \<const0> ;
-  assign m_axi_gmem0_AWPROT[1] = \<const0> ;
-  assign m_axi_gmem0_AWPROT[0] = \<const0> ;
-  assign m_axi_gmem0_AWQOS[3] = \<const0> ;
-  assign m_axi_gmem0_AWQOS[2] = \<const0> ;
-  assign m_axi_gmem0_AWQOS[1] = \<const0> ;
-  assign m_axi_gmem0_AWQOS[0] = \<const0> ;
-  assign m_axi_gmem0_AWREGION[3] = \<const0> ;
-  assign m_axi_gmem0_AWREGION[2] = \<const0> ;
-  assign m_axi_gmem0_AWREGION[1] = \<const0> ;
-  assign m_axi_gmem0_AWREGION[0] = \<const0> ;
-  assign m_axi_gmem0_AWSIZE[2] = \<const1> ;
-  assign m_axi_gmem0_AWSIZE[1] = \<const1> ;
-  assign m_axi_gmem0_AWSIZE[0] = \<const1> ;
-  assign m_axi_gmem0_AWVALID = \<const0> ;
-  assign m_axi_gmem0_WDATA[1023] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1022] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1021] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1020] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1019] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1018] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1017] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1016] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1015] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1014] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1013] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1012] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1011] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1010] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1009] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1008] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1007] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1006] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1005] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1004] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1003] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1002] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1001] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1000] = \<const0> ;
-  assign m_axi_gmem0_WDATA[999] = \<const0> ;
-  assign m_axi_gmem0_WDATA[998] = \<const0> ;
-  assign m_axi_gmem0_WDATA[997] = \<const0> ;
-  assign m_axi_gmem0_WDATA[996] = \<const0> ;
-  assign m_axi_gmem0_WDATA[995] = \<const0> ;
-  assign m_axi_gmem0_WDATA[994] = \<const0> ;
-  assign m_axi_gmem0_WDATA[993] = \<const0> ;
-  assign m_axi_gmem0_WDATA[992] = \<const0> ;
-  assign m_axi_gmem0_WDATA[991] = \<const0> ;
-  assign m_axi_gmem0_WDATA[990] = \<const0> ;
-  assign m_axi_gmem0_WDATA[989] = \<const0> ;
-  assign m_axi_gmem0_WDATA[988] = \<const0> ;
-  assign m_axi_gmem0_WDATA[987] = \<const0> ;
-  assign m_axi_gmem0_WDATA[986] = \<const0> ;
-  assign m_axi_gmem0_WDATA[985] = \<const0> ;
-  assign m_axi_gmem0_WDATA[984] = \<const0> ;
-  assign m_axi_gmem0_WDATA[983] = \<const0> ;
-  assign m_axi_gmem0_WDATA[982] = \<const0> ;
-  assign m_axi_gmem0_WDATA[981] = \<const0> ;
-  assign m_axi_gmem0_WDATA[980] = \<const0> ;
-  assign m_axi_gmem0_WDATA[979] = \<const0> ;
-  assign m_axi_gmem0_WDATA[978] = \<const0> ;
-  assign m_axi_gmem0_WDATA[977] = \<const0> ;
-  assign m_axi_gmem0_WDATA[976] = \<const0> ;
-  assign m_axi_gmem0_WDATA[975] = \<const0> ;
-  assign m_axi_gmem0_WDATA[974] = \<const0> ;
-  assign m_axi_gmem0_WDATA[973] = \<const0> ;
-  assign m_axi_gmem0_WDATA[972] = \<const0> ;
-  assign m_axi_gmem0_WDATA[971] = \<const0> ;
-  assign m_axi_gmem0_WDATA[970] = \<const0> ;
-  assign m_axi_gmem0_WDATA[969] = \<const0> ;
-  assign m_axi_gmem0_WDATA[968] = \<const0> ;
-  assign m_axi_gmem0_WDATA[967] = \<const0> ;
-  assign m_axi_gmem0_WDATA[966] = \<const0> ;
-  assign m_axi_gmem0_WDATA[965] = \<const0> ;
-  assign m_axi_gmem0_WDATA[964] = \<const0> ;
-  assign m_axi_gmem0_WDATA[963] = \<const0> ;
-  assign m_axi_gmem0_WDATA[962] = \<const0> ;
-  assign m_axi_gmem0_WDATA[961] = \<const0> ;
-  assign m_axi_gmem0_WDATA[960] = \<const0> ;
-  assign m_axi_gmem0_WDATA[959] = \<const0> ;
-  assign m_axi_gmem0_WDATA[958] = \<const0> ;
-  assign m_axi_gmem0_WDATA[957] = \<const0> ;
-  assign m_axi_gmem0_WDATA[956] = \<const0> ;
-  assign m_axi_gmem0_WDATA[955] = \<const0> ;
-  assign m_axi_gmem0_WDATA[954] = \<const0> ;
-  assign m_axi_gmem0_WDATA[953] = \<const0> ;
-  assign m_axi_gmem0_WDATA[952] = \<const0> ;
-  assign m_axi_gmem0_WDATA[951] = \<const0> ;
-  assign m_axi_gmem0_WDATA[950] = \<const0> ;
-  assign m_axi_gmem0_WDATA[949] = \<const0> ;
-  assign m_axi_gmem0_WDATA[948] = \<const0> ;
-  assign m_axi_gmem0_WDATA[947] = \<const0> ;
-  assign m_axi_gmem0_WDATA[946] = \<const0> ;
-  assign m_axi_gmem0_WDATA[945] = \<const0> ;
-  assign m_axi_gmem0_WDATA[944] = \<const0> ;
-  assign m_axi_gmem0_WDATA[943] = \<const0> ;
-  assign m_axi_gmem0_WDATA[942] = \<const0> ;
-  assign m_axi_gmem0_WDATA[941] = \<const0> ;
-  assign m_axi_gmem0_WDATA[940] = \<const0> ;
-  assign m_axi_gmem0_WDATA[939] = \<const0> ;
-  assign m_axi_gmem0_WDATA[938] = \<const0> ;
-  assign m_axi_gmem0_WDATA[937] = \<const0> ;
-  assign m_axi_gmem0_WDATA[936] = \<const0> ;
-  assign m_axi_gmem0_WDATA[935] = \<const0> ;
-  assign m_axi_gmem0_WDATA[934] = \<const0> ;
-  assign m_axi_gmem0_WDATA[933] = \<const0> ;
-  assign m_axi_gmem0_WDATA[932] = \<const0> ;
-  assign m_axi_gmem0_WDATA[931] = \<const0> ;
-  assign m_axi_gmem0_WDATA[930] = \<const0> ;
-  assign m_axi_gmem0_WDATA[929] = \<const0> ;
-  assign m_axi_gmem0_WDATA[928] = \<const0> ;
-  assign m_axi_gmem0_WDATA[927] = \<const0> ;
-  assign m_axi_gmem0_WDATA[926] = \<const0> ;
-  assign m_axi_gmem0_WDATA[925] = \<const0> ;
-  assign m_axi_gmem0_WDATA[924] = \<const0> ;
-  assign m_axi_gmem0_WDATA[923] = \<const0> ;
-  assign m_axi_gmem0_WDATA[922] = \<const0> ;
-  assign m_axi_gmem0_WDATA[921] = \<const0> ;
-  assign m_axi_gmem0_WDATA[920] = \<const0> ;
-  assign m_axi_gmem0_WDATA[919] = \<const0> ;
-  assign m_axi_gmem0_WDATA[918] = \<const0> ;
-  assign m_axi_gmem0_WDATA[917] = \<const0> ;
-  assign m_axi_gmem0_WDATA[916] = \<const0> ;
-  assign m_axi_gmem0_WDATA[915] = \<const0> ;
-  assign m_axi_gmem0_WDATA[914] = \<const0> ;
-  assign m_axi_gmem0_WDATA[913] = \<const0> ;
-  assign m_axi_gmem0_WDATA[912] = \<const0> ;
-  assign m_axi_gmem0_WDATA[911] = \<const0> ;
-  assign m_axi_gmem0_WDATA[910] = \<const0> ;
-  assign m_axi_gmem0_WDATA[909] = \<const0> ;
-  assign m_axi_gmem0_WDATA[908] = \<const0> ;
-  assign m_axi_gmem0_WDATA[907] = \<const0> ;
-  assign m_axi_gmem0_WDATA[906] = \<const0> ;
-  assign m_axi_gmem0_WDATA[905] = \<const0> ;
-  assign m_axi_gmem0_WDATA[904] = \<const0> ;
-  assign m_axi_gmem0_WDATA[903] = \<const0> ;
-  assign m_axi_gmem0_WDATA[902] = \<const0> ;
-  assign m_axi_gmem0_WDATA[901] = \<const0> ;
-  assign m_axi_gmem0_WDATA[900] = \<const0> ;
-  assign m_axi_gmem0_WDATA[899] = \<const0> ;
-  assign m_axi_gmem0_WDATA[898] = \<const0> ;
-  assign m_axi_gmem0_WDATA[897] = \<const0> ;
-  assign m_axi_gmem0_WDATA[896] = \<const0> ;
-  assign m_axi_gmem0_WDATA[895] = \<const0> ;
-  assign m_axi_gmem0_WDATA[894] = \<const0> ;
-  assign m_axi_gmem0_WDATA[893] = \<const0> ;
-  assign m_axi_gmem0_WDATA[892] = \<const0> ;
-  assign m_axi_gmem0_WDATA[891] = \<const0> ;
-  assign m_axi_gmem0_WDATA[890] = \<const0> ;
-  assign m_axi_gmem0_WDATA[889] = \<const0> ;
-  assign m_axi_gmem0_WDATA[888] = \<const0> ;
-  assign m_axi_gmem0_WDATA[887] = \<const0> ;
-  assign m_axi_gmem0_WDATA[886] = \<const0> ;
-  assign m_axi_gmem0_WDATA[885] = \<const0> ;
-  assign m_axi_gmem0_WDATA[884] = \<const0> ;
-  assign m_axi_gmem0_WDATA[883] = \<const0> ;
-  assign m_axi_gmem0_WDATA[882] = \<const0> ;
-  assign m_axi_gmem0_WDATA[881] = \<const0> ;
-  assign m_axi_gmem0_WDATA[880] = \<const0> ;
-  assign m_axi_gmem0_WDATA[879] = \<const0> ;
-  assign m_axi_gmem0_WDATA[878] = \<const0> ;
-  assign m_axi_gmem0_WDATA[877] = \<const0> ;
-  assign m_axi_gmem0_WDATA[876] = \<const0> ;
-  assign m_axi_gmem0_WDATA[875] = \<const0> ;
-  assign m_axi_gmem0_WDATA[874] = \<const0> ;
-  assign m_axi_gmem0_WDATA[873] = \<const0> ;
-  assign m_axi_gmem0_WDATA[872] = \<const0> ;
-  assign m_axi_gmem0_WDATA[871] = \<const0> ;
-  assign m_axi_gmem0_WDATA[870] = \<const0> ;
-  assign m_axi_gmem0_WDATA[869] = \<const0> ;
-  assign m_axi_gmem0_WDATA[868] = \<const0> ;
-  assign m_axi_gmem0_WDATA[867] = \<const0> ;
-  assign m_axi_gmem0_WDATA[866] = \<const0> ;
-  assign m_axi_gmem0_WDATA[865] = \<const0> ;
-  assign m_axi_gmem0_WDATA[864] = \<const0> ;
-  assign m_axi_gmem0_WDATA[863] = \<const0> ;
-  assign m_axi_gmem0_WDATA[862] = \<const0> ;
-  assign m_axi_gmem0_WDATA[861] = \<const0> ;
-  assign m_axi_gmem0_WDATA[860] = \<const0> ;
-  assign m_axi_gmem0_WDATA[859] = \<const0> ;
-  assign m_axi_gmem0_WDATA[858] = \<const0> ;
-  assign m_axi_gmem0_WDATA[857] = \<const0> ;
-  assign m_axi_gmem0_WDATA[856] = \<const0> ;
-  assign m_axi_gmem0_WDATA[855] = \<const0> ;
-  assign m_axi_gmem0_WDATA[854] = \<const0> ;
-  assign m_axi_gmem0_WDATA[853] = \<const0> ;
-  assign m_axi_gmem0_WDATA[852] = \<const0> ;
-  assign m_axi_gmem0_WDATA[851] = \<const0> ;
-  assign m_axi_gmem0_WDATA[850] = \<const0> ;
-  assign m_axi_gmem0_WDATA[849] = \<const0> ;
-  assign m_axi_gmem0_WDATA[848] = \<const0> ;
-  assign m_axi_gmem0_WDATA[847] = \<const0> ;
-  assign m_axi_gmem0_WDATA[846] = \<const0> ;
-  assign m_axi_gmem0_WDATA[845] = \<const0> ;
-  assign m_axi_gmem0_WDATA[844] = \<const0> ;
-  assign m_axi_gmem0_WDATA[843] = \<const0> ;
-  assign m_axi_gmem0_WDATA[842] = \<const0> ;
-  assign m_axi_gmem0_WDATA[841] = \<const0> ;
-  assign m_axi_gmem0_WDATA[840] = \<const0> ;
-  assign m_axi_gmem0_WDATA[839] = \<const0> ;
-  assign m_axi_gmem0_WDATA[838] = \<const0> ;
-  assign m_axi_gmem0_WDATA[837] = \<const0> ;
-  assign m_axi_gmem0_WDATA[836] = \<const0> ;
-  assign m_axi_gmem0_WDATA[835] = \<const0> ;
-  assign m_axi_gmem0_WDATA[834] = \<const0> ;
-  assign m_axi_gmem0_WDATA[833] = \<const0> ;
-  assign m_axi_gmem0_WDATA[832] = \<const0> ;
-  assign m_axi_gmem0_WDATA[831] = \<const0> ;
-  assign m_axi_gmem0_WDATA[830] = \<const0> ;
-  assign m_axi_gmem0_WDATA[829] = \<const0> ;
-  assign m_axi_gmem0_WDATA[828] = \<const0> ;
-  assign m_axi_gmem0_WDATA[827] = \<const0> ;
-  assign m_axi_gmem0_WDATA[826] = \<const0> ;
-  assign m_axi_gmem0_WDATA[825] = \<const0> ;
-  assign m_axi_gmem0_WDATA[824] = \<const0> ;
-  assign m_axi_gmem0_WDATA[823] = \<const0> ;
-  assign m_axi_gmem0_WDATA[822] = \<const0> ;
-  assign m_axi_gmem0_WDATA[821] = \<const0> ;
-  assign m_axi_gmem0_WDATA[820] = \<const0> ;
-  assign m_axi_gmem0_WDATA[819] = \<const0> ;
-  assign m_axi_gmem0_WDATA[818] = \<const0> ;
-  assign m_axi_gmem0_WDATA[817] = \<const0> ;
-  assign m_axi_gmem0_WDATA[816] = \<const0> ;
-  assign m_axi_gmem0_WDATA[815] = \<const0> ;
-  assign m_axi_gmem0_WDATA[814] = \<const0> ;
-  assign m_axi_gmem0_WDATA[813] = \<const0> ;
-  assign m_axi_gmem0_WDATA[812] = \<const0> ;
-  assign m_axi_gmem0_WDATA[811] = \<const0> ;
-  assign m_axi_gmem0_WDATA[810] = \<const0> ;
-  assign m_axi_gmem0_WDATA[809] = \<const0> ;
-  assign m_axi_gmem0_WDATA[808] = \<const0> ;
-  assign m_axi_gmem0_WDATA[807] = \<const0> ;
-  assign m_axi_gmem0_WDATA[806] = \<const0> ;
-  assign m_axi_gmem0_WDATA[805] = \<const0> ;
-  assign m_axi_gmem0_WDATA[804] = \<const0> ;
-  assign m_axi_gmem0_WDATA[803] = \<const0> ;
-  assign m_axi_gmem0_WDATA[802] = \<const0> ;
-  assign m_axi_gmem0_WDATA[801] = \<const0> ;
-  assign m_axi_gmem0_WDATA[800] = \<const0> ;
-  assign m_axi_gmem0_WDATA[799] = \<const0> ;
-  assign m_axi_gmem0_WDATA[798] = \<const0> ;
-  assign m_axi_gmem0_WDATA[797] = \<const0> ;
-  assign m_axi_gmem0_WDATA[796] = \<const0> ;
-  assign m_axi_gmem0_WDATA[795] = \<const0> ;
-  assign m_axi_gmem0_WDATA[794] = \<const0> ;
-  assign m_axi_gmem0_WDATA[793] = \<const0> ;
-  assign m_axi_gmem0_WDATA[792] = \<const0> ;
-  assign m_axi_gmem0_WDATA[791] = \<const0> ;
-  assign m_axi_gmem0_WDATA[790] = \<const0> ;
-  assign m_axi_gmem0_WDATA[789] = \<const0> ;
-  assign m_axi_gmem0_WDATA[788] = \<const0> ;
-  assign m_axi_gmem0_WDATA[787] = \<const0> ;
-  assign m_axi_gmem0_WDATA[786] = \<const0> ;
-  assign m_axi_gmem0_WDATA[785] = \<const0> ;
-  assign m_axi_gmem0_WDATA[784] = \<const0> ;
-  assign m_axi_gmem0_WDATA[783] = \<const0> ;
-  assign m_axi_gmem0_WDATA[782] = \<const0> ;
-  assign m_axi_gmem0_WDATA[781] = \<const0> ;
-  assign m_axi_gmem0_WDATA[780] = \<const0> ;
-  assign m_axi_gmem0_WDATA[779] = \<const0> ;
-  assign m_axi_gmem0_WDATA[778] = \<const0> ;
-  assign m_axi_gmem0_WDATA[777] = \<const0> ;
-  assign m_axi_gmem0_WDATA[776] = \<const0> ;
-  assign m_axi_gmem0_WDATA[775] = \<const0> ;
-  assign m_axi_gmem0_WDATA[774] = \<const0> ;
-  assign m_axi_gmem0_WDATA[773] = \<const0> ;
-  assign m_axi_gmem0_WDATA[772] = \<const0> ;
-  assign m_axi_gmem0_WDATA[771] = \<const0> ;
-  assign m_axi_gmem0_WDATA[770] = \<const0> ;
-  assign m_axi_gmem0_WDATA[769] = \<const0> ;
-  assign m_axi_gmem0_WDATA[768] = \<const0> ;
-  assign m_axi_gmem0_WDATA[767] = \<const0> ;
-  assign m_axi_gmem0_WDATA[766] = \<const0> ;
-  assign m_axi_gmem0_WDATA[765] = \<const0> ;
-  assign m_axi_gmem0_WDATA[764] = \<const0> ;
-  assign m_axi_gmem0_WDATA[763] = \<const0> ;
-  assign m_axi_gmem0_WDATA[762] = \<const0> ;
-  assign m_axi_gmem0_WDATA[761] = \<const0> ;
-  assign m_axi_gmem0_WDATA[760] = \<const0> ;
-  assign m_axi_gmem0_WDATA[759] = \<const0> ;
-  assign m_axi_gmem0_WDATA[758] = \<const0> ;
-  assign m_axi_gmem0_WDATA[757] = \<const0> ;
-  assign m_axi_gmem0_WDATA[756] = \<const0> ;
-  assign m_axi_gmem0_WDATA[755] = \<const0> ;
-  assign m_axi_gmem0_WDATA[754] = \<const0> ;
-  assign m_axi_gmem0_WDATA[753] = \<const0> ;
-  assign m_axi_gmem0_WDATA[752] = \<const0> ;
-  assign m_axi_gmem0_WDATA[751] = \<const0> ;
-  assign m_axi_gmem0_WDATA[750] = \<const0> ;
-  assign m_axi_gmem0_WDATA[749] = \<const0> ;
-  assign m_axi_gmem0_WDATA[748] = \<const0> ;
-  assign m_axi_gmem0_WDATA[747] = \<const0> ;
-  assign m_axi_gmem0_WDATA[746] = \<const0> ;
-  assign m_axi_gmem0_WDATA[745] = \<const0> ;
-  assign m_axi_gmem0_WDATA[744] = \<const0> ;
-  assign m_axi_gmem0_WDATA[743] = \<const0> ;
-  assign m_axi_gmem0_WDATA[742] = \<const0> ;
-  assign m_axi_gmem0_WDATA[741] = \<const0> ;
-  assign m_axi_gmem0_WDATA[740] = \<const0> ;
-  assign m_axi_gmem0_WDATA[739] = \<const0> ;
-  assign m_axi_gmem0_WDATA[738] = \<const0> ;
-  assign m_axi_gmem0_WDATA[737] = \<const0> ;
-  assign m_axi_gmem0_WDATA[736] = \<const0> ;
-  assign m_axi_gmem0_WDATA[735] = \<const0> ;
-  assign m_axi_gmem0_WDATA[734] = \<const0> ;
-  assign m_axi_gmem0_WDATA[733] = \<const0> ;
-  assign m_axi_gmem0_WDATA[732] = \<const0> ;
-  assign m_axi_gmem0_WDATA[731] = \<const0> ;
-  assign m_axi_gmem0_WDATA[730] = \<const0> ;
-  assign m_axi_gmem0_WDATA[729] = \<const0> ;
-  assign m_axi_gmem0_WDATA[728] = \<const0> ;
-  assign m_axi_gmem0_WDATA[727] = \<const0> ;
-  assign m_axi_gmem0_WDATA[726] = \<const0> ;
-  assign m_axi_gmem0_WDATA[725] = \<const0> ;
-  assign m_axi_gmem0_WDATA[724] = \<const0> ;
-  assign m_axi_gmem0_WDATA[723] = \<const0> ;
-  assign m_axi_gmem0_WDATA[722] = \<const0> ;
-  assign m_axi_gmem0_WDATA[721] = \<const0> ;
-  assign m_axi_gmem0_WDATA[720] = \<const0> ;
-  assign m_axi_gmem0_WDATA[719] = \<const0> ;
-  assign m_axi_gmem0_WDATA[718] = \<const0> ;
-  assign m_axi_gmem0_WDATA[717] = \<const0> ;
-  assign m_axi_gmem0_WDATA[716] = \<const0> ;
-  assign m_axi_gmem0_WDATA[715] = \<const0> ;
-  assign m_axi_gmem0_WDATA[714] = \<const0> ;
-  assign m_axi_gmem0_WDATA[713] = \<const0> ;
-  assign m_axi_gmem0_WDATA[712] = \<const0> ;
-  assign m_axi_gmem0_WDATA[711] = \<const0> ;
-  assign m_axi_gmem0_WDATA[710] = \<const0> ;
-  assign m_axi_gmem0_WDATA[709] = \<const0> ;
-  assign m_axi_gmem0_WDATA[708] = \<const0> ;
-  assign m_axi_gmem0_WDATA[707] = \<const0> ;
-  assign m_axi_gmem0_WDATA[706] = \<const0> ;
-  assign m_axi_gmem0_WDATA[705] = \<const0> ;
-  assign m_axi_gmem0_WDATA[704] = \<const0> ;
-  assign m_axi_gmem0_WDATA[703] = \<const0> ;
-  assign m_axi_gmem0_WDATA[702] = \<const0> ;
-  assign m_axi_gmem0_WDATA[701] = \<const0> ;
-  assign m_axi_gmem0_WDATA[700] = \<const0> ;
-  assign m_axi_gmem0_WDATA[699] = \<const0> ;
-  assign m_axi_gmem0_WDATA[698] = \<const0> ;
-  assign m_axi_gmem0_WDATA[697] = \<const0> ;
-  assign m_axi_gmem0_WDATA[696] = \<const0> ;
-  assign m_axi_gmem0_WDATA[695] = \<const0> ;
-  assign m_axi_gmem0_WDATA[694] = \<const0> ;
-  assign m_axi_gmem0_WDATA[693] = \<const0> ;
-  assign m_axi_gmem0_WDATA[692] = \<const0> ;
-  assign m_axi_gmem0_WDATA[691] = \<const0> ;
-  assign m_axi_gmem0_WDATA[690] = \<const0> ;
-  assign m_axi_gmem0_WDATA[689] = \<const0> ;
-  assign m_axi_gmem0_WDATA[688] = \<const0> ;
-  assign m_axi_gmem0_WDATA[687] = \<const0> ;
-  assign m_axi_gmem0_WDATA[686] = \<const0> ;
-  assign m_axi_gmem0_WDATA[685] = \<const0> ;
-  assign m_axi_gmem0_WDATA[684] = \<const0> ;
-  assign m_axi_gmem0_WDATA[683] = \<const0> ;
-  assign m_axi_gmem0_WDATA[682] = \<const0> ;
-  assign m_axi_gmem0_WDATA[681] = \<const0> ;
-  assign m_axi_gmem0_WDATA[680] = \<const0> ;
-  assign m_axi_gmem0_WDATA[679] = \<const0> ;
-  assign m_axi_gmem0_WDATA[678] = \<const0> ;
-  assign m_axi_gmem0_WDATA[677] = \<const0> ;
-  assign m_axi_gmem0_WDATA[676] = \<const0> ;
-  assign m_axi_gmem0_WDATA[675] = \<const0> ;
-  assign m_axi_gmem0_WDATA[674] = \<const0> ;
-  assign m_axi_gmem0_WDATA[673] = \<const0> ;
-  assign m_axi_gmem0_WDATA[672] = \<const0> ;
-  assign m_axi_gmem0_WDATA[671] = \<const0> ;
-  assign m_axi_gmem0_WDATA[670] = \<const0> ;
-  assign m_axi_gmem0_WDATA[669] = \<const0> ;
-  assign m_axi_gmem0_WDATA[668] = \<const0> ;
-  assign m_axi_gmem0_WDATA[667] = \<const0> ;
-  assign m_axi_gmem0_WDATA[666] = \<const0> ;
-  assign m_axi_gmem0_WDATA[665] = \<const0> ;
-  assign m_axi_gmem0_WDATA[664] = \<const0> ;
-  assign m_axi_gmem0_WDATA[663] = \<const0> ;
-  assign m_axi_gmem0_WDATA[662] = \<const0> ;
-  assign m_axi_gmem0_WDATA[661] = \<const0> ;
-  assign m_axi_gmem0_WDATA[660] = \<const0> ;
-  assign m_axi_gmem0_WDATA[659] = \<const0> ;
-  assign m_axi_gmem0_WDATA[658] = \<const0> ;
-  assign m_axi_gmem0_WDATA[657] = \<const0> ;
-  assign m_axi_gmem0_WDATA[656] = \<const0> ;
-  assign m_axi_gmem0_WDATA[655] = \<const0> ;
-  assign m_axi_gmem0_WDATA[654] = \<const0> ;
-  assign m_axi_gmem0_WDATA[653] = \<const0> ;
-  assign m_axi_gmem0_WDATA[652] = \<const0> ;
-  assign m_axi_gmem0_WDATA[651] = \<const0> ;
-  assign m_axi_gmem0_WDATA[650] = \<const0> ;
-  assign m_axi_gmem0_WDATA[649] = \<const0> ;
-  assign m_axi_gmem0_WDATA[648] = \<const0> ;
-  assign m_axi_gmem0_WDATA[647] = \<const0> ;
-  assign m_axi_gmem0_WDATA[646] = \<const0> ;
-  assign m_axi_gmem0_WDATA[645] = \<const0> ;
-  assign m_axi_gmem0_WDATA[644] = \<const0> ;
-  assign m_axi_gmem0_WDATA[643] = \<const0> ;
-  assign m_axi_gmem0_WDATA[642] = \<const0> ;
-  assign m_axi_gmem0_WDATA[641] = \<const0> ;
-  assign m_axi_gmem0_WDATA[640] = \<const0> ;
-  assign m_axi_gmem0_WDATA[639] = \<const0> ;
-  assign m_axi_gmem0_WDATA[638] = \<const0> ;
-  assign m_axi_gmem0_WDATA[637] = \<const0> ;
-  assign m_axi_gmem0_WDATA[636] = \<const0> ;
-  assign m_axi_gmem0_WDATA[635] = \<const0> ;
-  assign m_axi_gmem0_WDATA[634] = \<const0> ;
-  assign m_axi_gmem0_WDATA[633] = \<const0> ;
-  assign m_axi_gmem0_WDATA[632] = \<const0> ;
-  assign m_axi_gmem0_WDATA[631] = \<const0> ;
-  assign m_axi_gmem0_WDATA[630] = \<const0> ;
-  assign m_axi_gmem0_WDATA[629] = \<const0> ;
-  assign m_axi_gmem0_WDATA[628] = \<const0> ;
-  assign m_axi_gmem0_WDATA[627] = \<const0> ;
-  assign m_axi_gmem0_WDATA[626] = \<const0> ;
-  assign m_axi_gmem0_WDATA[625] = \<const0> ;
-  assign m_axi_gmem0_WDATA[624] = \<const0> ;
-  assign m_axi_gmem0_WDATA[623] = \<const0> ;
-  assign m_axi_gmem0_WDATA[622] = \<const0> ;
-  assign m_axi_gmem0_WDATA[621] = \<const0> ;
-  assign m_axi_gmem0_WDATA[620] = \<const0> ;
-  assign m_axi_gmem0_WDATA[619] = \<const0> ;
-  assign m_axi_gmem0_WDATA[618] = \<const0> ;
-  assign m_axi_gmem0_WDATA[617] = \<const0> ;
-  assign m_axi_gmem0_WDATA[616] = \<const0> ;
-  assign m_axi_gmem0_WDATA[615] = \<const0> ;
-  assign m_axi_gmem0_WDATA[614] = \<const0> ;
-  assign m_axi_gmem0_WDATA[613] = \<const0> ;
-  assign m_axi_gmem0_WDATA[612] = \<const0> ;
-  assign m_axi_gmem0_WDATA[611] = \<const0> ;
-  assign m_axi_gmem0_WDATA[610] = \<const0> ;
-  assign m_axi_gmem0_WDATA[609] = \<const0> ;
-  assign m_axi_gmem0_WDATA[608] = \<const0> ;
-  assign m_axi_gmem0_WDATA[607] = \<const0> ;
-  assign m_axi_gmem0_WDATA[606] = \<const0> ;
-  assign m_axi_gmem0_WDATA[605] = \<const0> ;
-  assign m_axi_gmem0_WDATA[604] = \<const0> ;
-  assign m_axi_gmem0_WDATA[603] = \<const0> ;
-  assign m_axi_gmem0_WDATA[602] = \<const0> ;
-  assign m_axi_gmem0_WDATA[601] = \<const0> ;
-  assign m_axi_gmem0_WDATA[600] = \<const0> ;
-  assign m_axi_gmem0_WDATA[599] = \<const0> ;
-  assign m_axi_gmem0_WDATA[598] = \<const0> ;
-  assign m_axi_gmem0_WDATA[597] = \<const0> ;
-  assign m_axi_gmem0_WDATA[596] = \<const0> ;
-  assign m_axi_gmem0_WDATA[595] = \<const0> ;
-  assign m_axi_gmem0_WDATA[594] = \<const0> ;
-  assign m_axi_gmem0_WDATA[593] = \<const0> ;
-  assign m_axi_gmem0_WDATA[592] = \<const0> ;
-  assign m_axi_gmem0_WDATA[591] = \<const0> ;
-  assign m_axi_gmem0_WDATA[590] = \<const0> ;
-  assign m_axi_gmem0_WDATA[589] = \<const0> ;
-  assign m_axi_gmem0_WDATA[588] = \<const0> ;
-  assign m_axi_gmem0_WDATA[587] = \<const0> ;
-  assign m_axi_gmem0_WDATA[586] = \<const0> ;
-  assign m_axi_gmem0_WDATA[585] = \<const0> ;
-  assign m_axi_gmem0_WDATA[584] = \<const0> ;
-  assign m_axi_gmem0_WDATA[583] = \<const0> ;
-  assign m_axi_gmem0_WDATA[582] = \<const0> ;
-  assign m_axi_gmem0_WDATA[581] = \<const0> ;
-  assign m_axi_gmem0_WDATA[580] = \<const0> ;
-  assign m_axi_gmem0_WDATA[579] = \<const0> ;
-  assign m_axi_gmem0_WDATA[578] = \<const0> ;
-  assign m_axi_gmem0_WDATA[577] = \<const0> ;
-  assign m_axi_gmem0_WDATA[576] = \<const0> ;
-  assign m_axi_gmem0_WDATA[575] = \<const0> ;
-  assign m_axi_gmem0_WDATA[574] = \<const0> ;
-  assign m_axi_gmem0_WDATA[573] = \<const0> ;
-  assign m_axi_gmem0_WDATA[572] = \<const0> ;
-  assign m_axi_gmem0_WDATA[571] = \<const0> ;
-  assign m_axi_gmem0_WDATA[570] = \<const0> ;
-  assign m_axi_gmem0_WDATA[569] = \<const0> ;
-  assign m_axi_gmem0_WDATA[568] = \<const0> ;
-  assign m_axi_gmem0_WDATA[567] = \<const0> ;
-  assign m_axi_gmem0_WDATA[566] = \<const0> ;
-  assign m_axi_gmem0_WDATA[565] = \<const0> ;
-  assign m_axi_gmem0_WDATA[564] = \<const0> ;
-  assign m_axi_gmem0_WDATA[563] = \<const0> ;
-  assign m_axi_gmem0_WDATA[562] = \<const0> ;
-  assign m_axi_gmem0_WDATA[561] = \<const0> ;
-  assign m_axi_gmem0_WDATA[560] = \<const0> ;
-  assign m_axi_gmem0_WDATA[559] = \<const0> ;
-  assign m_axi_gmem0_WDATA[558] = \<const0> ;
-  assign m_axi_gmem0_WDATA[557] = \<const0> ;
-  assign m_axi_gmem0_WDATA[556] = \<const0> ;
-  assign m_axi_gmem0_WDATA[555] = \<const0> ;
-  assign m_axi_gmem0_WDATA[554] = \<const0> ;
-  assign m_axi_gmem0_WDATA[553] = \<const0> ;
-  assign m_axi_gmem0_WDATA[552] = \<const0> ;
-  assign m_axi_gmem0_WDATA[551] = \<const0> ;
-  assign m_axi_gmem0_WDATA[550] = \<const0> ;
-  assign m_axi_gmem0_WDATA[549] = \<const0> ;
-  assign m_axi_gmem0_WDATA[548] = \<const0> ;
-  assign m_axi_gmem0_WDATA[547] = \<const0> ;
-  assign m_axi_gmem0_WDATA[546] = \<const0> ;
-  assign m_axi_gmem0_WDATA[545] = \<const0> ;
-  assign m_axi_gmem0_WDATA[544] = \<const0> ;
-  assign m_axi_gmem0_WDATA[543] = \<const0> ;
-  assign m_axi_gmem0_WDATA[542] = \<const0> ;
-  assign m_axi_gmem0_WDATA[541] = \<const0> ;
-  assign m_axi_gmem0_WDATA[540] = \<const0> ;
-  assign m_axi_gmem0_WDATA[539] = \<const0> ;
-  assign m_axi_gmem0_WDATA[538] = \<const0> ;
-  assign m_axi_gmem0_WDATA[537] = \<const0> ;
-  assign m_axi_gmem0_WDATA[536] = \<const0> ;
-  assign m_axi_gmem0_WDATA[535] = \<const0> ;
-  assign m_axi_gmem0_WDATA[534] = \<const0> ;
-  assign m_axi_gmem0_WDATA[533] = \<const0> ;
-  assign m_axi_gmem0_WDATA[532] = \<const0> ;
-  assign m_axi_gmem0_WDATA[531] = \<const0> ;
-  assign m_axi_gmem0_WDATA[530] = \<const0> ;
-  assign m_axi_gmem0_WDATA[529] = \<const0> ;
-  assign m_axi_gmem0_WDATA[528] = \<const0> ;
-  assign m_axi_gmem0_WDATA[527] = \<const0> ;
-  assign m_axi_gmem0_WDATA[526] = \<const0> ;
-  assign m_axi_gmem0_WDATA[525] = \<const0> ;
-  assign m_axi_gmem0_WDATA[524] = \<const0> ;
-  assign m_axi_gmem0_WDATA[523] = \<const0> ;
-  assign m_axi_gmem0_WDATA[522] = \<const0> ;
-  assign m_axi_gmem0_WDATA[521] = \<const0> ;
-  assign m_axi_gmem0_WDATA[520] = \<const0> ;
-  assign m_axi_gmem0_WDATA[519] = \<const0> ;
-  assign m_axi_gmem0_WDATA[518] = \<const0> ;
-  assign m_axi_gmem0_WDATA[517] = \<const0> ;
-  assign m_axi_gmem0_WDATA[516] = \<const0> ;
-  assign m_axi_gmem0_WDATA[515] = \<const0> ;
-  assign m_axi_gmem0_WDATA[514] = \<const0> ;
-  assign m_axi_gmem0_WDATA[513] = \<const0> ;
-  assign m_axi_gmem0_WDATA[512] = \<const0> ;
-  assign m_axi_gmem0_WDATA[511] = \<const0> ;
-  assign m_axi_gmem0_WDATA[510] = \<const0> ;
-  assign m_axi_gmem0_WDATA[509] = \<const0> ;
-  assign m_axi_gmem0_WDATA[508] = \<const0> ;
-  assign m_axi_gmem0_WDATA[507] = \<const0> ;
-  assign m_axi_gmem0_WDATA[506] = \<const0> ;
-  assign m_axi_gmem0_WDATA[505] = \<const0> ;
-  assign m_axi_gmem0_WDATA[504] = \<const0> ;
-  assign m_axi_gmem0_WDATA[503] = \<const0> ;
-  assign m_axi_gmem0_WDATA[502] = \<const0> ;
-  assign m_axi_gmem0_WDATA[501] = \<const0> ;
-  assign m_axi_gmem0_WDATA[500] = \<const0> ;
-  assign m_axi_gmem0_WDATA[499] = \<const0> ;
-  assign m_axi_gmem0_WDATA[498] = \<const0> ;
-  assign m_axi_gmem0_WDATA[497] = \<const0> ;
-  assign m_axi_gmem0_WDATA[496] = \<const0> ;
-  assign m_axi_gmem0_WDATA[495] = \<const0> ;
-  assign m_axi_gmem0_WDATA[494] = \<const0> ;
-  assign m_axi_gmem0_WDATA[493] = \<const0> ;
-  assign m_axi_gmem0_WDATA[492] = \<const0> ;
-  assign m_axi_gmem0_WDATA[491] = \<const0> ;
-  assign m_axi_gmem0_WDATA[490] = \<const0> ;
-  assign m_axi_gmem0_WDATA[489] = \<const0> ;
-  assign m_axi_gmem0_WDATA[488] = \<const0> ;
-  assign m_axi_gmem0_WDATA[487] = \<const0> ;
-  assign m_axi_gmem0_WDATA[486] = \<const0> ;
-  assign m_axi_gmem0_WDATA[485] = \<const0> ;
-  assign m_axi_gmem0_WDATA[484] = \<const0> ;
-  assign m_axi_gmem0_WDATA[483] = \<const0> ;
-  assign m_axi_gmem0_WDATA[482] = \<const0> ;
-  assign m_axi_gmem0_WDATA[481] = \<const0> ;
-  assign m_axi_gmem0_WDATA[480] = \<const0> ;
-  assign m_axi_gmem0_WDATA[479] = \<const0> ;
-  assign m_axi_gmem0_WDATA[478] = \<const0> ;
-  assign m_axi_gmem0_WDATA[477] = \<const0> ;
-  assign m_axi_gmem0_WDATA[476] = \<const0> ;
-  assign m_axi_gmem0_WDATA[475] = \<const0> ;
-  assign m_axi_gmem0_WDATA[474] = \<const0> ;
-  assign m_axi_gmem0_WDATA[473] = \<const0> ;
-  assign m_axi_gmem0_WDATA[472] = \<const0> ;
-  assign m_axi_gmem0_WDATA[471] = \<const0> ;
-  assign m_axi_gmem0_WDATA[470] = \<const0> ;
-  assign m_axi_gmem0_WDATA[469] = \<const0> ;
-  assign m_axi_gmem0_WDATA[468] = \<const0> ;
-  assign m_axi_gmem0_WDATA[467] = \<const0> ;
-  assign m_axi_gmem0_WDATA[466] = \<const0> ;
-  assign m_axi_gmem0_WDATA[465] = \<const0> ;
-  assign m_axi_gmem0_WDATA[464] = \<const0> ;
-  assign m_axi_gmem0_WDATA[463] = \<const0> ;
-  assign m_axi_gmem0_WDATA[462] = \<const0> ;
-  assign m_axi_gmem0_WDATA[461] = \<const0> ;
-  assign m_axi_gmem0_WDATA[460] = \<const0> ;
-  assign m_axi_gmem0_WDATA[459] = \<const0> ;
-  assign m_axi_gmem0_WDATA[458] = \<const0> ;
-  assign m_axi_gmem0_WDATA[457] = \<const0> ;
-  assign m_axi_gmem0_WDATA[456] = \<const0> ;
-  assign m_axi_gmem0_WDATA[455] = \<const0> ;
-  assign m_axi_gmem0_WDATA[454] = \<const0> ;
-  assign m_axi_gmem0_WDATA[453] = \<const0> ;
-  assign m_axi_gmem0_WDATA[452] = \<const0> ;
-  assign m_axi_gmem0_WDATA[451] = \<const0> ;
-  assign m_axi_gmem0_WDATA[450] = \<const0> ;
-  assign m_axi_gmem0_WDATA[449] = \<const0> ;
-  assign m_axi_gmem0_WDATA[448] = \<const0> ;
-  assign m_axi_gmem0_WDATA[447] = \<const0> ;
-  assign m_axi_gmem0_WDATA[446] = \<const0> ;
-  assign m_axi_gmem0_WDATA[445] = \<const0> ;
-  assign m_axi_gmem0_WDATA[444] = \<const0> ;
-  assign m_axi_gmem0_WDATA[443] = \<const0> ;
-  assign m_axi_gmem0_WDATA[442] = \<const0> ;
-  assign m_axi_gmem0_WDATA[441] = \<const0> ;
-  assign m_axi_gmem0_WDATA[440] = \<const0> ;
-  assign m_axi_gmem0_WDATA[439] = \<const0> ;
-  assign m_axi_gmem0_WDATA[438] = \<const0> ;
-  assign m_axi_gmem0_WDATA[437] = \<const0> ;
-  assign m_axi_gmem0_WDATA[436] = \<const0> ;
-  assign m_axi_gmem0_WDATA[435] = \<const0> ;
-  assign m_axi_gmem0_WDATA[434] = \<const0> ;
-  assign m_axi_gmem0_WDATA[433] = \<const0> ;
-  assign m_axi_gmem0_WDATA[432] = \<const0> ;
-  assign m_axi_gmem0_WDATA[431] = \<const0> ;
-  assign m_axi_gmem0_WDATA[430] = \<const0> ;
-  assign m_axi_gmem0_WDATA[429] = \<const0> ;
-  assign m_axi_gmem0_WDATA[428] = \<const0> ;
-  assign m_axi_gmem0_WDATA[427] = \<const0> ;
-  assign m_axi_gmem0_WDATA[426] = \<const0> ;
-  assign m_axi_gmem0_WDATA[425] = \<const0> ;
-  assign m_axi_gmem0_WDATA[424] = \<const0> ;
-  assign m_axi_gmem0_WDATA[423] = \<const0> ;
-  assign m_axi_gmem0_WDATA[422] = \<const0> ;
-  assign m_axi_gmem0_WDATA[421] = \<const0> ;
-  assign m_axi_gmem0_WDATA[420] = \<const0> ;
-  assign m_axi_gmem0_WDATA[419] = \<const0> ;
-  assign m_axi_gmem0_WDATA[418] = \<const0> ;
-  assign m_axi_gmem0_WDATA[417] = \<const0> ;
-  assign m_axi_gmem0_WDATA[416] = \<const0> ;
-  assign m_axi_gmem0_WDATA[415] = \<const0> ;
-  assign m_axi_gmem0_WDATA[414] = \<const0> ;
-  assign m_axi_gmem0_WDATA[413] = \<const0> ;
-  assign m_axi_gmem0_WDATA[412] = \<const0> ;
-  assign m_axi_gmem0_WDATA[411] = \<const0> ;
-  assign m_axi_gmem0_WDATA[410] = \<const0> ;
-  assign m_axi_gmem0_WDATA[409] = \<const0> ;
-  assign m_axi_gmem0_WDATA[408] = \<const0> ;
-  assign m_axi_gmem0_WDATA[407] = \<const0> ;
-  assign m_axi_gmem0_WDATA[406] = \<const0> ;
-  assign m_axi_gmem0_WDATA[405] = \<const0> ;
-  assign m_axi_gmem0_WDATA[404] = \<const0> ;
-  assign m_axi_gmem0_WDATA[403] = \<const0> ;
-  assign m_axi_gmem0_WDATA[402] = \<const0> ;
-  assign m_axi_gmem0_WDATA[401] = \<const0> ;
-  assign m_axi_gmem0_WDATA[400] = \<const0> ;
-  assign m_axi_gmem0_WDATA[399] = \<const0> ;
-  assign m_axi_gmem0_WDATA[398] = \<const0> ;
-  assign m_axi_gmem0_WDATA[397] = \<const0> ;
-  assign m_axi_gmem0_WDATA[396] = \<const0> ;
-  assign m_axi_gmem0_WDATA[395] = \<const0> ;
-  assign m_axi_gmem0_WDATA[394] = \<const0> ;
-  assign m_axi_gmem0_WDATA[393] = \<const0> ;
-  assign m_axi_gmem0_WDATA[392] = \<const0> ;
-  assign m_axi_gmem0_WDATA[391] = \<const0> ;
-  assign m_axi_gmem0_WDATA[390] = \<const0> ;
-  assign m_axi_gmem0_WDATA[389] = \<const0> ;
-  assign m_axi_gmem0_WDATA[388] = \<const0> ;
-  assign m_axi_gmem0_WDATA[387] = \<const0> ;
-  assign m_axi_gmem0_WDATA[386] = \<const0> ;
-  assign m_axi_gmem0_WDATA[385] = \<const0> ;
-  assign m_axi_gmem0_WDATA[384] = \<const0> ;
-  assign m_axi_gmem0_WDATA[383] = \<const0> ;
-  assign m_axi_gmem0_WDATA[382] = \<const0> ;
-  assign m_axi_gmem0_WDATA[381] = \<const0> ;
-  assign m_axi_gmem0_WDATA[380] = \<const0> ;
-  assign m_axi_gmem0_WDATA[379] = \<const0> ;
-  assign m_axi_gmem0_WDATA[378] = \<const0> ;
-  assign m_axi_gmem0_WDATA[377] = \<const0> ;
-  assign m_axi_gmem0_WDATA[376] = \<const0> ;
-  assign m_axi_gmem0_WDATA[375] = \<const0> ;
-  assign m_axi_gmem0_WDATA[374] = \<const0> ;
-  assign m_axi_gmem0_WDATA[373] = \<const0> ;
-  assign m_axi_gmem0_WDATA[372] = \<const0> ;
-  assign m_axi_gmem0_WDATA[371] = \<const0> ;
-  assign m_axi_gmem0_WDATA[370] = \<const0> ;
-  assign m_axi_gmem0_WDATA[369] = \<const0> ;
-  assign m_axi_gmem0_WDATA[368] = \<const0> ;
-  assign m_axi_gmem0_WDATA[367] = \<const0> ;
-  assign m_axi_gmem0_WDATA[366] = \<const0> ;
-  assign m_axi_gmem0_WDATA[365] = \<const0> ;
-  assign m_axi_gmem0_WDATA[364] = \<const0> ;
-  assign m_axi_gmem0_WDATA[363] = \<const0> ;
-  assign m_axi_gmem0_WDATA[362] = \<const0> ;
-  assign m_axi_gmem0_WDATA[361] = \<const0> ;
-  assign m_axi_gmem0_WDATA[360] = \<const0> ;
-  assign m_axi_gmem0_WDATA[359] = \<const0> ;
-  assign m_axi_gmem0_WDATA[358] = \<const0> ;
-  assign m_axi_gmem0_WDATA[357] = \<const0> ;
-  assign m_axi_gmem0_WDATA[356] = \<const0> ;
-  assign m_axi_gmem0_WDATA[355] = \<const0> ;
-  assign m_axi_gmem0_WDATA[354] = \<const0> ;
-  assign m_axi_gmem0_WDATA[353] = \<const0> ;
-  assign m_axi_gmem0_WDATA[352] = \<const0> ;
-  assign m_axi_gmem0_WDATA[351] = \<const0> ;
-  assign m_axi_gmem0_WDATA[350] = \<const0> ;
-  assign m_axi_gmem0_WDATA[349] = \<const0> ;
-  assign m_axi_gmem0_WDATA[348] = \<const0> ;
-  assign m_axi_gmem0_WDATA[347] = \<const0> ;
-  assign m_axi_gmem0_WDATA[346] = \<const0> ;
-  assign m_axi_gmem0_WDATA[345] = \<const0> ;
-  assign m_axi_gmem0_WDATA[344] = \<const0> ;
-  assign m_axi_gmem0_WDATA[343] = \<const0> ;
-  assign m_axi_gmem0_WDATA[342] = \<const0> ;
-  assign m_axi_gmem0_WDATA[341] = \<const0> ;
-  assign m_axi_gmem0_WDATA[340] = \<const0> ;
-  assign m_axi_gmem0_WDATA[339] = \<const0> ;
-  assign m_axi_gmem0_WDATA[338] = \<const0> ;
-  assign m_axi_gmem0_WDATA[337] = \<const0> ;
-  assign m_axi_gmem0_WDATA[336] = \<const0> ;
-  assign m_axi_gmem0_WDATA[335] = \<const0> ;
-  assign m_axi_gmem0_WDATA[334] = \<const0> ;
-  assign m_axi_gmem0_WDATA[333] = \<const0> ;
-  assign m_axi_gmem0_WDATA[332] = \<const0> ;
-  assign m_axi_gmem0_WDATA[331] = \<const0> ;
-  assign m_axi_gmem0_WDATA[330] = \<const0> ;
-  assign m_axi_gmem0_WDATA[329] = \<const0> ;
-  assign m_axi_gmem0_WDATA[328] = \<const0> ;
-  assign m_axi_gmem0_WDATA[327] = \<const0> ;
-  assign m_axi_gmem0_WDATA[326] = \<const0> ;
-  assign m_axi_gmem0_WDATA[325] = \<const0> ;
-  assign m_axi_gmem0_WDATA[324] = \<const0> ;
-  assign m_axi_gmem0_WDATA[323] = \<const0> ;
-  assign m_axi_gmem0_WDATA[322] = \<const0> ;
-  assign m_axi_gmem0_WDATA[321] = \<const0> ;
-  assign m_axi_gmem0_WDATA[320] = \<const0> ;
-  assign m_axi_gmem0_WDATA[319] = \<const0> ;
-  assign m_axi_gmem0_WDATA[318] = \<const0> ;
-  assign m_axi_gmem0_WDATA[317] = \<const0> ;
-  assign m_axi_gmem0_WDATA[316] = \<const0> ;
-  assign m_axi_gmem0_WDATA[315] = \<const0> ;
-  assign m_axi_gmem0_WDATA[314] = \<const0> ;
-  assign m_axi_gmem0_WDATA[313] = \<const0> ;
-  assign m_axi_gmem0_WDATA[312] = \<const0> ;
-  assign m_axi_gmem0_WDATA[311] = \<const0> ;
-  assign m_axi_gmem0_WDATA[310] = \<const0> ;
-  assign m_axi_gmem0_WDATA[309] = \<const0> ;
-  assign m_axi_gmem0_WDATA[308] = \<const0> ;
-  assign m_axi_gmem0_WDATA[307] = \<const0> ;
-  assign m_axi_gmem0_WDATA[306] = \<const0> ;
-  assign m_axi_gmem0_WDATA[305] = \<const0> ;
-  assign m_axi_gmem0_WDATA[304] = \<const0> ;
-  assign m_axi_gmem0_WDATA[303] = \<const0> ;
-  assign m_axi_gmem0_WDATA[302] = \<const0> ;
-  assign m_axi_gmem0_WDATA[301] = \<const0> ;
-  assign m_axi_gmem0_WDATA[300] = \<const0> ;
-  assign m_axi_gmem0_WDATA[299] = \<const0> ;
-  assign m_axi_gmem0_WDATA[298] = \<const0> ;
-  assign m_axi_gmem0_WDATA[297] = \<const0> ;
-  assign m_axi_gmem0_WDATA[296] = \<const0> ;
-  assign m_axi_gmem0_WDATA[295] = \<const0> ;
-  assign m_axi_gmem0_WDATA[294] = \<const0> ;
-  assign m_axi_gmem0_WDATA[293] = \<const0> ;
-  assign m_axi_gmem0_WDATA[292] = \<const0> ;
-  assign m_axi_gmem0_WDATA[291] = \<const0> ;
-  assign m_axi_gmem0_WDATA[290] = \<const0> ;
-  assign m_axi_gmem0_WDATA[289] = \<const0> ;
-  assign m_axi_gmem0_WDATA[288] = \<const0> ;
-  assign m_axi_gmem0_WDATA[287] = \<const0> ;
-  assign m_axi_gmem0_WDATA[286] = \<const0> ;
-  assign m_axi_gmem0_WDATA[285] = \<const0> ;
-  assign m_axi_gmem0_WDATA[284] = \<const0> ;
-  assign m_axi_gmem0_WDATA[283] = \<const0> ;
-  assign m_axi_gmem0_WDATA[282] = \<const0> ;
-  assign m_axi_gmem0_WDATA[281] = \<const0> ;
-  assign m_axi_gmem0_WDATA[280] = \<const0> ;
-  assign m_axi_gmem0_WDATA[279] = \<const0> ;
-  assign m_axi_gmem0_WDATA[278] = \<const0> ;
-  assign m_axi_gmem0_WDATA[277] = \<const0> ;
-  assign m_axi_gmem0_WDATA[276] = \<const0> ;
-  assign m_axi_gmem0_WDATA[275] = \<const0> ;
-  assign m_axi_gmem0_WDATA[274] = \<const0> ;
-  assign m_axi_gmem0_WDATA[273] = \<const0> ;
-  assign m_axi_gmem0_WDATA[272] = \<const0> ;
-  assign m_axi_gmem0_WDATA[271] = \<const0> ;
-  assign m_axi_gmem0_WDATA[270] = \<const0> ;
-  assign m_axi_gmem0_WDATA[269] = \<const0> ;
-  assign m_axi_gmem0_WDATA[268] = \<const0> ;
-  assign m_axi_gmem0_WDATA[267] = \<const0> ;
-  assign m_axi_gmem0_WDATA[266] = \<const0> ;
-  assign m_axi_gmem0_WDATA[265] = \<const0> ;
-  assign m_axi_gmem0_WDATA[264] = \<const0> ;
-  assign m_axi_gmem0_WDATA[263] = \<const0> ;
-  assign m_axi_gmem0_WDATA[262] = \<const0> ;
-  assign m_axi_gmem0_WDATA[261] = \<const0> ;
-  assign m_axi_gmem0_WDATA[260] = \<const0> ;
-  assign m_axi_gmem0_WDATA[259] = \<const0> ;
-  assign m_axi_gmem0_WDATA[258] = \<const0> ;
-  assign m_axi_gmem0_WDATA[257] = \<const0> ;
-  assign m_axi_gmem0_WDATA[256] = \<const0> ;
-  assign m_axi_gmem0_WDATA[255] = \<const0> ;
-  assign m_axi_gmem0_WDATA[254] = \<const0> ;
-  assign m_axi_gmem0_WDATA[253] = \<const0> ;
-  assign m_axi_gmem0_WDATA[252] = \<const0> ;
-  assign m_axi_gmem0_WDATA[251] = \<const0> ;
-  assign m_axi_gmem0_WDATA[250] = \<const0> ;
-  assign m_axi_gmem0_WDATA[249] = \<const0> ;
-  assign m_axi_gmem0_WDATA[248] = \<const0> ;
-  assign m_axi_gmem0_WDATA[247] = \<const0> ;
-  assign m_axi_gmem0_WDATA[246] = \<const0> ;
-  assign m_axi_gmem0_WDATA[245] = \<const0> ;
-  assign m_axi_gmem0_WDATA[244] = \<const0> ;
-  assign m_axi_gmem0_WDATA[243] = \<const0> ;
-  assign m_axi_gmem0_WDATA[242] = \<const0> ;
-  assign m_axi_gmem0_WDATA[241] = \<const0> ;
-  assign m_axi_gmem0_WDATA[240] = \<const0> ;
-  assign m_axi_gmem0_WDATA[239] = \<const0> ;
-  assign m_axi_gmem0_WDATA[238] = \<const0> ;
-  assign m_axi_gmem0_WDATA[237] = \<const0> ;
-  assign m_axi_gmem0_WDATA[236] = \<const0> ;
-  assign m_axi_gmem0_WDATA[235] = \<const0> ;
-  assign m_axi_gmem0_WDATA[234] = \<const0> ;
-  assign m_axi_gmem0_WDATA[233] = \<const0> ;
-  assign m_axi_gmem0_WDATA[232] = \<const0> ;
-  assign m_axi_gmem0_WDATA[231] = \<const0> ;
-  assign m_axi_gmem0_WDATA[230] = \<const0> ;
-  assign m_axi_gmem0_WDATA[229] = \<const0> ;
-  assign m_axi_gmem0_WDATA[228] = \<const0> ;
-  assign m_axi_gmem0_WDATA[227] = \<const0> ;
-  assign m_axi_gmem0_WDATA[226] = \<const0> ;
-  assign m_axi_gmem0_WDATA[225] = \<const0> ;
-  assign m_axi_gmem0_WDATA[224] = \<const0> ;
-  assign m_axi_gmem0_WDATA[223] = \<const0> ;
-  assign m_axi_gmem0_WDATA[222] = \<const0> ;
-  assign m_axi_gmem0_WDATA[221] = \<const0> ;
-  assign m_axi_gmem0_WDATA[220] = \<const0> ;
-  assign m_axi_gmem0_WDATA[219] = \<const0> ;
-  assign m_axi_gmem0_WDATA[218] = \<const0> ;
-  assign m_axi_gmem0_WDATA[217] = \<const0> ;
-  assign m_axi_gmem0_WDATA[216] = \<const0> ;
-  assign m_axi_gmem0_WDATA[215] = \<const0> ;
-  assign m_axi_gmem0_WDATA[214] = \<const0> ;
-  assign m_axi_gmem0_WDATA[213] = \<const0> ;
-  assign m_axi_gmem0_WDATA[212] = \<const0> ;
-  assign m_axi_gmem0_WDATA[211] = \<const0> ;
-  assign m_axi_gmem0_WDATA[210] = \<const0> ;
-  assign m_axi_gmem0_WDATA[209] = \<const0> ;
-  assign m_axi_gmem0_WDATA[208] = \<const0> ;
-  assign m_axi_gmem0_WDATA[207] = \<const0> ;
-  assign m_axi_gmem0_WDATA[206] = \<const0> ;
-  assign m_axi_gmem0_WDATA[205] = \<const0> ;
-  assign m_axi_gmem0_WDATA[204] = \<const0> ;
-  assign m_axi_gmem0_WDATA[203] = \<const0> ;
-  assign m_axi_gmem0_WDATA[202] = \<const0> ;
-  assign m_axi_gmem0_WDATA[201] = \<const0> ;
-  assign m_axi_gmem0_WDATA[200] = \<const0> ;
-  assign m_axi_gmem0_WDATA[199] = \<const0> ;
-  assign m_axi_gmem0_WDATA[198] = \<const0> ;
-  assign m_axi_gmem0_WDATA[197] = \<const0> ;
-  assign m_axi_gmem0_WDATA[196] = \<const0> ;
-  assign m_axi_gmem0_WDATA[195] = \<const0> ;
-  assign m_axi_gmem0_WDATA[194] = \<const0> ;
-  assign m_axi_gmem0_WDATA[193] = \<const0> ;
-  assign m_axi_gmem0_WDATA[192] = \<const0> ;
-  assign m_axi_gmem0_WDATA[191] = \<const0> ;
-  assign m_axi_gmem0_WDATA[190] = \<const0> ;
-  assign m_axi_gmem0_WDATA[189] = \<const0> ;
-  assign m_axi_gmem0_WDATA[188] = \<const0> ;
-  assign m_axi_gmem0_WDATA[187] = \<const0> ;
-  assign m_axi_gmem0_WDATA[186] = \<const0> ;
-  assign m_axi_gmem0_WDATA[185] = \<const0> ;
-  assign m_axi_gmem0_WDATA[184] = \<const0> ;
-  assign m_axi_gmem0_WDATA[183] = \<const0> ;
-  assign m_axi_gmem0_WDATA[182] = \<const0> ;
-  assign m_axi_gmem0_WDATA[181] = \<const0> ;
-  assign m_axi_gmem0_WDATA[180] = \<const0> ;
-  assign m_axi_gmem0_WDATA[179] = \<const0> ;
-  assign m_axi_gmem0_WDATA[178] = \<const0> ;
-  assign m_axi_gmem0_WDATA[177] = \<const0> ;
-  assign m_axi_gmem0_WDATA[176] = \<const0> ;
-  assign m_axi_gmem0_WDATA[175] = \<const0> ;
-  assign m_axi_gmem0_WDATA[174] = \<const0> ;
-  assign m_axi_gmem0_WDATA[173] = \<const0> ;
-  assign m_axi_gmem0_WDATA[172] = \<const0> ;
-  assign m_axi_gmem0_WDATA[171] = \<const0> ;
-  assign m_axi_gmem0_WDATA[170] = \<const0> ;
-  assign m_axi_gmem0_WDATA[169] = \<const0> ;
-  assign m_axi_gmem0_WDATA[168] = \<const0> ;
-  assign m_axi_gmem0_WDATA[167] = \<const0> ;
-  assign m_axi_gmem0_WDATA[166] = \<const0> ;
-  assign m_axi_gmem0_WDATA[165] = \<const0> ;
-  assign m_axi_gmem0_WDATA[164] = \<const0> ;
-  assign m_axi_gmem0_WDATA[163] = \<const0> ;
-  assign m_axi_gmem0_WDATA[162] = \<const0> ;
-  assign m_axi_gmem0_WDATA[161] = \<const0> ;
-  assign m_axi_gmem0_WDATA[160] = \<const0> ;
-  assign m_axi_gmem0_WDATA[159] = \<const0> ;
-  assign m_axi_gmem0_WDATA[158] = \<const0> ;
-  assign m_axi_gmem0_WDATA[157] = \<const0> ;
-  assign m_axi_gmem0_WDATA[156] = \<const0> ;
-  assign m_axi_gmem0_WDATA[155] = \<const0> ;
-  assign m_axi_gmem0_WDATA[154] = \<const0> ;
-  assign m_axi_gmem0_WDATA[153] = \<const0> ;
-  assign m_axi_gmem0_WDATA[152] = \<const0> ;
-  assign m_axi_gmem0_WDATA[151] = \<const0> ;
-  assign m_axi_gmem0_WDATA[150] = \<const0> ;
-  assign m_axi_gmem0_WDATA[149] = \<const0> ;
-  assign m_axi_gmem0_WDATA[148] = \<const0> ;
-  assign m_axi_gmem0_WDATA[147] = \<const0> ;
-  assign m_axi_gmem0_WDATA[146] = \<const0> ;
-  assign m_axi_gmem0_WDATA[145] = \<const0> ;
-  assign m_axi_gmem0_WDATA[144] = \<const0> ;
-  assign m_axi_gmem0_WDATA[143] = \<const0> ;
-  assign m_axi_gmem0_WDATA[142] = \<const0> ;
-  assign m_axi_gmem0_WDATA[141] = \<const0> ;
-  assign m_axi_gmem0_WDATA[140] = \<const0> ;
-  assign m_axi_gmem0_WDATA[139] = \<const0> ;
-  assign m_axi_gmem0_WDATA[138] = \<const0> ;
-  assign m_axi_gmem0_WDATA[137] = \<const0> ;
-  assign m_axi_gmem0_WDATA[136] = \<const0> ;
-  assign m_axi_gmem0_WDATA[135] = \<const0> ;
-  assign m_axi_gmem0_WDATA[134] = \<const0> ;
-  assign m_axi_gmem0_WDATA[133] = \<const0> ;
-  assign m_axi_gmem0_WDATA[132] = \<const0> ;
-  assign m_axi_gmem0_WDATA[131] = \<const0> ;
-  assign m_axi_gmem0_WDATA[130] = \<const0> ;
-  assign m_axi_gmem0_WDATA[129] = \<const0> ;
-  assign m_axi_gmem0_WDATA[128] = \<const0> ;
-  assign m_axi_gmem0_WDATA[127] = \<const0> ;
-  assign m_axi_gmem0_WDATA[126] = \<const0> ;
-  assign m_axi_gmem0_WDATA[125] = \<const0> ;
-  assign m_axi_gmem0_WDATA[124] = \<const0> ;
-  assign m_axi_gmem0_WDATA[123] = \<const0> ;
-  assign m_axi_gmem0_WDATA[122] = \<const0> ;
-  assign m_axi_gmem0_WDATA[121] = \<const0> ;
-  assign m_axi_gmem0_WDATA[120] = \<const0> ;
-  assign m_axi_gmem0_WDATA[119] = \<const0> ;
-  assign m_axi_gmem0_WDATA[118] = \<const0> ;
-  assign m_axi_gmem0_WDATA[117] = \<const0> ;
-  assign m_axi_gmem0_WDATA[116] = \<const0> ;
-  assign m_axi_gmem0_WDATA[115] = \<const0> ;
-  assign m_axi_gmem0_WDATA[114] = \<const0> ;
-  assign m_axi_gmem0_WDATA[113] = \<const0> ;
-  assign m_axi_gmem0_WDATA[112] = \<const0> ;
-  assign m_axi_gmem0_WDATA[111] = \<const0> ;
-  assign m_axi_gmem0_WDATA[110] = \<const0> ;
-  assign m_axi_gmem0_WDATA[109] = \<const0> ;
-  assign m_axi_gmem0_WDATA[108] = \<const0> ;
-  assign m_axi_gmem0_WDATA[107] = \<const0> ;
-  assign m_axi_gmem0_WDATA[106] = \<const0> ;
-  assign m_axi_gmem0_WDATA[105] = \<const0> ;
-  assign m_axi_gmem0_WDATA[104] = \<const0> ;
-  assign m_axi_gmem0_WDATA[103] = \<const0> ;
-  assign m_axi_gmem0_WDATA[102] = \<const0> ;
-  assign m_axi_gmem0_WDATA[101] = \<const0> ;
-  assign m_axi_gmem0_WDATA[100] = \<const0> ;
-  assign m_axi_gmem0_WDATA[99] = \<const0> ;
-  assign m_axi_gmem0_WDATA[98] = \<const0> ;
-  assign m_axi_gmem0_WDATA[97] = \<const0> ;
-  assign m_axi_gmem0_WDATA[96] = \<const0> ;
-  assign m_axi_gmem0_WDATA[95] = \<const0> ;
-  assign m_axi_gmem0_WDATA[94] = \<const0> ;
-  assign m_axi_gmem0_WDATA[93] = \<const0> ;
-  assign m_axi_gmem0_WDATA[92] = \<const0> ;
-  assign m_axi_gmem0_WDATA[91] = \<const0> ;
-  assign m_axi_gmem0_WDATA[90] = \<const0> ;
-  assign m_axi_gmem0_WDATA[89] = \<const0> ;
-  assign m_axi_gmem0_WDATA[88] = \<const0> ;
-  assign m_axi_gmem0_WDATA[87] = \<const0> ;
-  assign m_axi_gmem0_WDATA[86] = \<const0> ;
-  assign m_axi_gmem0_WDATA[85] = \<const0> ;
-  assign m_axi_gmem0_WDATA[84] = \<const0> ;
-  assign m_axi_gmem0_WDATA[83] = \<const0> ;
-  assign m_axi_gmem0_WDATA[82] = \<const0> ;
-  assign m_axi_gmem0_WDATA[81] = \<const0> ;
-  assign m_axi_gmem0_WDATA[80] = \<const0> ;
-  assign m_axi_gmem0_WDATA[79] = \<const0> ;
-  assign m_axi_gmem0_WDATA[78] = \<const0> ;
-  assign m_axi_gmem0_WDATA[77] = \<const0> ;
-  assign m_axi_gmem0_WDATA[76] = \<const0> ;
-  assign m_axi_gmem0_WDATA[75] = \<const0> ;
-  assign m_axi_gmem0_WDATA[74] = \<const0> ;
-  assign m_axi_gmem0_WDATA[73] = \<const0> ;
-  assign m_axi_gmem0_WDATA[72] = \<const0> ;
-  assign m_axi_gmem0_WDATA[71] = \<const0> ;
-  assign m_axi_gmem0_WDATA[70] = \<const0> ;
-  assign m_axi_gmem0_WDATA[69] = \<const0> ;
-  assign m_axi_gmem0_WDATA[68] = \<const0> ;
-  assign m_axi_gmem0_WDATA[67] = \<const0> ;
-  assign m_axi_gmem0_WDATA[66] = \<const0> ;
-  assign m_axi_gmem0_WDATA[65] = \<const0> ;
-  assign m_axi_gmem0_WDATA[64] = \<const0> ;
-  assign m_axi_gmem0_WDATA[63] = \<const0> ;
-  assign m_axi_gmem0_WDATA[62] = \<const0> ;
-  assign m_axi_gmem0_WDATA[61] = \<const0> ;
-  assign m_axi_gmem0_WDATA[60] = \<const0> ;
-  assign m_axi_gmem0_WDATA[59] = \<const0> ;
-  assign m_axi_gmem0_WDATA[58] = \<const0> ;
-  assign m_axi_gmem0_WDATA[57] = \<const0> ;
-  assign m_axi_gmem0_WDATA[56] = \<const0> ;
-  assign m_axi_gmem0_WDATA[55] = \<const0> ;
-  assign m_axi_gmem0_WDATA[54] = \<const0> ;
-  assign m_axi_gmem0_WDATA[53] = \<const0> ;
-  assign m_axi_gmem0_WDATA[52] = \<const0> ;
-  assign m_axi_gmem0_WDATA[51] = \<const0> ;
-  assign m_axi_gmem0_WDATA[50] = \<const0> ;
-  assign m_axi_gmem0_WDATA[49] = \<const0> ;
-  assign m_axi_gmem0_WDATA[48] = \<const0> ;
-  assign m_axi_gmem0_WDATA[47] = \<const0> ;
-  assign m_axi_gmem0_WDATA[46] = \<const0> ;
-  assign m_axi_gmem0_WDATA[45] = \<const0> ;
-  assign m_axi_gmem0_WDATA[44] = \<const0> ;
-  assign m_axi_gmem0_WDATA[43] = \<const0> ;
-  assign m_axi_gmem0_WDATA[42] = \<const0> ;
-  assign m_axi_gmem0_WDATA[41] = \<const0> ;
-  assign m_axi_gmem0_WDATA[40] = \<const0> ;
-  assign m_axi_gmem0_WDATA[39] = \<const0> ;
-  assign m_axi_gmem0_WDATA[38] = \<const0> ;
-  assign m_axi_gmem0_WDATA[37] = \<const0> ;
-  assign m_axi_gmem0_WDATA[36] = \<const0> ;
-  assign m_axi_gmem0_WDATA[35] = \<const0> ;
-  assign m_axi_gmem0_WDATA[34] = \<const0> ;
-  assign m_axi_gmem0_WDATA[33] = \<const0> ;
-  assign m_axi_gmem0_WDATA[32] = \<const0> ;
-  assign m_axi_gmem0_WDATA[31] = \<const0> ;
-  assign m_axi_gmem0_WDATA[30] = \<const0> ;
-  assign m_axi_gmem0_WDATA[29] = \<const0> ;
-  assign m_axi_gmem0_WDATA[28] = \<const0> ;
-  assign m_axi_gmem0_WDATA[27] = \<const0> ;
-  assign m_axi_gmem0_WDATA[26] = \<const0> ;
-  assign m_axi_gmem0_WDATA[25] = \<const0> ;
-  assign m_axi_gmem0_WDATA[24] = \<const0> ;
-  assign m_axi_gmem0_WDATA[23] = \<const0> ;
-  assign m_axi_gmem0_WDATA[22] = \<const0> ;
-  assign m_axi_gmem0_WDATA[21] = \<const0> ;
-  assign m_axi_gmem0_WDATA[20] = \<const0> ;
-  assign m_axi_gmem0_WDATA[19] = \<const0> ;
-  assign m_axi_gmem0_WDATA[18] = \<const0> ;
-  assign m_axi_gmem0_WDATA[17] = \<const0> ;
-  assign m_axi_gmem0_WDATA[16] = \<const0> ;
-  assign m_axi_gmem0_WDATA[15] = \<const0> ;
-  assign m_axi_gmem0_WDATA[14] = \<const0> ;
-  assign m_axi_gmem0_WDATA[13] = \<const0> ;
-  assign m_axi_gmem0_WDATA[12] = \<const0> ;
-  assign m_axi_gmem0_WDATA[11] = \<const0> ;
-  assign m_axi_gmem0_WDATA[10] = \<const0> ;
-  assign m_axi_gmem0_WDATA[9] = \<const0> ;
-  assign m_axi_gmem0_WDATA[8] = \<const0> ;
-  assign m_axi_gmem0_WDATA[7] = \<const0> ;
-  assign m_axi_gmem0_WDATA[6] = \<const0> ;
-  assign m_axi_gmem0_WDATA[5] = \<const0> ;
-  assign m_axi_gmem0_WDATA[4] = \<const0> ;
-  assign m_axi_gmem0_WDATA[3] = \<const0> ;
-  assign m_axi_gmem0_WDATA[2] = \<const0> ;
-  assign m_axi_gmem0_WDATA[1] = \<const0> ;
-  assign m_axi_gmem0_WDATA[0] = \<const0> ;
-  assign m_axi_gmem0_WID[0] = \<const0> ;
-  assign m_axi_gmem0_WLAST = \<const0> ;
-  assign m_axi_gmem0_WSTRB[127] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[126] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[125] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[124] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[123] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[122] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[121] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[120] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[119] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[118] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[117] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[116] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[115] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[114] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[113] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[112] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[111] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[110] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[109] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[108] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[107] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[106] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[105] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[104] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[103] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[102] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[101] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[100] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[99] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[98] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[97] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[96] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[95] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[94] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[93] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[92] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[91] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[90] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[89] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[88] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[87] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[86] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[85] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[84] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[83] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[82] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[81] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[80] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[79] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[78] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[77] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[76] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[75] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[74] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[73] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[72] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[71] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[70] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[69] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[68] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[67] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[66] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[65] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[64] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[63] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[62] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[61] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[60] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[59] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[58] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[57] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[56] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[55] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[54] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[53] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[52] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[51] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[50] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[49] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[48] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[47] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[46] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[45] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[44] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[43] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[42] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[41] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[40] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[39] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[38] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[37] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[36] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[35] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[34] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[33] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[32] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[31] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[30] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[29] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[28] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[27] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[26] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[25] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[24] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[23] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[22] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[21] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[20] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[19] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[18] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[17] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[16] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[15] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[14] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[13] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[12] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[11] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[10] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[9] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[8] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[7] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[6] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[5] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[4] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[3] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[2] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[1] = \<const0> ;
-  assign m_axi_gmem0_WSTRB[0] = \<const0> ;
-  assign m_axi_gmem0_WVALID = \<const0> ;
-  assign m_axi_gmem1_ARADDR[63:5] = \^m_axi_gmem1_ARADDR [63:5];
-  assign m_axi_gmem1_ARADDR[4] = \<const0> ;
-  assign m_axi_gmem1_ARADDR[3] = \<const0> ;
-  assign m_axi_gmem1_ARADDR[2] = \<const0> ;
-  assign m_axi_gmem1_ARADDR[1] = \<const0> ;
-  assign m_axi_gmem1_ARADDR[0] = \<const0> ;
-  assign m_axi_gmem1_ARBURST[1] = \<const0> ;
-  assign m_axi_gmem1_ARBURST[0] = \<const1> ;
-  assign m_axi_gmem1_ARCACHE[3] = \<const0> ;
-  assign m_axi_gmem1_ARCACHE[2] = \<const0> ;
-  assign m_axi_gmem1_ARCACHE[1] = \<const1> ;
-  assign m_axi_gmem1_ARCACHE[0] = \<const1> ;
-  assign m_axi_gmem1_ARID[0] = \<const0> ;
-  assign m_axi_gmem1_ARLEN[7] = \<const0> ;
-  assign m_axi_gmem1_ARLEN[6] = \<const0> ;
-  assign m_axi_gmem1_ARLEN[5] = \<const0> ;
-  assign m_axi_gmem1_ARLEN[4] = \<const0> ;
-  assign m_axi_gmem1_ARLEN[3:0] = \^m_axi_gmem1_ARLEN [3:0];
-  assign m_axi_gmem1_ARLOCK[1] = \<const0> ;
-  assign m_axi_gmem1_ARLOCK[0] = \<const0> ;
-  assign m_axi_gmem1_ARPROT[2] = \<const0> ;
-  assign m_axi_gmem1_ARPROT[1] = \<const0> ;
-  assign m_axi_gmem1_ARPROT[0] = \<const0> ;
-  assign m_axi_gmem1_ARQOS[3] = \<const0> ;
-  assign m_axi_gmem1_ARQOS[2] = \<const0> ;
-  assign m_axi_gmem1_ARQOS[1] = \<const0> ;
-  assign m_axi_gmem1_ARQOS[0] = \<const0> ;
-  assign m_axi_gmem1_ARREGION[3] = \<const0> ;
-  assign m_axi_gmem1_ARREGION[2] = \<const0> ;
-  assign m_axi_gmem1_ARREGION[1] = \<const0> ;
-  assign m_axi_gmem1_ARREGION[0] = \<const0> ;
-  assign m_axi_gmem1_ARSIZE[2] = \<const1> ;
-  assign m_axi_gmem1_ARSIZE[1] = \<const0> ;
-  assign m_axi_gmem1_ARSIZE[0] = \<const1> ;
-  assign m_axi_gmem1_AWADDR[63] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[62] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[61] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[60] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[59] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[58] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[57] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[56] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[55] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[54] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[53] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[52] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[51] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[50] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[49] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[48] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[47] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[46] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[45] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[44] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[43] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[42] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[41] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[40] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[39] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[38] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[37] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[36] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[35] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[34] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[33] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[32] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[31] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[30] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[29] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[28] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[27] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[26] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[25] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[24] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[23] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[22] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[21] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[20] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[19] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[18] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[17] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[16] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[15] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[14] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[13] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[12] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[11] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[10] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[9] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[8] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[7] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[6] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[5] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[4] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[3] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[2] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[1] = \<const0> ;
-  assign m_axi_gmem1_AWADDR[0] = \<const0> ;
-  assign m_axi_gmem1_AWBURST[1] = \<const0> ;
-  assign m_axi_gmem1_AWBURST[0] = \<const1> ;
-  assign m_axi_gmem1_AWCACHE[3] = \<const0> ;
-  assign m_axi_gmem1_AWCACHE[2] = \<const0> ;
-  assign m_axi_gmem1_AWCACHE[1] = \<const1> ;
-  assign m_axi_gmem1_AWCACHE[0] = \<const1> ;
-  assign m_axi_gmem1_AWID[0] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[7] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[6] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[5] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[4] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[3] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[2] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[1] = \<const0> ;
-  assign m_axi_gmem1_AWLEN[0] = \<const0> ;
-  assign m_axi_gmem1_AWLOCK[1] = \<const0> ;
-  assign m_axi_gmem1_AWLOCK[0] = \<const0> ;
-  assign m_axi_gmem1_AWPROT[2] = \<const0> ;
-  assign m_axi_gmem1_AWPROT[1] = \<const0> ;
-  assign m_axi_gmem1_AWPROT[0] = \<const0> ;
-  assign m_axi_gmem1_AWQOS[3] = \<const0> ;
-  assign m_axi_gmem1_AWQOS[2] = \<const0> ;
-  assign m_axi_gmem1_AWQOS[1] = \<const0> ;
-  assign m_axi_gmem1_AWQOS[0] = \<const0> ;
-  assign m_axi_gmem1_AWREGION[3] = \<const0> ;
-  assign m_axi_gmem1_AWREGION[2] = \<const0> ;
-  assign m_axi_gmem1_AWREGION[1] = \<const0> ;
-  assign m_axi_gmem1_AWREGION[0] = \<const0> ;
-  assign m_axi_gmem1_AWSIZE[2] = \<const1> ;
-  assign m_axi_gmem1_AWSIZE[1] = \<const0> ;
-  assign m_axi_gmem1_AWSIZE[0] = \<const1> ;
-  assign m_axi_gmem1_AWVALID = \<const0> ;
-  assign m_axi_gmem1_WDATA[255] = \<const0> ;
-  assign m_axi_gmem1_WDATA[254] = \<const0> ;
-  assign m_axi_gmem1_WDATA[253] = \<const0> ;
-  assign m_axi_gmem1_WDATA[252] = \<const0> ;
-  assign m_axi_gmem1_WDATA[251] = \<const0> ;
-  assign m_axi_gmem1_WDATA[250] = \<const0> ;
-  assign m_axi_gmem1_WDATA[249] = \<const0> ;
-  assign m_axi_gmem1_WDATA[248] = \<const0> ;
-  assign m_axi_gmem1_WDATA[247] = \<const0> ;
-  assign m_axi_gmem1_WDATA[246] = \<const0> ;
-  assign m_axi_gmem1_WDATA[245] = \<const0> ;
-  assign m_axi_gmem1_WDATA[244] = \<const0> ;
-  assign m_axi_gmem1_WDATA[243] = \<const0> ;
-  assign m_axi_gmem1_WDATA[242] = \<const0> ;
-  assign m_axi_gmem1_WDATA[241] = \<const0> ;
-  assign m_axi_gmem1_WDATA[240] = \<const0> ;
-  assign m_axi_gmem1_WDATA[239] = \<const0> ;
-  assign m_axi_gmem1_WDATA[238] = \<const0> ;
-  assign m_axi_gmem1_WDATA[237] = \<const0> ;
-  assign m_axi_gmem1_WDATA[236] = \<const0> ;
-  assign m_axi_gmem1_WDATA[235] = \<const0> ;
-  assign m_axi_gmem1_WDATA[234] = \<const0> ;
-  assign m_axi_gmem1_WDATA[233] = \<const0> ;
-  assign m_axi_gmem1_WDATA[232] = \<const0> ;
-  assign m_axi_gmem1_WDATA[231] = \<const0> ;
-  assign m_axi_gmem1_WDATA[230] = \<const0> ;
-  assign m_axi_gmem1_WDATA[229] = \<const0> ;
-  assign m_axi_gmem1_WDATA[228] = \<const0> ;
-  assign m_axi_gmem1_WDATA[227] = \<const0> ;
-  assign m_axi_gmem1_WDATA[226] = \<const0> ;
-  assign m_axi_gmem1_WDATA[225] = \<const0> ;
-  assign m_axi_gmem1_WDATA[224] = \<const0> ;
-  assign m_axi_gmem1_WDATA[223] = \<const0> ;
-  assign m_axi_gmem1_WDATA[222] = \<const0> ;
-  assign m_axi_gmem1_WDATA[221] = \<const0> ;
-  assign m_axi_gmem1_WDATA[220] = \<const0> ;
-  assign m_axi_gmem1_WDATA[219] = \<const0> ;
-  assign m_axi_gmem1_WDATA[218] = \<const0> ;
-  assign m_axi_gmem1_WDATA[217] = \<const0> ;
-  assign m_axi_gmem1_WDATA[216] = \<const0> ;
-  assign m_axi_gmem1_WDATA[215] = \<const0> ;
-  assign m_axi_gmem1_WDATA[214] = \<const0> ;
-  assign m_axi_gmem1_WDATA[213] = \<const0> ;
-  assign m_axi_gmem1_WDATA[212] = \<const0> ;
-  assign m_axi_gmem1_WDATA[211] = \<const0> ;
-  assign m_axi_gmem1_WDATA[210] = \<const0> ;
-  assign m_axi_gmem1_WDATA[209] = \<const0> ;
-  assign m_axi_gmem1_WDATA[208] = \<const0> ;
-  assign m_axi_gmem1_WDATA[207] = \<const0> ;
-  assign m_axi_gmem1_WDATA[206] = \<const0> ;
-  assign m_axi_gmem1_WDATA[205] = \<const0> ;
-  assign m_axi_gmem1_WDATA[204] = \<const0> ;
-  assign m_axi_gmem1_WDATA[203] = \<const0> ;
-  assign m_axi_gmem1_WDATA[202] = \<const0> ;
-  assign m_axi_gmem1_WDATA[201] = \<const0> ;
-  assign m_axi_gmem1_WDATA[200] = \<const0> ;
-  assign m_axi_gmem1_WDATA[199] = \<const0> ;
-  assign m_axi_gmem1_WDATA[198] = \<const0> ;
-  assign m_axi_gmem1_WDATA[197] = \<const0> ;
-  assign m_axi_gmem1_WDATA[196] = \<const0> ;
-  assign m_axi_gmem1_WDATA[195] = \<const0> ;
-  assign m_axi_gmem1_WDATA[194] = \<const0> ;
-  assign m_axi_gmem1_WDATA[193] = \<const0> ;
-  assign m_axi_gmem1_WDATA[192] = \<const0> ;
-  assign m_axi_gmem1_WDATA[191] = \<const0> ;
-  assign m_axi_gmem1_WDATA[190] = \<const0> ;
-  assign m_axi_gmem1_WDATA[189] = \<const0> ;
-  assign m_axi_gmem1_WDATA[188] = \<const0> ;
-  assign m_axi_gmem1_WDATA[187] = \<const0> ;
-  assign m_axi_gmem1_WDATA[186] = \<const0> ;
-  assign m_axi_gmem1_WDATA[185] = \<const0> ;
-  assign m_axi_gmem1_WDATA[184] = \<const0> ;
-  assign m_axi_gmem1_WDATA[183] = \<const0> ;
-  assign m_axi_gmem1_WDATA[182] = \<const0> ;
-  assign m_axi_gmem1_WDATA[181] = \<const0> ;
-  assign m_axi_gmem1_WDATA[180] = \<const0> ;
-  assign m_axi_gmem1_WDATA[179] = \<const0> ;
-  assign m_axi_gmem1_WDATA[178] = \<const0> ;
-  assign m_axi_gmem1_WDATA[177] = \<const0> ;
-  assign m_axi_gmem1_WDATA[176] = \<const0> ;
-  assign m_axi_gmem1_WDATA[175] = \<const0> ;
-  assign m_axi_gmem1_WDATA[174] = \<const0> ;
-  assign m_axi_gmem1_WDATA[173] = \<const0> ;
-  assign m_axi_gmem1_WDATA[172] = \<const0> ;
-  assign m_axi_gmem1_WDATA[171] = \<const0> ;
-  assign m_axi_gmem1_WDATA[170] = \<const0> ;
-  assign m_axi_gmem1_WDATA[169] = \<const0> ;
-  assign m_axi_gmem1_WDATA[168] = \<const0> ;
-  assign m_axi_gmem1_WDATA[167] = \<const0> ;
-  assign m_axi_gmem1_WDATA[166] = \<const0> ;
-  assign m_axi_gmem1_WDATA[165] = \<const0> ;
-  assign m_axi_gmem1_WDATA[164] = \<const0> ;
-  assign m_axi_gmem1_WDATA[163] = \<const0> ;
-  assign m_axi_gmem1_WDATA[162] = \<const0> ;
-  assign m_axi_gmem1_WDATA[161] = \<const0> ;
-  assign m_axi_gmem1_WDATA[160] = \<const0> ;
-  assign m_axi_gmem1_WDATA[159] = \<const0> ;
-  assign m_axi_gmem1_WDATA[158] = \<const0> ;
-  assign m_axi_gmem1_WDATA[157] = \<const0> ;
-  assign m_axi_gmem1_WDATA[156] = \<const0> ;
-  assign m_axi_gmem1_WDATA[155] = \<const0> ;
-  assign m_axi_gmem1_WDATA[154] = \<const0> ;
-  assign m_axi_gmem1_WDATA[153] = \<const0> ;
-  assign m_axi_gmem1_WDATA[152] = \<const0> ;
-  assign m_axi_gmem1_WDATA[151] = \<const0> ;
-  assign m_axi_gmem1_WDATA[150] = \<const0> ;
-  assign m_axi_gmem1_WDATA[149] = \<const0> ;
-  assign m_axi_gmem1_WDATA[148] = \<const0> ;
-  assign m_axi_gmem1_WDATA[147] = \<const0> ;
-  assign m_axi_gmem1_WDATA[146] = \<const0> ;
-  assign m_axi_gmem1_WDATA[145] = \<const0> ;
-  assign m_axi_gmem1_WDATA[144] = \<const0> ;
-  assign m_axi_gmem1_WDATA[143] = \<const0> ;
-  assign m_axi_gmem1_WDATA[142] = \<const0> ;
-  assign m_axi_gmem1_WDATA[141] = \<const0> ;
-  assign m_axi_gmem1_WDATA[140] = \<const0> ;
-  assign m_axi_gmem1_WDATA[139] = \<const0> ;
-  assign m_axi_gmem1_WDATA[138] = \<const0> ;
-  assign m_axi_gmem1_WDATA[137] = \<const0> ;
-  assign m_axi_gmem1_WDATA[136] = \<const0> ;
-  assign m_axi_gmem1_WDATA[135] = \<const0> ;
-  assign m_axi_gmem1_WDATA[134] = \<const0> ;
-  assign m_axi_gmem1_WDATA[133] = \<const0> ;
-  assign m_axi_gmem1_WDATA[132] = \<const0> ;
-  assign m_axi_gmem1_WDATA[131] = \<const0> ;
-  assign m_axi_gmem1_WDATA[130] = \<const0> ;
-  assign m_axi_gmem1_WDATA[129] = \<const0> ;
-  assign m_axi_gmem1_WDATA[128] = \<const0> ;
-  assign m_axi_gmem1_WDATA[127] = \<const0> ;
-  assign m_axi_gmem1_WDATA[126] = \<const0> ;
-  assign m_axi_gmem1_WDATA[125] = \<const0> ;
-  assign m_axi_gmem1_WDATA[124] = \<const0> ;
-  assign m_axi_gmem1_WDATA[123] = \<const0> ;
-  assign m_axi_gmem1_WDATA[122] = \<const0> ;
-  assign m_axi_gmem1_WDATA[121] = \<const0> ;
-  assign m_axi_gmem1_WDATA[120] = \<const0> ;
-  assign m_axi_gmem1_WDATA[119] = \<const0> ;
-  assign m_axi_gmem1_WDATA[118] = \<const0> ;
-  assign m_axi_gmem1_WDATA[117] = \<const0> ;
-  assign m_axi_gmem1_WDATA[116] = \<const0> ;
-  assign m_axi_gmem1_WDATA[115] = \<const0> ;
-  assign m_axi_gmem1_WDATA[114] = \<const0> ;
-  assign m_axi_gmem1_WDATA[113] = \<const0> ;
-  assign m_axi_gmem1_WDATA[112] = \<const0> ;
-  assign m_axi_gmem1_WDATA[111] = \<const0> ;
-  assign m_axi_gmem1_WDATA[110] = \<const0> ;
-  assign m_axi_gmem1_WDATA[109] = \<const0> ;
-  assign m_axi_gmem1_WDATA[108] = \<const0> ;
-  assign m_axi_gmem1_WDATA[107] = \<const0> ;
-  assign m_axi_gmem1_WDATA[106] = \<const0> ;
-  assign m_axi_gmem1_WDATA[105] = \<const0> ;
-  assign m_axi_gmem1_WDATA[104] = \<const0> ;
-  assign m_axi_gmem1_WDATA[103] = \<const0> ;
-  assign m_axi_gmem1_WDATA[102] = \<const0> ;
-  assign m_axi_gmem1_WDATA[101] = \<const0> ;
-  assign m_axi_gmem1_WDATA[100] = \<const0> ;
-  assign m_axi_gmem1_WDATA[99] = \<const0> ;
-  assign m_axi_gmem1_WDATA[98] = \<const0> ;
-  assign m_axi_gmem1_WDATA[97] = \<const0> ;
-  assign m_axi_gmem1_WDATA[96] = \<const0> ;
-  assign m_axi_gmem1_WDATA[95] = \<const0> ;
-  assign m_axi_gmem1_WDATA[94] = \<const0> ;
-  assign m_axi_gmem1_WDATA[93] = \<const0> ;
-  assign m_axi_gmem1_WDATA[92] = \<const0> ;
-  assign m_axi_gmem1_WDATA[91] = \<const0> ;
-  assign m_axi_gmem1_WDATA[90] = \<const0> ;
-  assign m_axi_gmem1_WDATA[89] = \<const0> ;
-  assign m_axi_gmem1_WDATA[88] = \<const0> ;
-  assign m_axi_gmem1_WDATA[87] = \<const0> ;
-  assign m_axi_gmem1_WDATA[86] = \<const0> ;
-  assign m_axi_gmem1_WDATA[85] = \<const0> ;
-  assign m_axi_gmem1_WDATA[84] = \<const0> ;
-  assign m_axi_gmem1_WDATA[83] = \<const0> ;
-  assign m_axi_gmem1_WDATA[82] = \<const0> ;
-  assign m_axi_gmem1_WDATA[81] = \<const0> ;
-  assign m_axi_gmem1_WDATA[80] = \<const0> ;
-  assign m_axi_gmem1_WDATA[79] = \<const0> ;
-  assign m_axi_gmem1_WDATA[78] = \<const0> ;
-  assign m_axi_gmem1_WDATA[77] = \<const0> ;
-  assign m_axi_gmem1_WDATA[76] = \<const0> ;
-  assign m_axi_gmem1_WDATA[75] = \<const0> ;
-  assign m_axi_gmem1_WDATA[74] = \<const0> ;
-  assign m_axi_gmem1_WDATA[73] = \<const0> ;
-  assign m_axi_gmem1_WDATA[72] = \<const0> ;
-  assign m_axi_gmem1_WDATA[71] = \<const0> ;
-  assign m_axi_gmem1_WDATA[70] = \<const0> ;
-  assign m_axi_gmem1_WDATA[69] = \<const0> ;
-  assign m_axi_gmem1_WDATA[68] = \<const0> ;
-  assign m_axi_gmem1_WDATA[67] = \<const0> ;
-  assign m_axi_gmem1_WDATA[66] = \<const0> ;
-  assign m_axi_gmem1_WDATA[65] = \<const0> ;
-  assign m_axi_gmem1_WDATA[64] = \<const0> ;
-  assign m_axi_gmem1_WDATA[63] = \<const0> ;
-  assign m_axi_gmem1_WDATA[62] = \<const0> ;
-  assign m_axi_gmem1_WDATA[61] = \<const0> ;
-  assign m_axi_gmem1_WDATA[60] = \<const0> ;
-  assign m_axi_gmem1_WDATA[59] = \<const0> ;
-  assign m_axi_gmem1_WDATA[58] = \<const0> ;
-  assign m_axi_gmem1_WDATA[57] = \<const0> ;
-  assign m_axi_gmem1_WDATA[56] = \<const0> ;
-  assign m_axi_gmem1_WDATA[55] = \<const0> ;
-  assign m_axi_gmem1_WDATA[54] = \<const0> ;
-  assign m_axi_gmem1_WDATA[53] = \<const0> ;
-  assign m_axi_gmem1_WDATA[52] = \<const0> ;
-  assign m_axi_gmem1_WDATA[51] = \<const0> ;
-  assign m_axi_gmem1_WDATA[50] = \<const0> ;
-  assign m_axi_gmem1_WDATA[49] = \<const0> ;
-  assign m_axi_gmem1_WDATA[48] = \<const0> ;
-  assign m_axi_gmem1_WDATA[47] = \<const0> ;
-  assign m_axi_gmem1_WDATA[46] = \<const0> ;
-  assign m_axi_gmem1_WDATA[45] = \<const0> ;
-  assign m_axi_gmem1_WDATA[44] = \<const0> ;
-  assign m_axi_gmem1_WDATA[43] = \<const0> ;
-  assign m_axi_gmem1_WDATA[42] = \<const0> ;
-  assign m_axi_gmem1_WDATA[41] = \<const0> ;
-  assign m_axi_gmem1_WDATA[40] = \<const0> ;
-  assign m_axi_gmem1_WDATA[39] = \<const0> ;
-  assign m_axi_gmem1_WDATA[38] = \<const0> ;
-  assign m_axi_gmem1_WDATA[37] = \<const0> ;
-  assign m_axi_gmem1_WDATA[36] = \<const0> ;
-  assign m_axi_gmem1_WDATA[35] = \<const0> ;
-  assign m_axi_gmem1_WDATA[34] = \<const0> ;
-  assign m_axi_gmem1_WDATA[33] = \<const0> ;
-  assign m_axi_gmem1_WDATA[32] = \<const0> ;
-  assign m_axi_gmem1_WDATA[31] = \<const0> ;
-  assign m_axi_gmem1_WDATA[30] = \<const0> ;
-  assign m_axi_gmem1_WDATA[29] = \<const0> ;
-  assign m_axi_gmem1_WDATA[28] = \<const0> ;
-  assign m_axi_gmem1_WDATA[27] = \<const0> ;
-  assign m_axi_gmem1_WDATA[26] = \<const0> ;
-  assign m_axi_gmem1_WDATA[25] = \<const0> ;
-  assign m_axi_gmem1_WDATA[24] = \<const0> ;
-  assign m_axi_gmem1_WDATA[23] = \<const0> ;
-  assign m_axi_gmem1_WDATA[22] = \<const0> ;
-  assign m_axi_gmem1_WDATA[21] = \<const0> ;
-  assign m_axi_gmem1_WDATA[20] = \<const0> ;
-  assign m_axi_gmem1_WDATA[19] = \<const0> ;
-  assign m_axi_gmem1_WDATA[18] = \<const0> ;
-  assign m_axi_gmem1_WDATA[17] = \<const0> ;
-  assign m_axi_gmem1_WDATA[16] = \<const0> ;
-  assign m_axi_gmem1_WDATA[15] = \<const0> ;
-  assign m_axi_gmem1_WDATA[14] = \<const0> ;
-  assign m_axi_gmem1_WDATA[13] = \<const0> ;
-  assign m_axi_gmem1_WDATA[12] = \<const0> ;
-  assign m_axi_gmem1_WDATA[11] = \<const0> ;
-  assign m_axi_gmem1_WDATA[10] = \<const0> ;
-  assign m_axi_gmem1_WDATA[9] = \<const0> ;
-  assign m_axi_gmem1_WDATA[8] = \<const0> ;
-  assign m_axi_gmem1_WDATA[7] = \<const0> ;
-  assign m_axi_gmem1_WDATA[6] = \<const0> ;
-  assign m_axi_gmem1_WDATA[5] = \<const0> ;
-  assign m_axi_gmem1_WDATA[4] = \<const0> ;
-  assign m_axi_gmem1_WDATA[3] = \<const0> ;
-  assign m_axi_gmem1_WDATA[2] = \<const0> ;
-  assign m_axi_gmem1_WDATA[1] = \<const0> ;
-  assign m_axi_gmem1_WDATA[0] = \<const0> ;
-  assign m_axi_gmem1_WID[0] = \<const0> ;
-  assign m_axi_gmem1_WLAST = \<const0> ;
-  assign m_axi_gmem1_WSTRB[31] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[30] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[29] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[28] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[27] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[26] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[25] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[24] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[23] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[22] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[21] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[20] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[19] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[18] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[17] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[16] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[15] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[14] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[13] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[12] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[11] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[10] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[9] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[8] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[7] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[6] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[5] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[4] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[3] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[2] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[1] = \<const0> ;
-  assign m_axi_gmem1_WSTRB[0] = \<const0> ;
-  assign m_axi_gmem1_WVALID = \<const0> ;
-  assign m_axi_gmem2_ARADDR[63:5] = \^m_axi_gmem2_ARADDR [63:5];
-  assign m_axi_gmem2_ARADDR[4] = \<const0> ;
-  assign m_axi_gmem2_ARADDR[3] = \<const0> ;
-  assign m_axi_gmem2_ARADDR[2] = \<const0> ;
-  assign m_axi_gmem2_ARADDR[1] = \<const0> ;
-  assign m_axi_gmem2_ARADDR[0] = \<const0> ;
-  assign m_axi_gmem2_ARBURST[1] = \<const0> ;
-  assign m_axi_gmem2_ARBURST[0] = \<const1> ;
-  assign m_axi_gmem2_ARCACHE[3] = \<const0> ;
-  assign m_axi_gmem2_ARCACHE[2] = \<const0> ;
-  assign m_axi_gmem2_ARCACHE[1] = \<const1> ;
-  assign m_axi_gmem2_ARCACHE[0] = \<const1> ;
-  assign m_axi_gmem2_ARID[0] = \<const0> ;
-  assign m_axi_gmem2_ARLEN[7] = \<const0> ;
-  assign m_axi_gmem2_ARLEN[6] = \<const0> ;
-  assign m_axi_gmem2_ARLEN[5] = \<const0> ;
-  assign m_axi_gmem2_ARLEN[4] = \<const0> ;
-  assign m_axi_gmem2_ARLEN[3:0] = \^m_axi_gmem2_ARLEN [3:0];
-  assign m_axi_gmem2_ARLOCK[1] = \<const0> ;
-  assign m_axi_gmem2_ARLOCK[0] = \<const0> ;
-  assign m_axi_gmem2_ARPROT[2] = \<const0> ;
-  assign m_axi_gmem2_ARPROT[1] = \<const0> ;
-  assign m_axi_gmem2_ARPROT[0] = \<const0> ;
-  assign m_axi_gmem2_ARQOS[3] = \<const0> ;
-  assign m_axi_gmem2_ARQOS[2] = \<const0> ;
-  assign m_axi_gmem2_ARQOS[1] = \<const0> ;
-  assign m_axi_gmem2_ARQOS[0] = \<const0> ;
-  assign m_axi_gmem2_ARREGION[3] = \<const0> ;
-  assign m_axi_gmem2_ARREGION[2] = \<const0> ;
-  assign m_axi_gmem2_ARREGION[1] = \<const0> ;
-  assign m_axi_gmem2_ARREGION[0] = \<const0> ;
-  assign m_axi_gmem2_ARSIZE[2] = \<const1> ;
-  assign m_axi_gmem2_ARSIZE[1] = \<const0> ;
-  assign m_axi_gmem2_ARSIZE[0] = \<const1> ;
-  assign m_axi_gmem2_AWADDR[63] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[62] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[61] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[60] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[59] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[58] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[57] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[56] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[55] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[54] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[53] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[52] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[51] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[50] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[49] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[48] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[47] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[46] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[45] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[44] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[43] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[42] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[41] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[40] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[39] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[38] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[37] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[36] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[35] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[34] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[33] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[32] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[31] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[30] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[29] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[28] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[27] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[26] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[25] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[24] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[23] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[22] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[21] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[20] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[19] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[18] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[17] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[16] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[15] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[14] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[13] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[12] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[11] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[10] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[9] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[8] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[7] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[6] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[5] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[4] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[3] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[2] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[1] = \<const0> ;
-  assign m_axi_gmem2_AWADDR[0] = \<const0> ;
-  assign m_axi_gmem2_AWBURST[1] = \<const0> ;
-  assign m_axi_gmem2_AWBURST[0] = \<const1> ;
-  assign m_axi_gmem2_AWCACHE[3] = \<const0> ;
-  assign m_axi_gmem2_AWCACHE[2] = \<const0> ;
-  assign m_axi_gmem2_AWCACHE[1] = \<const1> ;
-  assign m_axi_gmem2_AWCACHE[0] = \<const1> ;
-  assign m_axi_gmem2_AWID[0] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[7] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[6] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[5] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[4] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[3] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[2] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[1] = \<const0> ;
-  assign m_axi_gmem2_AWLEN[0] = \<const0> ;
-  assign m_axi_gmem2_AWLOCK[1] = \<const0> ;
-  assign m_axi_gmem2_AWLOCK[0] = \<const0> ;
-  assign m_axi_gmem2_AWPROT[2] = \<const0> ;
-  assign m_axi_gmem2_AWPROT[1] = \<const0> ;
-  assign m_axi_gmem2_AWPROT[0] = \<const0> ;
-  assign m_axi_gmem2_AWQOS[3] = \<const0> ;
-  assign m_axi_gmem2_AWQOS[2] = \<const0> ;
-  assign m_axi_gmem2_AWQOS[1] = \<const0> ;
-  assign m_axi_gmem2_AWQOS[0] = \<const0> ;
-  assign m_axi_gmem2_AWREGION[3] = \<const0> ;
-  assign m_axi_gmem2_AWREGION[2] = \<const0> ;
-  assign m_axi_gmem2_AWREGION[1] = \<const0> ;
-  assign m_axi_gmem2_AWREGION[0] = \<const0> ;
-  assign m_axi_gmem2_AWSIZE[2] = \<const1> ;
-  assign m_axi_gmem2_AWSIZE[1] = \<const0> ;
-  assign m_axi_gmem2_AWSIZE[0] = \<const1> ;
-  assign m_axi_gmem2_AWVALID = \<const0> ;
-  assign m_axi_gmem2_WDATA[255] = \<const0> ;
-  assign m_axi_gmem2_WDATA[254] = \<const0> ;
-  assign m_axi_gmem2_WDATA[253] = \<const0> ;
-  assign m_axi_gmem2_WDATA[252] = \<const0> ;
-  assign m_axi_gmem2_WDATA[251] = \<const0> ;
-  assign m_axi_gmem2_WDATA[250] = \<const0> ;
-  assign m_axi_gmem2_WDATA[249] = \<const0> ;
-  assign m_axi_gmem2_WDATA[248] = \<const0> ;
-  assign m_axi_gmem2_WDATA[247] = \<const0> ;
-  assign m_axi_gmem2_WDATA[246] = \<const0> ;
-  assign m_axi_gmem2_WDATA[245] = \<const0> ;
-  assign m_axi_gmem2_WDATA[244] = \<const0> ;
-  assign m_axi_gmem2_WDATA[243] = \<const0> ;
-  assign m_axi_gmem2_WDATA[242] = \<const0> ;
-  assign m_axi_gmem2_WDATA[241] = \<const0> ;
-  assign m_axi_gmem2_WDATA[240] = \<const0> ;
-  assign m_axi_gmem2_WDATA[239] = \<const0> ;
-  assign m_axi_gmem2_WDATA[238] = \<const0> ;
-  assign m_axi_gmem2_WDATA[237] = \<const0> ;
-  assign m_axi_gmem2_WDATA[236] = \<const0> ;
-  assign m_axi_gmem2_WDATA[235] = \<const0> ;
-  assign m_axi_gmem2_WDATA[234] = \<const0> ;
-  assign m_axi_gmem2_WDATA[233] = \<const0> ;
-  assign m_axi_gmem2_WDATA[232] = \<const0> ;
-  assign m_axi_gmem2_WDATA[231] = \<const0> ;
-  assign m_axi_gmem2_WDATA[230] = \<const0> ;
-  assign m_axi_gmem2_WDATA[229] = \<const0> ;
-  assign m_axi_gmem2_WDATA[228] = \<const0> ;
-  assign m_axi_gmem2_WDATA[227] = \<const0> ;
-  assign m_axi_gmem2_WDATA[226] = \<const0> ;
-  assign m_axi_gmem2_WDATA[225] = \<const0> ;
-  assign m_axi_gmem2_WDATA[224] = \<const0> ;
-  assign m_axi_gmem2_WDATA[223] = \<const0> ;
-  assign m_axi_gmem2_WDATA[222] = \<const0> ;
-  assign m_axi_gmem2_WDATA[221] = \<const0> ;
-  assign m_axi_gmem2_WDATA[220] = \<const0> ;
-  assign m_axi_gmem2_WDATA[219] = \<const0> ;
-  assign m_axi_gmem2_WDATA[218] = \<const0> ;
-  assign m_axi_gmem2_WDATA[217] = \<const0> ;
-  assign m_axi_gmem2_WDATA[216] = \<const0> ;
-  assign m_axi_gmem2_WDATA[215] = \<const0> ;
-  assign m_axi_gmem2_WDATA[214] = \<const0> ;
-  assign m_axi_gmem2_WDATA[213] = \<const0> ;
-  assign m_axi_gmem2_WDATA[212] = \<const0> ;
-  assign m_axi_gmem2_WDATA[211] = \<const0> ;
-  assign m_axi_gmem2_WDATA[210] = \<const0> ;
-  assign m_axi_gmem2_WDATA[209] = \<const0> ;
-  assign m_axi_gmem2_WDATA[208] = \<const0> ;
-  assign m_axi_gmem2_WDATA[207] = \<const0> ;
-  assign m_axi_gmem2_WDATA[206] = \<const0> ;
-  assign m_axi_gmem2_WDATA[205] = \<const0> ;
-  assign m_axi_gmem2_WDATA[204] = \<const0> ;
-  assign m_axi_gmem2_WDATA[203] = \<const0> ;
-  assign m_axi_gmem2_WDATA[202] = \<const0> ;
-  assign m_axi_gmem2_WDATA[201] = \<const0> ;
-  assign m_axi_gmem2_WDATA[200] = \<const0> ;
-  assign m_axi_gmem2_WDATA[199] = \<const0> ;
-  assign m_axi_gmem2_WDATA[198] = \<const0> ;
-  assign m_axi_gmem2_WDATA[197] = \<const0> ;
-  assign m_axi_gmem2_WDATA[196] = \<const0> ;
-  assign m_axi_gmem2_WDATA[195] = \<const0> ;
-  assign m_axi_gmem2_WDATA[194] = \<const0> ;
-  assign m_axi_gmem2_WDATA[193] = \<const0> ;
-  assign m_axi_gmem2_WDATA[192] = \<const0> ;
-  assign m_axi_gmem2_WDATA[191] = \<const0> ;
-  assign m_axi_gmem2_WDATA[190] = \<const0> ;
-  assign m_axi_gmem2_WDATA[189] = \<const0> ;
-  assign m_axi_gmem2_WDATA[188] = \<const0> ;
-  assign m_axi_gmem2_WDATA[187] = \<const0> ;
-  assign m_axi_gmem2_WDATA[186] = \<const0> ;
-  assign m_axi_gmem2_WDATA[185] = \<const0> ;
-  assign m_axi_gmem2_WDATA[184] = \<const0> ;
-  assign m_axi_gmem2_WDATA[183] = \<const0> ;
-  assign m_axi_gmem2_WDATA[182] = \<const0> ;
-  assign m_axi_gmem2_WDATA[181] = \<const0> ;
-  assign m_axi_gmem2_WDATA[180] = \<const0> ;
-  assign m_axi_gmem2_WDATA[179] = \<const0> ;
-  assign m_axi_gmem2_WDATA[178] = \<const0> ;
-  assign m_axi_gmem2_WDATA[177] = \<const0> ;
-  assign m_axi_gmem2_WDATA[176] = \<const0> ;
-  assign m_axi_gmem2_WDATA[175] = \<const0> ;
-  assign m_axi_gmem2_WDATA[174] = \<const0> ;
-  assign m_axi_gmem2_WDATA[173] = \<const0> ;
-  assign m_axi_gmem2_WDATA[172] = \<const0> ;
-  assign m_axi_gmem2_WDATA[171] = \<const0> ;
-  assign m_axi_gmem2_WDATA[170] = \<const0> ;
-  assign m_axi_gmem2_WDATA[169] = \<const0> ;
-  assign m_axi_gmem2_WDATA[168] = \<const0> ;
-  assign m_axi_gmem2_WDATA[167] = \<const0> ;
-  assign m_axi_gmem2_WDATA[166] = \<const0> ;
-  assign m_axi_gmem2_WDATA[165] = \<const0> ;
-  assign m_axi_gmem2_WDATA[164] = \<const0> ;
-  assign m_axi_gmem2_WDATA[163] = \<const0> ;
-  assign m_axi_gmem2_WDATA[162] = \<const0> ;
-  assign m_axi_gmem2_WDATA[161] = \<const0> ;
-  assign m_axi_gmem2_WDATA[160] = \<const0> ;
-  assign m_axi_gmem2_WDATA[159] = \<const0> ;
-  assign m_axi_gmem2_WDATA[158] = \<const0> ;
-  assign m_axi_gmem2_WDATA[157] = \<const0> ;
-  assign m_axi_gmem2_WDATA[156] = \<const0> ;
-  assign m_axi_gmem2_WDATA[155] = \<const0> ;
-  assign m_axi_gmem2_WDATA[154] = \<const0> ;
-  assign m_axi_gmem2_WDATA[153] = \<const0> ;
-  assign m_axi_gmem2_WDATA[152] = \<const0> ;
-  assign m_axi_gmem2_WDATA[151] = \<const0> ;
-  assign m_axi_gmem2_WDATA[150] = \<const0> ;
-  assign m_axi_gmem2_WDATA[149] = \<const0> ;
-  assign m_axi_gmem2_WDATA[148] = \<const0> ;
-  assign m_axi_gmem2_WDATA[147] = \<const0> ;
-  assign m_axi_gmem2_WDATA[146] = \<const0> ;
-  assign m_axi_gmem2_WDATA[145] = \<const0> ;
-  assign m_axi_gmem2_WDATA[144] = \<const0> ;
-  assign m_axi_gmem2_WDATA[143] = \<const0> ;
-  assign m_axi_gmem2_WDATA[142] = \<const0> ;
-  assign m_axi_gmem2_WDATA[141] = \<const0> ;
-  assign m_axi_gmem2_WDATA[140] = \<const0> ;
-  assign m_axi_gmem2_WDATA[139] = \<const0> ;
-  assign m_axi_gmem2_WDATA[138] = \<const0> ;
-  assign m_axi_gmem2_WDATA[137] = \<const0> ;
-  assign m_axi_gmem2_WDATA[136] = \<const0> ;
-  assign m_axi_gmem2_WDATA[135] = \<const0> ;
-  assign m_axi_gmem2_WDATA[134] = \<const0> ;
-  assign m_axi_gmem2_WDATA[133] = \<const0> ;
-  assign m_axi_gmem2_WDATA[132] = \<const0> ;
-  assign m_axi_gmem2_WDATA[131] = \<const0> ;
-  assign m_axi_gmem2_WDATA[130] = \<const0> ;
-  assign m_axi_gmem2_WDATA[129] = \<const0> ;
-  assign m_axi_gmem2_WDATA[128] = \<const0> ;
-  assign m_axi_gmem2_WDATA[127] = \<const0> ;
-  assign m_axi_gmem2_WDATA[126] = \<const0> ;
-  assign m_axi_gmem2_WDATA[125] = \<const0> ;
-  assign m_axi_gmem2_WDATA[124] = \<const0> ;
-  assign m_axi_gmem2_WDATA[123] = \<const0> ;
-  assign m_axi_gmem2_WDATA[122] = \<const0> ;
-  assign m_axi_gmem2_WDATA[121] = \<const0> ;
-  assign m_axi_gmem2_WDATA[120] = \<const0> ;
-  assign m_axi_gmem2_WDATA[119] = \<const0> ;
-  assign m_axi_gmem2_WDATA[118] = \<const0> ;
-  assign m_axi_gmem2_WDATA[117] = \<const0> ;
-  assign m_axi_gmem2_WDATA[116] = \<const0> ;
-  assign m_axi_gmem2_WDATA[115] = \<const0> ;
-  assign m_axi_gmem2_WDATA[114] = \<const0> ;
-  assign m_axi_gmem2_WDATA[113] = \<const0> ;
-  assign m_axi_gmem2_WDATA[112] = \<const0> ;
-  assign m_axi_gmem2_WDATA[111] = \<const0> ;
-  assign m_axi_gmem2_WDATA[110] = \<const0> ;
-  assign m_axi_gmem2_WDATA[109] = \<const0> ;
-  assign m_axi_gmem2_WDATA[108] = \<const0> ;
-  assign m_axi_gmem2_WDATA[107] = \<const0> ;
-  assign m_axi_gmem2_WDATA[106] = \<const0> ;
-  assign m_axi_gmem2_WDATA[105] = \<const0> ;
-  assign m_axi_gmem2_WDATA[104] = \<const0> ;
-  assign m_axi_gmem2_WDATA[103] = \<const0> ;
-  assign m_axi_gmem2_WDATA[102] = \<const0> ;
-  assign m_axi_gmem2_WDATA[101] = \<const0> ;
-  assign m_axi_gmem2_WDATA[100] = \<const0> ;
-  assign m_axi_gmem2_WDATA[99] = \<const0> ;
-  assign m_axi_gmem2_WDATA[98] = \<const0> ;
-  assign m_axi_gmem2_WDATA[97] = \<const0> ;
-  assign m_axi_gmem2_WDATA[96] = \<const0> ;
-  assign m_axi_gmem2_WDATA[95] = \<const0> ;
-  assign m_axi_gmem2_WDATA[94] = \<const0> ;
-  assign m_axi_gmem2_WDATA[93] = \<const0> ;
-  assign m_axi_gmem2_WDATA[92] = \<const0> ;
-  assign m_axi_gmem2_WDATA[91] = \<const0> ;
-  assign m_axi_gmem2_WDATA[90] = \<const0> ;
-  assign m_axi_gmem2_WDATA[89] = \<const0> ;
-  assign m_axi_gmem2_WDATA[88] = \<const0> ;
-  assign m_axi_gmem2_WDATA[87] = \<const0> ;
-  assign m_axi_gmem2_WDATA[86] = \<const0> ;
-  assign m_axi_gmem2_WDATA[85] = \<const0> ;
-  assign m_axi_gmem2_WDATA[84] = \<const0> ;
-  assign m_axi_gmem2_WDATA[83] = \<const0> ;
-  assign m_axi_gmem2_WDATA[82] = \<const0> ;
-  assign m_axi_gmem2_WDATA[81] = \<const0> ;
-  assign m_axi_gmem2_WDATA[80] = \<const0> ;
-  assign m_axi_gmem2_WDATA[79] = \<const0> ;
-  assign m_axi_gmem2_WDATA[78] = \<const0> ;
-  assign m_axi_gmem2_WDATA[77] = \<const0> ;
-  assign m_axi_gmem2_WDATA[76] = \<const0> ;
-  assign m_axi_gmem2_WDATA[75] = \<const0> ;
-  assign m_axi_gmem2_WDATA[74] = \<const0> ;
-  assign m_axi_gmem2_WDATA[73] = \<const0> ;
-  assign m_axi_gmem2_WDATA[72] = \<const0> ;
-  assign m_axi_gmem2_WDATA[71] = \<const0> ;
-  assign m_axi_gmem2_WDATA[70] = \<const0> ;
-  assign m_axi_gmem2_WDATA[69] = \<const0> ;
-  assign m_axi_gmem2_WDATA[68] = \<const0> ;
-  assign m_axi_gmem2_WDATA[67] = \<const0> ;
-  assign m_axi_gmem2_WDATA[66] = \<const0> ;
-  assign m_axi_gmem2_WDATA[65] = \<const0> ;
-  assign m_axi_gmem2_WDATA[64] = \<const0> ;
-  assign m_axi_gmem2_WDATA[63] = \<const0> ;
-  assign m_axi_gmem2_WDATA[62] = \<const0> ;
-  assign m_axi_gmem2_WDATA[61] = \<const0> ;
-  assign m_axi_gmem2_WDATA[60] = \<const0> ;
-  assign m_axi_gmem2_WDATA[59] = \<const0> ;
-  assign m_axi_gmem2_WDATA[58] = \<const0> ;
-  assign m_axi_gmem2_WDATA[57] = \<const0> ;
-  assign m_axi_gmem2_WDATA[56] = \<const0> ;
-  assign m_axi_gmem2_WDATA[55] = \<const0> ;
-  assign m_axi_gmem2_WDATA[54] = \<const0> ;
-  assign m_axi_gmem2_WDATA[53] = \<const0> ;
-  assign m_axi_gmem2_WDATA[52] = \<const0> ;
-  assign m_axi_gmem2_WDATA[51] = \<const0> ;
-  assign m_axi_gmem2_WDATA[50] = \<const0> ;
-  assign m_axi_gmem2_WDATA[49] = \<const0> ;
-  assign m_axi_gmem2_WDATA[48] = \<const0> ;
-  assign m_axi_gmem2_WDATA[47] = \<const0> ;
-  assign m_axi_gmem2_WDATA[46] = \<const0> ;
-  assign m_axi_gmem2_WDATA[45] = \<const0> ;
-  assign m_axi_gmem2_WDATA[44] = \<const0> ;
-  assign m_axi_gmem2_WDATA[43] = \<const0> ;
-  assign m_axi_gmem2_WDATA[42] = \<const0> ;
-  assign m_axi_gmem2_WDATA[41] = \<const0> ;
-  assign m_axi_gmem2_WDATA[40] = \<const0> ;
-  assign m_axi_gmem2_WDATA[39] = \<const0> ;
-  assign m_axi_gmem2_WDATA[38] = \<const0> ;
-  assign m_axi_gmem2_WDATA[37] = \<const0> ;
-  assign m_axi_gmem2_WDATA[36] = \<const0> ;
-  assign m_axi_gmem2_WDATA[35] = \<const0> ;
-  assign m_axi_gmem2_WDATA[34] = \<const0> ;
-  assign m_axi_gmem2_WDATA[33] = \<const0> ;
-  assign m_axi_gmem2_WDATA[32] = \<const0> ;
-  assign m_axi_gmem2_WDATA[31] = \<const0> ;
-  assign m_axi_gmem2_WDATA[30] = \<const0> ;
-  assign m_axi_gmem2_WDATA[29] = \<const0> ;
-  assign m_axi_gmem2_WDATA[28] = \<const0> ;
-  assign m_axi_gmem2_WDATA[27] = \<const0> ;
-  assign m_axi_gmem2_WDATA[26] = \<const0> ;
-  assign m_axi_gmem2_WDATA[25] = \<const0> ;
-  assign m_axi_gmem2_WDATA[24] = \<const0> ;
-  assign m_axi_gmem2_WDATA[23] = \<const0> ;
-  assign m_axi_gmem2_WDATA[22] = \<const0> ;
-  assign m_axi_gmem2_WDATA[21] = \<const0> ;
-  assign m_axi_gmem2_WDATA[20] = \<const0> ;
-  assign m_axi_gmem2_WDATA[19] = \<const0> ;
-  assign m_axi_gmem2_WDATA[18] = \<const0> ;
-  assign m_axi_gmem2_WDATA[17] = \<const0> ;
-  assign m_axi_gmem2_WDATA[16] = \<const0> ;
-  assign m_axi_gmem2_WDATA[15] = \<const0> ;
-  assign m_axi_gmem2_WDATA[14] = \<const0> ;
-  assign m_axi_gmem2_WDATA[13] = \<const0> ;
-  assign m_axi_gmem2_WDATA[12] = \<const0> ;
-  assign m_axi_gmem2_WDATA[11] = \<const0> ;
-  assign m_axi_gmem2_WDATA[10] = \<const0> ;
-  assign m_axi_gmem2_WDATA[9] = \<const0> ;
-  assign m_axi_gmem2_WDATA[8] = \<const0> ;
-  assign m_axi_gmem2_WDATA[7] = \<const0> ;
-  assign m_axi_gmem2_WDATA[6] = \<const0> ;
-  assign m_axi_gmem2_WDATA[5] = \<const0> ;
-  assign m_axi_gmem2_WDATA[4] = \<const0> ;
-  assign m_axi_gmem2_WDATA[3] = \<const0> ;
-  assign m_axi_gmem2_WDATA[2] = \<const0> ;
-  assign m_axi_gmem2_WDATA[1] = \<const0> ;
-  assign m_axi_gmem2_WDATA[0] = \<const0> ;
-  assign m_axi_gmem2_WID[0] = \<const0> ;
-  assign m_axi_gmem2_WLAST = \<const0> ;
-  assign m_axi_gmem2_WSTRB[31] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[30] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[29] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[28] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[27] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[26] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[25] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[24] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[23] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[22] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[21] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[20] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[19] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[18] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[17] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[16] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[15] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[14] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[13] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[12] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[11] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[10] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[9] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[8] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[7] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[6] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[5] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[4] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[3] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[2] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[1] = \<const0> ;
-  assign m_axi_gmem2_WSTRB[0] = \<const0> ;
-  assign m_axi_gmem2_WVALID = \<const0> ;
-  assign output_stream_TDATA[15:1] = \^output_stream_TDATA [15:1];
-  assign output_stream_TDATA[0] = \<const0> ;
-  assign output_stream_TKEEP[1] = \<const1> ;
-  assign output_stream_TKEEP[0] = \<const1> ;
-  assign output_stream_TSTRB[1] = \<const1> ;
-  assign output_stream_TSTRB[0] = \<const1> ;
-  assign s_axi_control_BRESP[1] = \<const0> ;
-  assign s_axi_control_BRESP[0] = \<const0> ;
-  assign s_axi_control_RRESP[1] = \<const0> ;
-  assign s_axi_control_RRESP[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
-  (* C_M_AXI_DATA_WIDTH = "32" *) 
-  (* C_M_AXI_GMEM0_ADDR_WIDTH = "64" *) 
-  (* C_M_AXI_GMEM0_ARUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM0_AWUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM0_BUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM0_CACHE_VALUE = "4'b0011" *) 
-  (* C_M_AXI_GMEM0_DATA_WIDTH = "1024" *) 
-  (* C_M_AXI_GMEM0_ID_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM0_PROT_VALUE = "3'b000" *) 
-  (* C_M_AXI_GMEM0_RUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM0_USER_VALUE = "0" *) 
-  (* C_M_AXI_GMEM0_WSTRB_WIDTH = "128" *) 
-  (* C_M_AXI_GMEM0_WUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_ADDR_WIDTH = "64" *) 
-  (* C_M_AXI_GMEM1_ARUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_AWUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_BUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_CACHE_VALUE = "4'b0011" *) 
-  (* C_M_AXI_GMEM1_DATA_WIDTH = "256" *) 
-  (* C_M_AXI_GMEM1_ID_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_PROT_VALUE = "3'b000" *) 
-  (* C_M_AXI_GMEM1_RUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM1_USER_VALUE = "0" *) 
-  (* C_M_AXI_GMEM1_WSTRB_WIDTH = "32" *) 
-  (* C_M_AXI_GMEM1_WUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_ADDR_WIDTH = "64" *) 
-  (* C_M_AXI_GMEM2_ARUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_AWUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_BUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_CACHE_VALUE = "4'b0011" *) 
-  (* C_M_AXI_GMEM2_DATA_WIDTH = "256" *) 
-  (* C_M_AXI_GMEM2_ID_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_PROT_VALUE = "3'b000" *) 
-  (* C_M_AXI_GMEM2_RUSER_WIDTH = "1" *) 
-  (* C_M_AXI_GMEM2_USER_VALUE = "0" *) 
-  (* C_M_AXI_GMEM2_WSTRB_WIDTH = "32" *) 
-  (* C_M_AXI_GMEM2_WUSER_WIDTH = "1" *) 
-  (* C_M_AXI_WSTRB_WIDTH = "4" *) 
-  (* C_S_AXI_CONTROL_ADDR_WIDTH = "6" *) 
-  (* C_S_AXI_CONTROL_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_CONTROL_WSTRB_WIDTH = "4" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* C_S_AXI_WSTRB_WIDTH = "4" *) 
-  (* SDX_KERNEL = "true" *) 
-  (* SDX_KERNEL_SYNTH_INST = "inst" *) 
-  (* SDX_KERNEL_TYPE = "hls" *) 
-  (* ap_ST_fsm_state1 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001" *) 
-  (* ap_ST_fsm_state10 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000" *) 
-  (* ap_ST_fsm_state100 = "147'b000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state101 = "147'b000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state102 = "147'b000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state103 = "147'b000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state104 = "147'b000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state105 = "147'b000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state106 = "147'b000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state107 = "147'b000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state108 = "147'b000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state109 = "147'b000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state11 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000" *) 
-  (* ap_ST_fsm_state110 = "147'b000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state111 = "147'b000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state112 = "147'b000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state113 = "147'b000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state114 = "147'b000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state115 = "147'b000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state116 = "147'b000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state117 = "147'b000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state118 = "147'b000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state119 = "147'b000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state12 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000" *) 
-  (* ap_ST_fsm_state120 = "147'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state121 = "147'b000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state122 = "147'b000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state123 = "147'b000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state124 = "147'b000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state125 = "147'b000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state126 = "147'b000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state127 = "147'b000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state128 = "147'b000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state129 = "147'b000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state13 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000" *) 
-  (* ap_ST_fsm_state130 = "147'b000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state131 = "147'b000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state132 = "147'b000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state133 = "147'b000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state134 = "147'b000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state135 = "147'b000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state136 = "147'b000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state137 = "147'b000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state138 = "147'b000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state139 = "147'b000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state14 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000" *) 
-  (* ap_ST_fsm_state140 = "147'b000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state141 = "147'b000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state142 = "147'b000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state143 = "147'b000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state144 = "147'b000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state145 = "147'b001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state146 = "147'b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state147 = "147'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state15 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000" *) 
-  (* ap_ST_fsm_state16 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000" *) 
-  (* ap_ST_fsm_state17 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000" *) 
-  (* ap_ST_fsm_state18 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000" *) 
-  (* ap_ST_fsm_state19 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000" *) 
-  (* ap_ST_fsm_state2 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010" *) 
-  (* ap_ST_fsm_state20 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000" *) 
-  (* ap_ST_fsm_state21 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000" *) 
-  (* ap_ST_fsm_state22 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000" *) 
-  (* ap_ST_fsm_state23 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000" *) 
-  (* ap_ST_fsm_state24 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000" *) 
-  (* ap_ST_fsm_state25 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000" *) 
-  (* ap_ST_fsm_state26 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000" *) 
-  (* ap_ST_fsm_state27 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000" *) 
-  (* ap_ST_fsm_state28 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000" *) 
-  (* ap_ST_fsm_state29 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000" *) 
-  (* ap_ST_fsm_state3 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100" *) 
-  (* ap_ST_fsm_state30 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000" *) 
-  (* ap_ST_fsm_state31 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state32 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state33 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state34 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state35 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state36 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state37 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state38 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state39 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state4 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000" *) 
-  (* ap_ST_fsm_state40 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state41 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state42 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state43 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state44 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state45 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state46 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state47 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state48 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state49 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state5 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000" *) 
-  (* ap_ST_fsm_state50 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state51 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state52 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state53 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state54 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state55 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state56 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state57 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state58 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state59 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state6 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000" *) 
-  (* ap_ST_fsm_state60 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state61 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state62 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state63 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state64 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state65 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state66 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state67 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state68 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state69 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state7 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000" *) 
-  (* ap_ST_fsm_state70 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state71 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state72 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state73 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state74 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state75 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state76 = "147'b000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state77 = "147'b000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state78 = "147'b000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state79 = "147'b000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state8 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000" *) 
-  (* ap_ST_fsm_state80 = "147'b000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state81 = "147'b000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state82 = "147'b000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state83 = "147'b000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state84 = "147'b000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state85 = "147'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state86 = "147'b000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state87 = "147'b000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state88 = "147'b000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state89 = "147'b000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state9 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000" *) 
-  (* ap_ST_fsm_state90 = "147'b000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state91 = "147'b000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state92 = "147'b000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state93 = "147'b000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state94 = "147'b000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state95 = "147'b000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state96 = "147'b000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state97 = "147'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state98 = "147'b000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state99 = "147'b000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-  bnn_top_bnn_top_0_0_bnn_top inst
-       (.ap_clk(ap_clk),
-        .ap_rst_n(ap_rst_n),
-        .input_stream_TDATA(input_stream_TDATA),
-        .input_stream_TKEEP({1'b0,1'b0,1'b0,1'b0}),
-        .input_stream_TLAST(1'b0),
-        .input_stream_TREADY(input_stream_TREADY),
-        .input_stream_TSTRB({1'b0,1'b0,1'b0,1'b0}),
-        .input_stream_TVALID(input_stream_TVALID),
-        .interrupt(interrupt),
-        .m_axi_gmem0_ARADDR({\^m_axi_gmem0_ARADDR ,NLW_inst_m_axi_gmem0_ARADDR_UNCONNECTED[6:0]}),
-        .m_axi_gmem0_ARBURST(NLW_inst_m_axi_gmem0_ARBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem0_ARCACHE(NLW_inst_m_axi_gmem0_ARCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem0_ARID(NLW_inst_m_axi_gmem0_ARID_UNCONNECTED[0]),
-        .m_axi_gmem0_ARLEN({NLW_inst_m_axi_gmem0_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem0_ARLEN }),
-        .m_axi_gmem0_ARLOCK(NLW_inst_m_axi_gmem0_ARLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem0_ARPROT(NLW_inst_m_axi_gmem0_ARPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem0_ARQOS(NLW_inst_m_axi_gmem0_ARQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem0_ARREADY(m_axi_gmem0_ARREADY),
-        .m_axi_gmem0_ARREGION(NLW_inst_m_axi_gmem0_ARREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem0_ARSIZE(NLW_inst_m_axi_gmem0_ARSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem0_ARUSER(NLW_inst_m_axi_gmem0_ARUSER_UNCONNECTED[0]),
-        .m_axi_gmem0_ARVALID(m_axi_gmem0_ARVALID),
-        .m_axi_gmem0_AWADDR(NLW_inst_m_axi_gmem0_AWADDR_UNCONNECTED[63:0]),
-        .m_axi_gmem0_AWBURST(NLW_inst_m_axi_gmem0_AWBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem0_AWCACHE(NLW_inst_m_axi_gmem0_AWCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem0_AWID(NLW_inst_m_axi_gmem0_AWID_UNCONNECTED[0]),
-        .m_axi_gmem0_AWLEN(NLW_inst_m_axi_gmem0_AWLEN_UNCONNECTED[7:0]),
-        .m_axi_gmem0_AWLOCK(NLW_inst_m_axi_gmem0_AWLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem0_AWPROT(NLW_inst_m_axi_gmem0_AWPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem0_AWQOS(NLW_inst_m_axi_gmem0_AWQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem0_AWREADY(1'b0),
-        .m_axi_gmem0_AWREGION(NLW_inst_m_axi_gmem0_AWREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem0_AWSIZE(NLW_inst_m_axi_gmem0_AWSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem0_AWUSER(NLW_inst_m_axi_gmem0_AWUSER_UNCONNECTED[0]),
-        .m_axi_gmem0_AWVALID(NLW_inst_m_axi_gmem0_AWVALID_UNCONNECTED),
-        .m_axi_gmem0_BID(1'b0),
-        .m_axi_gmem0_BREADY(m_axi_gmem0_BREADY),
-        .m_axi_gmem0_BRESP({1'b0,1'b0}),
-        .m_axi_gmem0_BUSER(1'b0),
-        .m_axi_gmem0_BVALID(m_axi_gmem0_BVALID),
-        .m_axi_gmem0_RDATA({m_axi_gmem0_RDATA[1023:1008],1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,m_axi_gmem0_RDATA[791:0]}),
-        .m_axi_gmem0_RID(1'b0),
-        .m_axi_gmem0_RLAST(m_axi_gmem0_RLAST),
-        .m_axi_gmem0_RREADY(m_axi_gmem0_RREADY),
-        .m_axi_gmem0_RRESP({1'b0,1'b0}),
-        .m_axi_gmem0_RUSER(1'b0),
-        .m_axi_gmem0_RVALID(m_axi_gmem0_RVALID),
-        .m_axi_gmem0_WDATA(NLW_inst_m_axi_gmem0_WDATA_UNCONNECTED[1023:0]),
-        .m_axi_gmem0_WID(NLW_inst_m_axi_gmem0_WID_UNCONNECTED[0]),
-        .m_axi_gmem0_WLAST(NLW_inst_m_axi_gmem0_WLAST_UNCONNECTED),
-        .m_axi_gmem0_WREADY(1'b0),
-        .m_axi_gmem0_WSTRB(NLW_inst_m_axi_gmem0_WSTRB_UNCONNECTED[127:0]),
-        .m_axi_gmem0_WUSER(NLW_inst_m_axi_gmem0_WUSER_UNCONNECTED[0]),
-        .m_axi_gmem0_WVALID(NLW_inst_m_axi_gmem0_WVALID_UNCONNECTED),
-        .m_axi_gmem1_ARADDR({\^m_axi_gmem1_ARADDR ,NLW_inst_m_axi_gmem1_ARADDR_UNCONNECTED[4:0]}),
-        .m_axi_gmem1_ARBURST(NLW_inst_m_axi_gmem1_ARBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem1_ARCACHE(NLW_inst_m_axi_gmem1_ARCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem1_ARID(NLW_inst_m_axi_gmem1_ARID_UNCONNECTED[0]),
-        .m_axi_gmem1_ARLEN({NLW_inst_m_axi_gmem1_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem1_ARLEN }),
-        .m_axi_gmem1_ARLOCK(NLW_inst_m_axi_gmem1_ARLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem1_ARPROT(NLW_inst_m_axi_gmem1_ARPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem1_ARQOS(NLW_inst_m_axi_gmem1_ARQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem1_ARREADY(m_axi_gmem1_ARREADY),
-        .m_axi_gmem1_ARREGION(NLW_inst_m_axi_gmem1_ARREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem1_ARSIZE(NLW_inst_m_axi_gmem1_ARSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem1_ARUSER(NLW_inst_m_axi_gmem1_ARUSER_UNCONNECTED[0]),
-        .m_axi_gmem1_ARVALID(m_axi_gmem1_ARVALID),
-        .m_axi_gmem1_AWADDR(NLW_inst_m_axi_gmem1_AWADDR_UNCONNECTED[63:0]),
-        .m_axi_gmem1_AWBURST(NLW_inst_m_axi_gmem1_AWBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem1_AWCACHE(NLW_inst_m_axi_gmem1_AWCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem1_AWID(NLW_inst_m_axi_gmem1_AWID_UNCONNECTED[0]),
-        .m_axi_gmem1_AWLEN(NLW_inst_m_axi_gmem1_AWLEN_UNCONNECTED[7:0]),
-        .m_axi_gmem1_AWLOCK(NLW_inst_m_axi_gmem1_AWLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem1_AWPROT(NLW_inst_m_axi_gmem1_AWPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem1_AWQOS(NLW_inst_m_axi_gmem1_AWQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem1_AWREADY(1'b0),
-        .m_axi_gmem1_AWREGION(NLW_inst_m_axi_gmem1_AWREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem1_AWSIZE(NLW_inst_m_axi_gmem1_AWSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem1_AWUSER(NLW_inst_m_axi_gmem1_AWUSER_UNCONNECTED[0]),
-        .m_axi_gmem1_AWVALID(NLW_inst_m_axi_gmem1_AWVALID_UNCONNECTED),
-        .m_axi_gmem1_BID(1'b0),
-        .m_axi_gmem1_BREADY(m_axi_gmem1_BREADY),
-        .m_axi_gmem1_BRESP({1'b0,1'b0}),
-        .m_axi_gmem1_BUSER(1'b0),
-        .m_axi_gmem1_BVALID(m_axi_gmem1_BVALID),
-        .m_axi_gmem1_RDATA(m_axi_gmem1_RDATA),
-        .m_axi_gmem1_RID(1'b0),
-        .m_axi_gmem1_RLAST(m_axi_gmem1_RLAST),
-        .m_axi_gmem1_RREADY(m_axi_gmem1_RREADY),
-        .m_axi_gmem1_RRESP({1'b0,1'b0}),
-        .m_axi_gmem1_RUSER(1'b0),
-        .m_axi_gmem1_RVALID(m_axi_gmem1_RVALID),
-        .m_axi_gmem1_WDATA(NLW_inst_m_axi_gmem1_WDATA_UNCONNECTED[255:0]),
-        .m_axi_gmem1_WID(NLW_inst_m_axi_gmem1_WID_UNCONNECTED[0]),
-        .m_axi_gmem1_WLAST(NLW_inst_m_axi_gmem1_WLAST_UNCONNECTED),
-        .m_axi_gmem1_WREADY(1'b0),
-        .m_axi_gmem1_WSTRB(NLW_inst_m_axi_gmem1_WSTRB_UNCONNECTED[31:0]),
-        .m_axi_gmem1_WUSER(NLW_inst_m_axi_gmem1_WUSER_UNCONNECTED[0]),
-        .m_axi_gmem1_WVALID(NLW_inst_m_axi_gmem1_WVALID_UNCONNECTED),
-        .m_axi_gmem2_ARADDR({\^m_axi_gmem2_ARADDR ,NLW_inst_m_axi_gmem2_ARADDR_UNCONNECTED[4:0]}),
-        .m_axi_gmem2_ARBURST(NLW_inst_m_axi_gmem2_ARBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem2_ARCACHE(NLW_inst_m_axi_gmem2_ARCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem2_ARID(NLW_inst_m_axi_gmem2_ARID_UNCONNECTED[0]),
-        .m_axi_gmem2_ARLEN({NLW_inst_m_axi_gmem2_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem2_ARLEN }),
-        .m_axi_gmem2_ARLOCK(NLW_inst_m_axi_gmem2_ARLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem2_ARPROT(NLW_inst_m_axi_gmem2_ARPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem2_ARQOS(NLW_inst_m_axi_gmem2_ARQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem2_ARREADY(m_axi_gmem2_ARREADY),
-        .m_axi_gmem2_ARREGION(NLW_inst_m_axi_gmem2_ARREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem2_ARSIZE(NLW_inst_m_axi_gmem2_ARSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem2_ARUSER(NLW_inst_m_axi_gmem2_ARUSER_UNCONNECTED[0]),
-        .m_axi_gmem2_ARVALID(m_axi_gmem2_ARVALID),
-        .m_axi_gmem2_AWADDR(NLW_inst_m_axi_gmem2_AWADDR_UNCONNECTED[63:0]),
-        .m_axi_gmem2_AWBURST(NLW_inst_m_axi_gmem2_AWBURST_UNCONNECTED[1:0]),
-        .m_axi_gmem2_AWCACHE(NLW_inst_m_axi_gmem2_AWCACHE_UNCONNECTED[3:0]),
-        .m_axi_gmem2_AWID(NLW_inst_m_axi_gmem2_AWID_UNCONNECTED[0]),
-        .m_axi_gmem2_AWLEN(NLW_inst_m_axi_gmem2_AWLEN_UNCONNECTED[7:0]),
-        .m_axi_gmem2_AWLOCK(NLW_inst_m_axi_gmem2_AWLOCK_UNCONNECTED[1:0]),
-        .m_axi_gmem2_AWPROT(NLW_inst_m_axi_gmem2_AWPROT_UNCONNECTED[2:0]),
-        .m_axi_gmem2_AWQOS(NLW_inst_m_axi_gmem2_AWQOS_UNCONNECTED[3:0]),
-        .m_axi_gmem2_AWREADY(1'b0),
-        .m_axi_gmem2_AWREGION(NLW_inst_m_axi_gmem2_AWREGION_UNCONNECTED[3:0]),
-        .m_axi_gmem2_AWSIZE(NLW_inst_m_axi_gmem2_AWSIZE_UNCONNECTED[2:0]),
-        .m_axi_gmem2_AWUSER(NLW_inst_m_axi_gmem2_AWUSER_UNCONNECTED[0]),
-        .m_axi_gmem2_AWVALID(NLW_inst_m_axi_gmem2_AWVALID_UNCONNECTED),
-        .m_axi_gmem2_BID(1'b0),
-        .m_axi_gmem2_BREADY(m_axi_gmem2_BREADY),
-        .m_axi_gmem2_BRESP({1'b0,1'b0}),
-        .m_axi_gmem2_BUSER(1'b0),
-        .m_axi_gmem2_BVALID(m_axi_gmem2_BVALID),
-        .m_axi_gmem2_RDATA(m_axi_gmem2_RDATA),
-        .m_axi_gmem2_RID(1'b0),
-        .m_axi_gmem2_RLAST(m_axi_gmem2_RLAST),
-        .m_axi_gmem2_RREADY(m_axi_gmem2_RREADY),
-        .m_axi_gmem2_RRESP({1'b0,1'b0}),
-        .m_axi_gmem2_RUSER(1'b0),
-        .m_axi_gmem2_RVALID(m_axi_gmem2_RVALID),
-        .m_axi_gmem2_WDATA(NLW_inst_m_axi_gmem2_WDATA_UNCONNECTED[255:0]),
-        .m_axi_gmem2_WID(NLW_inst_m_axi_gmem2_WID_UNCONNECTED[0]),
-        .m_axi_gmem2_WLAST(NLW_inst_m_axi_gmem2_WLAST_UNCONNECTED),
-        .m_axi_gmem2_WREADY(1'b0),
-        .m_axi_gmem2_WSTRB(NLW_inst_m_axi_gmem2_WSTRB_UNCONNECTED[31:0]),
-        .m_axi_gmem2_WUSER(NLW_inst_m_axi_gmem2_WUSER_UNCONNECTED[0]),
-        .m_axi_gmem2_WVALID(NLW_inst_m_axi_gmem2_WVALID_UNCONNECTED),
-        .output_stream_TDATA({\^output_stream_TDATA ,NLW_inst_output_stream_TDATA_UNCONNECTED[0]}),
-        .output_stream_TKEEP(NLW_inst_output_stream_TKEEP_UNCONNECTED[1:0]),
-        .output_stream_TLAST(output_stream_TLAST),
-        .output_stream_TREADY(output_stream_TREADY),
-        .output_stream_TSTRB(NLW_inst_output_stream_TSTRB_UNCONNECTED[1:0]),
-        .output_stream_TVALID(output_stream_TVALID),
-        .s_axi_control_ARADDR(s_axi_control_ARADDR),
-        .s_axi_control_ARREADY(s_axi_control_ARREADY),
-        .s_axi_control_ARVALID(s_axi_control_ARVALID),
-        .s_axi_control_AWADDR({s_axi_control_AWADDR[5:2],1'b0,1'b0}),
-        .s_axi_control_AWREADY(s_axi_control_AWREADY),
-        .s_axi_control_AWVALID(s_axi_control_AWVALID),
-        .s_axi_control_BREADY(s_axi_control_BREADY),
-        .s_axi_control_BRESP(NLW_inst_s_axi_control_BRESP_UNCONNECTED[1:0]),
-        .s_axi_control_BVALID(s_axi_control_BVALID),
-        .s_axi_control_RDATA(s_axi_control_RDATA),
-        .s_axi_control_RREADY(s_axi_control_RREADY),
-        .s_axi_control_RRESP(NLW_inst_s_axi_control_RRESP_UNCONNECTED[1:0]),
-        .s_axi_control_RVALID(s_axi_control_RVALID),
-        .s_axi_control_WDATA(s_axi_control_WDATA),
-        .s_axi_control_WREADY(s_axi_control_WREADY),
-        .s_axi_control_WSTRB(s_axi_control_WSTRB),
-        .s_axi_control_WVALID(s_axi_control_WVALID));
-endmodule
 
 (* C_M_AXI_DATA_WIDTH = "32" *) (* C_M_AXI_GMEM0_ADDR_WIDTH = "64" *) (* C_M_AXI_GMEM0_ARUSER_WIDTH = "1" *) 
 (* C_M_AXI_GMEM0_AWUSER_WIDTH = "1" *) (* C_M_AXI_GMEM0_BUSER_WIDTH = "1" *) (* C_M_AXI_GMEM0_CACHE_VALUE = "4'b0011" *) 
@@ -2992,56 +27,56 @@ endmodule
 (* C_M_AXI_GMEM2_RUSER_WIDTH = "1" *) (* C_M_AXI_GMEM2_USER_VALUE = "0" *) (* C_M_AXI_GMEM2_WSTRB_WIDTH = "32" *) 
 (* C_M_AXI_GMEM2_WUSER_WIDTH = "1" *) (* C_M_AXI_WSTRB_WIDTH = "4" *) (* C_S_AXI_CONTROL_ADDR_WIDTH = "6" *) 
 (* C_S_AXI_CONTROL_DATA_WIDTH = "32" *) (* C_S_AXI_CONTROL_WSTRB_WIDTH = "4" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
-(* C_S_AXI_WSTRB_WIDTH = "4" *) (* ORIG_REF_NAME = "bnn_top" *) (* ap_ST_fsm_state1 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001" *) 
-(* ap_ST_fsm_state10 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000" *) (* ap_ST_fsm_state100 = "147'b000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state101 = "147'b000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state102 = "147'b000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state103 = "147'b000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state104 = "147'b000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state105 = "147'b000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state106 = "147'b000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state107 = "147'b000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state108 = "147'b000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state109 = "147'b000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state11 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000" *) 
-(* ap_ST_fsm_state110 = "147'b000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state111 = "147'b000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state112 = "147'b000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state113 = "147'b000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state114 = "147'b000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state115 = "147'b000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state116 = "147'b000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state117 = "147'b000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state118 = "147'b000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state119 = "147'b000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state12 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000" *) (* ap_ST_fsm_state120 = "147'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state121 = "147'b000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state122 = "147'b000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state123 = "147'b000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state124 = "147'b000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state125 = "147'b000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state126 = "147'b000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state127 = "147'b000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state128 = "147'b000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state129 = "147'b000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state13 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000" *) (* ap_ST_fsm_state130 = "147'b000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state131 = "147'b000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state132 = "147'b000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state133 = "147'b000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state134 = "147'b000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state135 = "147'b000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state136 = "147'b000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state137 = "147'b000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state138 = "147'b000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state139 = "147'b000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state14 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000" *) 
-(* ap_ST_fsm_state140 = "147'b000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state141 = "147'b000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state142 = "147'b000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state143 = "147'b000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state144 = "147'b000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state145 = "147'b001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state146 = "147'b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state147 = "147'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state15 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000" *) 
-(* ap_ST_fsm_state16 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000" *) (* ap_ST_fsm_state17 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000" *) (* ap_ST_fsm_state18 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000" *) 
-(* ap_ST_fsm_state19 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000" *) (* ap_ST_fsm_state2 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010" *) (* ap_ST_fsm_state20 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000" *) 
-(* ap_ST_fsm_state21 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000" *) (* ap_ST_fsm_state22 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000" *) (* ap_ST_fsm_state23 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000" *) 
-(* ap_ST_fsm_state24 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000" *) (* ap_ST_fsm_state25 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000" *) (* ap_ST_fsm_state26 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000" *) 
-(* ap_ST_fsm_state27 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000" *) (* ap_ST_fsm_state28 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000" *) (* ap_ST_fsm_state29 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000" *) 
-(* ap_ST_fsm_state3 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100" *) (* ap_ST_fsm_state30 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000" *) (* ap_ST_fsm_state31 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000" *) 
-(* ap_ST_fsm_state32 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000" *) (* ap_ST_fsm_state33 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000" *) (* ap_ST_fsm_state34 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state35 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000" *) (* ap_ST_fsm_state36 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000" *) (* ap_ST_fsm_state37 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state38 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000" *) (* ap_ST_fsm_state39 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000" *) (* ap_ST_fsm_state4 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000" *) 
-(* ap_ST_fsm_state40 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000" *) (* ap_ST_fsm_state41 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000" *) (* ap_ST_fsm_state42 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state43 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state44 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state45 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state46 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state47 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state48 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state49 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state5 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000" *) (* ap_ST_fsm_state50 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state51 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state52 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state53 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state54 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state55 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state56 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state57 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state58 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state59 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state6 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000" *) (* ap_ST_fsm_state60 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state61 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state62 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state63 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state64 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state65 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state66 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state67 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state68 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state69 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state7 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000" *) 
-(* ap_ST_fsm_state70 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state71 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state72 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state73 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state74 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state75 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state76 = "147'b000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state77 = "147'b000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state78 = "147'b000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state79 = "147'b000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state8 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000" *) (* ap_ST_fsm_state80 = "147'b000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state81 = "147'b000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state82 = "147'b000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state83 = "147'b000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state84 = "147'b000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state85 = "147'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state86 = "147'b000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state87 = "147'b000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state88 = "147'b000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state89 = "147'b000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state9 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000" *) (* ap_ST_fsm_state90 = "147'b000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state91 = "147'b000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state92 = "147'b000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state93 = "147'b000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state94 = "147'b000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state95 = "147'b000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state96 = "147'b000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state97 = "147'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state98 = "147'b000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state99 = "147'b000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* hls_module = "yes" *) 
+(* C_S_AXI_WSTRB_WIDTH = "4" *) (* ap_ST_fsm_state1 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001" *) (* ap_ST_fsm_state10 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000" *) 
+(* ap_ST_fsm_state100 = "147'b000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state101 = "147'b000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state102 = "147'b000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state103 = "147'b000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state104 = "147'b000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state105 = "147'b000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state106 = "147'b000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state107 = "147'b000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state108 = "147'b000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state109 = "147'b000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state11 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000" *) (* ap_ST_fsm_state110 = "147'b000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state111 = "147'b000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state112 = "147'b000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state113 = "147'b000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state114 = "147'b000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state115 = "147'b000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state116 = "147'b000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state117 = "147'b000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state118 = "147'b000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state119 = "147'b000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state12 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000" *) (* ap_ST_fsm_state120 = "147'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state121 = "147'b000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state122 = "147'b000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state123 = "147'b000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state124 = "147'b000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state125 = "147'b000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state126 = "147'b000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state127 = "147'b000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state128 = "147'b000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state129 = "147'b000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state13 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000" *) 
+(* ap_ST_fsm_state130 = "147'b000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state131 = "147'b000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state132 = "147'b000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state133 = "147'b000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state134 = "147'b000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state135 = "147'b000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state136 = "147'b000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state137 = "147'b000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state138 = "147'b000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state139 = "147'b000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state14 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000" *) (* ap_ST_fsm_state140 = "147'b000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state141 = "147'b000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state142 = "147'b000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state143 = "147'b000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state144 = "147'b000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state145 = "147'b001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state146 = "147'b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state147 = "147'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state15 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000" *) (* ap_ST_fsm_state16 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000" *) 
+(* ap_ST_fsm_state17 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000" *) (* ap_ST_fsm_state18 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000" *) (* ap_ST_fsm_state19 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000" *) 
+(* ap_ST_fsm_state2 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010" *) (* ap_ST_fsm_state20 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000" *) (* ap_ST_fsm_state21 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000" *) 
+(* ap_ST_fsm_state22 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000" *) (* ap_ST_fsm_state23 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000" *) (* ap_ST_fsm_state24 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000" *) 
+(* ap_ST_fsm_state25 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000" *) (* ap_ST_fsm_state26 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000" *) (* ap_ST_fsm_state27 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000" *) 
+(* ap_ST_fsm_state28 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000" *) (* ap_ST_fsm_state29 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000" *) (* ap_ST_fsm_state3 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100" *) 
+(* ap_ST_fsm_state30 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000" *) (* ap_ST_fsm_state31 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000" *) (* ap_ST_fsm_state32 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000" *) 
+(* ap_ST_fsm_state33 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000" *) (* ap_ST_fsm_state34 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000" *) (* ap_ST_fsm_state35 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state36 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000" *) (* ap_ST_fsm_state37 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000" *) (* ap_ST_fsm_state38 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state39 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000" *) (* ap_ST_fsm_state4 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000" *) (* ap_ST_fsm_state40 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state41 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000" *) (* ap_ST_fsm_state42 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000" *) (* ap_ST_fsm_state43 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state44 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state45 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state46 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state47 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state48 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state49 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state5 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000" *) (* ap_ST_fsm_state50 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state51 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state52 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state53 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state54 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state55 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state56 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state57 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state58 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state59 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state6 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000" *) 
+(* ap_ST_fsm_state60 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state61 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state62 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state63 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state64 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state65 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state66 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state67 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state68 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state69 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state7 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000" *) (* ap_ST_fsm_state70 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state71 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state72 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state73 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state74 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state75 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state76 = "147'b000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state77 = "147'b000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state78 = "147'b000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state79 = "147'b000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state8 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000" *) (* ap_ST_fsm_state80 = "147'b000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state81 = "147'b000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state82 = "147'b000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state83 = "147'b000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state84 = "147'b000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state85 = "147'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state86 = "147'b000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state87 = "147'b000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state88 = "147'b000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state89 = "147'b000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state9 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000" *) 
+(* ap_ST_fsm_state90 = "147'b000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state91 = "147'b000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state92 = "147'b000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state93 = "147'b000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state94 = "147'b000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state95 = "147'b000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state96 = "147'b000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state97 = "147'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* ap_ST_fsm_state98 = "147'b000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state99 = "147'b000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* hls_module = "yes" *) 
 module bnn_top_bnn_top_0_0_bnn_top
    (ap_clk,
     ap_rst_n,
@@ -18784,7 +15819,2971 @@ module bnn_top_bnn_top_0_0_bnn_top
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L1_LOAD" *) 
+(* CHECK_LICENSE_TYPE = "bnn_top_bnn_top_0_0,bnn_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "HLS" *) 
+(* X_CORE_INFO = "bnn_top,Vivado 2024.1" *) (* hls_module = "yes" *) 
+(* NotValidForBitStream *)
+module bnn_top_bnn_top_0_0
+   (s_axi_control_ARADDR,
+    s_axi_control_ARREADY,
+    s_axi_control_ARVALID,
+    s_axi_control_AWADDR,
+    s_axi_control_AWREADY,
+    s_axi_control_AWVALID,
+    s_axi_control_BREADY,
+    s_axi_control_BRESP,
+    s_axi_control_BVALID,
+    s_axi_control_RDATA,
+    s_axi_control_RREADY,
+    s_axi_control_RRESP,
+    s_axi_control_RVALID,
+    s_axi_control_WDATA,
+    s_axi_control_WREADY,
+    s_axi_control_WSTRB,
+    s_axi_control_WVALID,
+    ap_clk,
+    ap_rst_n,
+    interrupt,
+    m_axi_gmem0_ARADDR,
+    m_axi_gmem0_ARBURST,
+    m_axi_gmem0_ARCACHE,
+    m_axi_gmem0_ARID,
+    m_axi_gmem0_ARLEN,
+    m_axi_gmem0_ARLOCK,
+    m_axi_gmem0_ARPROT,
+    m_axi_gmem0_ARQOS,
+    m_axi_gmem0_ARREADY,
+    m_axi_gmem0_ARREGION,
+    m_axi_gmem0_ARSIZE,
+    m_axi_gmem0_ARVALID,
+    m_axi_gmem0_AWADDR,
+    m_axi_gmem0_AWBURST,
+    m_axi_gmem0_AWCACHE,
+    m_axi_gmem0_AWID,
+    m_axi_gmem0_AWLEN,
+    m_axi_gmem0_AWLOCK,
+    m_axi_gmem0_AWPROT,
+    m_axi_gmem0_AWQOS,
+    m_axi_gmem0_AWREADY,
+    m_axi_gmem0_AWREGION,
+    m_axi_gmem0_AWSIZE,
+    m_axi_gmem0_AWVALID,
+    m_axi_gmem0_BID,
+    m_axi_gmem0_BREADY,
+    m_axi_gmem0_BRESP,
+    m_axi_gmem0_BVALID,
+    m_axi_gmem0_RDATA,
+    m_axi_gmem0_RID,
+    m_axi_gmem0_RLAST,
+    m_axi_gmem0_RREADY,
+    m_axi_gmem0_RRESP,
+    m_axi_gmem0_RVALID,
+    m_axi_gmem0_WDATA,
+    m_axi_gmem0_WID,
+    m_axi_gmem0_WLAST,
+    m_axi_gmem0_WREADY,
+    m_axi_gmem0_WSTRB,
+    m_axi_gmem0_WVALID,
+    m_axi_gmem1_ARADDR,
+    m_axi_gmem1_ARBURST,
+    m_axi_gmem1_ARCACHE,
+    m_axi_gmem1_ARID,
+    m_axi_gmem1_ARLEN,
+    m_axi_gmem1_ARLOCK,
+    m_axi_gmem1_ARPROT,
+    m_axi_gmem1_ARQOS,
+    m_axi_gmem1_ARREADY,
+    m_axi_gmem1_ARREGION,
+    m_axi_gmem1_ARSIZE,
+    m_axi_gmem1_ARVALID,
+    m_axi_gmem1_AWADDR,
+    m_axi_gmem1_AWBURST,
+    m_axi_gmem1_AWCACHE,
+    m_axi_gmem1_AWID,
+    m_axi_gmem1_AWLEN,
+    m_axi_gmem1_AWLOCK,
+    m_axi_gmem1_AWPROT,
+    m_axi_gmem1_AWQOS,
+    m_axi_gmem1_AWREADY,
+    m_axi_gmem1_AWREGION,
+    m_axi_gmem1_AWSIZE,
+    m_axi_gmem1_AWVALID,
+    m_axi_gmem1_BID,
+    m_axi_gmem1_BREADY,
+    m_axi_gmem1_BRESP,
+    m_axi_gmem1_BVALID,
+    m_axi_gmem1_RDATA,
+    m_axi_gmem1_RID,
+    m_axi_gmem1_RLAST,
+    m_axi_gmem1_RREADY,
+    m_axi_gmem1_RRESP,
+    m_axi_gmem1_RVALID,
+    m_axi_gmem1_WDATA,
+    m_axi_gmem1_WID,
+    m_axi_gmem1_WLAST,
+    m_axi_gmem1_WREADY,
+    m_axi_gmem1_WSTRB,
+    m_axi_gmem1_WVALID,
+    m_axi_gmem2_ARADDR,
+    m_axi_gmem2_ARBURST,
+    m_axi_gmem2_ARCACHE,
+    m_axi_gmem2_ARID,
+    m_axi_gmem2_ARLEN,
+    m_axi_gmem2_ARLOCK,
+    m_axi_gmem2_ARPROT,
+    m_axi_gmem2_ARQOS,
+    m_axi_gmem2_ARREADY,
+    m_axi_gmem2_ARREGION,
+    m_axi_gmem2_ARSIZE,
+    m_axi_gmem2_ARVALID,
+    m_axi_gmem2_AWADDR,
+    m_axi_gmem2_AWBURST,
+    m_axi_gmem2_AWCACHE,
+    m_axi_gmem2_AWID,
+    m_axi_gmem2_AWLEN,
+    m_axi_gmem2_AWLOCK,
+    m_axi_gmem2_AWPROT,
+    m_axi_gmem2_AWQOS,
+    m_axi_gmem2_AWREADY,
+    m_axi_gmem2_AWREGION,
+    m_axi_gmem2_AWSIZE,
+    m_axi_gmem2_AWVALID,
+    m_axi_gmem2_BID,
+    m_axi_gmem2_BREADY,
+    m_axi_gmem2_BRESP,
+    m_axi_gmem2_BVALID,
+    m_axi_gmem2_RDATA,
+    m_axi_gmem2_RID,
+    m_axi_gmem2_RLAST,
+    m_axi_gmem2_RREADY,
+    m_axi_gmem2_RRESP,
+    m_axi_gmem2_RVALID,
+    m_axi_gmem2_WDATA,
+    m_axi_gmem2_WID,
+    m_axi_gmem2_WLAST,
+    m_axi_gmem2_WREADY,
+    m_axi_gmem2_WSTRB,
+    m_axi_gmem2_WVALID,
+    input_stream_TDATA,
+    input_stream_TKEEP,
+    input_stream_TLAST,
+    input_stream_TREADY,
+    input_stream_TSTRB,
+    input_stream_TVALID,
+    output_stream_TDATA,
+    output_stream_TKEEP,
+    output_stream_TLAST,
+    output_stream_TREADY,
+    output_stream_TSTRB,
+    output_stream_TVALID);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *) input [5:0]s_axi_control_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARREADY" *) output s_axi_control_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARVALID" *) input s_axi_control_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWADDR" *) input [5:0]s_axi_control_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWREADY" *) output s_axi_control_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWVALID" *) input s_axi_control_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BREADY" *) input s_axi_control_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BRESP" *) output [1:0]s_axi_control_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BVALID" *) output s_axi_control_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RDATA" *) output [31:0]s_axi_control_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RREADY" *) input s_axi_control_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RRESP" *) output [1:0]s_axi_control_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RVALID" *) output s_axi_control_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WDATA" *) input [31:0]s_axi_control_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WREADY" *) output s_axi_control_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WSTRB" *) input [3:0]s_axi_control_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 6, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 299999939, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_control_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_control:m_axi_gmem0:m_axi_gmem1:m_axi_gmem2:input_stream:output_stream, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 299999939, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output interrupt;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARADDR" *) output [63:0]m_axi_gmem0_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARBURST" *) output [1:0]m_axi_gmem0_ARBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARCACHE" *) output [3:0]m_axi_gmem0_ARCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARID" *) output [0:0]m_axi_gmem0_ARID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARLEN" *) output [7:0]m_axi_gmem0_ARLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARLOCK" *) output [1:0]m_axi_gmem0_ARLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARPROT" *) output [2:0]m_axi_gmem0_ARPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARQOS" *) output [3:0]m_axi_gmem0_ARQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARREADY" *) input m_axi_gmem0_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARREGION" *) output [3:0]m_axi_gmem0_ARREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARSIZE" *) output [2:0]m_axi_gmem0_ARSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 ARVALID" *) output m_axi_gmem0_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWADDR" *) output [63:0]m_axi_gmem0_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWBURST" *) output [1:0]m_axi_gmem0_AWBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWCACHE" *) output [3:0]m_axi_gmem0_AWCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWID" *) output [0:0]m_axi_gmem0_AWID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWLEN" *) output [7:0]m_axi_gmem0_AWLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWLOCK" *) output [1:0]m_axi_gmem0_AWLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWPROT" *) output [2:0]m_axi_gmem0_AWPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWQOS" *) output [3:0]m_axi_gmem0_AWQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWREADY" *) input m_axi_gmem0_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWREGION" *) output [3:0]m_axi_gmem0_AWREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWSIZE" *) output [2:0]m_axi_gmem0_AWSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 AWVALID" *) output m_axi_gmem0_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BID" *) input [0:0]m_axi_gmem0_BID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BREADY" *) output m_axi_gmem0_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BRESP" *) input [1:0]m_axi_gmem0_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 BVALID" *) input m_axi_gmem0_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RDATA" *) input [1023:0]m_axi_gmem0_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RID" *) input [0:0]m_axi_gmem0_RID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RLAST" *) input m_axi_gmem0_RLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RREADY" *) output m_axi_gmem0_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RRESP" *) input [1:0]m_axi_gmem0_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 RVALID" *) input m_axi_gmem0_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WDATA" *) output [1023:0]m_axi_gmem0_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WID" *) output [0:0]m_axi_gmem0_WID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WLAST" *) output m_axi_gmem0_WLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WREADY" *) input m_axi_gmem0_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WSTRB" *) output [127:0]m_axi_gmem0_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem0 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem0, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 1024, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem0_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARADDR" *) output [63:0]m_axi_gmem1_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARBURST" *) output [1:0]m_axi_gmem1_ARBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARCACHE" *) output [3:0]m_axi_gmem1_ARCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARID" *) output [0:0]m_axi_gmem1_ARID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARLEN" *) output [7:0]m_axi_gmem1_ARLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARLOCK" *) output [1:0]m_axi_gmem1_ARLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARPROT" *) output [2:0]m_axi_gmem1_ARPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARQOS" *) output [3:0]m_axi_gmem1_ARQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARREADY" *) input m_axi_gmem1_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARREGION" *) output [3:0]m_axi_gmem1_ARREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARSIZE" *) output [2:0]m_axi_gmem1_ARSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 ARVALID" *) output m_axi_gmem1_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWADDR" *) output [63:0]m_axi_gmem1_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWBURST" *) output [1:0]m_axi_gmem1_AWBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWCACHE" *) output [3:0]m_axi_gmem1_AWCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWID" *) output [0:0]m_axi_gmem1_AWID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWLEN" *) output [7:0]m_axi_gmem1_AWLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWLOCK" *) output [1:0]m_axi_gmem1_AWLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWPROT" *) output [2:0]m_axi_gmem1_AWPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWQOS" *) output [3:0]m_axi_gmem1_AWQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWREADY" *) input m_axi_gmem1_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWREGION" *) output [3:0]m_axi_gmem1_AWREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWSIZE" *) output [2:0]m_axi_gmem1_AWSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 AWVALID" *) output m_axi_gmem1_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BID" *) input [0:0]m_axi_gmem1_BID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BREADY" *) output m_axi_gmem1_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BRESP" *) input [1:0]m_axi_gmem1_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 BVALID" *) input m_axi_gmem1_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RDATA" *) input [255:0]m_axi_gmem1_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RID" *) input [0:0]m_axi_gmem1_RID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RLAST" *) input m_axi_gmem1_RLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RREADY" *) output m_axi_gmem1_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RRESP" *) input [1:0]m_axi_gmem1_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 RVALID" *) input m_axi_gmem1_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WDATA" *) output [255:0]m_axi_gmem1_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WID" *) output [0:0]m_axi_gmem1_WID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WLAST" *) output m_axi_gmem1_WLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WREADY" *) input m_axi_gmem1_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WSTRB" *) output [31:0]m_axi_gmem1_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem1 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem1, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 256, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem1_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARADDR" *) output [63:0]m_axi_gmem2_ARADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARBURST" *) output [1:0]m_axi_gmem2_ARBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARCACHE" *) output [3:0]m_axi_gmem2_ARCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARID" *) output [0:0]m_axi_gmem2_ARID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARLEN" *) output [7:0]m_axi_gmem2_ARLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARLOCK" *) output [1:0]m_axi_gmem2_ARLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARPROT" *) output [2:0]m_axi_gmem2_ARPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARQOS" *) output [3:0]m_axi_gmem2_ARQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARREADY" *) input m_axi_gmem2_ARREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARREGION" *) output [3:0]m_axi_gmem2_ARREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARSIZE" *) output [2:0]m_axi_gmem2_ARSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 ARVALID" *) output m_axi_gmem2_ARVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWADDR" *) output [63:0]m_axi_gmem2_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWBURST" *) output [1:0]m_axi_gmem2_AWBURST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWCACHE" *) output [3:0]m_axi_gmem2_AWCACHE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWID" *) output [0:0]m_axi_gmem2_AWID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWLEN" *) output [7:0]m_axi_gmem2_AWLEN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWLOCK" *) output [1:0]m_axi_gmem2_AWLOCK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWPROT" *) output [2:0]m_axi_gmem2_AWPROT;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWQOS" *) output [3:0]m_axi_gmem2_AWQOS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWREADY" *) input m_axi_gmem2_AWREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWREGION" *) output [3:0]m_axi_gmem2_AWREGION;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWSIZE" *) output [2:0]m_axi_gmem2_AWSIZE;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 AWVALID" *) output m_axi_gmem2_AWVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BID" *) input [0:0]m_axi_gmem2_BID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BREADY" *) output m_axi_gmem2_BREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BRESP" *) input [1:0]m_axi_gmem2_BRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 BVALID" *) input m_axi_gmem2_BVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RDATA" *) input [255:0]m_axi_gmem2_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RID" *) input [0:0]m_axi_gmem2_RID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RLAST" *) input m_axi_gmem2_RLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RREADY" *) output m_axi_gmem2_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RRESP" *) input [1:0]m_axi_gmem2_RRESP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 RVALID" *) input m_axi_gmem2_RVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WDATA" *) output [255:0]m_axi_gmem2_WDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WID" *) output [0:0]m_axi_gmem2_WID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WLAST" *) output m_axi_gmem2_WLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WREADY" *) input m_axi_gmem2_WREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WSTRB" *) output [31:0]m_axi_gmem2_WSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem2 WVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem2, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, MAX_BURST_LENGTH 256, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, ADDR_WIDTH 64, DATA_WIDTH 256, FREQ_HZ 299999939, ID_WIDTH 1, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output m_axi_gmem2_WVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TDATA" *) input [31:0]input_stream_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TKEEP" *) input [3:0]input_stream_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TLAST" *) input [0:0]input_stream_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TREADY" *) output input_stream_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TSTRB" *) input [3:0]input_stream_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_stream TVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_stream, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 299999939, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) input input_stream_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TDATA" *) output [15:0]output_stream_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TKEEP" *) output [1:0]output_stream_TKEEP;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TLAST" *) output [0:0]output_stream_TLAST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TREADY" *) input output_stream_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TSTRB" *) output [1:0]output_stream_TSTRB;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_stream TVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_stream, TUSER_WIDTH 0, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 299999939, PHASE 0.0, CLK_DOMAIN bnn_top_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) output output_stream_TVALID;
+
+  wire \<const0> ;
+  wire \<const1> ;
+  wire ap_clk;
+  wire ap_rst_n;
+  wire [31:0]input_stream_TDATA;
+  wire input_stream_TREADY;
+  wire input_stream_TVALID;
+  wire interrupt;
+  wire [63:7]\^m_axi_gmem0_ARADDR ;
+  wire [3:0]\^m_axi_gmem0_ARLEN ;
+  wire m_axi_gmem0_ARREADY;
+  wire m_axi_gmem0_ARVALID;
+  wire m_axi_gmem0_BREADY;
+  wire m_axi_gmem0_BVALID;
+  wire [1023:0]m_axi_gmem0_RDATA;
+  wire m_axi_gmem0_RLAST;
+  wire m_axi_gmem0_RREADY;
+  wire m_axi_gmem0_RVALID;
+  wire [63:5]\^m_axi_gmem1_ARADDR ;
+  wire [3:0]\^m_axi_gmem1_ARLEN ;
+  wire m_axi_gmem1_ARREADY;
+  wire m_axi_gmem1_ARVALID;
+  wire m_axi_gmem1_BREADY;
+  wire m_axi_gmem1_BVALID;
+  wire [255:0]m_axi_gmem1_RDATA;
+  wire m_axi_gmem1_RLAST;
+  wire m_axi_gmem1_RREADY;
+  wire m_axi_gmem1_RVALID;
+  wire [63:5]\^m_axi_gmem2_ARADDR ;
+  wire [3:0]\^m_axi_gmem2_ARLEN ;
+  wire m_axi_gmem2_ARREADY;
+  wire m_axi_gmem2_ARVALID;
+  wire m_axi_gmem2_BREADY;
+  wire m_axi_gmem2_BVALID;
+  wire [255:0]m_axi_gmem2_RDATA;
+  wire m_axi_gmem2_RLAST;
+  wire m_axi_gmem2_RREADY;
+  wire m_axi_gmem2_RVALID;
+  wire [15:1]\^output_stream_TDATA ;
+  wire [0:0]output_stream_TLAST;
+  wire output_stream_TREADY;
+  wire output_stream_TVALID;
+  wire [5:0]s_axi_control_ARADDR;
+  wire s_axi_control_ARREADY;
+  wire s_axi_control_ARVALID;
+  wire [5:0]s_axi_control_AWADDR;
+  wire s_axi_control_AWREADY;
+  wire s_axi_control_AWVALID;
+  wire s_axi_control_BREADY;
+  wire s_axi_control_BVALID;
+  wire [31:0]s_axi_control_RDATA;
+  wire s_axi_control_RREADY;
+  wire s_axi_control_RVALID;
+  wire [31:0]s_axi_control_WDATA;
+  wire s_axi_control_WREADY;
+  wire [3:0]s_axi_control_WSTRB;
+  wire s_axi_control_WVALID;
+  wire NLW_inst_m_axi_gmem0_AWVALID_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem0_WLAST_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem0_WVALID_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem1_AWVALID_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem1_WLAST_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem1_WVALID_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem2_AWVALID_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem2_WLAST_UNCONNECTED;
+  wire NLW_inst_m_axi_gmem2_WVALID_UNCONNECTED;
+  wire [6:0]NLW_inst_m_axi_gmem0_ARADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem0_ARBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_ARCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_ARID_UNCONNECTED;
+  wire [7:4]NLW_inst_m_axi_gmem0_ARLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem0_ARLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem0_ARPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_ARQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_ARREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem0_ARSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_ARUSER_UNCONNECTED;
+  wire [63:0]NLW_inst_m_axi_gmem0_AWADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem0_AWBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_AWCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_AWID_UNCONNECTED;
+  wire [7:0]NLW_inst_m_axi_gmem0_AWLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem0_AWLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem0_AWPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_AWQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem0_AWREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem0_AWSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_AWUSER_UNCONNECTED;
+  wire [1023:0]NLW_inst_m_axi_gmem0_WDATA_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_WID_UNCONNECTED;
+  wire [127:0]NLW_inst_m_axi_gmem0_WSTRB_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem0_WUSER_UNCONNECTED;
+  wire [4:0]NLW_inst_m_axi_gmem1_ARADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem1_ARBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_ARCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_ARID_UNCONNECTED;
+  wire [7:4]NLW_inst_m_axi_gmem1_ARLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem1_ARLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem1_ARPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_ARQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_ARREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem1_ARSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_ARUSER_UNCONNECTED;
+  wire [63:0]NLW_inst_m_axi_gmem1_AWADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem1_AWBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_AWCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_AWID_UNCONNECTED;
+  wire [7:0]NLW_inst_m_axi_gmem1_AWLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem1_AWLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem1_AWPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_AWQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem1_AWREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem1_AWSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_AWUSER_UNCONNECTED;
+  wire [255:0]NLW_inst_m_axi_gmem1_WDATA_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_WID_UNCONNECTED;
+  wire [31:0]NLW_inst_m_axi_gmem1_WSTRB_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem1_WUSER_UNCONNECTED;
+  wire [4:0]NLW_inst_m_axi_gmem2_ARADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem2_ARBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_ARCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_ARID_UNCONNECTED;
+  wire [7:4]NLW_inst_m_axi_gmem2_ARLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem2_ARLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem2_ARPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_ARQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_ARREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem2_ARSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_ARUSER_UNCONNECTED;
+  wire [63:0]NLW_inst_m_axi_gmem2_AWADDR_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem2_AWBURST_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_AWCACHE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_AWID_UNCONNECTED;
+  wire [7:0]NLW_inst_m_axi_gmem2_AWLEN_UNCONNECTED;
+  wire [1:0]NLW_inst_m_axi_gmem2_AWLOCK_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem2_AWPROT_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_AWQOS_UNCONNECTED;
+  wire [3:0]NLW_inst_m_axi_gmem2_AWREGION_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axi_gmem2_AWSIZE_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_AWUSER_UNCONNECTED;
+  wire [255:0]NLW_inst_m_axi_gmem2_WDATA_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_WID_UNCONNECTED;
+  wire [31:0]NLW_inst_m_axi_gmem2_WSTRB_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axi_gmem2_WUSER_UNCONNECTED;
+  wire [0:0]NLW_inst_output_stream_TDATA_UNCONNECTED;
+  wire [1:0]NLW_inst_output_stream_TKEEP_UNCONNECTED;
+  wire [1:0]NLW_inst_output_stream_TSTRB_UNCONNECTED;
+  wire [1:0]NLW_inst_s_axi_control_BRESP_UNCONNECTED;
+  wire [1:0]NLW_inst_s_axi_control_RRESP_UNCONNECTED;
+
+  assign m_axi_gmem0_ARADDR[63:7] = \^m_axi_gmem0_ARADDR [63:7];
+  assign m_axi_gmem0_ARADDR[6] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[5] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[4] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[3] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[2] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[1] = \<const0> ;
+  assign m_axi_gmem0_ARADDR[0] = \<const0> ;
+  assign m_axi_gmem0_ARBURST[1] = \<const0> ;
+  assign m_axi_gmem0_ARBURST[0] = \<const1> ;
+  assign m_axi_gmem0_ARCACHE[3] = \<const0> ;
+  assign m_axi_gmem0_ARCACHE[2] = \<const0> ;
+  assign m_axi_gmem0_ARCACHE[1] = \<const1> ;
+  assign m_axi_gmem0_ARCACHE[0] = \<const1> ;
+  assign m_axi_gmem0_ARID[0] = \<const0> ;
+  assign m_axi_gmem0_ARLEN[7] = \<const0> ;
+  assign m_axi_gmem0_ARLEN[6] = \<const0> ;
+  assign m_axi_gmem0_ARLEN[5] = \<const0> ;
+  assign m_axi_gmem0_ARLEN[4] = \<const0> ;
+  assign m_axi_gmem0_ARLEN[3:0] = \^m_axi_gmem0_ARLEN [3:0];
+  assign m_axi_gmem0_ARLOCK[1] = \<const0> ;
+  assign m_axi_gmem0_ARLOCK[0] = \<const0> ;
+  assign m_axi_gmem0_ARPROT[2] = \<const0> ;
+  assign m_axi_gmem0_ARPROT[1] = \<const0> ;
+  assign m_axi_gmem0_ARPROT[0] = \<const0> ;
+  assign m_axi_gmem0_ARQOS[3] = \<const0> ;
+  assign m_axi_gmem0_ARQOS[2] = \<const0> ;
+  assign m_axi_gmem0_ARQOS[1] = \<const0> ;
+  assign m_axi_gmem0_ARQOS[0] = \<const0> ;
+  assign m_axi_gmem0_ARREGION[3] = \<const0> ;
+  assign m_axi_gmem0_ARREGION[2] = \<const0> ;
+  assign m_axi_gmem0_ARREGION[1] = \<const0> ;
+  assign m_axi_gmem0_ARREGION[0] = \<const0> ;
+  assign m_axi_gmem0_ARSIZE[2] = \<const1> ;
+  assign m_axi_gmem0_ARSIZE[1] = \<const1> ;
+  assign m_axi_gmem0_ARSIZE[0] = \<const1> ;
+  assign m_axi_gmem0_AWADDR[63] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[62] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[61] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[60] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[59] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[58] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[57] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[56] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[55] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[54] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[53] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[52] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[51] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[50] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[49] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[48] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[47] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[46] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[45] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[44] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[43] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[42] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[41] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[40] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[39] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[38] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[37] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[36] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[35] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[34] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[33] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[32] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[31] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[30] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[29] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[28] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[27] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[26] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[25] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[24] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[23] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[22] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[21] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[20] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[19] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[18] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[17] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[16] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[15] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[14] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[13] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[12] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[11] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[10] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[9] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[8] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[7] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[6] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[5] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[4] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[3] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[2] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[1] = \<const0> ;
+  assign m_axi_gmem0_AWADDR[0] = \<const0> ;
+  assign m_axi_gmem0_AWBURST[1] = \<const0> ;
+  assign m_axi_gmem0_AWBURST[0] = \<const1> ;
+  assign m_axi_gmem0_AWCACHE[3] = \<const0> ;
+  assign m_axi_gmem0_AWCACHE[2] = \<const0> ;
+  assign m_axi_gmem0_AWCACHE[1] = \<const1> ;
+  assign m_axi_gmem0_AWCACHE[0] = \<const1> ;
+  assign m_axi_gmem0_AWID[0] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[7] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[6] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[5] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[4] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[3] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[2] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[1] = \<const0> ;
+  assign m_axi_gmem0_AWLEN[0] = \<const0> ;
+  assign m_axi_gmem0_AWLOCK[1] = \<const0> ;
+  assign m_axi_gmem0_AWLOCK[0] = \<const0> ;
+  assign m_axi_gmem0_AWPROT[2] = \<const0> ;
+  assign m_axi_gmem0_AWPROT[1] = \<const0> ;
+  assign m_axi_gmem0_AWPROT[0] = \<const0> ;
+  assign m_axi_gmem0_AWQOS[3] = \<const0> ;
+  assign m_axi_gmem0_AWQOS[2] = \<const0> ;
+  assign m_axi_gmem0_AWQOS[1] = \<const0> ;
+  assign m_axi_gmem0_AWQOS[0] = \<const0> ;
+  assign m_axi_gmem0_AWREGION[3] = \<const0> ;
+  assign m_axi_gmem0_AWREGION[2] = \<const0> ;
+  assign m_axi_gmem0_AWREGION[1] = \<const0> ;
+  assign m_axi_gmem0_AWREGION[0] = \<const0> ;
+  assign m_axi_gmem0_AWSIZE[2] = \<const1> ;
+  assign m_axi_gmem0_AWSIZE[1] = \<const1> ;
+  assign m_axi_gmem0_AWSIZE[0] = \<const1> ;
+  assign m_axi_gmem0_AWVALID = \<const0> ;
+  assign m_axi_gmem0_WDATA[1023] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1022] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1021] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1020] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1019] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1018] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1017] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1016] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1015] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1014] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1013] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1012] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1011] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1010] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1009] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1008] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1007] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1006] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1005] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1004] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1003] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1002] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1001] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1000] = \<const0> ;
+  assign m_axi_gmem0_WDATA[999] = \<const0> ;
+  assign m_axi_gmem0_WDATA[998] = \<const0> ;
+  assign m_axi_gmem0_WDATA[997] = \<const0> ;
+  assign m_axi_gmem0_WDATA[996] = \<const0> ;
+  assign m_axi_gmem0_WDATA[995] = \<const0> ;
+  assign m_axi_gmem0_WDATA[994] = \<const0> ;
+  assign m_axi_gmem0_WDATA[993] = \<const0> ;
+  assign m_axi_gmem0_WDATA[992] = \<const0> ;
+  assign m_axi_gmem0_WDATA[991] = \<const0> ;
+  assign m_axi_gmem0_WDATA[990] = \<const0> ;
+  assign m_axi_gmem0_WDATA[989] = \<const0> ;
+  assign m_axi_gmem0_WDATA[988] = \<const0> ;
+  assign m_axi_gmem0_WDATA[987] = \<const0> ;
+  assign m_axi_gmem0_WDATA[986] = \<const0> ;
+  assign m_axi_gmem0_WDATA[985] = \<const0> ;
+  assign m_axi_gmem0_WDATA[984] = \<const0> ;
+  assign m_axi_gmem0_WDATA[983] = \<const0> ;
+  assign m_axi_gmem0_WDATA[982] = \<const0> ;
+  assign m_axi_gmem0_WDATA[981] = \<const0> ;
+  assign m_axi_gmem0_WDATA[980] = \<const0> ;
+  assign m_axi_gmem0_WDATA[979] = \<const0> ;
+  assign m_axi_gmem0_WDATA[978] = \<const0> ;
+  assign m_axi_gmem0_WDATA[977] = \<const0> ;
+  assign m_axi_gmem0_WDATA[976] = \<const0> ;
+  assign m_axi_gmem0_WDATA[975] = \<const0> ;
+  assign m_axi_gmem0_WDATA[974] = \<const0> ;
+  assign m_axi_gmem0_WDATA[973] = \<const0> ;
+  assign m_axi_gmem0_WDATA[972] = \<const0> ;
+  assign m_axi_gmem0_WDATA[971] = \<const0> ;
+  assign m_axi_gmem0_WDATA[970] = \<const0> ;
+  assign m_axi_gmem0_WDATA[969] = \<const0> ;
+  assign m_axi_gmem0_WDATA[968] = \<const0> ;
+  assign m_axi_gmem0_WDATA[967] = \<const0> ;
+  assign m_axi_gmem0_WDATA[966] = \<const0> ;
+  assign m_axi_gmem0_WDATA[965] = \<const0> ;
+  assign m_axi_gmem0_WDATA[964] = \<const0> ;
+  assign m_axi_gmem0_WDATA[963] = \<const0> ;
+  assign m_axi_gmem0_WDATA[962] = \<const0> ;
+  assign m_axi_gmem0_WDATA[961] = \<const0> ;
+  assign m_axi_gmem0_WDATA[960] = \<const0> ;
+  assign m_axi_gmem0_WDATA[959] = \<const0> ;
+  assign m_axi_gmem0_WDATA[958] = \<const0> ;
+  assign m_axi_gmem0_WDATA[957] = \<const0> ;
+  assign m_axi_gmem0_WDATA[956] = \<const0> ;
+  assign m_axi_gmem0_WDATA[955] = \<const0> ;
+  assign m_axi_gmem0_WDATA[954] = \<const0> ;
+  assign m_axi_gmem0_WDATA[953] = \<const0> ;
+  assign m_axi_gmem0_WDATA[952] = \<const0> ;
+  assign m_axi_gmem0_WDATA[951] = \<const0> ;
+  assign m_axi_gmem0_WDATA[950] = \<const0> ;
+  assign m_axi_gmem0_WDATA[949] = \<const0> ;
+  assign m_axi_gmem0_WDATA[948] = \<const0> ;
+  assign m_axi_gmem0_WDATA[947] = \<const0> ;
+  assign m_axi_gmem0_WDATA[946] = \<const0> ;
+  assign m_axi_gmem0_WDATA[945] = \<const0> ;
+  assign m_axi_gmem0_WDATA[944] = \<const0> ;
+  assign m_axi_gmem0_WDATA[943] = \<const0> ;
+  assign m_axi_gmem0_WDATA[942] = \<const0> ;
+  assign m_axi_gmem0_WDATA[941] = \<const0> ;
+  assign m_axi_gmem0_WDATA[940] = \<const0> ;
+  assign m_axi_gmem0_WDATA[939] = \<const0> ;
+  assign m_axi_gmem0_WDATA[938] = \<const0> ;
+  assign m_axi_gmem0_WDATA[937] = \<const0> ;
+  assign m_axi_gmem0_WDATA[936] = \<const0> ;
+  assign m_axi_gmem0_WDATA[935] = \<const0> ;
+  assign m_axi_gmem0_WDATA[934] = \<const0> ;
+  assign m_axi_gmem0_WDATA[933] = \<const0> ;
+  assign m_axi_gmem0_WDATA[932] = \<const0> ;
+  assign m_axi_gmem0_WDATA[931] = \<const0> ;
+  assign m_axi_gmem0_WDATA[930] = \<const0> ;
+  assign m_axi_gmem0_WDATA[929] = \<const0> ;
+  assign m_axi_gmem0_WDATA[928] = \<const0> ;
+  assign m_axi_gmem0_WDATA[927] = \<const0> ;
+  assign m_axi_gmem0_WDATA[926] = \<const0> ;
+  assign m_axi_gmem0_WDATA[925] = \<const0> ;
+  assign m_axi_gmem0_WDATA[924] = \<const0> ;
+  assign m_axi_gmem0_WDATA[923] = \<const0> ;
+  assign m_axi_gmem0_WDATA[922] = \<const0> ;
+  assign m_axi_gmem0_WDATA[921] = \<const0> ;
+  assign m_axi_gmem0_WDATA[920] = \<const0> ;
+  assign m_axi_gmem0_WDATA[919] = \<const0> ;
+  assign m_axi_gmem0_WDATA[918] = \<const0> ;
+  assign m_axi_gmem0_WDATA[917] = \<const0> ;
+  assign m_axi_gmem0_WDATA[916] = \<const0> ;
+  assign m_axi_gmem0_WDATA[915] = \<const0> ;
+  assign m_axi_gmem0_WDATA[914] = \<const0> ;
+  assign m_axi_gmem0_WDATA[913] = \<const0> ;
+  assign m_axi_gmem0_WDATA[912] = \<const0> ;
+  assign m_axi_gmem0_WDATA[911] = \<const0> ;
+  assign m_axi_gmem0_WDATA[910] = \<const0> ;
+  assign m_axi_gmem0_WDATA[909] = \<const0> ;
+  assign m_axi_gmem0_WDATA[908] = \<const0> ;
+  assign m_axi_gmem0_WDATA[907] = \<const0> ;
+  assign m_axi_gmem0_WDATA[906] = \<const0> ;
+  assign m_axi_gmem0_WDATA[905] = \<const0> ;
+  assign m_axi_gmem0_WDATA[904] = \<const0> ;
+  assign m_axi_gmem0_WDATA[903] = \<const0> ;
+  assign m_axi_gmem0_WDATA[902] = \<const0> ;
+  assign m_axi_gmem0_WDATA[901] = \<const0> ;
+  assign m_axi_gmem0_WDATA[900] = \<const0> ;
+  assign m_axi_gmem0_WDATA[899] = \<const0> ;
+  assign m_axi_gmem0_WDATA[898] = \<const0> ;
+  assign m_axi_gmem0_WDATA[897] = \<const0> ;
+  assign m_axi_gmem0_WDATA[896] = \<const0> ;
+  assign m_axi_gmem0_WDATA[895] = \<const0> ;
+  assign m_axi_gmem0_WDATA[894] = \<const0> ;
+  assign m_axi_gmem0_WDATA[893] = \<const0> ;
+  assign m_axi_gmem0_WDATA[892] = \<const0> ;
+  assign m_axi_gmem0_WDATA[891] = \<const0> ;
+  assign m_axi_gmem0_WDATA[890] = \<const0> ;
+  assign m_axi_gmem0_WDATA[889] = \<const0> ;
+  assign m_axi_gmem0_WDATA[888] = \<const0> ;
+  assign m_axi_gmem0_WDATA[887] = \<const0> ;
+  assign m_axi_gmem0_WDATA[886] = \<const0> ;
+  assign m_axi_gmem0_WDATA[885] = \<const0> ;
+  assign m_axi_gmem0_WDATA[884] = \<const0> ;
+  assign m_axi_gmem0_WDATA[883] = \<const0> ;
+  assign m_axi_gmem0_WDATA[882] = \<const0> ;
+  assign m_axi_gmem0_WDATA[881] = \<const0> ;
+  assign m_axi_gmem0_WDATA[880] = \<const0> ;
+  assign m_axi_gmem0_WDATA[879] = \<const0> ;
+  assign m_axi_gmem0_WDATA[878] = \<const0> ;
+  assign m_axi_gmem0_WDATA[877] = \<const0> ;
+  assign m_axi_gmem0_WDATA[876] = \<const0> ;
+  assign m_axi_gmem0_WDATA[875] = \<const0> ;
+  assign m_axi_gmem0_WDATA[874] = \<const0> ;
+  assign m_axi_gmem0_WDATA[873] = \<const0> ;
+  assign m_axi_gmem0_WDATA[872] = \<const0> ;
+  assign m_axi_gmem0_WDATA[871] = \<const0> ;
+  assign m_axi_gmem0_WDATA[870] = \<const0> ;
+  assign m_axi_gmem0_WDATA[869] = \<const0> ;
+  assign m_axi_gmem0_WDATA[868] = \<const0> ;
+  assign m_axi_gmem0_WDATA[867] = \<const0> ;
+  assign m_axi_gmem0_WDATA[866] = \<const0> ;
+  assign m_axi_gmem0_WDATA[865] = \<const0> ;
+  assign m_axi_gmem0_WDATA[864] = \<const0> ;
+  assign m_axi_gmem0_WDATA[863] = \<const0> ;
+  assign m_axi_gmem0_WDATA[862] = \<const0> ;
+  assign m_axi_gmem0_WDATA[861] = \<const0> ;
+  assign m_axi_gmem0_WDATA[860] = \<const0> ;
+  assign m_axi_gmem0_WDATA[859] = \<const0> ;
+  assign m_axi_gmem0_WDATA[858] = \<const0> ;
+  assign m_axi_gmem0_WDATA[857] = \<const0> ;
+  assign m_axi_gmem0_WDATA[856] = \<const0> ;
+  assign m_axi_gmem0_WDATA[855] = \<const0> ;
+  assign m_axi_gmem0_WDATA[854] = \<const0> ;
+  assign m_axi_gmem0_WDATA[853] = \<const0> ;
+  assign m_axi_gmem0_WDATA[852] = \<const0> ;
+  assign m_axi_gmem0_WDATA[851] = \<const0> ;
+  assign m_axi_gmem0_WDATA[850] = \<const0> ;
+  assign m_axi_gmem0_WDATA[849] = \<const0> ;
+  assign m_axi_gmem0_WDATA[848] = \<const0> ;
+  assign m_axi_gmem0_WDATA[847] = \<const0> ;
+  assign m_axi_gmem0_WDATA[846] = \<const0> ;
+  assign m_axi_gmem0_WDATA[845] = \<const0> ;
+  assign m_axi_gmem0_WDATA[844] = \<const0> ;
+  assign m_axi_gmem0_WDATA[843] = \<const0> ;
+  assign m_axi_gmem0_WDATA[842] = \<const0> ;
+  assign m_axi_gmem0_WDATA[841] = \<const0> ;
+  assign m_axi_gmem0_WDATA[840] = \<const0> ;
+  assign m_axi_gmem0_WDATA[839] = \<const0> ;
+  assign m_axi_gmem0_WDATA[838] = \<const0> ;
+  assign m_axi_gmem0_WDATA[837] = \<const0> ;
+  assign m_axi_gmem0_WDATA[836] = \<const0> ;
+  assign m_axi_gmem0_WDATA[835] = \<const0> ;
+  assign m_axi_gmem0_WDATA[834] = \<const0> ;
+  assign m_axi_gmem0_WDATA[833] = \<const0> ;
+  assign m_axi_gmem0_WDATA[832] = \<const0> ;
+  assign m_axi_gmem0_WDATA[831] = \<const0> ;
+  assign m_axi_gmem0_WDATA[830] = \<const0> ;
+  assign m_axi_gmem0_WDATA[829] = \<const0> ;
+  assign m_axi_gmem0_WDATA[828] = \<const0> ;
+  assign m_axi_gmem0_WDATA[827] = \<const0> ;
+  assign m_axi_gmem0_WDATA[826] = \<const0> ;
+  assign m_axi_gmem0_WDATA[825] = \<const0> ;
+  assign m_axi_gmem0_WDATA[824] = \<const0> ;
+  assign m_axi_gmem0_WDATA[823] = \<const0> ;
+  assign m_axi_gmem0_WDATA[822] = \<const0> ;
+  assign m_axi_gmem0_WDATA[821] = \<const0> ;
+  assign m_axi_gmem0_WDATA[820] = \<const0> ;
+  assign m_axi_gmem0_WDATA[819] = \<const0> ;
+  assign m_axi_gmem0_WDATA[818] = \<const0> ;
+  assign m_axi_gmem0_WDATA[817] = \<const0> ;
+  assign m_axi_gmem0_WDATA[816] = \<const0> ;
+  assign m_axi_gmem0_WDATA[815] = \<const0> ;
+  assign m_axi_gmem0_WDATA[814] = \<const0> ;
+  assign m_axi_gmem0_WDATA[813] = \<const0> ;
+  assign m_axi_gmem0_WDATA[812] = \<const0> ;
+  assign m_axi_gmem0_WDATA[811] = \<const0> ;
+  assign m_axi_gmem0_WDATA[810] = \<const0> ;
+  assign m_axi_gmem0_WDATA[809] = \<const0> ;
+  assign m_axi_gmem0_WDATA[808] = \<const0> ;
+  assign m_axi_gmem0_WDATA[807] = \<const0> ;
+  assign m_axi_gmem0_WDATA[806] = \<const0> ;
+  assign m_axi_gmem0_WDATA[805] = \<const0> ;
+  assign m_axi_gmem0_WDATA[804] = \<const0> ;
+  assign m_axi_gmem0_WDATA[803] = \<const0> ;
+  assign m_axi_gmem0_WDATA[802] = \<const0> ;
+  assign m_axi_gmem0_WDATA[801] = \<const0> ;
+  assign m_axi_gmem0_WDATA[800] = \<const0> ;
+  assign m_axi_gmem0_WDATA[799] = \<const0> ;
+  assign m_axi_gmem0_WDATA[798] = \<const0> ;
+  assign m_axi_gmem0_WDATA[797] = \<const0> ;
+  assign m_axi_gmem0_WDATA[796] = \<const0> ;
+  assign m_axi_gmem0_WDATA[795] = \<const0> ;
+  assign m_axi_gmem0_WDATA[794] = \<const0> ;
+  assign m_axi_gmem0_WDATA[793] = \<const0> ;
+  assign m_axi_gmem0_WDATA[792] = \<const0> ;
+  assign m_axi_gmem0_WDATA[791] = \<const0> ;
+  assign m_axi_gmem0_WDATA[790] = \<const0> ;
+  assign m_axi_gmem0_WDATA[789] = \<const0> ;
+  assign m_axi_gmem0_WDATA[788] = \<const0> ;
+  assign m_axi_gmem0_WDATA[787] = \<const0> ;
+  assign m_axi_gmem0_WDATA[786] = \<const0> ;
+  assign m_axi_gmem0_WDATA[785] = \<const0> ;
+  assign m_axi_gmem0_WDATA[784] = \<const0> ;
+  assign m_axi_gmem0_WDATA[783] = \<const0> ;
+  assign m_axi_gmem0_WDATA[782] = \<const0> ;
+  assign m_axi_gmem0_WDATA[781] = \<const0> ;
+  assign m_axi_gmem0_WDATA[780] = \<const0> ;
+  assign m_axi_gmem0_WDATA[779] = \<const0> ;
+  assign m_axi_gmem0_WDATA[778] = \<const0> ;
+  assign m_axi_gmem0_WDATA[777] = \<const0> ;
+  assign m_axi_gmem0_WDATA[776] = \<const0> ;
+  assign m_axi_gmem0_WDATA[775] = \<const0> ;
+  assign m_axi_gmem0_WDATA[774] = \<const0> ;
+  assign m_axi_gmem0_WDATA[773] = \<const0> ;
+  assign m_axi_gmem0_WDATA[772] = \<const0> ;
+  assign m_axi_gmem0_WDATA[771] = \<const0> ;
+  assign m_axi_gmem0_WDATA[770] = \<const0> ;
+  assign m_axi_gmem0_WDATA[769] = \<const0> ;
+  assign m_axi_gmem0_WDATA[768] = \<const0> ;
+  assign m_axi_gmem0_WDATA[767] = \<const0> ;
+  assign m_axi_gmem0_WDATA[766] = \<const0> ;
+  assign m_axi_gmem0_WDATA[765] = \<const0> ;
+  assign m_axi_gmem0_WDATA[764] = \<const0> ;
+  assign m_axi_gmem0_WDATA[763] = \<const0> ;
+  assign m_axi_gmem0_WDATA[762] = \<const0> ;
+  assign m_axi_gmem0_WDATA[761] = \<const0> ;
+  assign m_axi_gmem0_WDATA[760] = \<const0> ;
+  assign m_axi_gmem0_WDATA[759] = \<const0> ;
+  assign m_axi_gmem0_WDATA[758] = \<const0> ;
+  assign m_axi_gmem0_WDATA[757] = \<const0> ;
+  assign m_axi_gmem0_WDATA[756] = \<const0> ;
+  assign m_axi_gmem0_WDATA[755] = \<const0> ;
+  assign m_axi_gmem0_WDATA[754] = \<const0> ;
+  assign m_axi_gmem0_WDATA[753] = \<const0> ;
+  assign m_axi_gmem0_WDATA[752] = \<const0> ;
+  assign m_axi_gmem0_WDATA[751] = \<const0> ;
+  assign m_axi_gmem0_WDATA[750] = \<const0> ;
+  assign m_axi_gmem0_WDATA[749] = \<const0> ;
+  assign m_axi_gmem0_WDATA[748] = \<const0> ;
+  assign m_axi_gmem0_WDATA[747] = \<const0> ;
+  assign m_axi_gmem0_WDATA[746] = \<const0> ;
+  assign m_axi_gmem0_WDATA[745] = \<const0> ;
+  assign m_axi_gmem0_WDATA[744] = \<const0> ;
+  assign m_axi_gmem0_WDATA[743] = \<const0> ;
+  assign m_axi_gmem0_WDATA[742] = \<const0> ;
+  assign m_axi_gmem0_WDATA[741] = \<const0> ;
+  assign m_axi_gmem0_WDATA[740] = \<const0> ;
+  assign m_axi_gmem0_WDATA[739] = \<const0> ;
+  assign m_axi_gmem0_WDATA[738] = \<const0> ;
+  assign m_axi_gmem0_WDATA[737] = \<const0> ;
+  assign m_axi_gmem0_WDATA[736] = \<const0> ;
+  assign m_axi_gmem0_WDATA[735] = \<const0> ;
+  assign m_axi_gmem0_WDATA[734] = \<const0> ;
+  assign m_axi_gmem0_WDATA[733] = \<const0> ;
+  assign m_axi_gmem0_WDATA[732] = \<const0> ;
+  assign m_axi_gmem0_WDATA[731] = \<const0> ;
+  assign m_axi_gmem0_WDATA[730] = \<const0> ;
+  assign m_axi_gmem0_WDATA[729] = \<const0> ;
+  assign m_axi_gmem0_WDATA[728] = \<const0> ;
+  assign m_axi_gmem0_WDATA[727] = \<const0> ;
+  assign m_axi_gmem0_WDATA[726] = \<const0> ;
+  assign m_axi_gmem0_WDATA[725] = \<const0> ;
+  assign m_axi_gmem0_WDATA[724] = \<const0> ;
+  assign m_axi_gmem0_WDATA[723] = \<const0> ;
+  assign m_axi_gmem0_WDATA[722] = \<const0> ;
+  assign m_axi_gmem0_WDATA[721] = \<const0> ;
+  assign m_axi_gmem0_WDATA[720] = \<const0> ;
+  assign m_axi_gmem0_WDATA[719] = \<const0> ;
+  assign m_axi_gmem0_WDATA[718] = \<const0> ;
+  assign m_axi_gmem0_WDATA[717] = \<const0> ;
+  assign m_axi_gmem0_WDATA[716] = \<const0> ;
+  assign m_axi_gmem0_WDATA[715] = \<const0> ;
+  assign m_axi_gmem0_WDATA[714] = \<const0> ;
+  assign m_axi_gmem0_WDATA[713] = \<const0> ;
+  assign m_axi_gmem0_WDATA[712] = \<const0> ;
+  assign m_axi_gmem0_WDATA[711] = \<const0> ;
+  assign m_axi_gmem0_WDATA[710] = \<const0> ;
+  assign m_axi_gmem0_WDATA[709] = \<const0> ;
+  assign m_axi_gmem0_WDATA[708] = \<const0> ;
+  assign m_axi_gmem0_WDATA[707] = \<const0> ;
+  assign m_axi_gmem0_WDATA[706] = \<const0> ;
+  assign m_axi_gmem0_WDATA[705] = \<const0> ;
+  assign m_axi_gmem0_WDATA[704] = \<const0> ;
+  assign m_axi_gmem0_WDATA[703] = \<const0> ;
+  assign m_axi_gmem0_WDATA[702] = \<const0> ;
+  assign m_axi_gmem0_WDATA[701] = \<const0> ;
+  assign m_axi_gmem0_WDATA[700] = \<const0> ;
+  assign m_axi_gmem0_WDATA[699] = \<const0> ;
+  assign m_axi_gmem0_WDATA[698] = \<const0> ;
+  assign m_axi_gmem0_WDATA[697] = \<const0> ;
+  assign m_axi_gmem0_WDATA[696] = \<const0> ;
+  assign m_axi_gmem0_WDATA[695] = \<const0> ;
+  assign m_axi_gmem0_WDATA[694] = \<const0> ;
+  assign m_axi_gmem0_WDATA[693] = \<const0> ;
+  assign m_axi_gmem0_WDATA[692] = \<const0> ;
+  assign m_axi_gmem0_WDATA[691] = \<const0> ;
+  assign m_axi_gmem0_WDATA[690] = \<const0> ;
+  assign m_axi_gmem0_WDATA[689] = \<const0> ;
+  assign m_axi_gmem0_WDATA[688] = \<const0> ;
+  assign m_axi_gmem0_WDATA[687] = \<const0> ;
+  assign m_axi_gmem0_WDATA[686] = \<const0> ;
+  assign m_axi_gmem0_WDATA[685] = \<const0> ;
+  assign m_axi_gmem0_WDATA[684] = \<const0> ;
+  assign m_axi_gmem0_WDATA[683] = \<const0> ;
+  assign m_axi_gmem0_WDATA[682] = \<const0> ;
+  assign m_axi_gmem0_WDATA[681] = \<const0> ;
+  assign m_axi_gmem0_WDATA[680] = \<const0> ;
+  assign m_axi_gmem0_WDATA[679] = \<const0> ;
+  assign m_axi_gmem0_WDATA[678] = \<const0> ;
+  assign m_axi_gmem0_WDATA[677] = \<const0> ;
+  assign m_axi_gmem0_WDATA[676] = \<const0> ;
+  assign m_axi_gmem0_WDATA[675] = \<const0> ;
+  assign m_axi_gmem0_WDATA[674] = \<const0> ;
+  assign m_axi_gmem0_WDATA[673] = \<const0> ;
+  assign m_axi_gmem0_WDATA[672] = \<const0> ;
+  assign m_axi_gmem0_WDATA[671] = \<const0> ;
+  assign m_axi_gmem0_WDATA[670] = \<const0> ;
+  assign m_axi_gmem0_WDATA[669] = \<const0> ;
+  assign m_axi_gmem0_WDATA[668] = \<const0> ;
+  assign m_axi_gmem0_WDATA[667] = \<const0> ;
+  assign m_axi_gmem0_WDATA[666] = \<const0> ;
+  assign m_axi_gmem0_WDATA[665] = \<const0> ;
+  assign m_axi_gmem0_WDATA[664] = \<const0> ;
+  assign m_axi_gmem0_WDATA[663] = \<const0> ;
+  assign m_axi_gmem0_WDATA[662] = \<const0> ;
+  assign m_axi_gmem0_WDATA[661] = \<const0> ;
+  assign m_axi_gmem0_WDATA[660] = \<const0> ;
+  assign m_axi_gmem0_WDATA[659] = \<const0> ;
+  assign m_axi_gmem0_WDATA[658] = \<const0> ;
+  assign m_axi_gmem0_WDATA[657] = \<const0> ;
+  assign m_axi_gmem0_WDATA[656] = \<const0> ;
+  assign m_axi_gmem0_WDATA[655] = \<const0> ;
+  assign m_axi_gmem0_WDATA[654] = \<const0> ;
+  assign m_axi_gmem0_WDATA[653] = \<const0> ;
+  assign m_axi_gmem0_WDATA[652] = \<const0> ;
+  assign m_axi_gmem0_WDATA[651] = \<const0> ;
+  assign m_axi_gmem0_WDATA[650] = \<const0> ;
+  assign m_axi_gmem0_WDATA[649] = \<const0> ;
+  assign m_axi_gmem0_WDATA[648] = \<const0> ;
+  assign m_axi_gmem0_WDATA[647] = \<const0> ;
+  assign m_axi_gmem0_WDATA[646] = \<const0> ;
+  assign m_axi_gmem0_WDATA[645] = \<const0> ;
+  assign m_axi_gmem0_WDATA[644] = \<const0> ;
+  assign m_axi_gmem0_WDATA[643] = \<const0> ;
+  assign m_axi_gmem0_WDATA[642] = \<const0> ;
+  assign m_axi_gmem0_WDATA[641] = \<const0> ;
+  assign m_axi_gmem0_WDATA[640] = \<const0> ;
+  assign m_axi_gmem0_WDATA[639] = \<const0> ;
+  assign m_axi_gmem0_WDATA[638] = \<const0> ;
+  assign m_axi_gmem0_WDATA[637] = \<const0> ;
+  assign m_axi_gmem0_WDATA[636] = \<const0> ;
+  assign m_axi_gmem0_WDATA[635] = \<const0> ;
+  assign m_axi_gmem0_WDATA[634] = \<const0> ;
+  assign m_axi_gmem0_WDATA[633] = \<const0> ;
+  assign m_axi_gmem0_WDATA[632] = \<const0> ;
+  assign m_axi_gmem0_WDATA[631] = \<const0> ;
+  assign m_axi_gmem0_WDATA[630] = \<const0> ;
+  assign m_axi_gmem0_WDATA[629] = \<const0> ;
+  assign m_axi_gmem0_WDATA[628] = \<const0> ;
+  assign m_axi_gmem0_WDATA[627] = \<const0> ;
+  assign m_axi_gmem0_WDATA[626] = \<const0> ;
+  assign m_axi_gmem0_WDATA[625] = \<const0> ;
+  assign m_axi_gmem0_WDATA[624] = \<const0> ;
+  assign m_axi_gmem0_WDATA[623] = \<const0> ;
+  assign m_axi_gmem0_WDATA[622] = \<const0> ;
+  assign m_axi_gmem0_WDATA[621] = \<const0> ;
+  assign m_axi_gmem0_WDATA[620] = \<const0> ;
+  assign m_axi_gmem0_WDATA[619] = \<const0> ;
+  assign m_axi_gmem0_WDATA[618] = \<const0> ;
+  assign m_axi_gmem0_WDATA[617] = \<const0> ;
+  assign m_axi_gmem0_WDATA[616] = \<const0> ;
+  assign m_axi_gmem0_WDATA[615] = \<const0> ;
+  assign m_axi_gmem0_WDATA[614] = \<const0> ;
+  assign m_axi_gmem0_WDATA[613] = \<const0> ;
+  assign m_axi_gmem0_WDATA[612] = \<const0> ;
+  assign m_axi_gmem0_WDATA[611] = \<const0> ;
+  assign m_axi_gmem0_WDATA[610] = \<const0> ;
+  assign m_axi_gmem0_WDATA[609] = \<const0> ;
+  assign m_axi_gmem0_WDATA[608] = \<const0> ;
+  assign m_axi_gmem0_WDATA[607] = \<const0> ;
+  assign m_axi_gmem0_WDATA[606] = \<const0> ;
+  assign m_axi_gmem0_WDATA[605] = \<const0> ;
+  assign m_axi_gmem0_WDATA[604] = \<const0> ;
+  assign m_axi_gmem0_WDATA[603] = \<const0> ;
+  assign m_axi_gmem0_WDATA[602] = \<const0> ;
+  assign m_axi_gmem0_WDATA[601] = \<const0> ;
+  assign m_axi_gmem0_WDATA[600] = \<const0> ;
+  assign m_axi_gmem0_WDATA[599] = \<const0> ;
+  assign m_axi_gmem0_WDATA[598] = \<const0> ;
+  assign m_axi_gmem0_WDATA[597] = \<const0> ;
+  assign m_axi_gmem0_WDATA[596] = \<const0> ;
+  assign m_axi_gmem0_WDATA[595] = \<const0> ;
+  assign m_axi_gmem0_WDATA[594] = \<const0> ;
+  assign m_axi_gmem0_WDATA[593] = \<const0> ;
+  assign m_axi_gmem0_WDATA[592] = \<const0> ;
+  assign m_axi_gmem0_WDATA[591] = \<const0> ;
+  assign m_axi_gmem0_WDATA[590] = \<const0> ;
+  assign m_axi_gmem0_WDATA[589] = \<const0> ;
+  assign m_axi_gmem0_WDATA[588] = \<const0> ;
+  assign m_axi_gmem0_WDATA[587] = \<const0> ;
+  assign m_axi_gmem0_WDATA[586] = \<const0> ;
+  assign m_axi_gmem0_WDATA[585] = \<const0> ;
+  assign m_axi_gmem0_WDATA[584] = \<const0> ;
+  assign m_axi_gmem0_WDATA[583] = \<const0> ;
+  assign m_axi_gmem0_WDATA[582] = \<const0> ;
+  assign m_axi_gmem0_WDATA[581] = \<const0> ;
+  assign m_axi_gmem0_WDATA[580] = \<const0> ;
+  assign m_axi_gmem0_WDATA[579] = \<const0> ;
+  assign m_axi_gmem0_WDATA[578] = \<const0> ;
+  assign m_axi_gmem0_WDATA[577] = \<const0> ;
+  assign m_axi_gmem0_WDATA[576] = \<const0> ;
+  assign m_axi_gmem0_WDATA[575] = \<const0> ;
+  assign m_axi_gmem0_WDATA[574] = \<const0> ;
+  assign m_axi_gmem0_WDATA[573] = \<const0> ;
+  assign m_axi_gmem0_WDATA[572] = \<const0> ;
+  assign m_axi_gmem0_WDATA[571] = \<const0> ;
+  assign m_axi_gmem0_WDATA[570] = \<const0> ;
+  assign m_axi_gmem0_WDATA[569] = \<const0> ;
+  assign m_axi_gmem0_WDATA[568] = \<const0> ;
+  assign m_axi_gmem0_WDATA[567] = \<const0> ;
+  assign m_axi_gmem0_WDATA[566] = \<const0> ;
+  assign m_axi_gmem0_WDATA[565] = \<const0> ;
+  assign m_axi_gmem0_WDATA[564] = \<const0> ;
+  assign m_axi_gmem0_WDATA[563] = \<const0> ;
+  assign m_axi_gmem0_WDATA[562] = \<const0> ;
+  assign m_axi_gmem0_WDATA[561] = \<const0> ;
+  assign m_axi_gmem0_WDATA[560] = \<const0> ;
+  assign m_axi_gmem0_WDATA[559] = \<const0> ;
+  assign m_axi_gmem0_WDATA[558] = \<const0> ;
+  assign m_axi_gmem0_WDATA[557] = \<const0> ;
+  assign m_axi_gmem0_WDATA[556] = \<const0> ;
+  assign m_axi_gmem0_WDATA[555] = \<const0> ;
+  assign m_axi_gmem0_WDATA[554] = \<const0> ;
+  assign m_axi_gmem0_WDATA[553] = \<const0> ;
+  assign m_axi_gmem0_WDATA[552] = \<const0> ;
+  assign m_axi_gmem0_WDATA[551] = \<const0> ;
+  assign m_axi_gmem0_WDATA[550] = \<const0> ;
+  assign m_axi_gmem0_WDATA[549] = \<const0> ;
+  assign m_axi_gmem0_WDATA[548] = \<const0> ;
+  assign m_axi_gmem0_WDATA[547] = \<const0> ;
+  assign m_axi_gmem0_WDATA[546] = \<const0> ;
+  assign m_axi_gmem0_WDATA[545] = \<const0> ;
+  assign m_axi_gmem0_WDATA[544] = \<const0> ;
+  assign m_axi_gmem0_WDATA[543] = \<const0> ;
+  assign m_axi_gmem0_WDATA[542] = \<const0> ;
+  assign m_axi_gmem0_WDATA[541] = \<const0> ;
+  assign m_axi_gmem0_WDATA[540] = \<const0> ;
+  assign m_axi_gmem0_WDATA[539] = \<const0> ;
+  assign m_axi_gmem0_WDATA[538] = \<const0> ;
+  assign m_axi_gmem0_WDATA[537] = \<const0> ;
+  assign m_axi_gmem0_WDATA[536] = \<const0> ;
+  assign m_axi_gmem0_WDATA[535] = \<const0> ;
+  assign m_axi_gmem0_WDATA[534] = \<const0> ;
+  assign m_axi_gmem0_WDATA[533] = \<const0> ;
+  assign m_axi_gmem0_WDATA[532] = \<const0> ;
+  assign m_axi_gmem0_WDATA[531] = \<const0> ;
+  assign m_axi_gmem0_WDATA[530] = \<const0> ;
+  assign m_axi_gmem0_WDATA[529] = \<const0> ;
+  assign m_axi_gmem0_WDATA[528] = \<const0> ;
+  assign m_axi_gmem0_WDATA[527] = \<const0> ;
+  assign m_axi_gmem0_WDATA[526] = \<const0> ;
+  assign m_axi_gmem0_WDATA[525] = \<const0> ;
+  assign m_axi_gmem0_WDATA[524] = \<const0> ;
+  assign m_axi_gmem0_WDATA[523] = \<const0> ;
+  assign m_axi_gmem0_WDATA[522] = \<const0> ;
+  assign m_axi_gmem0_WDATA[521] = \<const0> ;
+  assign m_axi_gmem0_WDATA[520] = \<const0> ;
+  assign m_axi_gmem0_WDATA[519] = \<const0> ;
+  assign m_axi_gmem0_WDATA[518] = \<const0> ;
+  assign m_axi_gmem0_WDATA[517] = \<const0> ;
+  assign m_axi_gmem0_WDATA[516] = \<const0> ;
+  assign m_axi_gmem0_WDATA[515] = \<const0> ;
+  assign m_axi_gmem0_WDATA[514] = \<const0> ;
+  assign m_axi_gmem0_WDATA[513] = \<const0> ;
+  assign m_axi_gmem0_WDATA[512] = \<const0> ;
+  assign m_axi_gmem0_WDATA[511] = \<const0> ;
+  assign m_axi_gmem0_WDATA[510] = \<const0> ;
+  assign m_axi_gmem0_WDATA[509] = \<const0> ;
+  assign m_axi_gmem0_WDATA[508] = \<const0> ;
+  assign m_axi_gmem0_WDATA[507] = \<const0> ;
+  assign m_axi_gmem0_WDATA[506] = \<const0> ;
+  assign m_axi_gmem0_WDATA[505] = \<const0> ;
+  assign m_axi_gmem0_WDATA[504] = \<const0> ;
+  assign m_axi_gmem0_WDATA[503] = \<const0> ;
+  assign m_axi_gmem0_WDATA[502] = \<const0> ;
+  assign m_axi_gmem0_WDATA[501] = \<const0> ;
+  assign m_axi_gmem0_WDATA[500] = \<const0> ;
+  assign m_axi_gmem0_WDATA[499] = \<const0> ;
+  assign m_axi_gmem0_WDATA[498] = \<const0> ;
+  assign m_axi_gmem0_WDATA[497] = \<const0> ;
+  assign m_axi_gmem0_WDATA[496] = \<const0> ;
+  assign m_axi_gmem0_WDATA[495] = \<const0> ;
+  assign m_axi_gmem0_WDATA[494] = \<const0> ;
+  assign m_axi_gmem0_WDATA[493] = \<const0> ;
+  assign m_axi_gmem0_WDATA[492] = \<const0> ;
+  assign m_axi_gmem0_WDATA[491] = \<const0> ;
+  assign m_axi_gmem0_WDATA[490] = \<const0> ;
+  assign m_axi_gmem0_WDATA[489] = \<const0> ;
+  assign m_axi_gmem0_WDATA[488] = \<const0> ;
+  assign m_axi_gmem0_WDATA[487] = \<const0> ;
+  assign m_axi_gmem0_WDATA[486] = \<const0> ;
+  assign m_axi_gmem0_WDATA[485] = \<const0> ;
+  assign m_axi_gmem0_WDATA[484] = \<const0> ;
+  assign m_axi_gmem0_WDATA[483] = \<const0> ;
+  assign m_axi_gmem0_WDATA[482] = \<const0> ;
+  assign m_axi_gmem0_WDATA[481] = \<const0> ;
+  assign m_axi_gmem0_WDATA[480] = \<const0> ;
+  assign m_axi_gmem0_WDATA[479] = \<const0> ;
+  assign m_axi_gmem0_WDATA[478] = \<const0> ;
+  assign m_axi_gmem0_WDATA[477] = \<const0> ;
+  assign m_axi_gmem0_WDATA[476] = \<const0> ;
+  assign m_axi_gmem0_WDATA[475] = \<const0> ;
+  assign m_axi_gmem0_WDATA[474] = \<const0> ;
+  assign m_axi_gmem0_WDATA[473] = \<const0> ;
+  assign m_axi_gmem0_WDATA[472] = \<const0> ;
+  assign m_axi_gmem0_WDATA[471] = \<const0> ;
+  assign m_axi_gmem0_WDATA[470] = \<const0> ;
+  assign m_axi_gmem0_WDATA[469] = \<const0> ;
+  assign m_axi_gmem0_WDATA[468] = \<const0> ;
+  assign m_axi_gmem0_WDATA[467] = \<const0> ;
+  assign m_axi_gmem0_WDATA[466] = \<const0> ;
+  assign m_axi_gmem0_WDATA[465] = \<const0> ;
+  assign m_axi_gmem0_WDATA[464] = \<const0> ;
+  assign m_axi_gmem0_WDATA[463] = \<const0> ;
+  assign m_axi_gmem0_WDATA[462] = \<const0> ;
+  assign m_axi_gmem0_WDATA[461] = \<const0> ;
+  assign m_axi_gmem0_WDATA[460] = \<const0> ;
+  assign m_axi_gmem0_WDATA[459] = \<const0> ;
+  assign m_axi_gmem0_WDATA[458] = \<const0> ;
+  assign m_axi_gmem0_WDATA[457] = \<const0> ;
+  assign m_axi_gmem0_WDATA[456] = \<const0> ;
+  assign m_axi_gmem0_WDATA[455] = \<const0> ;
+  assign m_axi_gmem0_WDATA[454] = \<const0> ;
+  assign m_axi_gmem0_WDATA[453] = \<const0> ;
+  assign m_axi_gmem0_WDATA[452] = \<const0> ;
+  assign m_axi_gmem0_WDATA[451] = \<const0> ;
+  assign m_axi_gmem0_WDATA[450] = \<const0> ;
+  assign m_axi_gmem0_WDATA[449] = \<const0> ;
+  assign m_axi_gmem0_WDATA[448] = \<const0> ;
+  assign m_axi_gmem0_WDATA[447] = \<const0> ;
+  assign m_axi_gmem0_WDATA[446] = \<const0> ;
+  assign m_axi_gmem0_WDATA[445] = \<const0> ;
+  assign m_axi_gmem0_WDATA[444] = \<const0> ;
+  assign m_axi_gmem0_WDATA[443] = \<const0> ;
+  assign m_axi_gmem0_WDATA[442] = \<const0> ;
+  assign m_axi_gmem0_WDATA[441] = \<const0> ;
+  assign m_axi_gmem0_WDATA[440] = \<const0> ;
+  assign m_axi_gmem0_WDATA[439] = \<const0> ;
+  assign m_axi_gmem0_WDATA[438] = \<const0> ;
+  assign m_axi_gmem0_WDATA[437] = \<const0> ;
+  assign m_axi_gmem0_WDATA[436] = \<const0> ;
+  assign m_axi_gmem0_WDATA[435] = \<const0> ;
+  assign m_axi_gmem0_WDATA[434] = \<const0> ;
+  assign m_axi_gmem0_WDATA[433] = \<const0> ;
+  assign m_axi_gmem0_WDATA[432] = \<const0> ;
+  assign m_axi_gmem0_WDATA[431] = \<const0> ;
+  assign m_axi_gmem0_WDATA[430] = \<const0> ;
+  assign m_axi_gmem0_WDATA[429] = \<const0> ;
+  assign m_axi_gmem0_WDATA[428] = \<const0> ;
+  assign m_axi_gmem0_WDATA[427] = \<const0> ;
+  assign m_axi_gmem0_WDATA[426] = \<const0> ;
+  assign m_axi_gmem0_WDATA[425] = \<const0> ;
+  assign m_axi_gmem0_WDATA[424] = \<const0> ;
+  assign m_axi_gmem0_WDATA[423] = \<const0> ;
+  assign m_axi_gmem0_WDATA[422] = \<const0> ;
+  assign m_axi_gmem0_WDATA[421] = \<const0> ;
+  assign m_axi_gmem0_WDATA[420] = \<const0> ;
+  assign m_axi_gmem0_WDATA[419] = \<const0> ;
+  assign m_axi_gmem0_WDATA[418] = \<const0> ;
+  assign m_axi_gmem0_WDATA[417] = \<const0> ;
+  assign m_axi_gmem0_WDATA[416] = \<const0> ;
+  assign m_axi_gmem0_WDATA[415] = \<const0> ;
+  assign m_axi_gmem0_WDATA[414] = \<const0> ;
+  assign m_axi_gmem0_WDATA[413] = \<const0> ;
+  assign m_axi_gmem0_WDATA[412] = \<const0> ;
+  assign m_axi_gmem0_WDATA[411] = \<const0> ;
+  assign m_axi_gmem0_WDATA[410] = \<const0> ;
+  assign m_axi_gmem0_WDATA[409] = \<const0> ;
+  assign m_axi_gmem0_WDATA[408] = \<const0> ;
+  assign m_axi_gmem0_WDATA[407] = \<const0> ;
+  assign m_axi_gmem0_WDATA[406] = \<const0> ;
+  assign m_axi_gmem0_WDATA[405] = \<const0> ;
+  assign m_axi_gmem0_WDATA[404] = \<const0> ;
+  assign m_axi_gmem0_WDATA[403] = \<const0> ;
+  assign m_axi_gmem0_WDATA[402] = \<const0> ;
+  assign m_axi_gmem0_WDATA[401] = \<const0> ;
+  assign m_axi_gmem0_WDATA[400] = \<const0> ;
+  assign m_axi_gmem0_WDATA[399] = \<const0> ;
+  assign m_axi_gmem0_WDATA[398] = \<const0> ;
+  assign m_axi_gmem0_WDATA[397] = \<const0> ;
+  assign m_axi_gmem0_WDATA[396] = \<const0> ;
+  assign m_axi_gmem0_WDATA[395] = \<const0> ;
+  assign m_axi_gmem0_WDATA[394] = \<const0> ;
+  assign m_axi_gmem0_WDATA[393] = \<const0> ;
+  assign m_axi_gmem0_WDATA[392] = \<const0> ;
+  assign m_axi_gmem0_WDATA[391] = \<const0> ;
+  assign m_axi_gmem0_WDATA[390] = \<const0> ;
+  assign m_axi_gmem0_WDATA[389] = \<const0> ;
+  assign m_axi_gmem0_WDATA[388] = \<const0> ;
+  assign m_axi_gmem0_WDATA[387] = \<const0> ;
+  assign m_axi_gmem0_WDATA[386] = \<const0> ;
+  assign m_axi_gmem0_WDATA[385] = \<const0> ;
+  assign m_axi_gmem0_WDATA[384] = \<const0> ;
+  assign m_axi_gmem0_WDATA[383] = \<const0> ;
+  assign m_axi_gmem0_WDATA[382] = \<const0> ;
+  assign m_axi_gmem0_WDATA[381] = \<const0> ;
+  assign m_axi_gmem0_WDATA[380] = \<const0> ;
+  assign m_axi_gmem0_WDATA[379] = \<const0> ;
+  assign m_axi_gmem0_WDATA[378] = \<const0> ;
+  assign m_axi_gmem0_WDATA[377] = \<const0> ;
+  assign m_axi_gmem0_WDATA[376] = \<const0> ;
+  assign m_axi_gmem0_WDATA[375] = \<const0> ;
+  assign m_axi_gmem0_WDATA[374] = \<const0> ;
+  assign m_axi_gmem0_WDATA[373] = \<const0> ;
+  assign m_axi_gmem0_WDATA[372] = \<const0> ;
+  assign m_axi_gmem0_WDATA[371] = \<const0> ;
+  assign m_axi_gmem0_WDATA[370] = \<const0> ;
+  assign m_axi_gmem0_WDATA[369] = \<const0> ;
+  assign m_axi_gmem0_WDATA[368] = \<const0> ;
+  assign m_axi_gmem0_WDATA[367] = \<const0> ;
+  assign m_axi_gmem0_WDATA[366] = \<const0> ;
+  assign m_axi_gmem0_WDATA[365] = \<const0> ;
+  assign m_axi_gmem0_WDATA[364] = \<const0> ;
+  assign m_axi_gmem0_WDATA[363] = \<const0> ;
+  assign m_axi_gmem0_WDATA[362] = \<const0> ;
+  assign m_axi_gmem0_WDATA[361] = \<const0> ;
+  assign m_axi_gmem0_WDATA[360] = \<const0> ;
+  assign m_axi_gmem0_WDATA[359] = \<const0> ;
+  assign m_axi_gmem0_WDATA[358] = \<const0> ;
+  assign m_axi_gmem0_WDATA[357] = \<const0> ;
+  assign m_axi_gmem0_WDATA[356] = \<const0> ;
+  assign m_axi_gmem0_WDATA[355] = \<const0> ;
+  assign m_axi_gmem0_WDATA[354] = \<const0> ;
+  assign m_axi_gmem0_WDATA[353] = \<const0> ;
+  assign m_axi_gmem0_WDATA[352] = \<const0> ;
+  assign m_axi_gmem0_WDATA[351] = \<const0> ;
+  assign m_axi_gmem0_WDATA[350] = \<const0> ;
+  assign m_axi_gmem0_WDATA[349] = \<const0> ;
+  assign m_axi_gmem0_WDATA[348] = \<const0> ;
+  assign m_axi_gmem0_WDATA[347] = \<const0> ;
+  assign m_axi_gmem0_WDATA[346] = \<const0> ;
+  assign m_axi_gmem0_WDATA[345] = \<const0> ;
+  assign m_axi_gmem0_WDATA[344] = \<const0> ;
+  assign m_axi_gmem0_WDATA[343] = \<const0> ;
+  assign m_axi_gmem0_WDATA[342] = \<const0> ;
+  assign m_axi_gmem0_WDATA[341] = \<const0> ;
+  assign m_axi_gmem0_WDATA[340] = \<const0> ;
+  assign m_axi_gmem0_WDATA[339] = \<const0> ;
+  assign m_axi_gmem0_WDATA[338] = \<const0> ;
+  assign m_axi_gmem0_WDATA[337] = \<const0> ;
+  assign m_axi_gmem0_WDATA[336] = \<const0> ;
+  assign m_axi_gmem0_WDATA[335] = \<const0> ;
+  assign m_axi_gmem0_WDATA[334] = \<const0> ;
+  assign m_axi_gmem0_WDATA[333] = \<const0> ;
+  assign m_axi_gmem0_WDATA[332] = \<const0> ;
+  assign m_axi_gmem0_WDATA[331] = \<const0> ;
+  assign m_axi_gmem0_WDATA[330] = \<const0> ;
+  assign m_axi_gmem0_WDATA[329] = \<const0> ;
+  assign m_axi_gmem0_WDATA[328] = \<const0> ;
+  assign m_axi_gmem0_WDATA[327] = \<const0> ;
+  assign m_axi_gmem0_WDATA[326] = \<const0> ;
+  assign m_axi_gmem0_WDATA[325] = \<const0> ;
+  assign m_axi_gmem0_WDATA[324] = \<const0> ;
+  assign m_axi_gmem0_WDATA[323] = \<const0> ;
+  assign m_axi_gmem0_WDATA[322] = \<const0> ;
+  assign m_axi_gmem0_WDATA[321] = \<const0> ;
+  assign m_axi_gmem0_WDATA[320] = \<const0> ;
+  assign m_axi_gmem0_WDATA[319] = \<const0> ;
+  assign m_axi_gmem0_WDATA[318] = \<const0> ;
+  assign m_axi_gmem0_WDATA[317] = \<const0> ;
+  assign m_axi_gmem0_WDATA[316] = \<const0> ;
+  assign m_axi_gmem0_WDATA[315] = \<const0> ;
+  assign m_axi_gmem0_WDATA[314] = \<const0> ;
+  assign m_axi_gmem0_WDATA[313] = \<const0> ;
+  assign m_axi_gmem0_WDATA[312] = \<const0> ;
+  assign m_axi_gmem0_WDATA[311] = \<const0> ;
+  assign m_axi_gmem0_WDATA[310] = \<const0> ;
+  assign m_axi_gmem0_WDATA[309] = \<const0> ;
+  assign m_axi_gmem0_WDATA[308] = \<const0> ;
+  assign m_axi_gmem0_WDATA[307] = \<const0> ;
+  assign m_axi_gmem0_WDATA[306] = \<const0> ;
+  assign m_axi_gmem0_WDATA[305] = \<const0> ;
+  assign m_axi_gmem0_WDATA[304] = \<const0> ;
+  assign m_axi_gmem0_WDATA[303] = \<const0> ;
+  assign m_axi_gmem0_WDATA[302] = \<const0> ;
+  assign m_axi_gmem0_WDATA[301] = \<const0> ;
+  assign m_axi_gmem0_WDATA[300] = \<const0> ;
+  assign m_axi_gmem0_WDATA[299] = \<const0> ;
+  assign m_axi_gmem0_WDATA[298] = \<const0> ;
+  assign m_axi_gmem0_WDATA[297] = \<const0> ;
+  assign m_axi_gmem0_WDATA[296] = \<const0> ;
+  assign m_axi_gmem0_WDATA[295] = \<const0> ;
+  assign m_axi_gmem0_WDATA[294] = \<const0> ;
+  assign m_axi_gmem0_WDATA[293] = \<const0> ;
+  assign m_axi_gmem0_WDATA[292] = \<const0> ;
+  assign m_axi_gmem0_WDATA[291] = \<const0> ;
+  assign m_axi_gmem0_WDATA[290] = \<const0> ;
+  assign m_axi_gmem0_WDATA[289] = \<const0> ;
+  assign m_axi_gmem0_WDATA[288] = \<const0> ;
+  assign m_axi_gmem0_WDATA[287] = \<const0> ;
+  assign m_axi_gmem0_WDATA[286] = \<const0> ;
+  assign m_axi_gmem0_WDATA[285] = \<const0> ;
+  assign m_axi_gmem0_WDATA[284] = \<const0> ;
+  assign m_axi_gmem0_WDATA[283] = \<const0> ;
+  assign m_axi_gmem0_WDATA[282] = \<const0> ;
+  assign m_axi_gmem0_WDATA[281] = \<const0> ;
+  assign m_axi_gmem0_WDATA[280] = \<const0> ;
+  assign m_axi_gmem0_WDATA[279] = \<const0> ;
+  assign m_axi_gmem0_WDATA[278] = \<const0> ;
+  assign m_axi_gmem0_WDATA[277] = \<const0> ;
+  assign m_axi_gmem0_WDATA[276] = \<const0> ;
+  assign m_axi_gmem0_WDATA[275] = \<const0> ;
+  assign m_axi_gmem0_WDATA[274] = \<const0> ;
+  assign m_axi_gmem0_WDATA[273] = \<const0> ;
+  assign m_axi_gmem0_WDATA[272] = \<const0> ;
+  assign m_axi_gmem0_WDATA[271] = \<const0> ;
+  assign m_axi_gmem0_WDATA[270] = \<const0> ;
+  assign m_axi_gmem0_WDATA[269] = \<const0> ;
+  assign m_axi_gmem0_WDATA[268] = \<const0> ;
+  assign m_axi_gmem0_WDATA[267] = \<const0> ;
+  assign m_axi_gmem0_WDATA[266] = \<const0> ;
+  assign m_axi_gmem0_WDATA[265] = \<const0> ;
+  assign m_axi_gmem0_WDATA[264] = \<const0> ;
+  assign m_axi_gmem0_WDATA[263] = \<const0> ;
+  assign m_axi_gmem0_WDATA[262] = \<const0> ;
+  assign m_axi_gmem0_WDATA[261] = \<const0> ;
+  assign m_axi_gmem0_WDATA[260] = \<const0> ;
+  assign m_axi_gmem0_WDATA[259] = \<const0> ;
+  assign m_axi_gmem0_WDATA[258] = \<const0> ;
+  assign m_axi_gmem0_WDATA[257] = \<const0> ;
+  assign m_axi_gmem0_WDATA[256] = \<const0> ;
+  assign m_axi_gmem0_WDATA[255] = \<const0> ;
+  assign m_axi_gmem0_WDATA[254] = \<const0> ;
+  assign m_axi_gmem0_WDATA[253] = \<const0> ;
+  assign m_axi_gmem0_WDATA[252] = \<const0> ;
+  assign m_axi_gmem0_WDATA[251] = \<const0> ;
+  assign m_axi_gmem0_WDATA[250] = \<const0> ;
+  assign m_axi_gmem0_WDATA[249] = \<const0> ;
+  assign m_axi_gmem0_WDATA[248] = \<const0> ;
+  assign m_axi_gmem0_WDATA[247] = \<const0> ;
+  assign m_axi_gmem0_WDATA[246] = \<const0> ;
+  assign m_axi_gmem0_WDATA[245] = \<const0> ;
+  assign m_axi_gmem0_WDATA[244] = \<const0> ;
+  assign m_axi_gmem0_WDATA[243] = \<const0> ;
+  assign m_axi_gmem0_WDATA[242] = \<const0> ;
+  assign m_axi_gmem0_WDATA[241] = \<const0> ;
+  assign m_axi_gmem0_WDATA[240] = \<const0> ;
+  assign m_axi_gmem0_WDATA[239] = \<const0> ;
+  assign m_axi_gmem0_WDATA[238] = \<const0> ;
+  assign m_axi_gmem0_WDATA[237] = \<const0> ;
+  assign m_axi_gmem0_WDATA[236] = \<const0> ;
+  assign m_axi_gmem0_WDATA[235] = \<const0> ;
+  assign m_axi_gmem0_WDATA[234] = \<const0> ;
+  assign m_axi_gmem0_WDATA[233] = \<const0> ;
+  assign m_axi_gmem0_WDATA[232] = \<const0> ;
+  assign m_axi_gmem0_WDATA[231] = \<const0> ;
+  assign m_axi_gmem0_WDATA[230] = \<const0> ;
+  assign m_axi_gmem0_WDATA[229] = \<const0> ;
+  assign m_axi_gmem0_WDATA[228] = \<const0> ;
+  assign m_axi_gmem0_WDATA[227] = \<const0> ;
+  assign m_axi_gmem0_WDATA[226] = \<const0> ;
+  assign m_axi_gmem0_WDATA[225] = \<const0> ;
+  assign m_axi_gmem0_WDATA[224] = \<const0> ;
+  assign m_axi_gmem0_WDATA[223] = \<const0> ;
+  assign m_axi_gmem0_WDATA[222] = \<const0> ;
+  assign m_axi_gmem0_WDATA[221] = \<const0> ;
+  assign m_axi_gmem0_WDATA[220] = \<const0> ;
+  assign m_axi_gmem0_WDATA[219] = \<const0> ;
+  assign m_axi_gmem0_WDATA[218] = \<const0> ;
+  assign m_axi_gmem0_WDATA[217] = \<const0> ;
+  assign m_axi_gmem0_WDATA[216] = \<const0> ;
+  assign m_axi_gmem0_WDATA[215] = \<const0> ;
+  assign m_axi_gmem0_WDATA[214] = \<const0> ;
+  assign m_axi_gmem0_WDATA[213] = \<const0> ;
+  assign m_axi_gmem0_WDATA[212] = \<const0> ;
+  assign m_axi_gmem0_WDATA[211] = \<const0> ;
+  assign m_axi_gmem0_WDATA[210] = \<const0> ;
+  assign m_axi_gmem0_WDATA[209] = \<const0> ;
+  assign m_axi_gmem0_WDATA[208] = \<const0> ;
+  assign m_axi_gmem0_WDATA[207] = \<const0> ;
+  assign m_axi_gmem0_WDATA[206] = \<const0> ;
+  assign m_axi_gmem0_WDATA[205] = \<const0> ;
+  assign m_axi_gmem0_WDATA[204] = \<const0> ;
+  assign m_axi_gmem0_WDATA[203] = \<const0> ;
+  assign m_axi_gmem0_WDATA[202] = \<const0> ;
+  assign m_axi_gmem0_WDATA[201] = \<const0> ;
+  assign m_axi_gmem0_WDATA[200] = \<const0> ;
+  assign m_axi_gmem0_WDATA[199] = \<const0> ;
+  assign m_axi_gmem0_WDATA[198] = \<const0> ;
+  assign m_axi_gmem0_WDATA[197] = \<const0> ;
+  assign m_axi_gmem0_WDATA[196] = \<const0> ;
+  assign m_axi_gmem0_WDATA[195] = \<const0> ;
+  assign m_axi_gmem0_WDATA[194] = \<const0> ;
+  assign m_axi_gmem0_WDATA[193] = \<const0> ;
+  assign m_axi_gmem0_WDATA[192] = \<const0> ;
+  assign m_axi_gmem0_WDATA[191] = \<const0> ;
+  assign m_axi_gmem0_WDATA[190] = \<const0> ;
+  assign m_axi_gmem0_WDATA[189] = \<const0> ;
+  assign m_axi_gmem0_WDATA[188] = \<const0> ;
+  assign m_axi_gmem0_WDATA[187] = \<const0> ;
+  assign m_axi_gmem0_WDATA[186] = \<const0> ;
+  assign m_axi_gmem0_WDATA[185] = \<const0> ;
+  assign m_axi_gmem0_WDATA[184] = \<const0> ;
+  assign m_axi_gmem0_WDATA[183] = \<const0> ;
+  assign m_axi_gmem0_WDATA[182] = \<const0> ;
+  assign m_axi_gmem0_WDATA[181] = \<const0> ;
+  assign m_axi_gmem0_WDATA[180] = \<const0> ;
+  assign m_axi_gmem0_WDATA[179] = \<const0> ;
+  assign m_axi_gmem0_WDATA[178] = \<const0> ;
+  assign m_axi_gmem0_WDATA[177] = \<const0> ;
+  assign m_axi_gmem0_WDATA[176] = \<const0> ;
+  assign m_axi_gmem0_WDATA[175] = \<const0> ;
+  assign m_axi_gmem0_WDATA[174] = \<const0> ;
+  assign m_axi_gmem0_WDATA[173] = \<const0> ;
+  assign m_axi_gmem0_WDATA[172] = \<const0> ;
+  assign m_axi_gmem0_WDATA[171] = \<const0> ;
+  assign m_axi_gmem0_WDATA[170] = \<const0> ;
+  assign m_axi_gmem0_WDATA[169] = \<const0> ;
+  assign m_axi_gmem0_WDATA[168] = \<const0> ;
+  assign m_axi_gmem0_WDATA[167] = \<const0> ;
+  assign m_axi_gmem0_WDATA[166] = \<const0> ;
+  assign m_axi_gmem0_WDATA[165] = \<const0> ;
+  assign m_axi_gmem0_WDATA[164] = \<const0> ;
+  assign m_axi_gmem0_WDATA[163] = \<const0> ;
+  assign m_axi_gmem0_WDATA[162] = \<const0> ;
+  assign m_axi_gmem0_WDATA[161] = \<const0> ;
+  assign m_axi_gmem0_WDATA[160] = \<const0> ;
+  assign m_axi_gmem0_WDATA[159] = \<const0> ;
+  assign m_axi_gmem0_WDATA[158] = \<const0> ;
+  assign m_axi_gmem0_WDATA[157] = \<const0> ;
+  assign m_axi_gmem0_WDATA[156] = \<const0> ;
+  assign m_axi_gmem0_WDATA[155] = \<const0> ;
+  assign m_axi_gmem0_WDATA[154] = \<const0> ;
+  assign m_axi_gmem0_WDATA[153] = \<const0> ;
+  assign m_axi_gmem0_WDATA[152] = \<const0> ;
+  assign m_axi_gmem0_WDATA[151] = \<const0> ;
+  assign m_axi_gmem0_WDATA[150] = \<const0> ;
+  assign m_axi_gmem0_WDATA[149] = \<const0> ;
+  assign m_axi_gmem0_WDATA[148] = \<const0> ;
+  assign m_axi_gmem0_WDATA[147] = \<const0> ;
+  assign m_axi_gmem0_WDATA[146] = \<const0> ;
+  assign m_axi_gmem0_WDATA[145] = \<const0> ;
+  assign m_axi_gmem0_WDATA[144] = \<const0> ;
+  assign m_axi_gmem0_WDATA[143] = \<const0> ;
+  assign m_axi_gmem0_WDATA[142] = \<const0> ;
+  assign m_axi_gmem0_WDATA[141] = \<const0> ;
+  assign m_axi_gmem0_WDATA[140] = \<const0> ;
+  assign m_axi_gmem0_WDATA[139] = \<const0> ;
+  assign m_axi_gmem0_WDATA[138] = \<const0> ;
+  assign m_axi_gmem0_WDATA[137] = \<const0> ;
+  assign m_axi_gmem0_WDATA[136] = \<const0> ;
+  assign m_axi_gmem0_WDATA[135] = \<const0> ;
+  assign m_axi_gmem0_WDATA[134] = \<const0> ;
+  assign m_axi_gmem0_WDATA[133] = \<const0> ;
+  assign m_axi_gmem0_WDATA[132] = \<const0> ;
+  assign m_axi_gmem0_WDATA[131] = \<const0> ;
+  assign m_axi_gmem0_WDATA[130] = \<const0> ;
+  assign m_axi_gmem0_WDATA[129] = \<const0> ;
+  assign m_axi_gmem0_WDATA[128] = \<const0> ;
+  assign m_axi_gmem0_WDATA[127] = \<const0> ;
+  assign m_axi_gmem0_WDATA[126] = \<const0> ;
+  assign m_axi_gmem0_WDATA[125] = \<const0> ;
+  assign m_axi_gmem0_WDATA[124] = \<const0> ;
+  assign m_axi_gmem0_WDATA[123] = \<const0> ;
+  assign m_axi_gmem0_WDATA[122] = \<const0> ;
+  assign m_axi_gmem0_WDATA[121] = \<const0> ;
+  assign m_axi_gmem0_WDATA[120] = \<const0> ;
+  assign m_axi_gmem0_WDATA[119] = \<const0> ;
+  assign m_axi_gmem0_WDATA[118] = \<const0> ;
+  assign m_axi_gmem0_WDATA[117] = \<const0> ;
+  assign m_axi_gmem0_WDATA[116] = \<const0> ;
+  assign m_axi_gmem0_WDATA[115] = \<const0> ;
+  assign m_axi_gmem0_WDATA[114] = \<const0> ;
+  assign m_axi_gmem0_WDATA[113] = \<const0> ;
+  assign m_axi_gmem0_WDATA[112] = \<const0> ;
+  assign m_axi_gmem0_WDATA[111] = \<const0> ;
+  assign m_axi_gmem0_WDATA[110] = \<const0> ;
+  assign m_axi_gmem0_WDATA[109] = \<const0> ;
+  assign m_axi_gmem0_WDATA[108] = \<const0> ;
+  assign m_axi_gmem0_WDATA[107] = \<const0> ;
+  assign m_axi_gmem0_WDATA[106] = \<const0> ;
+  assign m_axi_gmem0_WDATA[105] = \<const0> ;
+  assign m_axi_gmem0_WDATA[104] = \<const0> ;
+  assign m_axi_gmem0_WDATA[103] = \<const0> ;
+  assign m_axi_gmem0_WDATA[102] = \<const0> ;
+  assign m_axi_gmem0_WDATA[101] = \<const0> ;
+  assign m_axi_gmem0_WDATA[100] = \<const0> ;
+  assign m_axi_gmem0_WDATA[99] = \<const0> ;
+  assign m_axi_gmem0_WDATA[98] = \<const0> ;
+  assign m_axi_gmem0_WDATA[97] = \<const0> ;
+  assign m_axi_gmem0_WDATA[96] = \<const0> ;
+  assign m_axi_gmem0_WDATA[95] = \<const0> ;
+  assign m_axi_gmem0_WDATA[94] = \<const0> ;
+  assign m_axi_gmem0_WDATA[93] = \<const0> ;
+  assign m_axi_gmem0_WDATA[92] = \<const0> ;
+  assign m_axi_gmem0_WDATA[91] = \<const0> ;
+  assign m_axi_gmem0_WDATA[90] = \<const0> ;
+  assign m_axi_gmem0_WDATA[89] = \<const0> ;
+  assign m_axi_gmem0_WDATA[88] = \<const0> ;
+  assign m_axi_gmem0_WDATA[87] = \<const0> ;
+  assign m_axi_gmem0_WDATA[86] = \<const0> ;
+  assign m_axi_gmem0_WDATA[85] = \<const0> ;
+  assign m_axi_gmem0_WDATA[84] = \<const0> ;
+  assign m_axi_gmem0_WDATA[83] = \<const0> ;
+  assign m_axi_gmem0_WDATA[82] = \<const0> ;
+  assign m_axi_gmem0_WDATA[81] = \<const0> ;
+  assign m_axi_gmem0_WDATA[80] = \<const0> ;
+  assign m_axi_gmem0_WDATA[79] = \<const0> ;
+  assign m_axi_gmem0_WDATA[78] = \<const0> ;
+  assign m_axi_gmem0_WDATA[77] = \<const0> ;
+  assign m_axi_gmem0_WDATA[76] = \<const0> ;
+  assign m_axi_gmem0_WDATA[75] = \<const0> ;
+  assign m_axi_gmem0_WDATA[74] = \<const0> ;
+  assign m_axi_gmem0_WDATA[73] = \<const0> ;
+  assign m_axi_gmem0_WDATA[72] = \<const0> ;
+  assign m_axi_gmem0_WDATA[71] = \<const0> ;
+  assign m_axi_gmem0_WDATA[70] = \<const0> ;
+  assign m_axi_gmem0_WDATA[69] = \<const0> ;
+  assign m_axi_gmem0_WDATA[68] = \<const0> ;
+  assign m_axi_gmem0_WDATA[67] = \<const0> ;
+  assign m_axi_gmem0_WDATA[66] = \<const0> ;
+  assign m_axi_gmem0_WDATA[65] = \<const0> ;
+  assign m_axi_gmem0_WDATA[64] = \<const0> ;
+  assign m_axi_gmem0_WDATA[63] = \<const0> ;
+  assign m_axi_gmem0_WDATA[62] = \<const0> ;
+  assign m_axi_gmem0_WDATA[61] = \<const0> ;
+  assign m_axi_gmem0_WDATA[60] = \<const0> ;
+  assign m_axi_gmem0_WDATA[59] = \<const0> ;
+  assign m_axi_gmem0_WDATA[58] = \<const0> ;
+  assign m_axi_gmem0_WDATA[57] = \<const0> ;
+  assign m_axi_gmem0_WDATA[56] = \<const0> ;
+  assign m_axi_gmem0_WDATA[55] = \<const0> ;
+  assign m_axi_gmem0_WDATA[54] = \<const0> ;
+  assign m_axi_gmem0_WDATA[53] = \<const0> ;
+  assign m_axi_gmem0_WDATA[52] = \<const0> ;
+  assign m_axi_gmem0_WDATA[51] = \<const0> ;
+  assign m_axi_gmem0_WDATA[50] = \<const0> ;
+  assign m_axi_gmem0_WDATA[49] = \<const0> ;
+  assign m_axi_gmem0_WDATA[48] = \<const0> ;
+  assign m_axi_gmem0_WDATA[47] = \<const0> ;
+  assign m_axi_gmem0_WDATA[46] = \<const0> ;
+  assign m_axi_gmem0_WDATA[45] = \<const0> ;
+  assign m_axi_gmem0_WDATA[44] = \<const0> ;
+  assign m_axi_gmem0_WDATA[43] = \<const0> ;
+  assign m_axi_gmem0_WDATA[42] = \<const0> ;
+  assign m_axi_gmem0_WDATA[41] = \<const0> ;
+  assign m_axi_gmem0_WDATA[40] = \<const0> ;
+  assign m_axi_gmem0_WDATA[39] = \<const0> ;
+  assign m_axi_gmem0_WDATA[38] = \<const0> ;
+  assign m_axi_gmem0_WDATA[37] = \<const0> ;
+  assign m_axi_gmem0_WDATA[36] = \<const0> ;
+  assign m_axi_gmem0_WDATA[35] = \<const0> ;
+  assign m_axi_gmem0_WDATA[34] = \<const0> ;
+  assign m_axi_gmem0_WDATA[33] = \<const0> ;
+  assign m_axi_gmem0_WDATA[32] = \<const0> ;
+  assign m_axi_gmem0_WDATA[31] = \<const0> ;
+  assign m_axi_gmem0_WDATA[30] = \<const0> ;
+  assign m_axi_gmem0_WDATA[29] = \<const0> ;
+  assign m_axi_gmem0_WDATA[28] = \<const0> ;
+  assign m_axi_gmem0_WDATA[27] = \<const0> ;
+  assign m_axi_gmem0_WDATA[26] = \<const0> ;
+  assign m_axi_gmem0_WDATA[25] = \<const0> ;
+  assign m_axi_gmem0_WDATA[24] = \<const0> ;
+  assign m_axi_gmem0_WDATA[23] = \<const0> ;
+  assign m_axi_gmem0_WDATA[22] = \<const0> ;
+  assign m_axi_gmem0_WDATA[21] = \<const0> ;
+  assign m_axi_gmem0_WDATA[20] = \<const0> ;
+  assign m_axi_gmem0_WDATA[19] = \<const0> ;
+  assign m_axi_gmem0_WDATA[18] = \<const0> ;
+  assign m_axi_gmem0_WDATA[17] = \<const0> ;
+  assign m_axi_gmem0_WDATA[16] = \<const0> ;
+  assign m_axi_gmem0_WDATA[15] = \<const0> ;
+  assign m_axi_gmem0_WDATA[14] = \<const0> ;
+  assign m_axi_gmem0_WDATA[13] = \<const0> ;
+  assign m_axi_gmem0_WDATA[12] = \<const0> ;
+  assign m_axi_gmem0_WDATA[11] = \<const0> ;
+  assign m_axi_gmem0_WDATA[10] = \<const0> ;
+  assign m_axi_gmem0_WDATA[9] = \<const0> ;
+  assign m_axi_gmem0_WDATA[8] = \<const0> ;
+  assign m_axi_gmem0_WDATA[7] = \<const0> ;
+  assign m_axi_gmem0_WDATA[6] = \<const0> ;
+  assign m_axi_gmem0_WDATA[5] = \<const0> ;
+  assign m_axi_gmem0_WDATA[4] = \<const0> ;
+  assign m_axi_gmem0_WDATA[3] = \<const0> ;
+  assign m_axi_gmem0_WDATA[2] = \<const0> ;
+  assign m_axi_gmem0_WDATA[1] = \<const0> ;
+  assign m_axi_gmem0_WDATA[0] = \<const0> ;
+  assign m_axi_gmem0_WID[0] = \<const0> ;
+  assign m_axi_gmem0_WLAST = \<const0> ;
+  assign m_axi_gmem0_WSTRB[127] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[126] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[125] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[124] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[123] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[122] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[121] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[120] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[119] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[118] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[117] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[116] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[115] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[114] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[113] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[112] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[111] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[110] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[109] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[108] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[107] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[106] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[105] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[104] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[103] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[102] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[101] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[100] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[99] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[98] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[97] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[96] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[95] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[94] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[93] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[92] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[91] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[90] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[89] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[88] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[87] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[86] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[85] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[84] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[83] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[82] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[81] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[80] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[79] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[78] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[77] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[76] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[75] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[74] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[73] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[72] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[71] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[70] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[69] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[68] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[67] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[66] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[65] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[64] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[63] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[62] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[61] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[60] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[59] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[58] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[57] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[56] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[55] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[54] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[53] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[52] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[51] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[50] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[49] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[48] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[47] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[46] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[45] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[44] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[43] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[42] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[41] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[40] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[39] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[38] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[37] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[36] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[35] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[34] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[33] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[32] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[31] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[30] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[29] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[28] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[27] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[26] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[25] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[24] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[23] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[22] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[21] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[20] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[19] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[18] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[17] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[16] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[15] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[14] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[13] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[12] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[11] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[10] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[9] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[8] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[7] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[6] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[5] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[4] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[3] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[2] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[1] = \<const0> ;
+  assign m_axi_gmem0_WSTRB[0] = \<const0> ;
+  assign m_axi_gmem0_WVALID = \<const0> ;
+  assign m_axi_gmem1_ARADDR[63:5] = \^m_axi_gmem1_ARADDR [63:5];
+  assign m_axi_gmem1_ARADDR[4] = \<const0> ;
+  assign m_axi_gmem1_ARADDR[3] = \<const0> ;
+  assign m_axi_gmem1_ARADDR[2] = \<const0> ;
+  assign m_axi_gmem1_ARADDR[1] = \<const0> ;
+  assign m_axi_gmem1_ARADDR[0] = \<const0> ;
+  assign m_axi_gmem1_ARBURST[1] = \<const0> ;
+  assign m_axi_gmem1_ARBURST[0] = \<const1> ;
+  assign m_axi_gmem1_ARCACHE[3] = \<const0> ;
+  assign m_axi_gmem1_ARCACHE[2] = \<const0> ;
+  assign m_axi_gmem1_ARCACHE[1] = \<const1> ;
+  assign m_axi_gmem1_ARCACHE[0] = \<const1> ;
+  assign m_axi_gmem1_ARID[0] = \<const0> ;
+  assign m_axi_gmem1_ARLEN[7] = \<const0> ;
+  assign m_axi_gmem1_ARLEN[6] = \<const0> ;
+  assign m_axi_gmem1_ARLEN[5] = \<const0> ;
+  assign m_axi_gmem1_ARLEN[4] = \<const0> ;
+  assign m_axi_gmem1_ARLEN[3:0] = \^m_axi_gmem1_ARLEN [3:0];
+  assign m_axi_gmem1_ARLOCK[1] = \<const0> ;
+  assign m_axi_gmem1_ARLOCK[0] = \<const0> ;
+  assign m_axi_gmem1_ARPROT[2] = \<const0> ;
+  assign m_axi_gmem1_ARPROT[1] = \<const0> ;
+  assign m_axi_gmem1_ARPROT[0] = \<const0> ;
+  assign m_axi_gmem1_ARQOS[3] = \<const0> ;
+  assign m_axi_gmem1_ARQOS[2] = \<const0> ;
+  assign m_axi_gmem1_ARQOS[1] = \<const0> ;
+  assign m_axi_gmem1_ARQOS[0] = \<const0> ;
+  assign m_axi_gmem1_ARREGION[3] = \<const0> ;
+  assign m_axi_gmem1_ARREGION[2] = \<const0> ;
+  assign m_axi_gmem1_ARREGION[1] = \<const0> ;
+  assign m_axi_gmem1_ARREGION[0] = \<const0> ;
+  assign m_axi_gmem1_ARSIZE[2] = \<const1> ;
+  assign m_axi_gmem1_ARSIZE[1] = \<const0> ;
+  assign m_axi_gmem1_ARSIZE[0] = \<const1> ;
+  assign m_axi_gmem1_AWADDR[63] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[62] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[61] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[60] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[59] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[58] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[57] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[56] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[55] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[54] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[53] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[52] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[51] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[50] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[49] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[48] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[47] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[46] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[45] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[44] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[43] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[42] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[41] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[40] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[39] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[38] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[37] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[36] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[35] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[34] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[33] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[32] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[31] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[30] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[29] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[28] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[27] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[26] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[25] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[24] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[23] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[22] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[21] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[20] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[19] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[18] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[17] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[16] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[15] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[14] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[13] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[12] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[11] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[10] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[9] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[8] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[7] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[6] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[5] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[4] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[3] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[2] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[1] = \<const0> ;
+  assign m_axi_gmem1_AWADDR[0] = \<const0> ;
+  assign m_axi_gmem1_AWBURST[1] = \<const0> ;
+  assign m_axi_gmem1_AWBURST[0] = \<const1> ;
+  assign m_axi_gmem1_AWCACHE[3] = \<const0> ;
+  assign m_axi_gmem1_AWCACHE[2] = \<const0> ;
+  assign m_axi_gmem1_AWCACHE[1] = \<const1> ;
+  assign m_axi_gmem1_AWCACHE[0] = \<const1> ;
+  assign m_axi_gmem1_AWID[0] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[7] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[6] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[5] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[4] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[3] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[2] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[1] = \<const0> ;
+  assign m_axi_gmem1_AWLEN[0] = \<const0> ;
+  assign m_axi_gmem1_AWLOCK[1] = \<const0> ;
+  assign m_axi_gmem1_AWLOCK[0] = \<const0> ;
+  assign m_axi_gmem1_AWPROT[2] = \<const0> ;
+  assign m_axi_gmem1_AWPROT[1] = \<const0> ;
+  assign m_axi_gmem1_AWPROT[0] = \<const0> ;
+  assign m_axi_gmem1_AWQOS[3] = \<const0> ;
+  assign m_axi_gmem1_AWQOS[2] = \<const0> ;
+  assign m_axi_gmem1_AWQOS[1] = \<const0> ;
+  assign m_axi_gmem1_AWQOS[0] = \<const0> ;
+  assign m_axi_gmem1_AWREGION[3] = \<const0> ;
+  assign m_axi_gmem1_AWREGION[2] = \<const0> ;
+  assign m_axi_gmem1_AWREGION[1] = \<const0> ;
+  assign m_axi_gmem1_AWREGION[0] = \<const0> ;
+  assign m_axi_gmem1_AWSIZE[2] = \<const1> ;
+  assign m_axi_gmem1_AWSIZE[1] = \<const0> ;
+  assign m_axi_gmem1_AWSIZE[0] = \<const1> ;
+  assign m_axi_gmem1_AWVALID = \<const0> ;
+  assign m_axi_gmem1_WDATA[255] = \<const0> ;
+  assign m_axi_gmem1_WDATA[254] = \<const0> ;
+  assign m_axi_gmem1_WDATA[253] = \<const0> ;
+  assign m_axi_gmem1_WDATA[252] = \<const0> ;
+  assign m_axi_gmem1_WDATA[251] = \<const0> ;
+  assign m_axi_gmem1_WDATA[250] = \<const0> ;
+  assign m_axi_gmem1_WDATA[249] = \<const0> ;
+  assign m_axi_gmem1_WDATA[248] = \<const0> ;
+  assign m_axi_gmem1_WDATA[247] = \<const0> ;
+  assign m_axi_gmem1_WDATA[246] = \<const0> ;
+  assign m_axi_gmem1_WDATA[245] = \<const0> ;
+  assign m_axi_gmem1_WDATA[244] = \<const0> ;
+  assign m_axi_gmem1_WDATA[243] = \<const0> ;
+  assign m_axi_gmem1_WDATA[242] = \<const0> ;
+  assign m_axi_gmem1_WDATA[241] = \<const0> ;
+  assign m_axi_gmem1_WDATA[240] = \<const0> ;
+  assign m_axi_gmem1_WDATA[239] = \<const0> ;
+  assign m_axi_gmem1_WDATA[238] = \<const0> ;
+  assign m_axi_gmem1_WDATA[237] = \<const0> ;
+  assign m_axi_gmem1_WDATA[236] = \<const0> ;
+  assign m_axi_gmem1_WDATA[235] = \<const0> ;
+  assign m_axi_gmem1_WDATA[234] = \<const0> ;
+  assign m_axi_gmem1_WDATA[233] = \<const0> ;
+  assign m_axi_gmem1_WDATA[232] = \<const0> ;
+  assign m_axi_gmem1_WDATA[231] = \<const0> ;
+  assign m_axi_gmem1_WDATA[230] = \<const0> ;
+  assign m_axi_gmem1_WDATA[229] = \<const0> ;
+  assign m_axi_gmem1_WDATA[228] = \<const0> ;
+  assign m_axi_gmem1_WDATA[227] = \<const0> ;
+  assign m_axi_gmem1_WDATA[226] = \<const0> ;
+  assign m_axi_gmem1_WDATA[225] = \<const0> ;
+  assign m_axi_gmem1_WDATA[224] = \<const0> ;
+  assign m_axi_gmem1_WDATA[223] = \<const0> ;
+  assign m_axi_gmem1_WDATA[222] = \<const0> ;
+  assign m_axi_gmem1_WDATA[221] = \<const0> ;
+  assign m_axi_gmem1_WDATA[220] = \<const0> ;
+  assign m_axi_gmem1_WDATA[219] = \<const0> ;
+  assign m_axi_gmem1_WDATA[218] = \<const0> ;
+  assign m_axi_gmem1_WDATA[217] = \<const0> ;
+  assign m_axi_gmem1_WDATA[216] = \<const0> ;
+  assign m_axi_gmem1_WDATA[215] = \<const0> ;
+  assign m_axi_gmem1_WDATA[214] = \<const0> ;
+  assign m_axi_gmem1_WDATA[213] = \<const0> ;
+  assign m_axi_gmem1_WDATA[212] = \<const0> ;
+  assign m_axi_gmem1_WDATA[211] = \<const0> ;
+  assign m_axi_gmem1_WDATA[210] = \<const0> ;
+  assign m_axi_gmem1_WDATA[209] = \<const0> ;
+  assign m_axi_gmem1_WDATA[208] = \<const0> ;
+  assign m_axi_gmem1_WDATA[207] = \<const0> ;
+  assign m_axi_gmem1_WDATA[206] = \<const0> ;
+  assign m_axi_gmem1_WDATA[205] = \<const0> ;
+  assign m_axi_gmem1_WDATA[204] = \<const0> ;
+  assign m_axi_gmem1_WDATA[203] = \<const0> ;
+  assign m_axi_gmem1_WDATA[202] = \<const0> ;
+  assign m_axi_gmem1_WDATA[201] = \<const0> ;
+  assign m_axi_gmem1_WDATA[200] = \<const0> ;
+  assign m_axi_gmem1_WDATA[199] = \<const0> ;
+  assign m_axi_gmem1_WDATA[198] = \<const0> ;
+  assign m_axi_gmem1_WDATA[197] = \<const0> ;
+  assign m_axi_gmem1_WDATA[196] = \<const0> ;
+  assign m_axi_gmem1_WDATA[195] = \<const0> ;
+  assign m_axi_gmem1_WDATA[194] = \<const0> ;
+  assign m_axi_gmem1_WDATA[193] = \<const0> ;
+  assign m_axi_gmem1_WDATA[192] = \<const0> ;
+  assign m_axi_gmem1_WDATA[191] = \<const0> ;
+  assign m_axi_gmem1_WDATA[190] = \<const0> ;
+  assign m_axi_gmem1_WDATA[189] = \<const0> ;
+  assign m_axi_gmem1_WDATA[188] = \<const0> ;
+  assign m_axi_gmem1_WDATA[187] = \<const0> ;
+  assign m_axi_gmem1_WDATA[186] = \<const0> ;
+  assign m_axi_gmem1_WDATA[185] = \<const0> ;
+  assign m_axi_gmem1_WDATA[184] = \<const0> ;
+  assign m_axi_gmem1_WDATA[183] = \<const0> ;
+  assign m_axi_gmem1_WDATA[182] = \<const0> ;
+  assign m_axi_gmem1_WDATA[181] = \<const0> ;
+  assign m_axi_gmem1_WDATA[180] = \<const0> ;
+  assign m_axi_gmem1_WDATA[179] = \<const0> ;
+  assign m_axi_gmem1_WDATA[178] = \<const0> ;
+  assign m_axi_gmem1_WDATA[177] = \<const0> ;
+  assign m_axi_gmem1_WDATA[176] = \<const0> ;
+  assign m_axi_gmem1_WDATA[175] = \<const0> ;
+  assign m_axi_gmem1_WDATA[174] = \<const0> ;
+  assign m_axi_gmem1_WDATA[173] = \<const0> ;
+  assign m_axi_gmem1_WDATA[172] = \<const0> ;
+  assign m_axi_gmem1_WDATA[171] = \<const0> ;
+  assign m_axi_gmem1_WDATA[170] = \<const0> ;
+  assign m_axi_gmem1_WDATA[169] = \<const0> ;
+  assign m_axi_gmem1_WDATA[168] = \<const0> ;
+  assign m_axi_gmem1_WDATA[167] = \<const0> ;
+  assign m_axi_gmem1_WDATA[166] = \<const0> ;
+  assign m_axi_gmem1_WDATA[165] = \<const0> ;
+  assign m_axi_gmem1_WDATA[164] = \<const0> ;
+  assign m_axi_gmem1_WDATA[163] = \<const0> ;
+  assign m_axi_gmem1_WDATA[162] = \<const0> ;
+  assign m_axi_gmem1_WDATA[161] = \<const0> ;
+  assign m_axi_gmem1_WDATA[160] = \<const0> ;
+  assign m_axi_gmem1_WDATA[159] = \<const0> ;
+  assign m_axi_gmem1_WDATA[158] = \<const0> ;
+  assign m_axi_gmem1_WDATA[157] = \<const0> ;
+  assign m_axi_gmem1_WDATA[156] = \<const0> ;
+  assign m_axi_gmem1_WDATA[155] = \<const0> ;
+  assign m_axi_gmem1_WDATA[154] = \<const0> ;
+  assign m_axi_gmem1_WDATA[153] = \<const0> ;
+  assign m_axi_gmem1_WDATA[152] = \<const0> ;
+  assign m_axi_gmem1_WDATA[151] = \<const0> ;
+  assign m_axi_gmem1_WDATA[150] = \<const0> ;
+  assign m_axi_gmem1_WDATA[149] = \<const0> ;
+  assign m_axi_gmem1_WDATA[148] = \<const0> ;
+  assign m_axi_gmem1_WDATA[147] = \<const0> ;
+  assign m_axi_gmem1_WDATA[146] = \<const0> ;
+  assign m_axi_gmem1_WDATA[145] = \<const0> ;
+  assign m_axi_gmem1_WDATA[144] = \<const0> ;
+  assign m_axi_gmem1_WDATA[143] = \<const0> ;
+  assign m_axi_gmem1_WDATA[142] = \<const0> ;
+  assign m_axi_gmem1_WDATA[141] = \<const0> ;
+  assign m_axi_gmem1_WDATA[140] = \<const0> ;
+  assign m_axi_gmem1_WDATA[139] = \<const0> ;
+  assign m_axi_gmem1_WDATA[138] = \<const0> ;
+  assign m_axi_gmem1_WDATA[137] = \<const0> ;
+  assign m_axi_gmem1_WDATA[136] = \<const0> ;
+  assign m_axi_gmem1_WDATA[135] = \<const0> ;
+  assign m_axi_gmem1_WDATA[134] = \<const0> ;
+  assign m_axi_gmem1_WDATA[133] = \<const0> ;
+  assign m_axi_gmem1_WDATA[132] = \<const0> ;
+  assign m_axi_gmem1_WDATA[131] = \<const0> ;
+  assign m_axi_gmem1_WDATA[130] = \<const0> ;
+  assign m_axi_gmem1_WDATA[129] = \<const0> ;
+  assign m_axi_gmem1_WDATA[128] = \<const0> ;
+  assign m_axi_gmem1_WDATA[127] = \<const0> ;
+  assign m_axi_gmem1_WDATA[126] = \<const0> ;
+  assign m_axi_gmem1_WDATA[125] = \<const0> ;
+  assign m_axi_gmem1_WDATA[124] = \<const0> ;
+  assign m_axi_gmem1_WDATA[123] = \<const0> ;
+  assign m_axi_gmem1_WDATA[122] = \<const0> ;
+  assign m_axi_gmem1_WDATA[121] = \<const0> ;
+  assign m_axi_gmem1_WDATA[120] = \<const0> ;
+  assign m_axi_gmem1_WDATA[119] = \<const0> ;
+  assign m_axi_gmem1_WDATA[118] = \<const0> ;
+  assign m_axi_gmem1_WDATA[117] = \<const0> ;
+  assign m_axi_gmem1_WDATA[116] = \<const0> ;
+  assign m_axi_gmem1_WDATA[115] = \<const0> ;
+  assign m_axi_gmem1_WDATA[114] = \<const0> ;
+  assign m_axi_gmem1_WDATA[113] = \<const0> ;
+  assign m_axi_gmem1_WDATA[112] = \<const0> ;
+  assign m_axi_gmem1_WDATA[111] = \<const0> ;
+  assign m_axi_gmem1_WDATA[110] = \<const0> ;
+  assign m_axi_gmem1_WDATA[109] = \<const0> ;
+  assign m_axi_gmem1_WDATA[108] = \<const0> ;
+  assign m_axi_gmem1_WDATA[107] = \<const0> ;
+  assign m_axi_gmem1_WDATA[106] = \<const0> ;
+  assign m_axi_gmem1_WDATA[105] = \<const0> ;
+  assign m_axi_gmem1_WDATA[104] = \<const0> ;
+  assign m_axi_gmem1_WDATA[103] = \<const0> ;
+  assign m_axi_gmem1_WDATA[102] = \<const0> ;
+  assign m_axi_gmem1_WDATA[101] = \<const0> ;
+  assign m_axi_gmem1_WDATA[100] = \<const0> ;
+  assign m_axi_gmem1_WDATA[99] = \<const0> ;
+  assign m_axi_gmem1_WDATA[98] = \<const0> ;
+  assign m_axi_gmem1_WDATA[97] = \<const0> ;
+  assign m_axi_gmem1_WDATA[96] = \<const0> ;
+  assign m_axi_gmem1_WDATA[95] = \<const0> ;
+  assign m_axi_gmem1_WDATA[94] = \<const0> ;
+  assign m_axi_gmem1_WDATA[93] = \<const0> ;
+  assign m_axi_gmem1_WDATA[92] = \<const0> ;
+  assign m_axi_gmem1_WDATA[91] = \<const0> ;
+  assign m_axi_gmem1_WDATA[90] = \<const0> ;
+  assign m_axi_gmem1_WDATA[89] = \<const0> ;
+  assign m_axi_gmem1_WDATA[88] = \<const0> ;
+  assign m_axi_gmem1_WDATA[87] = \<const0> ;
+  assign m_axi_gmem1_WDATA[86] = \<const0> ;
+  assign m_axi_gmem1_WDATA[85] = \<const0> ;
+  assign m_axi_gmem1_WDATA[84] = \<const0> ;
+  assign m_axi_gmem1_WDATA[83] = \<const0> ;
+  assign m_axi_gmem1_WDATA[82] = \<const0> ;
+  assign m_axi_gmem1_WDATA[81] = \<const0> ;
+  assign m_axi_gmem1_WDATA[80] = \<const0> ;
+  assign m_axi_gmem1_WDATA[79] = \<const0> ;
+  assign m_axi_gmem1_WDATA[78] = \<const0> ;
+  assign m_axi_gmem1_WDATA[77] = \<const0> ;
+  assign m_axi_gmem1_WDATA[76] = \<const0> ;
+  assign m_axi_gmem1_WDATA[75] = \<const0> ;
+  assign m_axi_gmem1_WDATA[74] = \<const0> ;
+  assign m_axi_gmem1_WDATA[73] = \<const0> ;
+  assign m_axi_gmem1_WDATA[72] = \<const0> ;
+  assign m_axi_gmem1_WDATA[71] = \<const0> ;
+  assign m_axi_gmem1_WDATA[70] = \<const0> ;
+  assign m_axi_gmem1_WDATA[69] = \<const0> ;
+  assign m_axi_gmem1_WDATA[68] = \<const0> ;
+  assign m_axi_gmem1_WDATA[67] = \<const0> ;
+  assign m_axi_gmem1_WDATA[66] = \<const0> ;
+  assign m_axi_gmem1_WDATA[65] = \<const0> ;
+  assign m_axi_gmem1_WDATA[64] = \<const0> ;
+  assign m_axi_gmem1_WDATA[63] = \<const0> ;
+  assign m_axi_gmem1_WDATA[62] = \<const0> ;
+  assign m_axi_gmem1_WDATA[61] = \<const0> ;
+  assign m_axi_gmem1_WDATA[60] = \<const0> ;
+  assign m_axi_gmem1_WDATA[59] = \<const0> ;
+  assign m_axi_gmem1_WDATA[58] = \<const0> ;
+  assign m_axi_gmem1_WDATA[57] = \<const0> ;
+  assign m_axi_gmem1_WDATA[56] = \<const0> ;
+  assign m_axi_gmem1_WDATA[55] = \<const0> ;
+  assign m_axi_gmem1_WDATA[54] = \<const0> ;
+  assign m_axi_gmem1_WDATA[53] = \<const0> ;
+  assign m_axi_gmem1_WDATA[52] = \<const0> ;
+  assign m_axi_gmem1_WDATA[51] = \<const0> ;
+  assign m_axi_gmem1_WDATA[50] = \<const0> ;
+  assign m_axi_gmem1_WDATA[49] = \<const0> ;
+  assign m_axi_gmem1_WDATA[48] = \<const0> ;
+  assign m_axi_gmem1_WDATA[47] = \<const0> ;
+  assign m_axi_gmem1_WDATA[46] = \<const0> ;
+  assign m_axi_gmem1_WDATA[45] = \<const0> ;
+  assign m_axi_gmem1_WDATA[44] = \<const0> ;
+  assign m_axi_gmem1_WDATA[43] = \<const0> ;
+  assign m_axi_gmem1_WDATA[42] = \<const0> ;
+  assign m_axi_gmem1_WDATA[41] = \<const0> ;
+  assign m_axi_gmem1_WDATA[40] = \<const0> ;
+  assign m_axi_gmem1_WDATA[39] = \<const0> ;
+  assign m_axi_gmem1_WDATA[38] = \<const0> ;
+  assign m_axi_gmem1_WDATA[37] = \<const0> ;
+  assign m_axi_gmem1_WDATA[36] = \<const0> ;
+  assign m_axi_gmem1_WDATA[35] = \<const0> ;
+  assign m_axi_gmem1_WDATA[34] = \<const0> ;
+  assign m_axi_gmem1_WDATA[33] = \<const0> ;
+  assign m_axi_gmem1_WDATA[32] = \<const0> ;
+  assign m_axi_gmem1_WDATA[31] = \<const0> ;
+  assign m_axi_gmem1_WDATA[30] = \<const0> ;
+  assign m_axi_gmem1_WDATA[29] = \<const0> ;
+  assign m_axi_gmem1_WDATA[28] = \<const0> ;
+  assign m_axi_gmem1_WDATA[27] = \<const0> ;
+  assign m_axi_gmem1_WDATA[26] = \<const0> ;
+  assign m_axi_gmem1_WDATA[25] = \<const0> ;
+  assign m_axi_gmem1_WDATA[24] = \<const0> ;
+  assign m_axi_gmem1_WDATA[23] = \<const0> ;
+  assign m_axi_gmem1_WDATA[22] = \<const0> ;
+  assign m_axi_gmem1_WDATA[21] = \<const0> ;
+  assign m_axi_gmem1_WDATA[20] = \<const0> ;
+  assign m_axi_gmem1_WDATA[19] = \<const0> ;
+  assign m_axi_gmem1_WDATA[18] = \<const0> ;
+  assign m_axi_gmem1_WDATA[17] = \<const0> ;
+  assign m_axi_gmem1_WDATA[16] = \<const0> ;
+  assign m_axi_gmem1_WDATA[15] = \<const0> ;
+  assign m_axi_gmem1_WDATA[14] = \<const0> ;
+  assign m_axi_gmem1_WDATA[13] = \<const0> ;
+  assign m_axi_gmem1_WDATA[12] = \<const0> ;
+  assign m_axi_gmem1_WDATA[11] = \<const0> ;
+  assign m_axi_gmem1_WDATA[10] = \<const0> ;
+  assign m_axi_gmem1_WDATA[9] = \<const0> ;
+  assign m_axi_gmem1_WDATA[8] = \<const0> ;
+  assign m_axi_gmem1_WDATA[7] = \<const0> ;
+  assign m_axi_gmem1_WDATA[6] = \<const0> ;
+  assign m_axi_gmem1_WDATA[5] = \<const0> ;
+  assign m_axi_gmem1_WDATA[4] = \<const0> ;
+  assign m_axi_gmem1_WDATA[3] = \<const0> ;
+  assign m_axi_gmem1_WDATA[2] = \<const0> ;
+  assign m_axi_gmem1_WDATA[1] = \<const0> ;
+  assign m_axi_gmem1_WDATA[0] = \<const0> ;
+  assign m_axi_gmem1_WID[0] = \<const0> ;
+  assign m_axi_gmem1_WLAST = \<const0> ;
+  assign m_axi_gmem1_WSTRB[31] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[30] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[29] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[28] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[27] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[26] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[25] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[24] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[23] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[22] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[21] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[20] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[19] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[18] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[17] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[16] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[15] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[14] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[13] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[12] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[11] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[10] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[9] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[8] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[7] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[6] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[5] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[4] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[3] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[2] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[1] = \<const0> ;
+  assign m_axi_gmem1_WSTRB[0] = \<const0> ;
+  assign m_axi_gmem1_WVALID = \<const0> ;
+  assign m_axi_gmem2_ARADDR[63:5] = \^m_axi_gmem2_ARADDR [63:5];
+  assign m_axi_gmem2_ARADDR[4] = \<const0> ;
+  assign m_axi_gmem2_ARADDR[3] = \<const0> ;
+  assign m_axi_gmem2_ARADDR[2] = \<const0> ;
+  assign m_axi_gmem2_ARADDR[1] = \<const0> ;
+  assign m_axi_gmem2_ARADDR[0] = \<const0> ;
+  assign m_axi_gmem2_ARBURST[1] = \<const0> ;
+  assign m_axi_gmem2_ARBURST[0] = \<const1> ;
+  assign m_axi_gmem2_ARCACHE[3] = \<const0> ;
+  assign m_axi_gmem2_ARCACHE[2] = \<const0> ;
+  assign m_axi_gmem2_ARCACHE[1] = \<const1> ;
+  assign m_axi_gmem2_ARCACHE[0] = \<const1> ;
+  assign m_axi_gmem2_ARID[0] = \<const0> ;
+  assign m_axi_gmem2_ARLEN[7] = \<const0> ;
+  assign m_axi_gmem2_ARLEN[6] = \<const0> ;
+  assign m_axi_gmem2_ARLEN[5] = \<const0> ;
+  assign m_axi_gmem2_ARLEN[4] = \<const0> ;
+  assign m_axi_gmem2_ARLEN[3:0] = \^m_axi_gmem2_ARLEN [3:0];
+  assign m_axi_gmem2_ARLOCK[1] = \<const0> ;
+  assign m_axi_gmem2_ARLOCK[0] = \<const0> ;
+  assign m_axi_gmem2_ARPROT[2] = \<const0> ;
+  assign m_axi_gmem2_ARPROT[1] = \<const0> ;
+  assign m_axi_gmem2_ARPROT[0] = \<const0> ;
+  assign m_axi_gmem2_ARQOS[3] = \<const0> ;
+  assign m_axi_gmem2_ARQOS[2] = \<const0> ;
+  assign m_axi_gmem2_ARQOS[1] = \<const0> ;
+  assign m_axi_gmem2_ARQOS[0] = \<const0> ;
+  assign m_axi_gmem2_ARREGION[3] = \<const0> ;
+  assign m_axi_gmem2_ARREGION[2] = \<const0> ;
+  assign m_axi_gmem2_ARREGION[1] = \<const0> ;
+  assign m_axi_gmem2_ARREGION[0] = \<const0> ;
+  assign m_axi_gmem2_ARSIZE[2] = \<const1> ;
+  assign m_axi_gmem2_ARSIZE[1] = \<const0> ;
+  assign m_axi_gmem2_ARSIZE[0] = \<const1> ;
+  assign m_axi_gmem2_AWADDR[63] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[62] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[61] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[60] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[59] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[58] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[57] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[56] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[55] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[54] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[53] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[52] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[51] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[50] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[49] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[48] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[47] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[46] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[45] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[44] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[43] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[42] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[41] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[40] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[39] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[38] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[37] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[36] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[35] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[34] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[33] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[32] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[31] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[30] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[29] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[28] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[27] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[26] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[25] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[24] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[23] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[22] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[21] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[20] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[19] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[18] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[17] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[16] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[15] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[14] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[13] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[12] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[11] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[10] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[9] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[8] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[7] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[6] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[5] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[4] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[3] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[2] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[1] = \<const0> ;
+  assign m_axi_gmem2_AWADDR[0] = \<const0> ;
+  assign m_axi_gmem2_AWBURST[1] = \<const0> ;
+  assign m_axi_gmem2_AWBURST[0] = \<const1> ;
+  assign m_axi_gmem2_AWCACHE[3] = \<const0> ;
+  assign m_axi_gmem2_AWCACHE[2] = \<const0> ;
+  assign m_axi_gmem2_AWCACHE[1] = \<const1> ;
+  assign m_axi_gmem2_AWCACHE[0] = \<const1> ;
+  assign m_axi_gmem2_AWID[0] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[7] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[6] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[5] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[4] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[3] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[2] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[1] = \<const0> ;
+  assign m_axi_gmem2_AWLEN[0] = \<const0> ;
+  assign m_axi_gmem2_AWLOCK[1] = \<const0> ;
+  assign m_axi_gmem2_AWLOCK[0] = \<const0> ;
+  assign m_axi_gmem2_AWPROT[2] = \<const0> ;
+  assign m_axi_gmem2_AWPROT[1] = \<const0> ;
+  assign m_axi_gmem2_AWPROT[0] = \<const0> ;
+  assign m_axi_gmem2_AWQOS[3] = \<const0> ;
+  assign m_axi_gmem2_AWQOS[2] = \<const0> ;
+  assign m_axi_gmem2_AWQOS[1] = \<const0> ;
+  assign m_axi_gmem2_AWQOS[0] = \<const0> ;
+  assign m_axi_gmem2_AWREGION[3] = \<const0> ;
+  assign m_axi_gmem2_AWREGION[2] = \<const0> ;
+  assign m_axi_gmem2_AWREGION[1] = \<const0> ;
+  assign m_axi_gmem2_AWREGION[0] = \<const0> ;
+  assign m_axi_gmem2_AWSIZE[2] = \<const1> ;
+  assign m_axi_gmem2_AWSIZE[1] = \<const0> ;
+  assign m_axi_gmem2_AWSIZE[0] = \<const1> ;
+  assign m_axi_gmem2_AWVALID = \<const0> ;
+  assign m_axi_gmem2_WDATA[255] = \<const0> ;
+  assign m_axi_gmem2_WDATA[254] = \<const0> ;
+  assign m_axi_gmem2_WDATA[253] = \<const0> ;
+  assign m_axi_gmem2_WDATA[252] = \<const0> ;
+  assign m_axi_gmem2_WDATA[251] = \<const0> ;
+  assign m_axi_gmem2_WDATA[250] = \<const0> ;
+  assign m_axi_gmem2_WDATA[249] = \<const0> ;
+  assign m_axi_gmem2_WDATA[248] = \<const0> ;
+  assign m_axi_gmem2_WDATA[247] = \<const0> ;
+  assign m_axi_gmem2_WDATA[246] = \<const0> ;
+  assign m_axi_gmem2_WDATA[245] = \<const0> ;
+  assign m_axi_gmem2_WDATA[244] = \<const0> ;
+  assign m_axi_gmem2_WDATA[243] = \<const0> ;
+  assign m_axi_gmem2_WDATA[242] = \<const0> ;
+  assign m_axi_gmem2_WDATA[241] = \<const0> ;
+  assign m_axi_gmem2_WDATA[240] = \<const0> ;
+  assign m_axi_gmem2_WDATA[239] = \<const0> ;
+  assign m_axi_gmem2_WDATA[238] = \<const0> ;
+  assign m_axi_gmem2_WDATA[237] = \<const0> ;
+  assign m_axi_gmem2_WDATA[236] = \<const0> ;
+  assign m_axi_gmem2_WDATA[235] = \<const0> ;
+  assign m_axi_gmem2_WDATA[234] = \<const0> ;
+  assign m_axi_gmem2_WDATA[233] = \<const0> ;
+  assign m_axi_gmem2_WDATA[232] = \<const0> ;
+  assign m_axi_gmem2_WDATA[231] = \<const0> ;
+  assign m_axi_gmem2_WDATA[230] = \<const0> ;
+  assign m_axi_gmem2_WDATA[229] = \<const0> ;
+  assign m_axi_gmem2_WDATA[228] = \<const0> ;
+  assign m_axi_gmem2_WDATA[227] = \<const0> ;
+  assign m_axi_gmem2_WDATA[226] = \<const0> ;
+  assign m_axi_gmem2_WDATA[225] = \<const0> ;
+  assign m_axi_gmem2_WDATA[224] = \<const0> ;
+  assign m_axi_gmem2_WDATA[223] = \<const0> ;
+  assign m_axi_gmem2_WDATA[222] = \<const0> ;
+  assign m_axi_gmem2_WDATA[221] = \<const0> ;
+  assign m_axi_gmem2_WDATA[220] = \<const0> ;
+  assign m_axi_gmem2_WDATA[219] = \<const0> ;
+  assign m_axi_gmem2_WDATA[218] = \<const0> ;
+  assign m_axi_gmem2_WDATA[217] = \<const0> ;
+  assign m_axi_gmem2_WDATA[216] = \<const0> ;
+  assign m_axi_gmem2_WDATA[215] = \<const0> ;
+  assign m_axi_gmem2_WDATA[214] = \<const0> ;
+  assign m_axi_gmem2_WDATA[213] = \<const0> ;
+  assign m_axi_gmem2_WDATA[212] = \<const0> ;
+  assign m_axi_gmem2_WDATA[211] = \<const0> ;
+  assign m_axi_gmem2_WDATA[210] = \<const0> ;
+  assign m_axi_gmem2_WDATA[209] = \<const0> ;
+  assign m_axi_gmem2_WDATA[208] = \<const0> ;
+  assign m_axi_gmem2_WDATA[207] = \<const0> ;
+  assign m_axi_gmem2_WDATA[206] = \<const0> ;
+  assign m_axi_gmem2_WDATA[205] = \<const0> ;
+  assign m_axi_gmem2_WDATA[204] = \<const0> ;
+  assign m_axi_gmem2_WDATA[203] = \<const0> ;
+  assign m_axi_gmem2_WDATA[202] = \<const0> ;
+  assign m_axi_gmem2_WDATA[201] = \<const0> ;
+  assign m_axi_gmem2_WDATA[200] = \<const0> ;
+  assign m_axi_gmem2_WDATA[199] = \<const0> ;
+  assign m_axi_gmem2_WDATA[198] = \<const0> ;
+  assign m_axi_gmem2_WDATA[197] = \<const0> ;
+  assign m_axi_gmem2_WDATA[196] = \<const0> ;
+  assign m_axi_gmem2_WDATA[195] = \<const0> ;
+  assign m_axi_gmem2_WDATA[194] = \<const0> ;
+  assign m_axi_gmem2_WDATA[193] = \<const0> ;
+  assign m_axi_gmem2_WDATA[192] = \<const0> ;
+  assign m_axi_gmem2_WDATA[191] = \<const0> ;
+  assign m_axi_gmem2_WDATA[190] = \<const0> ;
+  assign m_axi_gmem2_WDATA[189] = \<const0> ;
+  assign m_axi_gmem2_WDATA[188] = \<const0> ;
+  assign m_axi_gmem2_WDATA[187] = \<const0> ;
+  assign m_axi_gmem2_WDATA[186] = \<const0> ;
+  assign m_axi_gmem2_WDATA[185] = \<const0> ;
+  assign m_axi_gmem2_WDATA[184] = \<const0> ;
+  assign m_axi_gmem2_WDATA[183] = \<const0> ;
+  assign m_axi_gmem2_WDATA[182] = \<const0> ;
+  assign m_axi_gmem2_WDATA[181] = \<const0> ;
+  assign m_axi_gmem2_WDATA[180] = \<const0> ;
+  assign m_axi_gmem2_WDATA[179] = \<const0> ;
+  assign m_axi_gmem2_WDATA[178] = \<const0> ;
+  assign m_axi_gmem2_WDATA[177] = \<const0> ;
+  assign m_axi_gmem2_WDATA[176] = \<const0> ;
+  assign m_axi_gmem2_WDATA[175] = \<const0> ;
+  assign m_axi_gmem2_WDATA[174] = \<const0> ;
+  assign m_axi_gmem2_WDATA[173] = \<const0> ;
+  assign m_axi_gmem2_WDATA[172] = \<const0> ;
+  assign m_axi_gmem2_WDATA[171] = \<const0> ;
+  assign m_axi_gmem2_WDATA[170] = \<const0> ;
+  assign m_axi_gmem2_WDATA[169] = \<const0> ;
+  assign m_axi_gmem2_WDATA[168] = \<const0> ;
+  assign m_axi_gmem2_WDATA[167] = \<const0> ;
+  assign m_axi_gmem2_WDATA[166] = \<const0> ;
+  assign m_axi_gmem2_WDATA[165] = \<const0> ;
+  assign m_axi_gmem2_WDATA[164] = \<const0> ;
+  assign m_axi_gmem2_WDATA[163] = \<const0> ;
+  assign m_axi_gmem2_WDATA[162] = \<const0> ;
+  assign m_axi_gmem2_WDATA[161] = \<const0> ;
+  assign m_axi_gmem2_WDATA[160] = \<const0> ;
+  assign m_axi_gmem2_WDATA[159] = \<const0> ;
+  assign m_axi_gmem2_WDATA[158] = \<const0> ;
+  assign m_axi_gmem2_WDATA[157] = \<const0> ;
+  assign m_axi_gmem2_WDATA[156] = \<const0> ;
+  assign m_axi_gmem2_WDATA[155] = \<const0> ;
+  assign m_axi_gmem2_WDATA[154] = \<const0> ;
+  assign m_axi_gmem2_WDATA[153] = \<const0> ;
+  assign m_axi_gmem2_WDATA[152] = \<const0> ;
+  assign m_axi_gmem2_WDATA[151] = \<const0> ;
+  assign m_axi_gmem2_WDATA[150] = \<const0> ;
+  assign m_axi_gmem2_WDATA[149] = \<const0> ;
+  assign m_axi_gmem2_WDATA[148] = \<const0> ;
+  assign m_axi_gmem2_WDATA[147] = \<const0> ;
+  assign m_axi_gmem2_WDATA[146] = \<const0> ;
+  assign m_axi_gmem2_WDATA[145] = \<const0> ;
+  assign m_axi_gmem2_WDATA[144] = \<const0> ;
+  assign m_axi_gmem2_WDATA[143] = \<const0> ;
+  assign m_axi_gmem2_WDATA[142] = \<const0> ;
+  assign m_axi_gmem2_WDATA[141] = \<const0> ;
+  assign m_axi_gmem2_WDATA[140] = \<const0> ;
+  assign m_axi_gmem2_WDATA[139] = \<const0> ;
+  assign m_axi_gmem2_WDATA[138] = \<const0> ;
+  assign m_axi_gmem2_WDATA[137] = \<const0> ;
+  assign m_axi_gmem2_WDATA[136] = \<const0> ;
+  assign m_axi_gmem2_WDATA[135] = \<const0> ;
+  assign m_axi_gmem2_WDATA[134] = \<const0> ;
+  assign m_axi_gmem2_WDATA[133] = \<const0> ;
+  assign m_axi_gmem2_WDATA[132] = \<const0> ;
+  assign m_axi_gmem2_WDATA[131] = \<const0> ;
+  assign m_axi_gmem2_WDATA[130] = \<const0> ;
+  assign m_axi_gmem2_WDATA[129] = \<const0> ;
+  assign m_axi_gmem2_WDATA[128] = \<const0> ;
+  assign m_axi_gmem2_WDATA[127] = \<const0> ;
+  assign m_axi_gmem2_WDATA[126] = \<const0> ;
+  assign m_axi_gmem2_WDATA[125] = \<const0> ;
+  assign m_axi_gmem2_WDATA[124] = \<const0> ;
+  assign m_axi_gmem2_WDATA[123] = \<const0> ;
+  assign m_axi_gmem2_WDATA[122] = \<const0> ;
+  assign m_axi_gmem2_WDATA[121] = \<const0> ;
+  assign m_axi_gmem2_WDATA[120] = \<const0> ;
+  assign m_axi_gmem2_WDATA[119] = \<const0> ;
+  assign m_axi_gmem2_WDATA[118] = \<const0> ;
+  assign m_axi_gmem2_WDATA[117] = \<const0> ;
+  assign m_axi_gmem2_WDATA[116] = \<const0> ;
+  assign m_axi_gmem2_WDATA[115] = \<const0> ;
+  assign m_axi_gmem2_WDATA[114] = \<const0> ;
+  assign m_axi_gmem2_WDATA[113] = \<const0> ;
+  assign m_axi_gmem2_WDATA[112] = \<const0> ;
+  assign m_axi_gmem2_WDATA[111] = \<const0> ;
+  assign m_axi_gmem2_WDATA[110] = \<const0> ;
+  assign m_axi_gmem2_WDATA[109] = \<const0> ;
+  assign m_axi_gmem2_WDATA[108] = \<const0> ;
+  assign m_axi_gmem2_WDATA[107] = \<const0> ;
+  assign m_axi_gmem2_WDATA[106] = \<const0> ;
+  assign m_axi_gmem2_WDATA[105] = \<const0> ;
+  assign m_axi_gmem2_WDATA[104] = \<const0> ;
+  assign m_axi_gmem2_WDATA[103] = \<const0> ;
+  assign m_axi_gmem2_WDATA[102] = \<const0> ;
+  assign m_axi_gmem2_WDATA[101] = \<const0> ;
+  assign m_axi_gmem2_WDATA[100] = \<const0> ;
+  assign m_axi_gmem2_WDATA[99] = \<const0> ;
+  assign m_axi_gmem2_WDATA[98] = \<const0> ;
+  assign m_axi_gmem2_WDATA[97] = \<const0> ;
+  assign m_axi_gmem2_WDATA[96] = \<const0> ;
+  assign m_axi_gmem2_WDATA[95] = \<const0> ;
+  assign m_axi_gmem2_WDATA[94] = \<const0> ;
+  assign m_axi_gmem2_WDATA[93] = \<const0> ;
+  assign m_axi_gmem2_WDATA[92] = \<const0> ;
+  assign m_axi_gmem2_WDATA[91] = \<const0> ;
+  assign m_axi_gmem2_WDATA[90] = \<const0> ;
+  assign m_axi_gmem2_WDATA[89] = \<const0> ;
+  assign m_axi_gmem2_WDATA[88] = \<const0> ;
+  assign m_axi_gmem2_WDATA[87] = \<const0> ;
+  assign m_axi_gmem2_WDATA[86] = \<const0> ;
+  assign m_axi_gmem2_WDATA[85] = \<const0> ;
+  assign m_axi_gmem2_WDATA[84] = \<const0> ;
+  assign m_axi_gmem2_WDATA[83] = \<const0> ;
+  assign m_axi_gmem2_WDATA[82] = \<const0> ;
+  assign m_axi_gmem2_WDATA[81] = \<const0> ;
+  assign m_axi_gmem2_WDATA[80] = \<const0> ;
+  assign m_axi_gmem2_WDATA[79] = \<const0> ;
+  assign m_axi_gmem2_WDATA[78] = \<const0> ;
+  assign m_axi_gmem2_WDATA[77] = \<const0> ;
+  assign m_axi_gmem2_WDATA[76] = \<const0> ;
+  assign m_axi_gmem2_WDATA[75] = \<const0> ;
+  assign m_axi_gmem2_WDATA[74] = \<const0> ;
+  assign m_axi_gmem2_WDATA[73] = \<const0> ;
+  assign m_axi_gmem2_WDATA[72] = \<const0> ;
+  assign m_axi_gmem2_WDATA[71] = \<const0> ;
+  assign m_axi_gmem2_WDATA[70] = \<const0> ;
+  assign m_axi_gmem2_WDATA[69] = \<const0> ;
+  assign m_axi_gmem2_WDATA[68] = \<const0> ;
+  assign m_axi_gmem2_WDATA[67] = \<const0> ;
+  assign m_axi_gmem2_WDATA[66] = \<const0> ;
+  assign m_axi_gmem2_WDATA[65] = \<const0> ;
+  assign m_axi_gmem2_WDATA[64] = \<const0> ;
+  assign m_axi_gmem2_WDATA[63] = \<const0> ;
+  assign m_axi_gmem2_WDATA[62] = \<const0> ;
+  assign m_axi_gmem2_WDATA[61] = \<const0> ;
+  assign m_axi_gmem2_WDATA[60] = \<const0> ;
+  assign m_axi_gmem2_WDATA[59] = \<const0> ;
+  assign m_axi_gmem2_WDATA[58] = \<const0> ;
+  assign m_axi_gmem2_WDATA[57] = \<const0> ;
+  assign m_axi_gmem2_WDATA[56] = \<const0> ;
+  assign m_axi_gmem2_WDATA[55] = \<const0> ;
+  assign m_axi_gmem2_WDATA[54] = \<const0> ;
+  assign m_axi_gmem2_WDATA[53] = \<const0> ;
+  assign m_axi_gmem2_WDATA[52] = \<const0> ;
+  assign m_axi_gmem2_WDATA[51] = \<const0> ;
+  assign m_axi_gmem2_WDATA[50] = \<const0> ;
+  assign m_axi_gmem2_WDATA[49] = \<const0> ;
+  assign m_axi_gmem2_WDATA[48] = \<const0> ;
+  assign m_axi_gmem2_WDATA[47] = \<const0> ;
+  assign m_axi_gmem2_WDATA[46] = \<const0> ;
+  assign m_axi_gmem2_WDATA[45] = \<const0> ;
+  assign m_axi_gmem2_WDATA[44] = \<const0> ;
+  assign m_axi_gmem2_WDATA[43] = \<const0> ;
+  assign m_axi_gmem2_WDATA[42] = \<const0> ;
+  assign m_axi_gmem2_WDATA[41] = \<const0> ;
+  assign m_axi_gmem2_WDATA[40] = \<const0> ;
+  assign m_axi_gmem2_WDATA[39] = \<const0> ;
+  assign m_axi_gmem2_WDATA[38] = \<const0> ;
+  assign m_axi_gmem2_WDATA[37] = \<const0> ;
+  assign m_axi_gmem2_WDATA[36] = \<const0> ;
+  assign m_axi_gmem2_WDATA[35] = \<const0> ;
+  assign m_axi_gmem2_WDATA[34] = \<const0> ;
+  assign m_axi_gmem2_WDATA[33] = \<const0> ;
+  assign m_axi_gmem2_WDATA[32] = \<const0> ;
+  assign m_axi_gmem2_WDATA[31] = \<const0> ;
+  assign m_axi_gmem2_WDATA[30] = \<const0> ;
+  assign m_axi_gmem2_WDATA[29] = \<const0> ;
+  assign m_axi_gmem2_WDATA[28] = \<const0> ;
+  assign m_axi_gmem2_WDATA[27] = \<const0> ;
+  assign m_axi_gmem2_WDATA[26] = \<const0> ;
+  assign m_axi_gmem2_WDATA[25] = \<const0> ;
+  assign m_axi_gmem2_WDATA[24] = \<const0> ;
+  assign m_axi_gmem2_WDATA[23] = \<const0> ;
+  assign m_axi_gmem2_WDATA[22] = \<const0> ;
+  assign m_axi_gmem2_WDATA[21] = \<const0> ;
+  assign m_axi_gmem2_WDATA[20] = \<const0> ;
+  assign m_axi_gmem2_WDATA[19] = \<const0> ;
+  assign m_axi_gmem2_WDATA[18] = \<const0> ;
+  assign m_axi_gmem2_WDATA[17] = \<const0> ;
+  assign m_axi_gmem2_WDATA[16] = \<const0> ;
+  assign m_axi_gmem2_WDATA[15] = \<const0> ;
+  assign m_axi_gmem2_WDATA[14] = \<const0> ;
+  assign m_axi_gmem2_WDATA[13] = \<const0> ;
+  assign m_axi_gmem2_WDATA[12] = \<const0> ;
+  assign m_axi_gmem2_WDATA[11] = \<const0> ;
+  assign m_axi_gmem2_WDATA[10] = \<const0> ;
+  assign m_axi_gmem2_WDATA[9] = \<const0> ;
+  assign m_axi_gmem2_WDATA[8] = \<const0> ;
+  assign m_axi_gmem2_WDATA[7] = \<const0> ;
+  assign m_axi_gmem2_WDATA[6] = \<const0> ;
+  assign m_axi_gmem2_WDATA[5] = \<const0> ;
+  assign m_axi_gmem2_WDATA[4] = \<const0> ;
+  assign m_axi_gmem2_WDATA[3] = \<const0> ;
+  assign m_axi_gmem2_WDATA[2] = \<const0> ;
+  assign m_axi_gmem2_WDATA[1] = \<const0> ;
+  assign m_axi_gmem2_WDATA[0] = \<const0> ;
+  assign m_axi_gmem2_WID[0] = \<const0> ;
+  assign m_axi_gmem2_WLAST = \<const0> ;
+  assign m_axi_gmem2_WSTRB[31] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[30] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[29] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[28] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[27] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[26] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[25] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[24] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[23] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[22] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[21] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[20] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[19] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[18] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[17] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[16] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[15] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[14] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[13] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[12] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[11] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[10] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[9] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[8] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[7] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[6] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[5] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[4] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[3] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[2] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[1] = \<const0> ;
+  assign m_axi_gmem2_WSTRB[0] = \<const0> ;
+  assign m_axi_gmem2_WVALID = \<const0> ;
+  assign output_stream_TDATA[15:1] = \^output_stream_TDATA [15:1];
+  assign output_stream_TDATA[0] = \<const0> ;
+  assign output_stream_TKEEP[1] = \<const1> ;
+  assign output_stream_TKEEP[0] = \<const1> ;
+  assign output_stream_TSTRB[1] = \<const1> ;
+  assign output_stream_TSTRB[0] = \<const1> ;
+  assign s_axi_control_BRESP[1] = \<const0> ;
+  assign s_axi_control_BRESP[0] = \<const0> ;
+  assign s_axi_control_RRESP[1] = \<const0> ;
+  assign s_axi_control_RRESP[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
+  (* C_M_AXI_DATA_WIDTH = "32" *) 
+  (* C_M_AXI_GMEM0_ADDR_WIDTH = "64" *) 
+  (* C_M_AXI_GMEM0_ARUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM0_AWUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM0_BUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM0_CACHE_VALUE = "4'b0011" *) 
+  (* C_M_AXI_GMEM0_DATA_WIDTH = "1024" *) 
+  (* C_M_AXI_GMEM0_ID_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM0_PROT_VALUE = "3'b000" *) 
+  (* C_M_AXI_GMEM0_RUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM0_USER_VALUE = "0" *) 
+  (* C_M_AXI_GMEM0_WSTRB_WIDTH = "128" *) 
+  (* C_M_AXI_GMEM0_WUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_ADDR_WIDTH = "64" *) 
+  (* C_M_AXI_GMEM1_ARUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_AWUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_BUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_CACHE_VALUE = "4'b0011" *) 
+  (* C_M_AXI_GMEM1_DATA_WIDTH = "256" *) 
+  (* C_M_AXI_GMEM1_ID_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_PROT_VALUE = "3'b000" *) 
+  (* C_M_AXI_GMEM1_RUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM1_USER_VALUE = "0" *) 
+  (* C_M_AXI_GMEM1_WSTRB_WIDTH = "32" *) 
+  (* C_M_AXI_GMEM1_WUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_ADDR_WIDTH = "64" *) 
+  (* C_M_AXI_GMEM2_ARUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_AWUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_BUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_CACHE_VALUE = "4'b0011" *) 
+  (* C_M_AXI_GMEM2_DATA_WIDTH = "256" *) 
+  (* C_M_AXI_GMEM2_ID_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_PROT_VALUE = "3'b000" *) 
+  (* C_M_AXI_GMEM2_RUSER_WIDTH = "1" *) 
+  (* C_M_AXI_GMEM2_USER_VALUE = "0" *) 
+  (* C_M_AXI_GMEM2_WSTRB_WIDTH = "32" *) 
+  (* C_M_AXI_GMEM2_WUSER_WIDTH = "1" *) 
+  (* C_M_AXI_WSTRB_WIDTH = "4" *) 
+  (* C_S_AXI_CONTROL_ADDR_WIDTH = "6" *) 
+  (* C_S_AXI_CONTROL_DATA_WIDTH = "32" *) 
+  (* C_S_AXI_CONTROL_WSTRB_WIDTH = "4" *) 
+  (* C_S_AXI_DATA_WIDTH = "32" *) 
+  (* C_S_AXI_WSTRB_WIDTH = "4" *) 
+  (* SDX_KERNEL = "true" *) 
+  (* SDX_KERNEL_SYNTH_INST = "inst" *) 
+  (* SDX_KERNEL_TYPE = "hls" *) 
+  (* ap_ST_fsm_state1 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001" *) 
+  (* ap_ST_fsm_state10 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000" *) 
+  (* ap_ST_fsm_state100 = "147'b000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state101 = "147'b000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state102 = "147'b000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state103 = "147'b000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state104 = "147'b000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state105 = "147'b000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state106 = "147'b000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state107 = "147'b000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state108 = "147'b000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state109 = "147'b000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state11 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000" *) 
+  (* ap_ST_fsm_state110 = "147'b000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state111 = "147'b000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state112 = "147'b000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state113 = "147'b000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state114 = "147'b000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state115 = "147'b000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state116 = "147'b000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state117 = "147'b000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state118 = "147'b000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state119 = "147'b000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state12 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000" *) 
+  (* ap_ST_fsm_state120 = "147'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state121 = "147'b000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state122 = "147'b000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state123 = "147'b000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state124 = "147'b000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state125 = "147'b000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state126 = "147'b000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state127 = "147'b000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state128 = "147'b000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state129 = "147'b000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state13 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000" *) 
+  (* ap_ST_fsm_state130 = "147'b000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state131 = "147'b000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state132 = "147'b000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state133 = "147'b000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state134 = "147'b000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state135 = "147'b000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state136 = "147'b000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state137 = "147'b000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state138 = "147'b000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state139 = "147'b000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state14 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000" *) 
+  (* ap_ST_fsm_state140 = "147'b000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state141 = "147'b000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state142 = "147'b000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state143 = "147'b000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state144 = "147'b000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state145 = "147'b001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state146 = "147'b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state147 = "147'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state15 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000" *) 
+  (* ap_ST_fsm_state16 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000" *) 
+  (* ap_ST_fsm_state17 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000" *) 
+  (* ap_ST_fsm_state18 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000" *) 
+  (* ap_ST_fsm_state19 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000" *) 
+  (* ap_ST_fsm_state2 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010" *) 
+  (* ap_ST_fsm_state20 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000" *) 
+  (* ap_ST_fsm_state21 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000" *) 
+  (* ap_ST_fsm_state22 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000" *) 
+  (* ap_ST_fsm_state23 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000" *) 
+  (* ap_ST_fsm_state24 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000" *) 
+  (* ap_ST_fsm_state25 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000" *) 
+  (* ap_ST_fsm_state26 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000" *) 
+  (* ap_ST_fsm_state27 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000" *) 
+  (* ap_ST_fsm_state28 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000" *) 
+  (* ap_ST_fsm_state29 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000" *) 
+  (* ap_ST_fsm_state3 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100" *) 
+  (* ap_ST_fsm_state30 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000" *) 
+  (* ap_ST_fsm_state31 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state32 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state33 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state34 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state35 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state36 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state37 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state38 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state39 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state4 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000" *) 
+  (* ap_ST_fsm_state40 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state41 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state42 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state43 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state44 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state45 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state46 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state47 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state48 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state49 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state5 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000" *) 
+  (* ap_ST_fsm_state50 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state51 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state52 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state53 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state54 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state55 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state56 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state57 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state58 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state59 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state6 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000" *) 
+  (* ap_ST_fsm_state60 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state61 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state62 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state63 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state64 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state65 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state66 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state67 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state68 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state69 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state7 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000" *) 
+  (* ap_ST_fsm_state70 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state71 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state72 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state73 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state74 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state75 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state76 = "147'b000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state77 = "147'b000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state78 = "147'b000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state79 = "147'b000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state8 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000" *) 
+  (* ap_ST_fsm_state80 = "147'b000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state81 = "147'b000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state82 = "147'b000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state83 = "147'b000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state84 = "147'b000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state85 = "147'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state86 = "147'b000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state87 = "147'b000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state88 = "147'b000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state89 = "147'b000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state9 = "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000" *) 
+  (* ap_ST_fsm_state90 = "147'b000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state91 = "147'b000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state92 = "147'b000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state93 = "147'b000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state94 = "147'b000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state95 = "147'b000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state96 = "147'b000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state97 = "147'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state98 = "147'b000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state99 = "147'b000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
+  bnn_top_bnn_top_0_0_bnn_top inst
+       (.ap_clk(ap_clk),
+        .ap_rst_n(ap_rst_n),
+        .input_stream_TDATA(input_stream_TDATA),
+        .input_stream_TKEEP({1'b0,1'b0,1'b0,1'b0}),
+        .input_stream_TLAST(1'b0),
+        .input_stream_TREADY(input_stream_TREADY),
+        .input_stream_TSTRB({1'b0,1'b0,1'b0,1'b0}),
+        .input_stream_TVALID(input_stream_TVALID),
+        .interrupt(interrupt),
+        .m_axi_gmem0_ARADDR({\^m_axi_gmem0_ARADDR ,NLW_inst_m_axi_gmem0_ARADDR_UNCONNECTED[6:0]}),
+        .m_axi_gmem0_ARBURST(NLW_inst_m_axi_gmem0_ARBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem0_ARCACHE(NLW_inst_m_axi_gmem0_ARCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem0_ARID(NLW_inst_m_axi_gmem0_ARID_UNCONNECTED[0]),
+        .m_axi_gmem0_ARLEN({NLW_inst_m_axi_gmem0_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem0_ARLEN }),
+        .m_axi_gmem0_ARLOCK(NLW_inst_m_axi_gmem0_ARLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem0_ARPROT(NLW_inst_m_axi_gmem0_ARPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem0_ARQOS(NLW_inst_m_axi_gmem0_ARQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem0_ARREADY(m_axi_gmem0_ARREADY),
+        .m_axi_gmem0_ARREGION(NLW_inst_m_axi_gmem0_ARREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem0_ARSIZE(NLW_inst_m_axi_gmem0_ARSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem0_ARUSER(NLW_inst_m_axi_gmem0_ARUSER_UNCONNECTED[0]),
+        .m_axi_gmem0_ARVALID(m_axi_gmem0_ARVALID),
+        .m_axi_gmem0_AWADDR(NLW_inst_m_axi_gmem0_AWADDR_UNCONNECTED[63:0]),
+        .m_axi_gmem0_AWBURST(NLW_inst_m_axi_gmem0_AWBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem0_AWCACHE(NLW_inst_m_axi_gmem0_AWCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem0_AWID(NLW_inst_m_axi_gmem0_AWID_UNCONNECTED[0]),
+        .m_axi_gmem0_AWLEN(NLW_inst_m_axi_gmem0_AWLEN_UNCONNECTED[7:0]),
+        .m_axi_gmem0_AWLOCK(NLW_inst_m_axi_gmem0_AWLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem0_AWPROT(NLW_inst_m_axi_gmem0_AWPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem0_AWQOS(NLW_inst_m_axi_gmem0_AWQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem0_AWREADY(1'b0),
+        .m_axi_gmem0_AWREGION(NLW_inst_m_axi_gmem0_AWREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem0_AWSIZE(NLW_inst_m_axi_gmem0_AWSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem0_AWUSER(NLW_inst_m_axi_gmem0_AWUSER_UNCONNECTED[0]),
+        .m_axi_gmem0_AWVALID(NLW_inst_m_axi_gmem0_AWVALID_UNCONNECTED),
+        .m_axi_gmem0_BID(1'b0),
+        .m_axi_gmem0_BREADY(m_axi_gmem0_BREADY),
+        .m_axi_gmem0_BRESP({1'b0,1'b0}),
+        .m_axi_gmem0_BUSER(1'b0),
+        .m_axi_gmem0_BVALID(m_axi_gmem0_BVALID),
+        .m_axi_gmem0_RDATA({m_axi_gmem0_RDATA[1023:1008],1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,m_axi_gmem0_RDATA[791:0]}),
+        .m_axi_gmem0_RID(1'b0),
+        .m_axi_gmem0_RLAST(m_axi_gmem0_RLAST),
+        .m_axi_gmem0_RREADY(m_axi_gmem0_RREADY),
+        .m_axi_gmem0_RRESP({1'b0,1'b0}),
+        .m_axi_gmem0_RUSER(1'b0),
+        .m_axi_gmem0_RVALID(m_axi_gmem0_RVALID),
+        .m_axi_gmem0_WDATA(NLW_inst_m_axi_gmem0_WDATA_UNCONNECTED[1023:0]),
+        .m_axi_gmem0_WID(NLW_inst_m_axi_gmem0_WID_UNCONNECTED[0]),
+        .m_axi_gmem0_WLAST(NLW_inst_m_axi_gmem0_WLAST_UNCONNECTED),
+        .m_axi_gmem0_WREADY(1'b0),
+        .m_axi_gmem0_WSTRB(NLW_inst_m_axi_gmem0_WSTRB_UNCONNECTED[127:0]),
+        .m_axi_gmem0_WUSER(NLW_inst_m_axi_gmem0_WUSER_UNCONNECTED[0]),
+        .m_axi_gmem0_WVALID(NLW_inst_m_axi_gmem0_WVALID_UNCONNECTED),
+        .m_axi_gmem1_ARADDR({\^m_axi_gmem1_ARADDR ,NLW_inst_m_axi_gmem1_ARADDR_UNCONNECTED[4:0]}),
+        .m_axi_gmem1_ARBURST(NLW_inst_m_axi_gmem1_ARBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem1_ARCACHE(NLW_inst_m_axi_gmem1_ARCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem1_ARID(NLW_inst_m_axi_gmem1_ARID_UNCONNECTED[0]),
+        .m_axi_gmem1_ARLEN({NLW_inst_m_axi_gmem1_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem1_ARLEN }),
+        .m_axi_gmem1_ARLOCK(NLW_inst_m_axi_gmem1_ARLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem1_ARPROT(NLW_inst_m_axi_gmem1_ARPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem1_ARQOS(NLW_inst_m_axi_gmem1_ARQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem1_ARREADY(m_axi_gmem1_ARREADY),
+        .m_axi_gmem1_ARREGION(NLW_inst_m_axi_gmem1_ARREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem1_ARSIZE(NLW_inst_m_axi_gmem1_ARSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem1_ARUSER(NLW_inst_m_axi_gmem1_ARUSER_UNCONNECTED[0]),
+        .m_axi_gmem1_ARVALID(m_axi_gmem1_ARVALID),
+        .m_axi_gmem1_AWADDR(NLW_inst_m_axi_gmem1_AWADDR_UNCONNECTED[63:0]),
+        .m_axi_gmem1_AWBURST(NLW_inst_m_axi_gmem1_AWBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem1_AWCACHE(NLW_inst_m_axi_gmem1_AWCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem1_AWID(NLW_inst_m_axi_gmem1_AWID_UNCONNECTED[0]),
+        .m_axi_gmem1_AWLEN(NLW_inst_m_axi_gmem1_AWLEN_UNCONNECTED[7:0]),
+        .m_axi_gmem1_AWLOCK(NLW_inst_m_axi_gmem1_AWLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem1_AWPROT(NLW_inst_m_axi_gmem1_AWPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem1_AWQOS(NLW_inst_m_axi_gmem1_AWQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem1_AWREADY(1'b0),
+        .m_axi_gmem1_AWREGION(NLW_inst_m_axi_gmem1_AWREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem1_AWSIZE(NLW_inst_m_axi_gmem1_AWSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem1_AWUSER(NLW_inst_m_axi_gmem1_AWUSER_UNCONNECTED[0]),
+        .m_axi_gmem1_AWVALID(NLW_inst_m_axi_gmem1_AWVALID_UNCONNECTED),
+        .m_axi_gmem1_BID(1'b0),
+        .m_axi_gmem1_BREADY(m_axi_gmem1_BREADY),
+        .m_axi_gmem1_BRESP({1'b0,1'b0}),
+        .m_axi_gmem1_BUSER(1'b0),
+        .m_axi_gmem1_BVALID(m_axi_gmem1_BVALID),
+        .m_axi_gmem1_RDATA(m_axi_gmem1_RDATA),
+        .m_axi_gmem1_RID(1'b0),
+        .m_axi_gmem1_RLAST(m_axi_gmem1_RLAST),
+        .m_axi_gmem1_RREADY(m_axi_gmem1_RREADY),
+        .m_axi_gmem1_RRESP({1'b0,1'b0}),
+        .m_axi_gmem1_RUSER(1'b0),
+        .m_axi_gmem1_RVALID(m_axi_gmem1_RVALID),
+        .m_axi_gmem1_WDATA(NLW_inst_m_axi_gmem1_WDATA_UNCONNECTED[255:0]),
+        .m_axi_gmem1_WID(NLW_inst_m_axi_gmem1_WID_UNCONNECTED[0]),
+        .m_axi_gmem1_WLAST(NLW_inst_m_axi_gmem1_WLAST_UNCONNECTED),
+        .m_axi_gmem1_WREADY(1'b0),
+        .m_axi_gmem1_WSTRB(NLW_inst_m_axi_gmem1_WSTRB_UNCONNECTED[31:0]),
+        .m_axi_gmem1_WUSER(NLW_inst_m_axi_gmem1_WUSER_UNCONNECTED[0]),
+        .m_axi_gmem1_WVALID(NLW_inst_m_axi_gmem1_WVALID_UNCONNECTED),
+        .m_axi_gmem2_ARADDR({\^m_axi_gmem2_ARADDR ,NLW_inst_m_axi_gmem2_ARADDR_UNCONNECTED[4:0]}),
+        .m_axi_gmem2_ARBURST(NLW_inst_m_axi_gmem2_ARBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem2_ARCACHE(NLW_inst_m_axi_gmem2_ARCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem2_ARID(NLW_inst_m_axi_gmem2_ARID_UNCONNECTED[0]),
+        .m_axi_gmem2_ARLEN({NLW_inst_m_axi_gmem2_ARLEN_UNCONNECTED[7:4],\^m_axi_gmem2_ARLEN }),
+        .m_axi_gmem2_ARLOCK(NLW_inst_m_axi_gmem2_ARLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem2_ARPROT(NLW_inst_m_axi_gmem2_ARPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem2_ARQOS(NLW_inst_m_axi_gmem2_ARQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem2_ARREADY(m_axi_gmem2_ARREADY),
+        .m_axi_gmem2_ARREGION(NLW_inst_m_axi_gmem2_ARREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem2_ARSIZE(NLW_inst_m_axi_gmem2_ARSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem2_ARUSER(NLW_inst_m_axi_gmem2_ARUSER_UNCONNECTED[0]),
+        .m_axi_gmem2_ARVALID(m_axi_gmem2_ARVALID),
+        .m_axi_gmem2_AWADDR(NLW_inst_m_axi_gmem2_AWADDR_UNCONNECTED[63:0]),
+        .m_axi_gmem2_AWBURST(NLW_inst_m_axi_gmem2_AWBURST_UNCONNECTED[1:0]),
+        .m_axi_gmem2_AWCACHE(NLW_inst_m_axi_gmem2_AWCACHE_UNCONNECTED[3:0]),
+        .m_axi_gmem2_AWID(NLW_inst_m_axi_gmem2_AWID_UNCONNECTED[0]),
+        .m_axi_gmem2_AWLEN(NLW_inst_m_axi_gmem2_AWLEN_UNCONNECTED[7:0]),
+        .m_axi_gmem2_AWLOCK(NLW_inst_m_axi_gmem2_AWLOCK_UNCONNECTED[1:0]),
+        .m_axi_gmem2_AWPROT(NLW_inst_m_axi_gmem2_AWPROT_UNCONNECTED[2:0]),
+        .m_axi_gmem2_AWQOS(NLW_inst_m_axi_gmem2_AWQOS_UNCONNECTED[3:0]),
+        .m_axi_gmem2_AWREADY(1'b0),
+        .m_axi_gmem2_AWREGION(NLW_inst_m_axi_gmem2_AWREGION_UNCONNECTED[3:0]),
+        .m_axi_gmem2_AWSIZE(NLW_inst_m_axi_gmem2_AWSIZE_UNCONNECTED[2:0]),
+        .m_axi_gmem2_AWUSER(NLW_inst_m_axi_gmem2_AWUSER_UNCONNECTED[0]),
+        .m_axi_gmem2_AWVALID(NLW_inst_m_axi_gmem2_AWVALID_UNCONNECTED),
+        .m_axi_gmem2_BID(1'b0),
+        .m_axi_gmem2_BREADY(m_axi_gmem2_BREADY),
+        .m_axi_gmem2_BRESP({1'b0,1'b0}),
+        .m_axi_gmem2_BUSER(1'b0),
+        .m_axi_gmem2_BVALID(m_axi_gmem2_BVALID),
+        .m_axi_gmem2_RDATA(m_axi_gmem2_RDATA),
+        .m_axi_gmem2_RID(1'b0),
+        .m_axi_gmem2_RLAST(m_axi_gmem2_RLAST),
+        .m_axi_gmem2_RREADY(m_axi_gmem2_RREADY),
+        .m_axi_gmem2_RRESP({1'b0,1'b0}),
+        .m_axi_gmem2_RUSER(1'b0),
+        .m_axi_gmem2_RVALID(m_axi_gmem2_RVALID),
+        .m_axi_gmem2_WDATA(NLW_inst_m_axi_gmem2_WDATA_UNCONNECTED[255:0]),
+        .m_axi_gmem2_WID(NLW_inst_m_axi_gmem2_WID_UNCONNECTED[0]),
+        .m_axi_gmem2_WLAST(NLW_inst_m_axi_gmem2_WLAST_UNCONNECTED),
+        .m_axi_gmem2_WREADY(1'b0),
+        .m_axi_gmem2_WSTRB(NLW_inst_m_axi_gmem2_WSTRB_UNCONNECTED[31:0]),
+        .m_axi_gmem2_WUSER(NLW_inst_m_axi_gmem2_WUSER_UNCONNECTED[0]),
+        .m_axi_gmem2_WVALID(NLW_inst_m_axi_gmem2_WVALID_UNCONNECTED),
+        .output_stream_TDATA({\^output_stream_TDATA ,NLW_inst_output_stream_TDATA_UNCONNECTED[0]}),
+        .output_stream_TKEEP(NLW_inst_output_stream_TKEEP_UNCONNECTED[1:0]),
+        .output_stream_TLAST(output_stream_TLAST),
+        .output_stream_TREADY(output_stream_TREADY),
+        .output_stream_TSTRB(NLW_inst_output_stream_TSTRB_UNCONNECTED[1:0]),
+        .output_stream_TVALID(output_stream_TVALID),
+        .s_axi_control_ARADDR(s_axi_control_ARADDR),
+        .s_axi_control_ARREADY(s_axi_control_ARREADY),
+        .s_axi_control_ARVALID(s_axi_control_ARVALID),
+        .s_axi_control_AWADDR({s_axi_control_AWADDR[5:2],1'b0,1'b0}),
+        .s_axi_control_AWREADY(s_axi_control_AWREADY),
+        .s_axi_control_AWVALID(s_axi_control_AWVALID),
+        .s_axi_control_BREADY(s_axi_control_BREADY),
+        .s_axi_control_BRESP(NLW_inst_s_axi_control_BRESP_UNCONNECTED[1:0]),
+        .s_axi_control_BVALID(s_axi_control_BVALID),
+        .s_axi_control_RDATA(s_axi_control_RDATA),
+        .s_axi_control_RREADY(s_axi_control_RREADY),
+        .s_axi_control_RRESP(NLW_inst_s_axi_control_RRESP_UNCONNECTED[1:0]),
+        .s_axi_control_RVALID(s_axi_control_RVALID),
+        .s_axi_control_WDATA(s_axi_control_WDATA),
+        .s_axi_control_WREADY(s_axi_control_WREADY),
+        .s_axi_control_WSTRB(s_axi_control_WSTRB),
+        .s_axi_control_WVALID(s_axi_control_WVALID));
+endmodule
+
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD
    (ap_enable_reg_pp0_iter1,
     ap_done_cache_reg,
@@ -19761,7 +19760,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD
         .R(flow_control_loop_pipe_sequential_init_U_n_18));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L1_NEURON" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON
    (ap_enable_reg_pp0_iter4_reg_r_0,
     WEA,
@@ -76798,7 +76796,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON
         .O(DINBDIN[8]));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L2_LOAD" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD
    (ap_done_cache,
     ap_enable_reg_pp0_iter1,
@@ -77451,7 +77448,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD
         .R(flow_control_loop_pipe_sequential_init_U_n_18));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L2_NEURON" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON
    (ADDRARDADDR,
     l2_output_ce1,
@@ -108352,7 +108348,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON
         .O(DINADIN[7]));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L3_LOAD" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD
    (ap_enable_reg_pp0_iter1,
     D,
@@ -108844,7 +108839,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD
         .O(local_l3_weights_address0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_L3_NEURON" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON
    (ap_enable_reg_pp0_iter5,
     grp_bnn_top_Pipeline_L3_NEURON_fu_4654_output_stream_TLAST,
@@ -116683,7 +116677,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_Pipeline_RECV_INPUT" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT
    (\i_fu_70_reg[2]_0 ,
     grp_bnn_top_Pipeline_RECV_INPUT_fu_4611_ap_done,
@@ -165378,7 +165371,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT
         .R(\shl_ln64_reg_358[14]_i_1_n_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb
    (q0,
     ap_clk,
@@ -176690,7 +176682,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint
         .WEBWE({1'b0,1'b0,1'b0,1'b0,ram_reg_9_0,ram_reg_9_0,ram_reg_9_0,ram_reg_9_0}));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi" *) 
 module bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi
    (add_ln111_512_fu_11496_p2,
     add_ln111_515_fu_11508_p2,
@@ -191582,7 +191573,6 @@ module bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint
         .WEBWE({1'b0,1'b0,1'b0,1'b0,WEA,WEA,WEA,WEA}));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_control_s_axi" *) 
 module bnn_top_bnn_top_0_0_bnn_top_control_s_axi
    (D,
     s_axi_control_ARREADY,
@@ -196577,7 +196567,6 @@ module bnn_top_bnn_top_0_0_bnn_top_control_s_axi
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_flow_control_loop_pipe_sequential_init" *) 
 module bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init
    (\i_fu_70_reg[2] ,
     grp_bnn_top_Pipeline_RECV_INPUT_fu_4611_ap_done,
@@ -198701,7 +198690,6 @@ module bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init_9
         .O(\n_fu_58[3]_i_3_n_3 ));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi
    (m_axi_gmem0_ARVALID,
     s_ready_t_reg,
@@ -198905,7 +198893,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi
         .we(bus_read_n_892));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_burst_converter" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter
    (s_ready_t_reg,
     \could_multi_bursts.burst_valid_reg_0 ,
@@ -202871,7 +202858,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter
         .R(ap_rst_n_inv));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_fifo" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo
    (full_n_reg_0,
     in,
@@ -204510,7 +204496,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo__parameterized7_16
         .R(ap_rst_n_inv));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_load" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_load
    (full_n_reg,
     dout_vld_reg,
@@ -206723,7 +206708,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_mem__parameterized0
         .O(ready_for_outstanding));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_read" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read
    (ARREADY_Dummy,
     \could_multi_bursts.burst_valid_reg ,
@@ -206923,7 +206907,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read
         .we(we));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_reg_slice" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice
    (s_ready_t_reg_0,
     next_req,
@@ -227345,7 +227328,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice__parameterized2
         .O(E));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_srl" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl
    (in,
     \trunc_ln1_reg_5401_reg[58] ,
@@ -230244,7 +230226,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl__parameterized5
         .O(din));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem0_m_axi_write" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write
    (m_axi_gmem0_BREADY,
     m_axi_gmem0_BVALID,
@@ -230267,7 +230248,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write
         .m_axi_gmem0_BVALID(m_axi_gmem0_BVALID));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi
    (gmem1_ARREADY,
     gmem1_RVALID,
@@ -230408,7 +230388,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi
         .\tmp_len_reg[17]_0 ({ARLEN_Dummy[17],ARLEN_Dummy[12],ARADDR_Dummy}));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_burst_converter" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter
    (s_ready_t_reg,
     \could_multi_bursts.burst_valid_reg_0 ,
@@ -234535,7 +234514,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter
         .R(ap_rst_n_inv));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_fifo" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo
    (gmem1_ARREADY,
     \dout_reg[72] ,
@@ -236139,7 +236117,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo__parameterized7_15
         .R(ap_rst_n_inv));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_load" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_load
    (gmem1_ARREADY,
     dout_vld_reg,
@@ -237417,7 +237394,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_mem__parameterized0
         .O(ready_for_outstanding));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_read" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read
    (ARREADY_Dummy,
     \could_multi_bursts.burst_valid_reg ,
@@ -237553,7 +237529,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read
         .s_ready_t_reg_0(s_ready_t_reg));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_reg_slice" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice
    (s_ready_t_reg_0,
     next_req,
@@ -245602,7 +245577,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice__parameterized2
         .S(ap_rst_n_inv));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_srl" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl
    (\dout_reg[72]_0 ,
     D,
@@ -246930,7 +246904,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl__parameterized5
         .O(din));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem1_m_axi_write" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write
    (m_axi_gmem1_BREADY,
     m_axi_gmem1_BVALID,
@@ -246953,7 +246926,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write
         .m_axi_gmem1_BVALID(m_axi_gmem1_BVALID));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi
    (ap_rst_n_inv,
     gmem2_ARREADY,
@@ -247106,7 +247078,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi
         .\tmp_len_reg[17]_0 ({ARLEN_Dummy[17],ARLEN_Dummy[8:7],ARLEN_Dummy[5],ARADDR_Dummy}));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_burst_converter" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter
    (ap_rst_n_0,
     s_ready_t_reg,
@@ -251254,7 +251225,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter
         .R(ap_rst_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_fifo" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo
    (full_n_reg_0,
     dout_vld_reg_0,
@@ -252822,7 +252792,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo__parameterized7_14
         .R(\mOutPtr_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_load" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_load
    (full_n_reg,
     dout_vld_reg,
@@ -254131,7 +254100,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_mem__parameterized0
         .O(ready_for_outstanding));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_read" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read
    (ap_rst_n_0,
     ARREADY_Dummy,
@@ -254267,7 +254235,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read
         .s_ready_t_reg_1(ap_rst_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_reg_slice" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice
    (s_ready_t_reg_0,
     SR,
@@ -262349,7 +262316,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice__parameterized2
         .S(s_ready_t_reg_1));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_srl" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl
    (dout_vld_reg,
     Q,
@@ -263710,7 +263676,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl__parameterized5
         .O(din));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_gmem2_m_axi_write" *) 
 module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write
    (m_axi_gmem2_BREADY,
     m_axi_gmem2_BVALID,
@@ -263733,7 +263698,6 @@ module bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write
         .s_ready_t_reg_0(s_ready_t_reg));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_l1_output_RAM_AUTO_1R1W" *) 
 module bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W
    (D,
     \ap_CS_fsm_reg[48] ,
@@ -264767,7 +264731,6 @@ module bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W_6
         .WEBWE({1'b0,1'b0,WEA,WEA}));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_l2_output_RAM_AUTO_1R1W" *) 
 module bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W
    (D,
     ap_clk,
@@ -265910,7 +265873,6 @@ module bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W_7
         .O(ram_reg_bram_0_i_89_n_3));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W" *) 
 module bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W
    (\l3_input_reg_10481_reg[0] ,
     \l3_input_reg_10481_reg[5] ,
@@ -275792,7 +275754,6 @@ module bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W
         .WE(p_0_in));
 endmodule
 
-(* ORIG_REF_NAME = "bnn_top_regslice_both" *) 
 module bnn_top_bnn_top_0_0_bnn_top_regslice_both
    (Q,
     input_stream_TREADY,

@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Mar 25 17:19:39 2026
+-- Date        : Wed Mar 25 17:19:38 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top bnn_top_s00_mmu_0 -prefix
+--               bnn_top_s00_mmu_0_ bnn_top_s00_mmu_0_sim_netlist.vhdl
 -- Design      : bnn_top_s00_mmu_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,8 +39,6 @@ entity bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave is
     m_axi_bvalid : in STD_LOGIC;
     s_axi_wready_0 : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave : entity is "axi_mmu_v2_1_29_decerr_slave";
 end bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave is
@@ -310,8 +308,6 @@ entity bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice is
     \FSM_onehot_gen_write.w_state[2]_i_3_0\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice : entity is "axi_register_slice_v2_1_31_axic_register_slice";
 end bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice is
@@ -1253,8 +1249,6 @@ entity bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice is
     \FSM_onehot_gen_write.w_state[2]_i_3\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice : entity is "axi_register_slice_v2_1_31_axi_register_slice";
 end bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice is
@@ -1434,8 +1428,6 @@ entity bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top is
   attribute C_USES_DEST of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 0;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is "axi_mmu_v2_1_29_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 1;
   attribute P_AXI4 : integer;

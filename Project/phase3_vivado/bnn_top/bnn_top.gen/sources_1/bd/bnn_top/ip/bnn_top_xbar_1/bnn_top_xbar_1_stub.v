@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 // Date        : Wed Mar 25 17:19:52 2026
 // Host        : icarus running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top bnn_top_xbar_1 -prefix
+//               bnn_top_xbar_1_ bnn_top_xbar_1_stub.v
 // Design      : bnn_top_xbar_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sfvc784-2-e

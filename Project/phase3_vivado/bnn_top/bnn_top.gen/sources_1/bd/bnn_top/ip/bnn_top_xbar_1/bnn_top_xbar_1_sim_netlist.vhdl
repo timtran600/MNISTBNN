@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 -- Date        : Wed Mar 25 17:19:52 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_xbar_1/bnn_top_xbar_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top bnn_top_xbar_1 -prefix
+--               bnn_top_xbar_1_ bnn_top_xbar_1_sim_netlist.vhdl
 -- Design      : bnn_top_xbar_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -71,8 +71,6 @@ entity bnn_top_xbar_1_axi_crossbar_v2_1_32_addr_arbiter_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 39 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_crossbar_v2_1_32_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_32_addr_arbiter_sasd";
 end bnn_top_xbar_1_axi_crossbar_v2_1_32_addr_arbiter_sasd;
 
 architecture STRUCTURE of bnn_top_xbar_1_axi_crossbar_v2_1_32_addr_arbiter_sasd is
@@ -1643,8 +1641,6 @@ entity bnn_top_xbar_1_axi_crossbar_v2_1_32_decerr_slave is
     \gen_axilite.s_axi_awready_i_reg_0\ : in STD_LOGIC;
     \gen_axilite.s_axi_awready_i_reg_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_crossbar_v2_1_32_decerr_slave : entity is "axi_crossbar_v2_1_32_decerr_slave";
 end bnn_top_xbar_1_axi_crossbar_v2_1_32_decerr_slave;
 
 architecture STRUCTURE of bnn_top_xbar_1_axi_crossbar_v2_1_32_decerr_slave is
@@ -1817,8 +1813,6 @@ entity bnn_top_xbar_1_axi_crossbar_v2_1_32_splitter is
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_crossbar_v2_1_32_splitter : entity is "axi_crossbar_v2_1_32_splitter";
 end bnn_top_xbar_1_axi_crossbar_v2_1_32_splitter;
 
 architecture STRUCTURE of bnn_top_xbar_1_axi_crossbar_v2_1_32_splitter is
@@ -1950,8 +1944,6 @@ entity bnn_top_xbar_1_axi_register_slice_v2_1_31_axic_register_slice is
     \m_axi_rready[1]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_register_slice_v2_1_31_axic_register_slice : entity is "axi_register_slice_v2_1_31_axic_register_slice";
 end bnn_top_xbar_1_axi_register_slice_v2_1_31_axic_register_slice;
 
 architecture STRUCTURE of bnn_top_xbar_1_axi_register_slice_v2_1_31_axic_register_slice is
@@ -3157,8 +3149,6 @@ entity bnn_top_xbar_1_axi_crossbar_v2_1_32_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 39 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_crossbar_v2_1_32_crossbar_sasd : entity is "axi_crossbar_v2_1_32_crossbar_sasd";
 end bnn_top_xbar_1_axi_crossbar_v2_1_32_crossbar_sasd;
 
 architecture STRUCTURE of bnn_top_xbar_1_axi_crossbar_v2_1_32_crossbar_sasd is
@@ -3568,8 +3558,6 @@ entity bnn_top_xbar_1_axi_crossbar_v2_1_32_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of bnn_top_xbar_1_axi_crossbar_v2_1_32_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bnn_top_xbar_1_axi_crossbar_v2_1_32_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_xbar_1_axi_crossbar_v2_1_32_axi_crossbar : entity is "axi_crossbar_v2_1_32_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of bnn_top_xbar_1_axi_crossbar_v2_1_32_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

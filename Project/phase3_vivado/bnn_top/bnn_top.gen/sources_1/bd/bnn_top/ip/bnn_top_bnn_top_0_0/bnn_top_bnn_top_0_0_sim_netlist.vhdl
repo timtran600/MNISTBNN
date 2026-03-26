@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Mar 25 17:21:27 2026
+-- Date        : Wed Mar 25 17:21:24 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_bnn_top_0_0/bnn_top_bnn_top_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top bnn_top_bnn_top_0_0 -prefix
+--               bnn_top_bnn_top_0_0_ bnn_top_bnn_top_0_0_sim_netlist.vhdl
 -- Design      : bnn_top_bnn_top_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -34,8 +34,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint
     ram_reg_9_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     we0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb : entity is "bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l1_weights_3_RAM_bkb is
@@ -12052,8 +12050,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint
     WEA : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 255 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi : entity is "bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_stream_stream_ap_uint_ap_uint_ap_uint_ap_uint_local_l2_weights_3_RAM_fYi is
@@ -29167,8 +29163,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_control_s_axi is
     s_axi_control_AWVALID : in STD_LOGIC;
     s_axi_control_RREADY : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_control_s_axi : entity is "bnn_top_control_s_axi";
 end bnn_top_bnn_top_0_0_bnn_top_control_s_axi;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_control_s_axi is
@@ -35824,8 +35818,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init is
     \ap_CS_fsm_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_enable_reg_pp0_iter1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init : entity is "bnn_top_flow_control_loop_pipe_sequential_init";
 end bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_flow_control_loop_pipe_sequential_init is
@@ -40272,8 +40264,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice is
     S : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \data_p2_reg[81]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice : entity is "bnn_top_gmem0_m_axi_reg_slice";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_reg_slice is
@@ -67136,8 +67126,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl is
     ap_rst_n_inv : in STD_LOGIC;
     \dout_reg[56]_1\ : in STD_LOGIC_VECTOR ( 56 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl : entity is "bnn_top_gmem0_m_axi_srl";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_srl is
@@ -71961,8 +71949,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice is
     S : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \data_p2_reg[81]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice : entity is "bnn_top_gmem1_m_axi_reg_slice";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_reg_slice is
@@ -82546,8 +82532,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl is
     ap_clk : in STD_LOGIC;
     ap_rst_n_inv : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl : entity is "bnn_top_gmem1_m_axi_srl";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_srl is
@@ -85301,8 +85285,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice is
     S : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \data_p2_reg[81]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice : entity is "bnn_top_gmem2_m_axi_reg_slice";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_reg_slice is
@@ -95941,8 +95923,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl is
     ap_clk : in STD_LOGIC;
     \dout_reg[67]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl : entity is "bnn_top_gmem2_m_axi_srl";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_srl is
@@ -97612,8 +97592,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W is
     WEA : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W : entity is "bnn_top_l1_output_RAM_AUTO_1R1W";
 end bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_l1_output_RAM_AUTO_1R1W is
@@ -98881,8 +98859,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W is
     DINBDIN : in STD_LOGIC_VECTOR ( 8 downto 0 );
     WEA : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W : entity is "bnn_top_l2_output_RAM_AUTO_1R1W";
 end bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_l2_output_RAM_AUTO_1R1W is
@@ -100443,8 +100419,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 255 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W : entity is "bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W";
 end bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_local_l3_weights_RAM_1P_LUTRAM_1R1W is
@@ -112003,8 +111977,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_regslice_both is
     \i_fu_70_reg[4]\ : in STD_LOGIC;
     input_stream_TDATA : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_regslice_both : entity is "bnn_top_regslice_both";
 end bnn_top_bnn_top_0_0_bnn_top_regslice_both;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_regslice_both is
@@ -113747,8 +113719,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD is
     ap_rst_n : in STD_LOGIC;
     grp_bnn_top_Pipeline_L1_NEURON_fu_4624_ap_start_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD : entity is "bnn_top_bnn_top_Pipeline_L1_LOAD";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_LOAD is
@@ -115904,8 +115874,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON is
     add_ln83_768_fu_14246_p2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     add_ln83_762_fu_14222_p2 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON : entity is "bnn_top_bnn_top_Pipeline_L1_NEURON";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L1_NEURON is
@@ -187033,8 +187001,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD is
     grp_bnn_top_Pipeline_L2_NEURON_fu_4639_ap_start_reg : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD : entity is "bnn_top_bnn_top_Pipeline_L2_LOAD";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_LOAD is
@@ -188371,8 +188337,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON is
     add_ln111_240_fu_4550_p2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     add_ln111_247_fu_4574_p2 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON : entity is "bnn_top_bnn_top_Pipeline_L2_NEURON";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L2_NEURON is
@@ -226986,8 +226950,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD is
     ap_rst_n : in STD_LOGIC;
     \gmem2_addr_read_reg_146_reg[255]_1\ : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD : entity is "bnn_top_bnn_top_Pipeline_L3_LOAD";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_LOAD is
@@ -227708,8 +227670,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON is
     \add_ln140_240_reg_6797_reg[1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \add_ln140_247_reg_6817_reg[1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON : entity is "bnn_top_bnn_top_Pipeline_L3_NEURON";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_L3_NEURON is
@@ -238580,8 +238540,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT is
     \add_ln83_2341_reg_69581_reg[0]\ : in STD_LOGIC_VECTOR ( 783 downto 0 );
     \add_ln83_773_reg_66861_reg[0]\ : in STD_LOGIC_VECTOR ( 783 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT : entity is "bnn_top_bnn_top_Pipeline_RECV_INPUT";
 end bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_bnn_top_Pipeline_RECV_INPUT is
@@ -298561,8 +298519,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 58 downto 0 );
     \data_p2_reg[81]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter : entity is "bnn_top_gmem0_m_axi_burst_converter";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_burst_converter is
@@ -304080,8 +304036,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo is
     tmp_valid_reg : in STD_LOGIC;
     \dout_reg[56]_0\ : in STD_LOGIC_VECTOR ( 56 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo : entity is "bnn_top_gmem0_m_axi_fifo";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_fifo is
@@ -305768,8 +305722,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write : entity is "bnn_top_gmem0_m_axi_write";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_write is
@@ -305805,8 +305757,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 60 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter : entity is "bnn_top_gmem1_m_axi_burst_converter";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_burst_converter is
@@ -311563,8 +311513,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo is
     ap_rst_n : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 59 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo : entity is "bnn_top_gmem1_m_axi_fifo";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_fifo is
@@ -313291,8 +313239,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write is
     ap_rst_n_inv : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write : entity is "bnn_top_gmem1_m_axi_write";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_write is
@@ -313328,8 +313274,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 62 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter : entity is "bnn_top_gmem2_m_axi_burst_converter";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_burst_converter is
@@ -319122,8 +319066,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo is
     sel : in STD_LOGIC;
     \dout_reg[58]\ : in STD_LOGIC_VECTOR ( 58 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo : entity is "bnn_top_gmem2_m_axi_fifo";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_fifo is
@@ -320781,8 +320723,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write is
     s_ready_t_reg : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write : entity is "bnn_top_gmem2_m_axi_write";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_write is
@@ -320841,8 +320781,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_load is
     mem_reg_10 : in STD_LOGIC_VECTOR ( 0 to 0 );
     we : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_load : entity is "bnn_top_gmem0_m_axi_load";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_load;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_load is
@@ -321558,8 +321496,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 58 downto 0 );
     \data_p2_reg[81]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read : entity is "bnn_top_gmem0_m_axi_read";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi_read is
@@ -321692,8 +321628,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_load is
     \in\ : in STD_LOGIC_VECTOR ( 59 downto 0 );
     din : in STD_LOGIC_VECTOR ( 257 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_load : entity is "bnn_top_gmem1_m_axi_load";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_load;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_load is
@@ -322397,8 +322331,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 60 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read : entity is "bnn_top_gmem1_m_axi_read";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi_read is
@@ -322504,8 +322436,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_load is
     \dout_reg[58]\ : in STD_LOGIC_VECTOR ( 58 downto 0 );
     din : in STD_LOGIC_VECTOR ( 257 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_load : entity is "bnn_top_gmem2_m_axi_load";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_load;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_load is
@@ -323251,8 +323181,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read is
     \data_p2_reg[81]\ : in STD_LOGIC_VECTOR ( 62 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read : entity is "bnn_top_gmem2_m_axi_read";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi_read is
@@ -323368,8 +323296,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi is
     \dout_reg[56]\ : in STD_LOGIC_VECTOR ( 56 downto 0 );
     in_HLS_ARVALID : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi : entity is "bnn_top_gmem0_m_axi";
 end bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem0_m_axi is
@@ -323525,8 +323451,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi is
     D : in STD_LOGIC_VECTOR ( 256 downto 0 );
     \in\ : in STD_LOGIC_VECTOR ( 59 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi : entity is "bnn_top_gmem1_m_axi";
 end bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem1_m_axi is
@@ -323642,8 +323566,6 @@ entity bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi is
     D : in STD_LOGIC_VECTOR ( 256 downto 0 );
     \dout_reg[58]\ : in STD_LOGIC_VECTOR ( 58 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi : entity is "bnn_top_gmem2_m_axi";
 end bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi;
 
 architecture STRUCTURE of bnn_top_bnn_top_0_0_bnn_top_gmem2_m_axi is
@@ -323992,8 +323914,6 @@ entity bnn_top_bnn_top_0_0_bnn_top is
   attribute C_S_AXI_DATA_WIDTH of bnn_top_bnn_top_0_0_bnn_top : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
   attribute C_S_AXI_WSTRB_WIDTH of bnn_top_bnn_top_0_0_bnn_top : entity is 4;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of bnn_top_bnn_top_0_0_bnn_top : entity is "bnn_top";
   attribute ap_ST_fsm_state1 : string;
   attribute ap_ST_fsm_state1 of bnn_top_bnn_top_0_0_bnn_top : entity is "147'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001";
   attribute ap_ST_fsm_state10 : string;
