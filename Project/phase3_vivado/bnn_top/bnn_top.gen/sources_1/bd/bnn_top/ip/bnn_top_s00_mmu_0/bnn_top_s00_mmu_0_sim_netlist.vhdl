@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Mar 25 17:19:38 2026
+-- Date        : Thu Mar 26 20:07:06 2026
 -- Host        : icarus running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top bnn_top_s00_mmu_0 -prefix
---               bnn_top_s00_mmu_0_ bnn_top_s00_mmu_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/GitRepos/MNISTBNN/Project/phase3_vivado/bnn_top/bnn_top.gen/sources_1/bd/bnn_top/ip/bnn_top_s00_mmu_0/bnn_top_s00_mmu_0_sim_netlist.vhdl
 -- Design      : bnn_top_s00_mmu_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,6 +39,8 @@ entity bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave is
     m_axi_bvalid : in STD_LOGIC;
     s_axi_wready_0 : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave : entity is "axi_mmu_v2_1_29_decerr_slave";
 end bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave is
@@ -287,7 +289,7 @@ entity bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice is
     \m_payload_i_reg[66]_0\ : out STD_LOGIC_VECTOR ( 65 downto 0 );
     D : out STD_LOGIC_VECTOR ( 4 downto 0 );
     s_axi_awvalid_0 : out STD_LOGIC;
-    \s_axi_awaddr[39]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \s_axi_awaddr[38]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_ready_i_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_write.w_mask_reg\ : out STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
@@ -308,6 +310,8 @@ entity bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice is
     \FSM_onehot_gen_write.w_state[2]_i_3_0\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice : entity is "axi_register_slice_v2_1_31_axic_register_slice";
 end bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_register_slice is
@@ -320,12 +324,11 @@ architecture STRUCTURE of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axic_regi
   signal aw_pop0 : STD_LOGIC;
   signal \gen_write.aw_cnt[5]_i_5_n_0\ : STD_LOGIC;
   signal \m_payload_i[40]_i_2_n_0\ : STD_LOGIC;
-  signal \m_payload_i[40]_i_3_n_0\ : STD_LOGIC;
   signal \^m_payload_i_reg[66]_0\ : STD_LOGIC_VECTOR ( 65 downto 0 );
   signal m_valid_i_inv_i_1_n_0 : STD_LOGIC;
   signal \^m_valid_i_reg_inv_0\ : STD_LOGIC;
   signal \p_0_in__0\ : STD_LOGIC;
-  signal \^s_axi_awaddr[39]\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \^s_axi_awaddr[38]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^s_axi_awready\ : STD_LOGIC;
   signal \^s_axi_awvalid_0\ : STD_LOGIC;
   signal s_ready_i_i_1_n_0 : STD_LOGIC;
@@ -349,7 +352,7 @@ begin
   SR(0) <= \^sr\(0);
   \m_payload_i_reg[66]_0\(65 downto 0) <= \^m_payload_i_reg[66]_0\(65 downto 0);
   m_valid_i_reg_inv_0 <= \^m_valid_i_reg_inv_0\;
-  \s_axi_awaddr[39]\(0) <= \^s_axi_awaddr[39]\(0);
+  \s_axi_awaddr[38]\(0) <= \^s_axi_awaddr[38]\(0);
   s_axi_awready <= \^s_axi_awready\;
   s_axi_awvalid_0 <= \^s_axi_awvalid_0\;
 \FSM_onehot_gen_axi.gen_write.write_cs[2]_i_1\: unisim.vcomponents.LUT1
@@ -495,7 +498,7 @@ begin
       INIT => X"0080808080808080"
     )
         port map (
-      I0 => \^s_axi_awaddr[39]\(0),
+      I0 => \^s_axi_awaddr[38]\(0),
       I1 => sr_axi_awready,
       I2 => \^s_axi_awvalid_0\,
       I3 => m_axi_bvalid,
@@ -510,7 +513,7 @@ begin
         port map (
       I0 => \^s_axi_awvalid_0\,
       I1 => sr_axi_awready,
-      I2 => \^s_axi_awaddr[39]\(0),
+      I2 => \^s_axi_awaddr[38]\(0),
       I3 => s_axi_bready,
       I4 => aw_pop0,
       I5 => m_axi_bvalid,
@@ -560,7 +563,7 @@ begin
       I1 => aw_pop,
       I2 => \^s_axi_awvalid_0\,
       I3 => sr_axi_awready,
-      I4 => \^s_axi_awaddr[39]\(0),
+      I4 => \^s_axi_awaddr[38]\(0),
       I5 => s_axi_awready_0(0),
       O => \gen_write.aw_cnt[5]_i_5_n_0\
     );
@@ -582,7 +585,7 @@ begin
       I0 => w_mask,
       I1 => \^s_axi_awvalid_0\,
       I2 => \aresetn_d_reg_n_0_[1]\,
-      I3 => \^s_axi_awaddr[39]\(0),
+      I3 => \^s_axi_awaddr[38]\(0),
       I4 => \^s_axi_awready\,
       I5 => \^fsm_onehot_gen_write.w_state_reg[1]\,
       O => \gen_write.w_mask_reg\
@@ -598,39 +601,29 @@ m_axi_awvalid_INST_0: unisim.vcomponents.LUT4
       I3 => Q(1),
       O => m_axi_awvalid
     );
-\m_payload_i[40]_i_1\: unisim.vcomponents.LUT5
+\m_payload_i[40]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000001"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => \m_payload_i_reg[66]_1\(39),
+      I0 => \m_payload_i[40]_i_2_n_0\,
       I1 => \m_payload_i_reg[66]_1\(38),
-      I2 => \m_payload_i_reg[66]_1\(29),
-      I3 => \m_payload_i[40]_i_2_n_0\,
-      I4 => \m_payload_i[40]_i_3_n_0\,
-      O => \^s_axi_awaddr[39]\(0)
+      I2 => \m_payload_i_reg[66]_1\(39),
+      I3 => \m_payload_i_reg[66]_1\(36),
+      I4 => \m_payload_i_reg[66]_1\(37),
+      I5 => \m_payload_i_reg[66]_1\(31),
+      O => \^s_axi_awaddr[38]\(0)
     );
 \m_payload_i[40]_i_2\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"FFFE"
     )
         port map (
-      I0 => \m_payload_i_reg[66]_1\(32),
-      I1 => \m_payload_i_reg[66]_1\(33),
-      I2 => \m_payload_i_reg[66]_1\(30),
-      I3 => \m_payload_i_reg[66]_1\(31),
+      I0 => \m_payload_i_reg[66]_1\(34),
+      I1 => \m_payload_i_reg[66]_1\(35),
+      I2 => \m_payload_i_reg[66]_1\(32),
+      I3 => \m_payload_i_reg[66]_1\(33),
       O => \m_payload_i[40]_i_2_n_0\
-    );
-\m_payload_i[40]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => \m_payload_i_reg[66]_1\(36),
-      I1 => \m_payload_i_reg[66]_1\(37),
-      I2 => \m_payload_i_reg[66]_1\(34),
-      I3 => \m_payload_i_reg[66]_1\(35),
-      O => \m_payload_i[40]_i_3_n_0\
     );
 \m_payload_i_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -908,7 +901,7 @@ m_axi_awvalid_INST_0: unisim.vcomponents.LUT4
      port map (
       C => aclk,
       CE => \^m_valid_i_reg_inv_0\,
-      D => \^s_axi_awaddr[39]\(0),
+      D => \^s_axi_awaddr[38]\(0),
       Q => \^m_payload_i_reg[66]_0\(40),
       R => '0'
     );
@@ -1249,6 +1242,8 @@ entity bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice is
     \FSM_onehot_gen_write.w_state[2]_i_3\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice : entity is "axi_register_slice_v2_1_31_axi_register_slice";
 end bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice;
 
 architecture STRUCTURE of bnn_top_s00_mmu_0_axi_register_slice_v2_1_31_axi_register_slice is
@@ -1272,7 +1267,7 @@ begin
       m_valid_i_reg_inv_0 => E(0),
       m_valid_i_reg_inv_1(0) => m_valid_i_reg_inv(0),
       m_valid_i_reg_inv_2 => m_valid_i_reg_inv_0,
-      \s_axi_awaddr[39]\(0) => w_match,
+      \s_axi_awaddr[38]\(0) => w_match,
       s_axi_awready => s_axi_awready,
       s_axi_awready_0(5 downto 0) => s_axi_awready_0(5 downto 0),
       s_axi_awvalid => s_axi_awvalid,
@@ -1417,7 +1412,7 @@ entity bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top is
   attribute C_PREFIX_WIDTH : integer;
   attribute C_PREFIX_WIDTH of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 1;
   attribute C_RANGE_SIZE : integer;
-  attribute C_RANGE_SIZE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 29;
+  attribute C_RANGE_SIZE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 31;
   attribute C_S_AXI_ADDR_WIDTH : integer;
   attribute C_S_AXI_ADDR_WIDTH of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 40;
   attribute C_S_AXI_SUPPORTS_READ : integer;
@@ -1428,6 +1423,8 @@ entity bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top is
   attribute C_USES_DEST of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 0;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is "axi_mmu_v2_1_29_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top : entity is 1;
   attribute P_AXI4 : integer;
@@ -1473,7 +1470,6 @@ architecture STRUCTURE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top is
   signal \gen_write.w_cnt_reg\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal mr_axi_awaddr : STD_LOGIC_VECTOR ( 40 to 40 );
   signal mr_axi_awvalid : STD_LOGIC;
-  signal p_9_in : STD_LOGIC;
   signal register_slice_inst_n_1 : STD_LOGIC;
   signal register_slice_inst_n_69 : STD_LOGIC;
   signal register_slice_inst_n_70 : STD_LOGIC;
@@ -1499,16 +1495,14 @@ architecture STRUCTURE of bnn_top_s00_mmu_0_axi_mmu_v2_1_29_top is
   attribute FSM_ENCODED_STATES of \FSM_onehot_gen_write.w_state_reg[1]\ : label is "W_DECERR:100,iSTATE:001,W_PENDING:010";
   attribute FSM_ENCODED_STATES of \FSM_onehot_gen_write.w_state_reg[2]\ : label is "W_DECERR:100,iSTATE:001,W_PENDING:010";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gen_write.w_cnt[0]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \gen_write.w_cnt[1]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \gen_write.w_cnt[0]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \gen_write.w_cnt[1]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \gen_write.w_cnt[2]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \gen_write.w_cnt[3]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \gen_write.w_cnt[4]_i_2\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gen_write.w_cnt[5]_i_3\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gen_write.w_cnt[5]_i_5\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \gen_write.w_cnt[5]_i_3\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of m_axi_wvalid_INST_0 : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \s_axi_bresp[0]_INST_0\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \s_axi_bresp[1]_INST_0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \s_axi_bresp[0]_INST_0\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \s_axi_bresp[1]_INST_0\ : label is "soft_lutpair9";
 begin
   \^s_axi_bready\ <= s_axi_bready;
   \^s_axi_wdata\(31 downto 0) <= s_axi_wdata(31 downto 0);
@@ -1805,17 +1799,16 @@ decerr_slave_inst: entity work.bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave
       I4 => w_pop,
       O => w_cnt110_out
     );
-\gen_write.w_cnt[5]_i_1\: unisim.vcomponents.LUT6
+\gen_write.w_cnt[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AAAA6AAAAAAAAAAA"
+      INIT => X"FFDF0020"
     )
         port map (
-      I0 => p_9_in,
-      I1 => \^s_axi_wlast\,
-      I2 => m_axi_wready,
-      I3 => s_axi_wvalid,
-      I4 => \FSM_onehot_gen_write.w_state_reg_n_0_[2]\,
-      I5 => sr_axi_wvalid117_in,
+      I0 => s_axi_awvalid,
+      I1 => \gen_write.aw_cnt_reg\(5),
+      I2 => w_match,
+      I3 => w_mask,
+      I4 => w_pop,
       O => \gen_write.w_cnt[5]_i_1_n_0\
     );
 \gen_write.w_cnt[5]_i_2\: unisim.vcomponents.LUT6
@@ -1831,16 +1824,17 @@ decerr_slave_inst: entity work.bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave
       I5 => \gen_write.w_cnt_reg\(4),
       O => \gen_write.w_cnt[5]_i_2_n_0\
     );
-\gen_write.w_cnt[5]_i_3\: unisim.vcomponents.LUT4
+\gen_write.w_cnt[5]_i_3\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0020"
+      INIT => X"00800000"
     )
         port map (
-      I0 => s_axi_awvalid,
-      I1 => \gen_write.aw_cnt_reg\(5),
-      I2 => w_match,
-      I3 => w_mask,
-      O => p_9_in
+      I0 => \^s_axi_wlast\,
+      I1 => m_axi_wready,
+      I2 => s_axi_wvalid,
+      I3 => \FSM_onehot_gen_write.w_state_reg_n_0_[2]\,
+      I4 => sr_axi_wvalid117_in,
+      O => w_pop
     );
 \gen_write.w_cnt[5]_i_4\: unisim.vcomponents.LUT6
     generic map(
@@ -1854,18 +1848,6 @@ decerr_slave_inst: entity work.bnn_top_s00_mmu_0_axi_mmu_v2_1_29_decerr_slave
       I4 => w_mask,
       I5 => \gen_write.w_cnt_reg\(0),
       O => \gen_write.w_cnt[5]_i_4_n_0\
-    );
-\gen_write.w_cnt[5]_i_5\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00800000"
-    )
-        port map (
-      I0 => \^s_axi_wlast\,
-      I1 => m_axi_wready,
-      I2 => s_axi_wvalid,
-      I3 => \FSM_onehot_gen_write.w_state_reg_n_0_[2]\,
-      I4 => sr_axi_wvalid117_in,
-      O => w_pop
     );
 \gen_write.w_cnt_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -2121,7 +2103,7 @@ architecture STRUCTURE of bnn_top_s00_mmu_0 is
   attribute C_PREFIX_WIDTH : integer;
   attribute C_PREFIX_WIDTH of inst : label is 1;
   attribute C_RANGE_SIZE : integer;
-  attribute C_RANGE_SIZE of inst : label is 29;
+  attribute C_RANGE_SIZE of inst : label is 31;
   attribute C_S_AXI_ADDR_WIDTH : integer;
   attribute C_S_AXI_ADDR_WIDTH of inst : label is 40;
   attribute C_S_AXI_SUPPORTS_READ : integer;
