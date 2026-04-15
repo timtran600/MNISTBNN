@@ -23,7 +23,15 @@ jupyter notebook
 7. Navigate to project
 project/phase1_software/phase1.ipynb
 
-8. Deactivate venv
+8. Run Model Training
+To run the most recent update to the model, run cell 19 and test SW implementation with cell 14
+
+9. Run HW Implementation 
+To run the HW implementation the fc1_weights.npy, fc2_weights.npy, fc3_weights.npy, 
+test_inputs_binarized.npy, and test_labels_full.npy (from phase1 folder) must be imported 
+onto the board. Then, the entire notebook should be run and output the HW inference.
+
+10. Deactivate venv
 deactivate
 
 # Commiting to GitHub without venv
